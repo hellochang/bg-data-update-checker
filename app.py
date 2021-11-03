@@ -120,8 +120,7 @@ def week_of_month(dt):
 
     dom = dt.day
     adjusted_dom = dom + first_day.weekday()
-
-
+    return int(np.ceil(adjusted_dom/7.0))
 
 
 # Return a dataframe of month, weeks, days in the given year
