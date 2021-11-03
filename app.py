@@ -73,19 +73,31 @@ def is_not_daily(row, holiday_date):
     last_friday = (row.rdate - timedelta(3)).date()
     # st.write(type(holiday_date)
     # Check for weekends and remove Mondays
+    # st.write(diff_days)
+    # st.write(diff_days)
+    # if diff_days == timedelta(1):
+    #     return False
+    # elif (row.weekday == 0) and (diff_days == timedelta(3)):
+    #     return False
+    # elif (yesterday in holiday_date.values) and (diff_days == timedelta(2)):
+    #     # st.write(yesterday)
+    #     # st.write(holiday['holiday_date'])
+    #     return False
+    # elif (row.weekday == 0 and diff_days == timedelta(4)) and last_friday in holiday_date.values:
+    #     return False
     
+    # For weekdays
     if diff_days == 1:
         return False
-    elif (row.weekday == 0) and (diff_days == 3):
+    elif (row.weekday == 0) and diff_days == 3:
         return False
-    elif (yesterday in holiday_date.values) and (diff_days == 2):
+    elif (yesterday in holiday_date.values):
+        if (diff_days == 2) or (row.weekday == 1 and diff_days == 4):
         # st.write(yesterday)
         # st.write(holiday['holiday_date'])
-        return False
+            return False
     elif (row.weekday == 0 and diff_days == 4) and last_friday in holiday_date.values:
         return False
-    # For weekdays
-
     else:
         return True
 
@@ -95,8 +107,11 @@ def find_daily(df, group, holiday_date):
     df = df.copy()
     df['weekday'] =  pd.to_datetime(df['rdate']).dt.weekday
     df['diff_days'] = df.groupby(group)['rdate'].diff().apply(lambda x: x/np.timedelta64(1, 'D')).fillna(0).astype('int64')
+    # df['diff1'] = df.groupby(group)['rdate'].shift(1)
+    # df['diff_days'] = df['rdate'] - df['diff1']
+    # df['diff_days'].fillna(0)
     df['is_not_daily'] = df.apply(is_not_daily, args=[holiday_date], axis=1)
-
+    # st.write(df[df['rdate']=='2021-01-01'])
     return df[df['is_not_daily'] == True]
     
 @st.cache
@@ -316,7 +331,9 @@ else:
         res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
         res_portholding = find_null(res_portholding, 'secid')
         res_bmprices = find_daily(res_bmprices, 'bm_id', holiday_date)
+        
         res_portreturn = find_daily(res_portreturn, 'pid', holiday_date)
+        # res_portreturn['diff_days'] = res_portreturn['diff_days'].dt.days
         ### Univ snapshot can't see the reason for which is which?
         res_univsnapshot = find_univsnapshot(res_univsnapshot)
         res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
