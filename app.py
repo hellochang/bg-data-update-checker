@@ -67,17 +67,18 @@ def find_null(df, col):
 
 # holiday_date = holiday['holiday_date'].dt.date
 # Return True if the dates differ more or less than 1. Helper for find_daily(df, group)
-def is_not_daily(row):
+def is_not_daily(row, holiday_date):
     diff_days = row.diff_days
     yesterday = (row.rdate - timedelta(1)).date()
     last_friday = (row.rdate - timedelta(3)).date()
     # st.write(type(holiday_date)
     # Check for weekends and remove Mondays
-    if (row.weekday == 0) and (diff_days == 3):
+    
+    if diff_days == 1:
         return False
-    elif diff_days == 1:
+    elif (row.weekday == 0) and (diff_days == 3):
         return False
-    elif yesterday in holiday_date.values:
+    elif (yesterday in holiday_date.values) and (diff_days == 2):
         # st.write(yesterday)
         # st.write(holiday['holiday_date'])
         return False
@@ -90,11 +91,11 @@ def is_not_daily(row):
 
 # Differences in rdate between consec rows
 @st.cache
-def find_daily(df, group):
+def find_daily(df, group, holiday_date):
     df = df.copy()
     df['weekday'] =  pd.to_datetime(df['rdate']).dt.weekday
     df['diff_days'] = df.groupby(group)['rdate'].diff().apply(lambda x: x/np.timedelta64(1, 'D')).fillna(0).astype('int64')
-    df['is_not_daily'] = df.apply(is_not_daily, axis=1)
+    df['is_not_daily'] = df.apply(is_not_daily, args=[holiday_date], axis=1)
 
     return df[df['is_not_daily'] == True]
     
@@ -260,17 +261,8 @@ adjpricet = load_data(query_adjpricet)
 # Differences in rdate between consec rows
 
 
-holiday_date = holiday['holiday_date'].dt.date
 
-res_bmc_monthly = find_null(bmc_monthly, 'fsym_id')
-res_portholding = find_null(portholding, 'secid')
-res_bmprices = find_daily(bmprices, 'bm_id')
-res_portreturn = find_daily(portreturn, 'pid')
-### Univ snapshot can't see the reason for which is which?
-res_univsnapshot = find_univsnapshot(univsnapshot)
-res_univ_notin_id = not_in_adjpricest(univsnapshot)
-res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
-res_div_ltm = find_null(div_ltm, 'date')
+
    
 checkbox_sum = 'Summary'
 checkbox_date = 'View by Date'
@@ -292,13 +284,46 @@ else:
             'Select a  year', max_value=datetime.now().year,
             value=datetime.now().year, format='%d')
 
-        res_portholding = res_portholding[res_portholding['rdate'].dt.year == input_year]
-        res_bmprices = res_bmprices[res_bmprices['rdate'].dt.year == input_year]
-        res_portreturn = res_portreturn[res_portreturn['rdate'].dt.year == input_year]
-        res_bmc_monthly = res_bmc_monthly[res_bmc_monthly['rdate'].dt.year == input_year]
-        res_div_ltm = res_div_ltm[res_div_ltm['date'].dt.year == input_year]
-        res_univsnapshot = res_univsnapshot[res_univsnapshot['rdate'].dt.year == input_year]
+        res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+        res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+        res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+        res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+        res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+        res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
         
+        is_us_holiday = st.sidebar.checkbox('Show US Holiday')
+        is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
+        
+ 
+        holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
+        if not is_cad_holiday and not is_us_holiday:
+            holiday_df = pd.DataFrame([], columns = ['fref_exchange_code', 'holiday_date', 'month', 'day'])
+        else:
+            holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
+            holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
+            if is_us_holiday and not is_cad_holiday:
+                holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
+            elif is_cad_holiday and not is_us_holiday:
+                holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
+        
+        if not holiday_df.empty:
+            holiday_date = holiday_df['holiday_date'].dt.date
+        else:
+            holiday_date = pd.Series([])
+
+
+
+        res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+        res_portholding = find_null(res_portholding, 'secid')
+        res_bmprices = find_daily(res_bmprices, 'bm_id', holiday_date)
+        res_portreturn = find_daily(res_portreturn, 'pid', holiday_date)
+        ### Univ snapshot can't see the reason for which is which?
+        res_univsnapshot = find_univsnapshot(res_univsnapshot)
+        res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
+        res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
+        res_div_ltm = find_null(res_div_ltm, 'date')
+
+
         df = year_cal(input_year)
     
         lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
@@ -310,19 +335,9 @@ else:
         #                'day': pd.DatetimeIndex(res_date).day,
         #                'date': res_date})
         
-        is_us_holiday = st.sidebar.checkbox('Show US Holiday')
-        is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
+
         
-        holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
-        if not is_cad_holiday and not is_us_holiday:
-            holiday_df = pd.DataFrame([], columns = ['fref_exchange_code', 'month', 'day'])
-        else:
-            holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
-            holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
-            if is_us_holiday and not is_cad_holiday:
-                holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
-            elif is_cad_holiday and not is_us_holiday:
-                holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
+
       
         # holiday_df.iloc[:, 'holiday_date'] = pd.to_datetime(holiday['holiday_date'], format='%Y-%m-%d')
         # st.write(type(holiday_df['holiday_date'].dt.month_name()))
