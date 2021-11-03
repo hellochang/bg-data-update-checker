@@ -13,7 +13,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import sys
 sys.path.insert(0, r'C:\Users\Chang.Liu\Documents\dev\Data_Importer')
@@ -65,33 +65,45 @@ def load_data(query):
 def find_null(df, col):
     return df[df[col].isnull()]
 
+# holiday_date = holiday['holiday_date'].dt.date
 # Return True if the dates differ more or less than 1. Helper for find_daily(df, group)
 def is_not_daily(row):
     diff_days = row.diff_days
-    
+    yesterday = (row.rdate - timedelta(1)).date()
+    last_friday = (row.rdate - timedelta(3)).date()
+    # st.write(type(holiday_date)
     # Check for weekends and remove Mondays
     if (row.weekday == 0) and (diff_days == 3):
         return False
-    # For weekdays
     elif diff_days == 1:
         return False
+    elif yesterday in holiday_date.values:
+        # st.write(yesterday)
+        # st.write(holiday['holiday_date'])
+        return False
+    elif (row.weekday == 0 and diff_days == 4) and last_friday in holiday_date.values:
+        return False
+    # For weekdays
+
     else:
         return True
 
 # Differences in rdate between consec rows
 @st.cache
 def find_daily(df, group):
-    # df = df.copy()
-    df.loc[:, 'weekday'] =  pd.to_datetime(df['rdate']).dt.weekday
-    df.loc[:, 'diff_days'] = df.groupby(group)['rdate'].diff().apply(lambda x: x/np.timedelta64(1, 'D')).fillna(0).astype('int64')
-    df.loc[:, 'is_not_daily'] = df.apply(is_not_daily, axis=1)
+    df = df.copy()
+    df['weekday'] =  pd.to_datetime(df['rdate']).dt.weekday
+    df['diff_days'] = df.groupby(group)['rdate'].diff().apply(lambda x: x/np.timedelta64(1, 'D')).fillna(0).astype('int64')
+    df['is_not_daily'] = df.apply(is_not_daily, axis=1)
+
     return df[df['is_not_daily'] == True]
     
 @st.cache
 def find_univsnapshot(df):
-    tol = 300  
-    df.loc[:, 'monthly_company_count'] = df['univ_id'].groupby(df['rdate'].dt.month).transform('count')
-    df.loc[:, 'diff_monthly'] = df['monthly_company_count'].diff()
+    tol = 300
+    df = df.copy()
+    df['monthly_company_count'] = df['univ_id'].groupby(df['rdate'].dt.month).transform('count')
+    df['diff_monthly'] = df['monthly_company_count'].diff()
 
     return df[df['diff_monthly'] > tol]
 
@@ -114,8 +126,7 @@ def show_res(res_df):
 
 # Output week of the month based on the date
 def week_of_month(dt):
-    """ Returns the week of the month for the specified date.
-    """
+    """ Returns the week of the month for the specified date."""
     first_day = dt.replace(day=1)
 
     dom = dt.day
@@ -125,6 +136,8 @@ def week_of_month(dt):
 
 # Return a dataframe of month, weeks, days in the given year
 def year_cal(input_year):
+    """Return a dataframe of yearly calendar."""
+
     sdate = datetime(input_year, 1, 1)  
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
@@ -238,6 +251,7 @@ div_ltm = load_data(query_div_ltm)
 univsnapshot = load_data(query_univsnapshot)
 
 holiday = load_data(query_holiday)
+
 # df.loc[:, 'num_stock'] = df['rdate'].groupby(df['rdate']).transform('count')
 
 query_adjpricet = """SELECT [fsym_id]
@@ -246,6 +260,7 @@ adjpricet = load_data(query_adjpricet)
 # Differences in rdate between consec rows
 
 
+holiday_date = holiday['holiday_date'].dt.date
 
 res_bmc_monthly = find_null(bmc_monthly, 'fsym_id')
 res_portholding = find_null(portholding, 'secid')
@@ -256,7 +271,6 @@ res_univsnapshot = find_univsnapshot(univsnapshot)
 res_univ_notin_id = not_in_adjpricest(univsnapshot)
 res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
 res_div_ltm = find_null(div_ltm, 'date')
- 
    
 checkbox_sum = 'Summary'
 checkbox_date = 'View by Date'
