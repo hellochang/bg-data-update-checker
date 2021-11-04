@@ -69,8 +69,9 @@ def find_null(df, col):
 # Return True if the dates differ more or less than 1. Helper for find_daily(df, group)
 def is_not_daily(row, holiday_date):
     diff_days = row.diff_days
-    yesterday = (row.rdate - timedelta(1)).date()
-    last_friday = (row.rdate - timedelta(3)).date()
+    # yesterday = (row.rdate - timedelta(1)).date()
+    yesterday = row.rdate - timedelta(1)
+    last_friday = row.rdate - timedelta(3)
     # st.write(type(holiday_date)
     # Check for weekends and remove Mondays
     # st.write(diff_days)
@@ -89,6 +90,8 @@ def is_not_daily(row, holiday_date):
     # For weekdays
     if diff_days == 1:
         return False
+    # elif ((row.rdate.month == 1) and (row.rdate.day == 1)):
+    #     return False
     elif (row.weekday == 0) and diff_days == 3:
         return False
     elif (yesterday in holiday_date.values):
@@ -110,6 +113,8 @@ def find_daily(df, group, holiday_date):
     # df['diff1'] = df.groupby(group)['rdate'].shift(1)
     # df['diff_days'] = df['rdate'] - df['diff1']
     # df['diff_days'].fillna(0)
+    df.loc[df.groupby(group)['diff_days'].head(1).index, 'diff_days'] = 1
+
     df['is_not_daily'] = df.apply(is_not_daily, args=[holiday_date], axis=1)
     # st.write(df[df['rdate']=='2021-01-01'])
     return df[df['is_not_daily'] == True]
@@ -327,9 +332,21 @@ else:
             holiday_date = pd.Series([])
 
 
+        # res_bmc_monthly['rdate'] = res_bmc_monthly['rdate'].dt.date
+        res_portholding['rdate'] = res_portholding['rdate'].dt.date
+        res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
+        res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+        # res_univsnapshot['rdate'] = res_univsnapshot['rdate'].dt.date
+        # res_div_ltm['date'] = res_div_ltm['date'].dt.date
+
 
         res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
         res_portholding = find_null(res_portholding, 'secid')
+        # res_portholding_is_daily = find_daily(res_portholding, 'pid', holiday_date)
+        
+        # res_portholding = res_portholding.merge(res_portholding_is_daily, on="rdate", how = 'inner')
+
+      
         res_bmprices = find_daily(res_bmprices, 'bm_id', holiday_date)
         
         res_portreturn = find_daily(res_portreturn, 'pid', holiday_date)
@@ -399,10 +416,10 @@ else:
                 # res_portholding.loc[:, 'rdate'] = pd.to_datetime(res_portholding['rdate'], format ='%Y-%m-%d')
         # res_portholding.loc[:, 'rdate'] = res_portholding['rdate'].dt.strftime('%Y-%m-%d')
     
-        res_portholding = res_portholding[res_portholding['rdate'].dt.date == input_date]
+        res_portholding = res_portholding[res_portholding['rdate'] == input_date]
 
-        res_bmprices = res_bmprices[res_bmprices['rdate'].dt.date == input_date]
-        res_portreturn = res_portreturn[res_portreturn['rdate'].dt.date == input_date]
+        res_bmprices = res_bmprices[res_bmprices['rdate'] == input_date]
+        res_portreturn = res_portreturn[res_portreturn['rdate'] == input_date]
     
         input_date_m = pd.Period(input_date,freq='M').end_time.date()
         res_bmc_monthly = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
