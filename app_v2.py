@@ -118,6 +118,10 @@ def find_daily(df, group, holiday_date):
     df['is_not_daily'] = df.apply(is_not_daily, args=[holiday_date], axis=1)
     # st.write(df[df['rdate']=='2021-01-01'])
     return df[df['is_not_daily'] == True]
+
+def is_in_table_dates(week_date, table_dates):
+    return week_date in table_dates.values
+
     
 @st.cache
 def find_univsnapshot(df):
@@ -172,6 +176,14 @@ def year_cal(input_year):
     df.insert(loc=1, column='week', value=week)
     return df
 
+def weekday_dates(input_year, holiday_date):
+    sdate = datetime(input_year, 1, 1)  
+    edate = datetime(input_year, 12, 31)
+    dates = pd.date_range(start=sdate, end=edate)
+    dates = dates[dates.weekday < 5]
+    dates = dates[~dates.isin(holiday_date)]
+    return dates
+    
 # Return bad dates based on which multiselect tables was chosen
 def find_selected_bad_dates(tables):
     res_date = []
@@ -181,9 +193,9 @@ def find_selected_bad_dates(tables):
         elif table == 'Portfolio Holding':
             res_date.append(res_portholding['rdate'])
         elif table == 'Portfolio Return':
-            res_date.append(res_portreturn['rdate'])
+            res_date.append(res_portreturn.to_series())
         elif table == 'BM Prices':
-            res_date.append(res_bmprices['rdate'])
+            res_date.append(res_bmprices.to_series())
         elif table == 'Universe Snapshot':
             res_date.append(res_univsnapshot['rdate'])
         elif table == 'Div LTM':
@@ -313,7 +325,8 @@ else:
         
         is_us_holiday = st.sidebar.checkbox('Show US Holiday')
         is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
-        
+    
+
  
         holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
         if not is_cad_holiday and not is_us_holiday:
@@ -332,6 +345,9 @@ else:
             holiday_date = pd.Series([])
 
 
+        # business_dates = weekday_dates(input_year, holiday_date)
+        business_dates = weekday_dates(input_year, holiday_date).to_series()
+
         # res_bmc_monthly['rdate'] = res_bmc_monthly['rdate'].dt.date
         res_portholding['rdate'] = res_portholding['rdate'].dt.date
         res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
@@ -340,18 +356,57 @@ else:
         # res_div_ltm['date'] = res_div_ltm['date'].dt.date
 
 
-        res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
         
+        # res_portholding_is_daily = res_portholding.copy()
+        # res_portholding = find_null(res_portholding, 'secid')
+        # res_portholding_is_daily = find_daily(res_portholding_is_daily, 'pid', holiday_date) 
+        # res_portholding = res_portholding.merge(res_portholding_is_daily, on="rdate", how = 'inner')
+        
+        
+        # res_bmprices = find_daily(res_bmprices, 'bm_id', holiday_date)
+        sdate = datetime(input_year, 1, 1)  
+        edate = datetime(input_year, 12, 31)
+        dates = pd.date_range(start=sdate, end=edate)
+        dates = dates[dates.weekday < 5]
+        dates = dates[~dates.isin(holiday_date)]
+        
+        # st.write(dates)
+        # st.write(res_bmprices['rdate'])
+        # st.write(dates[~dates.isin(res_bmprices['rdate'])])
+        res_bmprices = dates[~dates.isin(res_bmprices['rdate'])]
+        res_portreturn = dates[~dates.isin(res_portreturn['rdate'])]
+        # st.write(business_dates)
         res_portholding_is_daily = res_portholding.copy()
         res_portholding = find_null(res_portholding, 'secid')
-        res_portholding_is_daily = find_daily(res_portholding_is_daily, 'pid', holiday_date) 
-        res_portholding = res_portholding.merge(res_portholding_is_daily, on="rdate", how = 'inner')
-        
-        
-        res_bmprices = find_daily(res_bmprices, 'bm_id', holiday_date)
-        res_portreturn = find_daily(res_portreturn, 'pid', holiday_date)
+        # res_portholding_is_daily = find_daily(res_portholding_is_daily, 'pid', holiday_date) 
+        # res_portholding = res_portholding.merge(res_portholding_is_daily, on="rdate", how = 'inner')
+        res_portholding_is_daily = dates[~dates.isin(res_portholding_is_daily['rdate'])].to_series().dt.date
+        res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
+
+        # res_portreturn = find_daily(res_portreturn, 'pid', holiday_date)
         # res_portreturn['diff_days'] = res_portreturn['diff_days'].dt.days
         ### Univ snapshot can't see the reason for which is which?
+
+        
+        monthly_dates = pd.date_range(start=sdate, end=edate)
+        # monthly_dates_uniq = monthly_dates.unique()
+        
+        monthly_dates_uniq = [datetime(input_year, 1, 1), datetime(input_year, 2, 1), datetime(input_year, 3, 1),
+                          datetime(input_year, 4, 1), datetime(input_year, 5, 1), datetime(input_year, 6, 1),
+                          datetime(input_year, 7, 1), datetime(input_year, 8, 1), datetime(input_year, 9, 1),
+                          datetime(input_year, 10, 1), datetime(input_year, 11, 1), datetime(input_year, 12, 1)]
+        monthly_dates_uniq = pd.Series(monthly_dates_uniq)
+        monthly_dates = pd.Series(monthly_dates)
+        res_bmc_monthly_is_monthly = res_bmc_monthly.copy()
+        # res_portholding_is_monthly = res_portholding.copy()
+
+        # res_portholding_is_monthly = res_portholding.copy()
+        
+        res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+        monthly_dates_not_in_res = pd.Series(monthly_dates_uniq[~monthly_dates_uniq.dt.month.isin(res_bmc_monthly_is_monthly['rdate'].dt.month)])
+        res_bmc_monthly_is_monthly = monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)]
+        res_bmc_monthly = res_bmc_monthly.merge(res_bmc_monthly_is_monthly.rename('rdate'), how='outer',on='rdate')
+
         res_univsnapshot = find_univsnapshot(res_univsnapshot)
         res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
         res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
