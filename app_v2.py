@@ -209,42 +209,72 @@ def find_selected_bad_dates(tables):
 
     return res_date
 
+def get_res_day(res_date, month):
+    res_date_df = pd.DataFrame({
+                'month': pd.DatetimeIndex(res_date).month_name(),
+                'day': pd.DatetimeIndex(res_date).day,
+                'date': res_date})
+    res_date_df = res_date_df[res_date_df['month'] == month]
+    return res_date_df['day']
+    
+    
 # Show a dataframe with bad dates highlighted for the given month
 def show_month_df(df, holiday_df, month):
     df = df[df['month'] == month]
-    # df = [df[df['weekday'].isin(pd.Series(data=[0, 1, 2, 3, 4]))]]
     df = df.pivot(index='week', columns='weekday', values='day')
     dayOfWeek={0:'M', 1:'T', 2:'W', 3:'Th', 4:'F', 5:'S', 6:'Su'}
     df.columns = [df.columns.map(dayOfWeek)]
+    
     df = df.fillna("")
     df = df.drop(['S', 'Su'], axis = 1)
     
-    res_date_df = pd.DataFrame({
-                    'month': pd.DatetimeIndex(res_date).month_name(),
-                    'day': pd.DatetimeIndex(res_date).day,
-                    'date': res_date})
+    res_bmprices_day = get_res_day(res_bmprices, month)
+    res_portreturn_day = get_res_day(res_portreturn, month)
 
+    res_bmc_monthly_day = get_res_day(res_bmc_monthly['rdate'], month)
+    res_portholding_day = get_res_day(res_portholding['rdate'], month)
+    res_univsnapshot_day = get_res_day(res_univsnapshot['rdate'], month)
+    res_div_ltm_day = get_res_day(res_div_ltm['date'], month)
     holiday_df = holiday_df[holiday_df['month'] == month]
-    res_date_df = res_date_df[res_date_df['month'] == month]
-    res_day = res_date_df['day']
-    st.dataframe(df.style.apply(highlight_bad_day, args=[res_day, holiday_df['day']], axis=1).set_precision(0))
+    st.dataframe(df.style.apply(highlight_bad_day, 
+                                args=[holiday_df['day'],
+                                      res_bmprices_day, res_portreturn_day,
+                                      res_bmc_monthly_day, res_portholding_day,
+                                      res_univsnapshot_day, res_div_ltm_day], axis=1).set_precision(0))
 
 
 # Helper to highlight dates with bad data quality
-def highlight_bad_day(days, res_day, holiday_days):
+def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day, 
+                      res_bmc_monthly_day, res_portholding_day,
+                      res_univsnapshot_day, res_div_ltm_day):
     # st.write(dates)
-    highlight = 'background-color: orange'
-    white = 'background-color: white'
-    grey = 'background-color: darkgrey'
+    res_bmprices_color = 'background-color: orange'
+    res_portreturn_color = 'background-color: yellow'
+    res_bmc_monthly_color = 'background-color: pink'
+    res_portholding_color = 'background-color: green'
+    res_univsnapshot_color = 'background-color: purple'
+    res_div_ltm_color = 'background-color: blue'
+    background_color = 'background-color: white'
+    holiday_color = 'background-color: darkgrey'
 
     colors = []
     for day in days:
         if day in holiday_days.values:
-            colors.append(grey)
-        elif day in res_day.values:
-            colors.append(highlight)
+            colors.append(holiday_color)
+        elif day in res_bmprices_day.values:
+            colors.append(res_bmprices_color)
+        elif day in res_portreturn_day.values:
+            colors.append(res_portreturn_color)
+        elif day in res_bmc_monthly_day.values:
+            colors.append(res_bmc_monthly_color)
+        elif day in res_portholding_day.values:
+            colors.append(res_portholding_color)
+        elif day in res_univsnapshot_day.values:
+            colors.append(res_univsnapshot_color)
+        elif day in res_div_ltm_day.values:
+            colors.append(res_div_ltm_color)
         else: 
-            colors.append(white)
+            colors.append(background_color)
     return colors
 
 # Show 3 monthly calendars in a row
@@ -350,107 +380,107 @@ if not sum_view and not date_view:
 
 
 
-if sum_view and date_view:
-    st.header(checkbox_sum)
-    input_year = st.number_input(
-        'Select a  year', min_value = 1990, max_value=datetime.now().year,
-        value=datetime.now().year, format='%d')
+# if sum_view and date_view:
+#     st.header(checkbox_sum)
+#     input_year = st.number_input(
+#         'Select a  year', min_value = 1990, max_value=datetime.now().year,
+#         value=datetime.now().year, format='%d')
 
-    res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
-    res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+#     res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+#     res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+#     res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+#     res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+#     res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+#     res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
     
 
 
         
-    holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
-    # Updated daily
-    res_portholding['rdate'] = res_portholding['rdate'].dt.date
-    res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-    res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+#     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+#     # Updated daily
+#     res_portholding['rdate'] = res_portholding['rdate'].dt.date
+#     res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
+#     res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
 
-    res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
-    res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
-    res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate']).to_series().dt.date
-    res_portholding = find_null(res_portholding, 'secid')
-    res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
+#     res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
+#     res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
+#     res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate']).to_series().dt.date
+#     res_portholding = find_null(res_portholding, 'secid')
+#     res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
 
       
 
-    ### Univ snapshot can't see the reason for which is which?        
-    res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
-    res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
-    res_bmc_monthly = res_bmc_monthly.merge(res_bmc_monthly_is_monthly.rename('rdate'), how='outer',on='rdate')
+#     ### Univ snapshot can't see the reason for which is which?        
+#     res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
+#     res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+#     res_bmc_monthly = res_bmc_monthly.merge(res_bmc_monthly_is_monthly.rename('rdate'), how='outer',on='rdate')
 
-    res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
-    res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-    res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
-    res_univsnapshot = res_univsnapshot.merge(res_univsnapshot_is_monthly.rename('rdate'), how='outer',on='rdate')
+#     res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+#     res_univsnapshot = find_univsnapshot(res_univsnapshot)
+#     res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
+#     res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
+#     res_univsnapshot = res_univsnapshot.merge(res_univsnapshot_is_monthly.rename('rdate'), how='outer',on='rdate')
     
     
-    res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
-    res_div_ltm = find_null(res_div_ltm, 'date')
-    res_div_ltm = res_div_ltm.merge(res_div_ltm_is_monthly.rename('date'), how='outer',on='date')
-
-
-
-    df = year_cal(input_year)
-    lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
-    selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
-    res_date = find_selected_bad_dates(selected)            
-
-    show_months(df, holiday_df, 'January', 'February', 'March')
-    show_months(df, holiday_df, 'April', 'May', 'June')
-    show_months(df, holiday_df, 'July', 'August', 'September')
-    show_months(df, holiday_df, 'October', 'November', 'December')
-    
-    
-    
-    st.header('View by Date')
-    
-    input_date = st.date_input("Choose a date")
-    input_year = input_date.year
-    
-    
-    
-    
-    res_bmprices = res_bmprices.date
-    res_bmprices = pd.Series(res_bmprices)
-    res_portreturn = res_portreturn.date
-    res_portreturn = pd.Series(res_portreturn)
-
-    res_bmprices_daily = res_bmprices[res_bmprices == input_date]    
-    # st.write(type(res_bmprices_daily))
-    
-    res_portreturn_daily = res_portreturn[res_portreturn == input_date]
-    res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
-
-    input_date_m = pd.Period(input_date,freq='M').end_time.date()
-    res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
-                                      (res_bmc_monthly['rdate'].dt.month == input_date.month)]
-    res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
-                              (res_div_ltm['date'].dt.month == input_date.month)]
-    res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
-                              (res_univsnapshot['rdate'].dt.month == input_date.month)]
-    
+#     res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
+#     res_div_ltm = find_null(res_div_ltm, 'date')
+#     res_div_ltm = res_div_ltm.merge(res_div_ltm_is_monthly.rename('date'), how='outer',on='date')
 
 
-    if st.button('Portfolio Holding'):
-        show_res(res_portholding_daily)
-    if st.button('Portfolio Return'):
-        show_res(res_portreturn_daily)
-    if st.button('BM Price'):
-        show_res(res_bmprices_daily)
-    if st.button('BMC Monthly'):
-        show_res(res_bmc_monthly_daily)
-    if st.button('Universe Snapshot'):
-        show_res(res_univsnapshot_daily)
-    if st.button('Div LTM'):
-        show_res(res_div_ltm_daily)
+
+#     df = year_cal(input_year)
+#     lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
+#     selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
+#     res_date = find_selected_bad_dates(selected)            
+
+#     show_months(df, holiday_df, 'January', 'February', 'March')
+#     show_months(df, holiday_df, 'April', 'May', 'June')
+#     show_months(df, holiday_df, 'July', 'August', 'September')
+#     show_months(df, holiday_df, 'October', 'November', 'December')
+    
+    
+    
+#     st.header('View by Date')
+    
+#     input_date = st.date_input("Choose a date")
+#     input_year = input_date.year
+    
+    
+    
+    
+#     res_bmprices = res_bmprices.date
+#     res_bmprices = pd.Series(res_bmprices)
+#     res_portreturn = res_portreturn.date
+#     res_portreturn = pd.Series(res_portreturn)
+
+#     res_bmprices_daily = res_bmprices[res_bmprices == input_date]    
+#     # st.write(type(res_bmprices_daily))
+    
+#     res_portreturn_daily = res_portreturn[res_portreturn == input_date]
+#     res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
+
+#     input_date_m = pd.Period(input_date,freq='M').end_time.date()
+#     res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
+#                                       (res_bmc_monthly['rdate'].dt.month == input_date.month)]
+#     res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
+#                               (res_div_ltm['date'].dt.month == input_date.month)]
+#     res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
+#                               (res_univsnapshot['rdate'].dt.month == input_date.month)]
+    
+
+
+#     if st.button('Portfolio Holding'):
+#         show_res(res_portholding_daily)
+#     if st.button('Portfolio Return'):
+#         show_res(res_portreturn_daily)
+#     if st.button('BM Price'):
+#         show_res(res_bmprices_daily)
+#     if st.button('BMC Monthly'):
+#         show_res(res_bmc_monthly_daily)
+#     if st.button('Universe Snapshot'):
+#         show_res(res_univsnapshot_daily)
+#     if st.button('Div LTM'):
+#         show_res(res_div_ltm_daily)
 
 
 if sum_view and not date_view:
@@ -458,53 +488,75 @@ if sum_view and not date_view:
     input_year = st.number_input(
         'Select a  year', min_value = 1990, max_value=datetime.now().year,
         value=datetime.now().year, format='%d')
-
-    res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
-    res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
     
-
-
-        
     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
-    # Updated daily
-    res_portholding['rdate'] = res_portholding['rdate'].dt.date
-    res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-    res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-
-    res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
-    res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
-    res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate']).to_series().dt.date
-    res_portholding = find_null(res_portholding, 'secid')
-    res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
-
-      
-
-    ### Univ snapshot can't see the reason for which is which?        
-    res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
-    res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
-    res_bmc_monthly = res_bmc_monthly.merge(res_bmc_monthly_is_monthly.rename('rdate'), how='outer',on='rdate')
-
-    res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
-    res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-    res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
-    res_univsnapshot = res_univsnapshot.merge(res_univsnapshot_is_monthly.rename('rdate'), how='outer',on='rdate')
-    
-    
-    res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
-    res_div_ltm = find_null(res_div_ltm, 'date')
-    res_div_ltm = res_div_ltm.merge(res_div_ltm_is_monthly.rename('date'), how='outer',on='date')
-
-
 
     df = year_cal(input_year)
     lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
     selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
-    res_date = find_selected_bad_dates(selected)            
+    
+    # Updated daily
+
+    if 'Portfolio Holding' in selected:
+        res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+        res_portholding['rdate'] = res_portholding['rdate'].dt.date
+    
+        res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate']).to_series().dt.date
+        res_portholding = find_null(res_portholding, 'secid')
+        res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
+    else:
+        res_portholding = pd.DataFrame([], columns = portholding.columns)
+
+    if 'BM Prices' in selected:
+        res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+        res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
+        res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate']).to_series()
+        
+    else:
+        res_bmprices = pd.Series([])
+
+    if 'Portfolio Return' in selected:
+        res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+        res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+        res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate']).to_series()
+    else:
+        res_portreturn = pd.Series([])
+    if 'BMC Monthly' in selected:
+        res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+        res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
+        res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+        # res_bmc_monthly = res_bmc_monthly.merge(res_bmc_monthly_is_monthly.rename('rdate'), how='outer',on='rdate')
+    else:
+        res_bmc_monthly = pd.DataFrame([], columns = bmc_monthly.columns)
+    if 'Universe Snapshot' in selected:
+        res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+        res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+        res_univsnapshot = find_univsnapshot(res_univsnapshot)
+        res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
+        res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
+        # res_univsnapshot = res_univsnapshot.merge(res_univsnapshot_is_monthly.rename('rdate'), how='outer',on='rdate')
+    else:
+        res_univsnapshot = pd.DataFrame([], columns = univsnapshot.columns)
+    if 'Div LTM' in selected:
+        res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+        res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
+        res_div_ltm = find_null(res_div_ltm, 'date')
+    else:
+        res_div_ltm = pd.DataFrame([], columns = div_ltm.columns)
+        
+
+
+
+    ### Univ snapshot can't see the reason for which is which?        
+
+
+    
+
+    # res_div_ltm = res_div_ltm.merge(res_div_ltm_is_monthly.rename('date'), how='outer',on='date')
+
+
+
+        
 
     show_months(df, holiday_df, 'January', 'February', 'March')
     show_months(df, holiday_df, 'April', 'May', 'June')
@@ -566,39 +618,45 @@ if not sum_view and date_view:
     
     
     
-    
     res_bmprices = res_bmprices.date
     res_bmprices = pd.Series(res_bmprices)
     res_portreturn = res_portreturn.date
     res_portreturn = pd.Series(res_portreturn)
 
     res_bmprices_daily = res_bmprices[res_bmprices == input_date]    
-    # res_portreturn_daily = res_portreturn[res_portreturn == input_date]
-    res_portreturn_daily = pd.DataFrame({'rdate': res_portreturn[res_portreturn == input_date]}, 
-                                        columns=portreturn.columns)
+    res_portreturn_daily = res_portreturn[res_portreturn == input_date]
+
     
     res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
 
     input_date_m = pd.Period(input_date,freq='M').end_time.date()
-    res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
+    res_bmc_monthly = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
                                       (res_bmc_monthly['rdate'].dt.month == input_date.month)]
-    res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
+    res_div_ltm = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
                               (res_div_ltm['date'].dt.month == input_date.month)]
-    res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
+    res_univsnapshot = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
                               (res_univsnapshot['rdate'].dt.month == input_date.month)]
     
 
 
+
+    if st.button('BM Price'):
+        if res_bmprices_daily.empty:
+            st.success(success_msg)
+        else:
+            st.error('No data found on ' + str(input_date))
+    if st.button('Portfolio Return'):
+        if res_portreturn_daily.empty:
+            st.success(success_msg)
+        else:
+            st.error('No data found on ' + str(input_date))
+        show_res(res_portreturn_daily)
     if st.button('Portfolio Holding'):
         show_res(res_portholding_daily)
-    if st.button('Portfolio Return'):
-        show_res(res_portreturn_daily)
-    if st.button('BM Price'):
-        show_res(res_bmprices_daily)
     if st.button('BMC Monthly'):
-        show_res(res_bmc_monthly_daily)
+        show_res(res_bmc_monthly)
     if st.button('Universe Snapshot'):
-        show_res(res_univsnapshot_daily)
+        show_res(res_univsnapshot)
     if st.button('Div LTM'):
-        show_res(res_div_ltm_daily)
+        show_res(res_div_ltm)
 
