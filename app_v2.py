@@ -880,7 +880,6 @@ if not sum_view and date_view:
             st.success(success_msg)
         else:
             st.error('No data found on ' + str(input_date))
-        show_res(res_portreturn_daily)
     if st.button('Portfolio Holding'):
         if res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
             st.success(success_msg)
