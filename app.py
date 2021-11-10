@@ -528,7 +528,7 @@ if date_view:
 
     st.header('View by Date')
     
-    input_date = st.date_input("Choose a date")
+    input_date = st.date_input("Choose a date", max_value=datetime.today())
     
     input_year = input_date.year    
     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
@@ -569,8 +569,9 @@ if date_view:
     # res_portreturn = pd.Series(res_portreturn)
     # res_portholding_is_daily = res_portholding_is_daily.date
     # res_portholding_is_daily = pd.Series(res_portholding_is_daily)
+    st.write(res_bmprices.fillna(0).date)
     
-    res_bmprices_daily = res_bmprices[res_bmprices == input_date]   
+    res_bmprices_daily = res_bmprices[res_bmprices == input_date]
     res_portreturn_daily = res_portreturn[res_portreturn == input_date]
     res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
 
@@ -608,95 +609,96 @@ if date_view:
     res_univ_notin_id_daily = res_univ_notin_id[(pd.DatetimeIndex(res_univ_notin_id['rdate']).year == input_date.year) &
                               (pd.DatetimeIndex(res_univ_notin_id['rdate']).month == input_date.month)]
 
+# def find_selected_bad_dates(tables):
+#     res_date = []
+#     for table in tables:
+#         if table == 'BMC Monthly':
+#             res_date.append(res_bmc_monthly['rdate'])
+#         elif table == 'Portfolio Holding':
+#             res_date.append(res_portholding['rdate'])
+#         elif table == 'Portfolio Return':
+#             res_date.append(res_portreturn.to_series())
+#         elif table == 'BM Prices':
+#             res_date.append(res_bmprices.to_series())
+#         elif table == 'Universe Snapshot':
+#             res_date.append(res_univsnapshot['rdate'])
+#         elif table == 'Div LTM':
+#             res_date.append(res_div_ltm['date'])
+
+#     if not res_date:
+#         st.warning("Please select a table to view.")
+#     else:
+#         res_date = pd.concat(res_date)
+#         res_date = res_date.unique()
+
+#     return res_date
 
 
-    if not res_bmprices_daily.empty:
-        st.subheader('BM Price')
-        st.error('No data found on ' + str(input_date))
-    if not res_portreturn_daily.empty:
-        st.subheader('Portfolio Return')
-        st.error('No data found on ' + str(input_date))
-
-    if res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
-        st.subheader('Portfolio Holding')
-        st.error(error_msg_prob_rows)
-        st.write(res_portholding_daily)  
-    if not res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
-        st.subheader('Portfolio Holding')
-        st.error('No data found on ' + str(input_date))           
-    if not res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
-        st.subheader('Portfolio Holding')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_portholding_daily) 
+    def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
+        st.subheader(header)
+        if (res_daily_df is not None and res_df is None) and res_df_2 is None:
+            if res_daily_df.empty:
+                st.success(success_msg)
+            if not res_daily_df.empty:
+                st.error('No data found on ' + str(input_date))
+            
+        if (res_daily_df is not None and res_df is not None) and res_df_2 is None:
+            if res_daily_df.empty and res_df.empty:
+                st.success(success_msg)
+            if res_daily_df.empty and not res_df.empty:
+                st.error(error_msg_prob_rows)
+                st.write(res_df)  
+            if not res_daily_df.empty and res_df.empty:
+                st.error('No data found on ' + str(input_date))           
+            if not res_daily_df.empty and not res_df.empty:
+                st.error('No data found on ' + str(input_date))
+                st.error(error_msg_prob_rows)
+                st.write(res_df) 
+                
+        if (res_daily_df is not None and res_df is not None) and res_df_2 is not None:
+            if (res_daily_df.empty and res_df.empty) and res_univsnapshot_is_monthly_daily.empty:
+                    st.success(success_msg)
+            if res_daily_df.empty and ((not res_df.empty) and not res_df_2.empty):
+                st.error(error_msg_prob_rows)
+                st.write(res_univsnapshot_daily)  
+                st.error(error_msg_prob_rows)
+                st.write(res_univ_notin_id_daily)  
         
-    if res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
-        st.subheader('BMC Monthly')
-        st.error(error_msg_prob_rows)
-        st.write(res_portholding_daily)  
-    if not res_bmc_monthly_is_monthly_daily.empty and res_bmc_monthly_daily.empty:
-        st.subheader('BMC Monthly')
-        st.error('No data found on ' + str(input_date))           
-    if not res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
-        st.subheader('BMC Monthly')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_portholding_daily)  
-    
-    if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                    (not res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')
-        st.error(error_msg_prob_rows)
-        st.write(res_univsnapshot_daily)  
-        st.error(error_msg_prob_rows)
-        st.write(res_univ_notin_id_daily)  
+            if res_daily_df.empty and ((not res_df.empty) and
+                                                            (res_df_2.empty)):
+                st.error(error_msg_prob_rows)
+                st.write(res_univ_notin_id_daily)  
+            if res_daily_df.empty and ((res_df.empty) and
+                                                            (not res_df_2.empty)):
+                st.error(error_msg_prob_rows)
+                st.write(res_univsnapshot_daily) 
+            if not res_daily_df.empty and (( res_df.empty) and
+                                                            (res_df_2.empty)):
+                st.error('No data found on ' + str(input_date))           
+            if not res_daily_df.empty and ((res_df.empty) and
+                                                            (not res_df_2.empty)):
+                st.error('No data found on ' + str(input_date))
+                st.error(error_msg_prob_rows)
+                st.write(res_univsnapshot_daily)
+            if not res_daily_df.empty and ((not res_df.empty) and
+                                                             res_df_2.empty):
+                st.error('No data found on ' + str(input_date))
+                st.error(error_msg_prob_rows)
+                st.write(res_univ_notin_id_daily)  
+            if not res_daily_df.empty and ((not res_df.empty) and
+                                                            (not res_df_2.empty)):
+                st.error('No data found on ' + str(input_date))
+                st.error(error_msg_prob_rows)
+                st.write(res_univsnapshot_daily)  
+                st.error(error_msg_prob_rows)
+                st.write(res_univ_notin_id_daily)  
+            
+    show_res_df('BM Prices', res_bmprices_daily)
+    show_res_df('Portfolio Return', res_portreturn_daily)
+    show_res_df('Portfolio Holding', res_portholding_is_daily_daily, res_bmprices_daily)
+    show_res_df('BMC Monthly', res_bmc_monthly_is_monthly_daily, res_bmc_monthly_daily)
+    show_res_df('Universe Snapshot', res_univsnapshot_is_monthly_daily, res_univ_notin_id_daily, res_univsnapshot_daily)
+    show_res_df('Div LTM', res_div_ltm_is_monthly_daily, res_div_ltm_daily)
 
-    if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                    (res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')
-        st.error(error_msg_prob_rows)
-        st.write(res_univ_notin_id_daily)  
-    if res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
-                                                    (not res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')            
-        st.error(error_msg_prob_rows)
-        st.write(res_univsnapshot_daily) 
-    if not res_univsnapshot_is_monthly_daily.empty and (( res_univ_notin_id_daily.empty) and
-                                                    (res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')
-        st.error('No data found on ' + str(input_date))           
-    if not res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
-                                                    (not res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_univsnapshot_daily)
-    if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                     res_univsnapshot_daily.empty):
-        st.subheader('Universe Snapshot')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_univ_notin_id_daily)  
-    if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                    (not res_univsnapshot_daily.empty)):
-        st.subheader('Universe Snapshot')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_univsnapshot_daily)  
-        st.error(error_msg_prob_rows)
-        st.write(res_univ_notin_id_daily)  
-    
-    if res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
-        st.subheader('Div LTM')
-        st.error(error_msg_prob_rows)
-        st.write(res_div_ltm_daily) 
-    if not res_div_ltm_is_monthly_daily.empty and res_div_ltm_daily.empty:
-        st.subheader('Div LTM')
-        st.error('No data found on ' + str(input_date))           
-    if not res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
-        st.subheader('Div LTM')
-        st.error('No data found on ' + str(input_date))
-        st.error(error_msg_prob_rows)
-        st.write(res_div_ltm_daily) 
-        
+
     
