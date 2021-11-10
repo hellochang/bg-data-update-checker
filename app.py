@@ -164,6 +164,9 @@ def year_cal(input_year):
 
     sdate = datetime(input_year, 1, 1)  
     edate = datetime(input_year, 12, 31)
+    today = datetime.today()
+    if edate > today:
+        edate = today
     dates = pd.date_range(start=sdate, end=edate)
     df = pd.DataFrame({'month': pd.DatetimeIndex(dates).month_name(),
                        'weekday': pd.DatetimeIndex(dates).weekday,
@@ -241,8 +244,9 @@ def show_month_df(df, holiday_df, month):
     res_univsnapshot_is_monthly_day = get_res_day(res_univsnapshot_is_monthly, month)
     res_univ_notin_id_day = get_res_day(res_univ_notin_id['rdate'], month)
     holiday_df = holiday_df[holiday_df['month'] == month]
+    checkToday = (month == datetime.today().strftime("%B"))
     st.dataframe(df.style.apply(highlight_bad_day, 
-                                args=[holiday_df['day'],
+                                args=[checkToday, holiday_df['day'],
                                       res_bmprices_day, res_portreturn_day,
                                       res_bmc_monthly_day, res_portholding_day,
                                       res_univsnapshot_day, res_div_ltm_day,
@@ -252,7 +256,7 @@ def show_month_df(df, holiday_df, month):
 
 
 # Helper to highlight dates with bad data quality
-def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day, 
+def highlight_bad_day(days, checkToday, holiday_days, res_bmprices_day, res_portreturn_day, 
                       res_bmc_monthly_day, res_portholding_day,
                       res_univsnapshot_day, res_div_ltm_day,
                         res_portholding_is_daily_day, res_bmc_monthly_is_monthly_day,
@@ -262,7 +266,7 @@ def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day,
     res_bmprices_color = 'background-color: orange'
     res_portreturn_color = 'background-color: yellow'
     res_bmc_monthly_color = 'background-color: purple'
-    res_bmc_monthly_is_monthly_color = 'background-color: lightpurple'
+    res_bmc_monthly_is_monthly_color = 'background-color: blueviolet'
     res_portholding_color = 'background-color: green'
     res_portholding_is_daily_color = 'background-color: lightgreen'
     res_univsnapshot_color = 'background-color: pink'
@@ -272,11 +276,19 @@ def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day,
     res_div_ltm_is_monthly_color = 'background-color: lightblue'
     background_color = 'background-color: white'
     holiday_color = 'background-color: darkgrey'
+    today_color = 'background-color: Aquamarine'
+    if checkToday:
+        today_day = datetime.today().date().day
+    else:
+        today_day = None        
 
     colors = []
     for day in days:
+
         if day in holiday_days.values:
             colors.append(holiday_color)
+        elif day == today_day:
+            colors.append(today_color)
         elif day in res_bmprices_day.values:
             colors.append(res_bmprices_color)
         elif day in res_portreturn_day.values:
@@ -298,7 +310,7 @@ def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day,
         elif day in res_univ_notin_id_day.values:
             colors.append(res_univ_notin_id_color)
         elif day in res_div_ltm_is_monthly_day.values:
-            colors.append(res_div_ltm_is_monthly_color)        
+            colors.append(res_div_ltm_is_monthly_color) 
         else: 
             colors.append(background_color)
     return colors
@@ -306,15 +318,22 @@ def highlight_bad_day(days, holiday_days, res_bmprices_day, res_portreturn_day,
 # Show 3 monthly calendars in a row
 def show_months(df, holiday_df, m1, m2, m3):
     col1, col2, col3 = st.beta_columns(3)
+    cur_month = datetime.today().month
+    months = dict(January=1, February=2, March=3, April=4, May=5,
+                  June=6, July=7, August=8, September=9, October=10,
+                  November=11, December=12)
     with col1:
-        st.header(m1)
-        show_month_df(df, holiday_df, m1)
+        if months[m1] <= cur_month:
+            st.header(m1)
+            show_month_df(df, holiday_df, m1)
     with col2:
-        st.header(m2)
-        show_month_df(df,holiday_df, m2)
+        if months[m2] <= cur_month:
+            st.header(m2)
+            show_month_df(df,holiday_df, m2)
     with col3:
-        st.header(m3)
-        show_month_df(df,holiday_df, m3)
+        if months[m3] <= cur_month:
+            st.header(m3)
+            show_month_df(df,holiday_df, m3)
 
 # Highlight explanation dataframe in different color
 def highlight_color(row):
@@ -323,7 +342,7 @@ def highlight_color(row):
     res_bmprices_color = 'background-color: orange'
     res_portreturn_color = 'background-color: yellow'
     res_bmc_monthly_color = 'background-color: purple'
-    res_bmc_monthly_is_monthly_color = 'background-color: lightpurple'
+    res_bmc_monthly_is_monthly_color = 'background-color: blueviolet'
     res_portholding_color = 'background-color: green'
     res_portholding_is_daily_color = 'background-color: lightgreen'
     res_univsnapshot_color = 'background-color: pink'
@@ -332,7 +351,8 @@ def highlight_color(row):
     res_div_ltm_color = 'background-color: blue'
     res_div_ltm_is_monthly_color = 'background-color: lightblue'
     holiday_color = 'background-color: darkgrey'
-    
+    today_color = 'background-color: Aquamarine'
+
     if table == bmprices_label:
         return 2 * [res_bmprices_color]
     if table == portreturn_label:
@@ -361,7 +381,9 @@ def highlight_color(row):
             return 2 *  [res_div_ltm_color]
     if table == holiday_label:
         return 2 * [holiday_color]
-
+    if table == today_label:
+        return 2 * [today_color]
+    
 success_msg = 'No problematic rows found.'
 error_msg_prob_rows = 'Found problematic rows.'
 
@@ -437,17 +459,16 @@ def get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday):
 
 checkbox_sum = 'Summary'
 checkbox_date = 'View by Date'
-sum_view = st.sidebar.checkbox(checkbox_sum, value=True)
+
+st.sidebar.subheader('Other views:')
 date_view = st.sidebar.checkbox(checkbox_date)
 
+st.sidebar.subheader('Holidays:')
 is_us_holiday = st.sidebar.checkbox('Show US Holiday', value=True)
 is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
     
 ## monthly
 ### univsnap, bmc monthly, div_ltm
-if not sum_view and not date_view:
-    st.warning('Please select a view.')
-
 
 portholding_label = 'Portfolio Holding'
 portreturn_label = 'Portfolio Return'
@@ -456,9 +477,10 @@ bmc_monthly_label = 'BMC Monthly'
 univsnapshot_label = 'Universe Snapshot'
 div_ltm_label = 'Div LTM'
 holiday_label = 'Holiday'
+today_label = 'Today'
 lst_tables = ['BM Prices', 'Portfolio Return', 'Portfolio Holding', 'Portfolio Holding',
               'BMC Monthly', 'BMC Monthly', 'Universe Snapshot','Universe Snapshot',
-              'Universe Snapshot', div_ltm_label,div_ltm_label, holiday_label]
+              'Universe Snapshot', div_ltm_label,div_ltm_label, holiday_label, today_label]
 not_updated_daily_reason ='Not Updated Daily'
 not_updated_monthly_reason ='Not Updated Monthly'
 prob_row_reason ='Problematic Rows'
@@ -468,35 +490,36 @@ color_df = pd.DataFrame({'Table': lst_tables,
               prob_row_reason, not_updated_daily_reason,
               prob_row_reason, not_updated_monthly_reason,
                prob_row_reason,large_port_diff_reason , not_updated_monthly_reason,
-               prob_row_reason, not_updated_monthly_reason, holiday_label]})
+               prob_row_reason, not_updated_monthly_reason, holiday_label, today_label]})
 
 
+# Sum view
+st.header(checkbox_sum)
+input_year = st.number_input(
+    'Select a  year', min_value = 1990, max_value=datetime.now().year,
+    value=datetime.now().year, format='%d')
 
-if sum_view and date_view:
-    st.header(checkbox_sum)
-    input_year = st.number_input(
-        'Select a  year', min_value = 1990, max_value=datetime.now().year,
-        value=datetime.now().year, format='%d')
+holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+
+year_cal = year_cal(input_year)
+lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
+selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
+
+show_table_color_ref = st.checkbox('Show color references')
+if show_table_color_ref:
+    st.dataframe(color_df.style.apply(highlight_color, axis=1))
+st.info('There is a 1 day data updatelag for some tables.')
+
+res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
+
+show_months(year_cal, holiday_df, 'January', 'February', 'March')
+show_months(year_cal, holiday_df, 'April', 'May', 'June')
+show_months(year_cal, holiday_df, 'July', 'August', 'September')
+show_months(year_cal, holiday_df, 'October', 'November', 'December')
+
     
-    holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+if date_view:
 
-    year_cal = year_cal(input_year)
-    lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
-    selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
-    
-    show_table_color_ref = st.checkbox('Show color references')
-    if show_table_color_ref:
-        st.dataframe(color_df.style.apply(highlight_color, axis=1))
-
-    res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
-
-    show_months(year_cal, holiday_df, 'January', 'February', 'March')
-    show_months(year_cal, holiday_df, 'April', 'May', 'June')
-    show_months(year_cal, holiday_df, 'July', 'August', 'September')
-    show_months(year_cal, holiday_df, 'October', 'November', 'December')
-    
-    
-    
     st.header('View by Date')
     
     input_date = st.date_input("Choose a date")
@@ -634,174 +657,174 @@ if sum_view and date_view:
             st.error('No data found on ' + str(input_date))
             show_res(res_div_ltm_daily)
 
-if sum_view and not date_view:
+# if sum_view and not date_view:
     
-    st.header(checkbox_sum)
-    input_year = st.number_input(
-        'Select a  year', min_value = 1990, max_value=datetime.now().year,
-        value=datetime.now().year, format='%d')
+#     st.header(checkbox_sum)
+#     input_year = st.number_input(
+#         'Select a  year', min_value = 1990, max_value=datetime.now().year,
+#         value=datetime.now().year, format='%d')
     
-    holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+#     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
 
-    df = year_cal(input_year)
-    lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
-    selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
+#     df = year_cal(input_year)
+#     lst_tables = ['BMC Monthly', 'Portfolio Holding', 'Portfolio Return', 'BM Prices', 'Universe Snapshot', 'Div LTM']
+#     selected = st.multiselect('Choose tables to view', lst_tables, ['Portfolio Holding'])
     
-    show_table_color_ref = st.checkbox('Show color references')
-    if show_table_color_ref:
-        st.dataframe(color_df.style.apply(highlight_color, axis=1))
+#     show_table_color_ref = st.checkbox('Show color references')
+#     if show_table_color_ref:
+#         st.dataframe(color_df.style.apply(highlight_color, axis=1))
 
-    # Updated daily
-    res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
+#     # Updated daily
+#     res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
 
-    ### Univ snapshot can't see the reason for which is which?        
+#     ### Univ snapshot can't see the reason for which is which?        
         
 
-    show_months(df, holiday_df, 'January', 'February', 'March')
-    show_months(df, holiday_df, 'April', 'May', 'June')
-    show_months(df, holiday_df, 'July', 'August', 'September')
-    show_months(df, holiday_df, 'October', 'November', 'December')
+#     show_months(df, holiday_df, 'January', 'February', 'March')
+#     show_months(df, holiday_df, 'April', 'May', 'June')
+#     show_months(df, holiday_df, 'July', 'August', 'September')
+#     show_months(df, holiday_df, 'October', 'November', 'December')
 
-if not sum_view and date_view:
-    st.header('View by Date')
+# if not sum_view and date_view:
+#     st.header('View by Date')
     
-    input_date = st.date_input("Choose a date")
-    input_year = input_date.year
+#     input_date = st.date_input("Choose a date")
+#     input_year = input_date.year
     
-    holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+#     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
     
     
-    res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
-    res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+#     res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+#     res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+#     res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+#     res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+#     res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+#     res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
     
-    # Updated daily
-    res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-    res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-    res_portholding['rdate'] = res_portholding['rdate'].dt.date
+#     # Updated daily
+#     res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
+#     res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+#     res_portholding['rdate'] = res_portholding['rdate'].dt.date
 
-    res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
-    res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
-    res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
-    res_portholding = find_null(res_portholding, 'secid')
-    # res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
+#     res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
+#     res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
+#     res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
+#     res_portholding = find_null(res_portholding, 'secid')
+#     # res_portholding = res_portholding.merge(res_portholding_is_daily.rename('rdate'), how='outer',on='rdate')
 
       
 
 
 
-    ### Univ snapshot can't see the reason for which is which?        
-    res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
-    res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
-    res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
-    res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-    res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
-    res_div_ltm = find_null(res_div_ltm, 'date')
+#     ### Univ snapshot can't see the reason for which is which?        
+#     res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
+#     res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+#     res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+#     res_univsnapshot = find_univsnapshot(res_univsnapshot)
+#     res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
+#     res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
+#     res_div_ltm = find_null(res_div_ltm, 'date')
     
     
-    res_bmprices = res_bmprices.date
-    res_bmprices = pd.Series(res_bmprices)
-    res_portreturn = res_portreturn.date
-    res_portreturn = pd.Series(res_portreturn)
-    res_portholding_is_daily = res_portholding_is_daily.date
-    res_portholding_is_daily = pd.Series(res_portholding_is_daily)
+#     res_bmprices = res_bmprices.date
+#     res_bmprices = pd.Series(res_bmprices)
+#     res_portreturn = res_portreturn.date
+#     res_portreturn = pd.Series(res_portreturn)
+#     res_portholding_is_daily = res_portholding_is_daily.date
+#     res_portholding_is_daily = pd.Series(res_portholding_is_daily)
     
     
 
-    res_bmprices_daily = res_bmprices[res_bmprices == input_date]    
-    res_portreturn_daily = res_portreturn[res_portreturn == input_date]
-    res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
+#     res_bmprices_daily = res_bmprices[res_bmprices == input_date]    
+#     res_portreturn_daily = res_portreturn[res_portreturn == input_date]
+#     res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
 
-    res_portholding_is_daily_daily = res_portholding_is_daily[res_portholding_is_daily == input_date]
+#     res_portholding_is_daily_daily = res_portholding_is_daily[res_portholding_is_daily == input_date]
 
 
-    res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
-                                      (res_bmc_monthly['rdate'].dt.month == input_date.month)]
-    res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(res_bmc_monthly_is_monthly.dt.year == input_date.year) &
-                                      (res_bmc_monthly_is_monthly.dt.month == input_date.month)]
-    res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
-                              (res_div_ltm['date'].dt.month == input_date.month)]
-    res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(res_div_ltm_is_monthly.dt.year == input_date.year) &
-                              (res_div_ltm_is_monthly.dt.month == input_date.month)]
-    res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
-                              (res_univsnapshot['rdate'].dt.month == input_date.month)]
-    res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(res_univsnapshot_is_monthly.dt.year == input_date.year) &
-                              (res_univsnapshot_is_monthly.dt.month == input_date.month)]
-    res_univ_notin_id_daily = res_univ_notin_id[(res_univ_notin_id['rdate'].dt.year == input_date.year) &
-                              (res_univ_notin_id['rdate'].dt.month == input_date.month)]
+#     res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
+#                                       (res_bmc_monthly['rdate'].dt.month == input_date.month)]
+#     res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(res_bmc_monthly_is_monthly.dt.year == input_date.year) &
+#                                       (res_bmc_monthly_is_monthly.dt.month == input_date.month)]
+#     res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
+#                               (res_div_ltm['date'].dt.month == input_date.month)]
+#     res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(res_div_ltm_is_monthly.dt.year == input_date.year) &
+#                               (res_div_ltm_is_monthly.dt.month == input_date.month)]
+#     res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
+#                               (res_univsnapshot['rdate'].dt.month == input_date.month)]
+#     res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(res_univsnapshot_is_monthly.dt.year == input_date.year) &
+#                               (res_univsnapshot_is_monthly.dt.month == input_date.month)]
+#     res_univ_notin_id_daily = res_univ_notin_id[(res_univ_notin_id['rdate'].dt.year == input_date.year) &
+#                               (res_univ_notin_id['rdate'].dt.month == input_date.month)]
   
 
-    if st.button('BM Price'):
-        if res_bmprices_daily.empty:
-            st.success(success_msg)
-        else:
-            st.error('No data found on ' + str(input_date))
-    if st.button('Portfolio Return'):
-        if res_portreturn_daily.empty:
-            st.success(success_msg)
-        else:
-            st.error('No data found on ' + str(input_date))
-    if st.button('Portfolio Holding'):
-        if res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
-            st.success(success_msg)
-        if res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
-            show_res(res_portholding_daily)
-        if not res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
-            st.error('No data found on ' + str(input_date))           
-        if not res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
-            st.error('No data found on ' + str(input_date))
-            show_res(res_portholding_daily)
-    if st.button('BMC Monthly'):
-        if res_bmc_monthly_is_monthly_daily.empty and res_bmc_monthly_daily.empty:
-            st.success(success_msg)
-        if res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
-            show_res(res_bmc_monthly_daily)
-        if not res_bmc_monthly_is_monthly_daily.empty and res_bmc_monthly_daily.empty:
-            st.error('No data found on ' + str(input_date))           
-        if not res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
-            st.error('No data found on ' + str(input_date))
-            show_res(res_bmc_monthly_daily)
-    if st.button('Universe Snapshot'):
-        if (res_univsnapshot_daily.empty and res_univ_notin_id_daily.empty) and res_univsnapshot_is_monthly_daily.empty:
-            st.success(success_msg)
-        if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                        (not res_univsnapshot_daily.empty)):
-            show_res(res_univsnapshot_daily)
-            show_res(res_univ_notin_id_daily)
-        if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                        (res_univsnapshot_daily.empty)):
-            show_res(res_univ_notin_id_daily)
-        if res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
-                                                        (not res_univsnapshot_daily.empty)):
-            show_res(res_univsnapshot_daily)    
-        if not res_univsnapshot_is_monthly_daily.empty and (( res_univ_notin_id_daily.empty) and
-                                                        (res_univsnapshot_daily.empty)):
-            st.error('No data found on ' + str(input_date))           
-        if not res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
-                                                        (not res_univsnapshot_daily.empty)):
-            st.error('No data found on ' + str(input_date))
-            show_res(res_univsnapshot_daily)
-        if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                         res_univsnapshot_daily.empty):
-            st.error('No data found on ' + str(input_date))
-            show_res(res_univ_notin_id_daily)
-        if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
-                                                        (not res_univsnapshot_daily.empty)):
-            st.error('No data found on ' + str(input_date))
-            show_res(res_univsnapshot_daily)
-            show_res(res_univ_notin_id_daily)
-    if st.button('Div LTM'):
-        if res_div_ltm_is_monthly_daily.empty and res_univsnapshot_is_monthly_daily.empty:
-            st.success(success_msg)
-        if res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
-            show_res(res_div_ltm_daily)
-        if not res_div_ltm_is_monthly_daily.empty and res_div_ltm_daily.empty:
-            st.error('No data found on ' + str(input_date))           
-        if not res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
-            st.error('No data found on ' + str(input_date))
-            show_res(res_div_ltm_daily)
+#     if st.button('BM Price'):
+#         if res_bmprices_daily.empty:
+#             st.success(success_msg)
+#         else:
+#             st.error('No data found on ' + str(input_date))
+#     if st.button('Portfolio Return'):
+#         if res_portreturn_daily.empty:
+#             st.success(success_msg)
+#         else:
+#             st.error('No data found on ' + str(input_date))
+#     if st.button('Portfolio Holding'):
+#         if res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
+#             st.success(success_msg)
+#         if res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
+#             show_res(res_portholding_daily)
+#         if not res_portholding_is_daily_daily.empty and res_portholding_daily.empty:
+#             st.error('No data found on ' + str(input_date))           
+#         if not res_portholding_is_daily_daily.empty and not res_portholding_daily.empty:
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_portholding_daily)
+#     if st.button('BMC Monthly'):
+#         if res_bmc_monthly_is_monthly_daily.empty and res_bmc_monthly_daily.empty:
+#             st.success(success_msg)
+#         if res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
+#             show_res(res_bmc_monthly_daily)
+#         if not res_bmc_monthly_is_monthly_daily.empty and res_bmc_monthly_daily.empty:
+#             st.error('No data found on ' + str(input_date))           
+#         if not res_bmc_monthly_is_monthly_daily.empty and not res_bmc_monthly_daily.empty:
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_bmc_monthly_daily)
+#     if st.button('Universe Snapshot'):
+#         if (res_univsnapshot_daily.empty and res_univ_notin_id_daily.empty) and res_univsnapshot_is_monthly_daily.empty:
+#             st.success(success_msg)
+#         if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
+#                                                         (not res_univsnapshot_daily.empty)):
+#             show_res(res_univsnapshot_daily)
+#             show_res(res_univ_notin_id_daily)
+#         if res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
+#                                                         (res_univsnapshot_daily.empty)):
+#             show_res(res_univ_notin_id_daily)
+#         if res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
+#                                                         (not res_univsnapshot_daily.empty)):
+#             show_res(res_univsnapshot_daily)    
+#         if not res_univsnapshot_is_monthly_daily.empty and (( res_univ_notin_id_daily.empty) and
+#                                                         (res_univsnapshot_daily.empty)):
+#             st.error('No data found on ' + str(input_date))           
+#         if not res_univsnapshot_is_monthly_daily.empty and ((res_univ_notin_id_daily.empty) and
+#                                                         (not res_univsnapshot_daily.empty)):
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_univsnapshot_daily)
+#         if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
+#                                                          res_univsnapshot_daily.empty):
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_univ_notin_id_daily)
+#         if not res_univsnapshot_is_monthly_daily.empty and ((not res_univ_notin_id_daily.empty) and
+#                                                         (not res_univsnapshot_daily.empty)):
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_univsnapshot_daily)
+#             show_res(res_univ_notin_id_daily)
+#     if st.button('Div LTM'):
+#         if res_div_ltm_is_monthly_daily.empty and res_univsnapshot_is_monthly_daily.empty:
+#             st.success(success_msg)
+#         if res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
+#             show_res(res_div_ltm_daily)
+#         if not res_div_ltm_is_monthly_daily.empty and res_div_ltm_daily.empty:
+#             st.error('No data found on ' + str(input_date))           
+#         if not res_div_ltm_is_monthly_daily.empty and not res_div_ltm_daily.empty:
+#             st.error('No data found on ' + str(input_date))
+#             show_res(res_div_ltm_daily)
 
