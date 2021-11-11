@@ -533,105 +533,81 @@ if date_view:
     input_year = input_date.year    
     holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
 
-    # res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    # res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    # res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    # res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    # res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
-    # res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+    res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+    res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+    res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+    res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+    res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+    res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
     
-    # # Updated daily
-    # res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-    # res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-    # res_portholding['rdate'] = res_portholding['rdate'].dt.date
+    # Updated daily
+    res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
+    res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+    res_portholding['rdate'] = res_portholding['rdate'].dt.date
 
-    # res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
-    # res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
-    # res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
-    # res_portholding = find_null(res_portholding, 'secid')
+    res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
+    res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
+    res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
+    res_portholding = find_null(res_portholding, 'secid')
 
 
 
-    # ### Univ snapshot can't see the reason for which is which?        
-    # res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
-    # res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
-    # res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
-    # res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    # res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-    # res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
-    # res_div_ltm = find_null(res_div_ltm, 'date')
+    ### Univ snapshot can't see the reason for which is which?        
+    res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
+    res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
+    res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+    res_univsnapshot = find_univsnapshot(res_univsnapshot)
+    res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
+    res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
+    res_div_ltm = find_null(res_div_ltm, 'date')
     
-    res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
-
-    # res_bmprices = res_bmprices.date
-    # res_bmprices = pd.Series(res_bmprices)
-    # res_portreturn = res_portreturn.date
-    # res_portreturn = pd.Series(res_portreturn)
-    # res_portholding_is_daily = res_portholding_is_daily.date
-    # res_portholding_is_daily = pd.Series(res_portholding_is_daily)
-    st.write(res_bmprices.fillna(0).date)
+    # res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
+# 
+    res_bmprices = res_bmprices.date
+    res_bmprices = pd.Series(res_bmprices)
+    res_portreturn = res_portreturn.date
+    res_portreturn = pd.Series(res_portreturn)
+    res_portholding_is_daily = res_portholding_is_daily.date
+    res_portholding_is_daily = pd.Series(res_portholding_is_daily)
     
     res_bmprices_daily = res_bmprices[res_bmprices == input_date]
     res_portreturn_daily = res_portreturn[res_portreturn == input_date]
     res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
-
     res_portholding_is_daily_daily = res_portholding_is_daily[res_portholding_is_daily == input_date]
 
 
-    # res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
-    #                                   (res_bmc_monthly['rdate'].dt.month == input_date.month)]
-    # res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(res_bmc_monthly_is_monthly.dt.year == input_date.year) &
-    #                                   (res_bmc_monthly_is_monthly.dt.month == input_date.month)]
-    # res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
-    #                           (res_div_ltm['date'].dt.month == input_date.month)]
-    # res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(res_div_ltm_is_monthly.dt.year == input_date.year) &
-    #                           (res_div_ltm_is_monthly.dt.month == input_date.month)]
-    # res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
-    #                           (res_univsnapshot['rdate'].dt.month == input_date.month)]
-    # res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(res_univsnapshot_is_monthly.dt.year == input_date.year) &
-    #                           (res_univsnapshot_is_monthly.dt.month == input_date.month)]
-    # res_univ_notin_id_daily = res_univ_notin_id[(res_univ_notin_id['rdate'].dt.year == input_date.year) &
-    #                           (res_univ_notin_id['rdate'].dt.month == input_date.month)]
+    res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
+                                      (res_bmc_monthly['rdate'].dt.month == input_date.month)]
+    res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(res_bmc_monthly_is_monthly.dt.year == input_date.year) &
+                                      (res_bmc_monthly_is_monthly.dt.month == input_date.month)]
+    res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
+                              (res_div_ltm['date'].dt.month == input_date.month)]
+    res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(res_div_ltm_is_monthly.dt.year == input_date.year) &
+                              (res_div_ltm_is_monthly.dt.month == input_date.month)]
+    res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
+                              (res_univsnapshot['rdate'].dt.month == input_date.month)]
+    res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(res_univsnapshot_is_monthly.dt.year == input_date.year) &
+                              (res_univsnapshot_is_monthly.dt.month == input_date.month)]
+    res_univ_notin_id_daily = res_univ_notin_id[(res_univ_notin_id['rdate'].dt.year == input_date.year) &
+                              (res_univ_notin_id['rdate'].dt.month == input_date.month)]
 
     
-    res_bmc_monthly_daily = res_bmc_monthly[(pd.DatetimeIndex(res_bmc_monthly['rdate']).year == input_date.year) &
-                                      (pd.DatetimeIndex(res_bmc_monthly['rdate']).month == input_date.month)]
-    res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(pd.DatetimeIndex(res_bmc_monthly_is_monthly).year == input_date.year) &
-                                      (pd.DatetimeIndex(res_bmc_monthly_is_monthly).month == input_date.month)]
-    res_div_ltm_daily = res_div_ltm[(pd.DatetimeIndex(res_div_ltm['date']).year == input_date.year) &
-                              (pd.DatetimeIndex(res_div_ltm['date']).month == input_date.month)]
-    res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(pd.DatetimeIndex(res_div_ltm_is_monthly).year == input_date.year) &
-                              (pd.DatetimeIndex(res_div_ltm_is_monthly).month == input_date.month)]
-    res_univsnapshot_daily = res_univsnapshot[(pd.DatetimeIndex(res_univsnapshot['rdate']).year == input_date.year) &
-                              (pd.DatetimeIndex(res_univsnapshot['rdate']).month == input_date.month)]
-    res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(pd.DatetimeIndex(res_univsnapshot_is_monthly).year == input_date.year) &
-                              (pd.DatetimeIndex(res_univsnapshot_is_monthly).month == input_date.month)]
-    res_univ_notin_id_daily = res_univ_notin_id[(pd.DatetimeIndex(res_univ_notin_id['rdate']).year == input_date.year) &
-                              (pd.DatetimeIndex(res_univ_notin_id['rdate']).month == input_date.month)]
+    # res_bmc_monthly_daily = res_bmc_monthly[(pd.DatetimeIndex(res_bmc_monthly['rdate']).year == input_date.year) &
+    #                                   (pd.DatetimeIndex(res_bmc_monthly['rdate']).month == input_date.month)]
+    # res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(pd.DatetimeIndex(res_bmc_monthly_is_monthly).year == input_date.year) &
+    #                                   (pd.DatetimeIndex(res_bmc_monthly_is_monthly).month == input_date.month)]
+    # res_div_ltm_daily = res_div_ltm[(pd.DatetimeIndex(res_div_ltm['date']).year == input_date.year) &
+    #                           (pd.DatetimeIndex(res_div_ltm['date']).month == input_date.month)]
+    # res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(pd.DatetimeIndex(res_div_ltm_is_monthly).year == input_date.year) &
+    #                           (pd.DatetimeIndex(res_div_ltm_is_monthly).month == input_date.month)]
+    # res_univsnapshot_daily = res_univsnapshot[(pd.DatetimeIndex(res_univsnapshot['rdate']).year == input_date.year) &
+    #                           (pd.DatetimeIndex(res_univsnapshot['rdate']).month == input_date.month)]
+    # res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(pd.DatetimeIndex(res_univsnapshot_is_monthly).year == input_date.year) &
+    #                           (pd.DatetimeIndex(res_univsnapshot_is_monthly).month == input_date.month)]
+    # res_univ_notin_id_daily = res_univ_notin_id[(pd.DatetimeIndex(res_univ_notin_id['rdate']).year == input_date.year) &
+    #                           (pd.DatetimeIndex(res_univ_notin_id['rdate']).month == input_date.month)]
 
-# def find_selected_bad_dates(tables):
-#     res_date = []
-#     for table in tables:
-#         if table == 'BMC Monthly':
-#             res_date.append(res_bmc_monthly['rdate'])
-#         elif table == 'Portfolio Holding':
-#             res_date.append(res_portholding['rdate'])
-#         elif table == 'Portfolio Return':
-#             res_date.append(res_portreturn.to_series())
-#         elif table == 'BM Prices':
-#             res_date.append(res_bmprices.to_series())
-#         elif table == 'Universe Snapshot':
-#             res_date.append(res_univsnapshot['rdate'])
-#         elif table == 'Div LTM':
-#             res_date.append(res_div_ltm['date'])
 
-#     if not res_date:
-#         st.warning("Please select a table to view.")
-#     else:
-#         res_date = pd.concat(res_date)
-#         res_date = res_date.unique()
-
-#     return res_date
 
 
     def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
@@ -693,12 +669,18 @@ if date_view:
                 st.error(error_msg_prob_rows)
                 st.write(res_univ_notin_id_daily)  
             
-    show_res_df('BM Prices', res_bmprices_daily)
-    show_res_df('Portfolio Return', res_portreturn_daily)
-    show_res_df('Portfolio Holding', res_portholding_is_daily_daily, res_bmprices_daily)
-    show_res_df('BMC Monthly', res_bmc_monthly_is_monthly_daily, res_bmc_monthly_daily)
-    show_res_df('Universe Snapshot', res_univsnapshot_is_monthly_daily, res_univ_notin_id_daily, res_univsnapshot_daily)
-    show_res_df('Div LTM', res_div_ltm_is_monthly_daily, res_div_ltm_daily)
 
-
+    for table in selected:
+        if table == 'BM Prices':
+            show_res_df('BM Prices', res_bmprices_daily)
+        elif table == 'Portfolio Return':
+            show_res_df('Portfolio Return', res_portreturn_daily)
+        elif table == 'Portfolio Holding':
+            show_res_df('Portfolio Holding', res_portholding_is_daily_daily, res_portholding_daily)
+        elif table == 'BMC Monthly':
+            show_res_df('BMC Monthly', res_bmc_monthly_is_monthly_daily, res_bmc_monthly_daily)
+        elif table == 'Universe Snapshot':
+            show_res_df('Universe Snapshot', res_univsnapshot_is_monthly_daily, res_univ_notin_id_daily, res_univsnapshot_daily)
+        elif table == 'Div LTM':
+            show_res_df('Div LTM', res_div_ltm_is_monthly_daily, res_div_ltm_daily)
     
