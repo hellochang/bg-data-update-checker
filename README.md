@@ -6,7 +6,7 @@ Verifies data quality for the 6 main data tables.
   
   Tables we can select to view.
 ![Selection dropdown](screenshot_selection_dropdown.png)
- <img src="screenshot_selection_dropdown.png" alt="Selection dropdown width="200"/>
+
 
   The calendars with problematic entries highlighted. Each type of error from each table is highlighted with a different color.
 ![Jan to June](prob_cal_jan_june.png)
