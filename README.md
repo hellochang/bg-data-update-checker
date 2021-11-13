@@ -2,10 +2,10 @@
 Verifies data quality for the 6 main data tables.
 
 ## Yearly Calendar View
-![Summary view](screenshot_selection.png)
+![Summary view](screenshot_selection.png). 
   
   Tables we can select to view.
-![Selection dropdown](screenshot_selection_dropdown.png)
+![Selection dropdown](screenshot_selection_dropdown.png). 
 
 
   The calendars with problematic entries highlighted. Each type of error from each table is highlighted with a different color.
