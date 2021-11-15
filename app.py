@@ -12,8 +12,7 @@ Created on Mon Oct 25 13:13:47 2021
 import streamlit as st
 import pandas as pd
 import numpy as np
-
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import sys
 sys.path.insert(0, r'C:\Users\Chang.Liu\Documents\dev\Data_Importer')
@@ -70,10 +69,11 @@ success_msg = 'No problematic rows found.'
 error_msg_prob_rows = 'Found problematic rows.'
 
 # Setup
-lst_tables = [bmprices_label, portreturn_label, portholding_label, portholding_label,
+lst_tables = [bmc_monthly_label, portholding_label, portreturn_label, bmprices_label, univsnapshot_label, div_ltm_label]
+lst_tables_colors = [bmprices_label, portreturn_label, portholding_label, portholding_label,
               bmc_monthly_label, bmc_monthly_label, univsnapshot_label,univsnapshot_label,
               univsnapshot_label, div_ltm_label,div_ltm_label, holiday_label, today_label]
-color_df = pd.DataFrame({'Table': lst_tables,
+color_df = pd.DataFrame({'Table': lst_tables_colors,
     'Reason': [not_updated_daily_reason,not_updated_daily_reason, 
               prob_row_reason, not_updated_daily_reason,
               prob_row_reason, not_updated_monthly_reason,
@@ -96,15 +96,16 @@ holiday_color = 'background-color: darkgrey'
 today_color = 'background-color: Aquamarine'
 background_color = 'background-color: white'
 
+# =============================================================================
+# Functions - Import data
+# =============================================================================
 
 # Perform query and fetch data from SQL server.
-@st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True, ttl=60*60)
 def load_data(query):
     """Load data from SQL database based on query and returns a dataframe"""
     data = DataImporter(verbose=False)
     return data.load_data(query)
-
-
 
 # =============================================================================
 # Functions - Check Data Quality
@@ -361,7 +362,9 @@ def get_res_day(res_date, month):
     res_date_df = res_date_df[res_date_df['month'] == month]
     return res_date_df['day']
     
-    
+# month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+# year_df = pd.DataFrame({'year': range(1990, datetime.now.year)}, columns=month_names)
+
 # Show a dataframe with bad dates highlighted for the given month
 def show_month_df(input_year, df, holiday_df, month):
     df = df[df['month'] == month]
@@ -533,10 +536,6 @@ date_view = st.sidebar.checkbox(checkbox_date)
 st.sidebar.subheader('Holidays:')
 is_us_holiday = st.sidebar.checkbox('Show US Holiday', value=True)
 is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
-    
-## monthly
-### univsnap, bmc monthly, div_ltm
-
 
 
 # Sum view
@@ -547,8 +546,6 @@ input_year = st.number_input(
 
 holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
 
-
-lst_tables = [bmc_monthly_label, portholding_label, portreturn_label, bmprices_label, univsnapshot_label, div_ltm_label]
 selected = st.multiselect('Select a table to view details.', lst_tables, [portholding_label])
 
 show_table_color_ref = st.checkbox('Show color references')
@@ -591,7 +588,7 @@ if date_view:
     res_portholding = find_null(res_portholding, 'secid')
 
 
-    ### Univ snapshot can't see the reason for which is which?        
+    # Updated monthly     
     res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
     res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
     res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
@@ -601,7 +598,6 @@ if date_view:
     res_div_ltm = find_null(res_div_ltm, 'date')
     
     # res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
-# 
     res_bmprices = res_bmprices.date
     res_bmprices = pd.Series(res_bmprices)
     res_portreturn = res_portreturn.date
