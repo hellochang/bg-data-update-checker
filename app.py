@@ -22,20 +22,21 @@ from bg_data_importer import DataImporter
 # Variables
 # =============================================================================
 # Queries
-query_bmc_monthly = """SELECT * FROM development.dbo.bmc_monthly WHERE bm_id IN ('sp500', 'sptsx')"""
+query_bmc_monthly = """SELECT * FROM development.dbo.bmc_monthly 
+WHERE bm_id IN ('sp500', 'sptsx')"""
 query_univsnapshot = """SELECT *
 FROM fstest.dbo.univsnapshot
 WHERE univ_id IN ('CANADA', 'US')"""
-query_portholding = """SELECT *
-FROM development.dbo.portholding
+query_portholding = """SELECT * FROM development.dbo.portholding
 WHERE company NOT IN ('Placeholder', 'Cash-INVEST-USD', 'Cash-INVEST-CAD')"""
 query_div_ltm = """SELECT div.fsym_id, exdate, date, div_type, div_freq
-FROM fstest.dbo.bg_div AS div
-LEFT JOIN fstest.dbo.bg_div_ltm AS ltm
-ON div.exdate = ltm.date
-AND div.fsym_id = ltm.fsym_id
-WHERE  div_type ='regular'
-AND dummy_payment = 0"""
+                    FROM fstest.dbo.bg_div AS div
+                    LEFT JOIN fstest.dbo.bg_div_ltm AS ltm
+                    ON div.exdate = ltm.date
+                    AND div.fsym_id = ltm.fsym_id
+                    WHERE  div_type ='regular'
+                    AND dummy_payment = 0
+                """
 query_portreturn = """SELECT *
 FROM development.dbo.PortReturn"""
 query_bmprices = """SELECT *
@@ -68,33 +69,64 @@ large_port_diff_reason = 'Large monthly portfolio count differences'
 success_msg = 'No problematic rows found.'
 error_msg_prob_rows = 'Found problematic rows.'
 
+
 # Setup
-lst_tables = [bmc_monthly_label, portholding_label, portreturn_label, bmprices_label, univsnapshot_label, div_ltm_label]
-lst_tables_colors = [bmprices_label, portreturn_label, portholding_label, portholding_label,
-              bmc_monthly_label, bmc_monthly_label, univsnapshot_label,univsnapshot_label,
-              univsnapshot_label, div_ltm_label,div_ltm_label, holiday_label, today_label]
+lst_tables = [bmc_monthly_label,
+              portholding_label,
+              portreturn_label,
+              bmprices_label,
+              univsnapshot_label,
+              div_ltm_label]
+lst_tables_colors = [bmprices_label,
+                     portreturn_label,
+                     portholding_label,
+                     portholding_label,
+                     bmc_monthly_label,
+                     bmc_monthly_label,
+                     univsnapshot_label,
+                     univsnapshot_label,
+                     univsnapshot_label,
+                     div_ltm_label,
+                     div_ltm_label,
+                     holiday_label,
+                     today_label]
 color_df = pd.DataFrame({'Table': lst_tables_colors,
-    'Reason': [not_updated_daily_reason,not_updated_daily_reason, 
-              prob_row_reason, not_updated_daily_reason,
-              prob_row_reason, not_updated_monthly_reason,
-               prob_row_reason,large_port_diff_reason , not_updated_monthly_reason,
-               prob_row_reason, not_updated_monthly_reason, holiday_label, today_label]})
+                        'Reason': [not_updated_daily_reason,
+                                   not_updated_daily_reason,
+                                   prob_row_reason,
+                                   not_updated_daily_reason,
+                                   prob_row_reason,
+                                   not_updated_monthly_reason,
+                                   prob_row_reason,
+                                   large_port_diff_reason,
+                                   not_updated_monthly_reason,
+                                   prob_row_reason,
+                                   not_updated_monthly_reason,
+                                   holiday_label,
+                                   today_label]})
+error_dict = { 1: not_updated_daily_reason,
+               2: not_updated_monthly_reason,
+               3: prob_row_reason,
+               4: large_port_diff_reason}
 
 # Colors for highlights and reference table
-res_bmprices_color = 'background-color: orange'
-res_portreturn_color = 'background-color: yellow'
-res_bmc_monthly_color = 'background-color: purple'
-res_bmc_monthly_is_monthly_color = 'background-color: blueviolet'
-res_portholding_color = 'background-color: green'
-res_portholding_is_daily_color = 'background-color: lightgreen'
-res_univsnapshot_color = 'background-color: pink'
-res_univsnapshot_is_monthly_color = 'background-color: red'
-res_univ_notin_id_color = 'background-color: darkred'
-res_div_ltm_color = 'background-color: blue'
-res_div_ltm_is_monthly_color = 'background-color: lightblue'
-holiday_color = 'background-color: darkgrey'
-today_color = 'background-color: Aquamarine'
-background_color = 'background-color: white'
+colors = {'bmprices': 'background-color: orange',
+          'portreturn': 'background-color: yellow',
+          'bmc_monthly': 'background-color: purple',
+          'bmc_monthly_is_monthly': 'background-color: blueviolet',
+          'portholding': 'background-color: green',
+          'portholding_is_daily': 'background-color: lightgreen',
+          'univsnapshot': 'background-color: pink',
+          'univsnapshot_is_monthly': 'background-color: red',
+          'univ_notin_id': 'background-color: darkred',
+          'div_ltm': 'background-color: blue',
+          'div_ltm_is_monthly': 'background-color: lightblue',
+          'holiday': 'background-color: darkgrey',
+          'today': 'background-color: aquamarine',
+          'background': 'background-color: white'
+          }
+
+
 
 # =============================================================================
 # Functions - Import data
@@ -102,118 +134,122 @@ background_color = 'background-color: white'
 
 # Perform query and fetch data from SQL server.
 @st.cache(allow_output_mutation=True, ttl=60*60)
-def load_data(query):
+def load_data(query: str) -> pd.DataFrame:
     """Load data from SQL database based on query and returns a dataframe"""
     data = DataImporter(verbose=False)
     return data.load_data(query)
-
 # =============================================================================
 # Functions - Check Data Quality
 # =============================================================================
 
 @st.cache
-def find_null(df, col):
+def find_null(df: pd.DataFrame, col: str) -> pd.DataFrame:
     """Filters dataframe for rows that contain null values in input column"""
     return df[df[col].isnull()]
 
-#
 @st.cache
 def find_univsnapshot(df):
     """Filters dataframe for rows with monthly company count larger than tolerance"""
     tol = 300
     df = df.copy()
-    df['monthly_company_count'] = df['univ_id'].groupby(df['rdate'].dt.month).transform('count')
-    df['diff_monthly'] = df['monthly_company_count'].diff()
-
+    df = df.groupby(df['rdate'])['univ_id'].value_counts().reset_index(name='monthly_company_count')
+    df['diff_monthly'] = df.groupby(['monthly_company_count'])['univ_id'].diff()
     return df[df['diff_monthly'] > tol]
 
-@st.cache
-def not_in_adjpricest(df):
-    """Filters dataframe for rows not also in Adj Price table"""
-    adjpricet_fsym_id = adjpricet['fsym_id'].unique()  
-    return df[~df['fsym_id'].isin(adjpricet_fsym_id)]
 
 @st.cache
-def check_daily(input_year, holiday_date, res_df_date):
+def check_daily(input_year, holiday_date, res_df_date) -> pd.DataFrame:
     """Returns business dates not included in input df"""
-    sdate = datetime(input_year, 1, 1)  
+    sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
-    business_dates = dates[dates.weekday < 5]
-    business_dates = dates[~dates.isin(holiday_date)]
-    return business_dates[~business_dates.isin(res_df_date)]
+    weekday_dates = dates[dates.weekday < 5]
+    business_dates = weekday_dates[~weekday_dates.isin(holiday_date)]
+    return pd.DataFrame({'result': business_dates[~business_dates.isin(res_df_date)].date})
 
 @st.cache
-def check_monthly(input_year, res_df_date, col):
-    sdate = datetime(input_year, 1, 1)  
+def check_monthly(input_year:int, res_df_date, col) -> pd.DataFrame:
+    sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
-    monthly_dates_uniq = [datetime(input_year, 1, 1), datetime(input_year, 2, 1), datetime(input_year, 3, 1),
-    datetime(input_year, 4, 1), datetime(input_year, 5, 1), datetime(input_year, 6, 1),
-    datetime(input_year, 7, 1), datetime(input_year, 8, 1), datetime(input_year, 9, 1),
-    datetime(input_year, 10, 1), datetime(input_year, 11, 1), datetime(input_year, 12, 1)]
-    monthly_dates_uniq = pd.Series(monthly_dates_uniq)
+    monthly_dates_uniq = pd.date_range(start=sdate, end=edate, freq='M')
     monthly_dates = pd.date_range(start=sdate, end=edate)
-    
+    monthly_dates_uniq = pd.Series(monthly_dates_uniq)
     monthly_dates = pd.Series(monthly_dates)
 
     res_df_date = res_df_date.copy()
     monthly_dates_not_in_res = pd.Series(monthly_dates_uniq[~monthly_dates_uniq.dt.month.isin(res_df_date[col].dt.month)])
-    return monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)]
+    return monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)].dt.date.to_frame('result')
 
 
-def find_res_tables(selected, input_year):
+def find_res_tables(selected, input_year, data):
     """Find errors of every table based on the input year and input table """
     if portholding_label in selected:
-        res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+        res_portholding = data['portholding'][data['portholding']['rdate'].dt.year == input_year]
+        res_portholding = res_portholding.copy()
         res_portholding['rdate'] = res_portholding['rdate'].dt.date
-        res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate']).to_series().dt.date
+        res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
         res_portholding = find_null(res_portholding, 'secid')
     else:
-        res_portholding = pd.DataFrame([], columns = portholding.columns)
-        res_portholding_is_daily = pd.Series([])
+        res_portholding = pd.DataFrame([], columns = data['portholding'].columns)
+        res_portholding_is_daily = pd.DataFrame([], columns = ['result'])
 
     if bmprices_label in selected:
-        res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-        res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-        res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate']).to_series()
-        
+        res_bmprices = data['bmprices'][data['bmprices']['rdate'].dt.year == input_year]
+        res_bmprice = res_bmprices.copy()
+        res_bmprice['rdate'] = res_bmprices['rdate'].dt.date
+        res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
     else:
-        res_bmprices = pd.Series([])
-
+        res_bmprices = pd.DataFrame([], columns = ['result'])
+    
     if portreturn_label in selected:
-        res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+        res_portreturn = data['portreturn'][data['portreturn']['rdate'].dt.year == input_year].copy()
         res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-        res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate']).to_series()
+        res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
     else:
-        res_portreturn = pd.Series([])
+        res_portreturn = pd.DataFrame([], columns = ['result'])
+    
     if bmc_monthly_label in selected:
-        res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+        res_bmc_monthly = data['bmc_monthly'][data['bmc_monthly']['rdate'].dt.year == input_year]
         res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
         res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
     else:
-        res_bmc_monthly = pd.DataFrame([], columns = bmc_monthly.columns)
-        res_bmc_monthly_is_monthly = pd.Series([])
+        res_bmc_monthly = pd.DataFrame([], columns = data['bmc_monthly'].columns)
+        res_bmc_monthly_is_monthly = pd.DataFrame([], columns = ['result'])
 
     if univsnapshot_label in selected:
-        res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+        res_univsnapshot = data['univsnapshot'][data['univsnapshot']['rdate'].dt.year == input_year]
         res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+        
+        # Filters dataframe for rows not also in Adj Price table
+        adjpricet_fsym_id = data['adjpricet']['fsym_id'].unique()
+        res_univ_notin_id = res_univsnapshot[~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
+        
         res_univsnapshot = find_univsnapshot(res_univsnapshot)
-        res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-        res_univsnapshot = res_univsnapshot.merge(res_univ_notin_id, on="rdate", how = 'inner')
     else:
-        res_univsnapshot = pd.DataFrame([], columns = univsnapshot.columns)
-        res_univsnapshot_is_monthly = pd.Series([])
-        res_univ_notin_id = pd.DataFrame([], columns = univsnapshot.columns)
+        res_univsnapshot = pd.DataFrame([], columns = data['univsnapshot'].columns)
+        res_univsnapshot_is_monthly = pd.DataFrame([], columns = ['result'])
+        res_univ_notin_id = pd.DataFrame([], columns = data['univsnapshot'].columns)
 
     if div_ltm_label in selected:
-        res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
+        res_div_ltm = data['div_ltm'][data['div_ltm']['date'].dt.year == input_year]
         res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
         res_div_ltm = find_null(res_div_ltm, 'date')
     else:
-        res_div_ltm = pd.DataFrame([], columns = div_ltm.columns)
-        res_div_ltm_is_monthly = pd.Series([])
-    
-    return res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn, res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly
+        res_div_ltm = pd.DataFrame([], columns = data['div_ltm'].columns)
+        res_div_ltm_is_monthly = pd.DataFrame([], columns = ['result'])
+        
+    result_dict = { 'portholding': res_portholding,
+                    'portholding_is_daily': res_portholding_is_daily,
+                    'bmprices': res_bmprices,
+                    'portreturn': res_portreturn,
+                    'bmc_monthly': res_bmc_monthly,
+                    'bmc_monthly_is_monthly': res_bmc_monthly_is_monthly,
+                    'univsnapshot': res_univsnapshot,
+                    'univsnapshot_is_monthly': res_univsnapshot_is_monthly,
+                    'univ_notin_id': res_univ_notin_id,
+                    'div_ltm': res_div_ltm,
+                    'div_ltm_is_monthly': res_div_ltm_is_monthly }
+    return result_dict
 
 def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
     """Dispaly results for daily view based on how many things each table is checking"""
@@ -223,40 +259,40 @@ def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
             st.success(success_msg)
         if not res_daily_df.empty:
             st.error('No data found on ' + str(input_date))
-        
+
     if (res_daily_df is not None and res_df is not None) and res_df_2 is None:
         if res_daily_df.empty and res_df.empty:
             st.success(success_msg)
         if res_daily_df.empty and not res_df.empty:
             st.error(error_msg_prob_rows)
-            st.write(res_df)  
+            st.write(res_df)
         if not res_daily_df.empty and res_df.empty:
-            st.error('No data found on ' + str(input_date))           
+            st.error('No data found on ' + str(input_date))
         if not res_daily_df.empty and not res_df.empty:
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_df) 
-            
+            st.write(res_df)
+
     if (res_daily_df is not None and res_df is not None) and res_df_2 is not None:
         if (res_daily_df.empty and res_df.empty) and res_univsnapshot_is_monthly_daily.empty:
                 st.success(success_msg)
         if res_daily_df.empty and ((not res_df.empty) and not res_df_2.empty):
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)  
+            st.write(res_univsnapshot_daily)
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)  
-    
+            st.write(res_univ_notin_id_daily)
+
         if res_daily_df.empty and ((not res_df.empty) and
                                                         (res_df_2.empty)):
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)  
+            st.write(res_univ_notin_id_daily)
         if res_daily_df.empty and ((res_df.empty) and
                                                         (not res_df_2.empty)):
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily) 
+            st.write(res_univsnapshot_daily)
         if not res_daily_df.empty and (( res_df.empty) and
                                                         (res_df_2.empty)):
-            st.error('No data found on ' + str(input_date))           
+            st.error('No data found on ' + str(input_date))
         if not res_daily_df.empty and ((res_df.empty) and
                                                         (not res_df_2.empty)):
             st.error('No data found on ' + str(input_date))
@@ -266,12 +302,12 @@ def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
                                                         res_df_2.empty):
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)  
+            st.write(res_univ_notin_id_daily)
         if not res_daily_df.empty and ((not res_df.empty) and
                                                         (not res_df_2.empty)):
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)  
+            st.write(res_univsnapshot_daily)
             st.error(error_msg_prob_rows)
             st.write(res_univ_notin_id_daily)
 
@@ -304,15 +340,49 @@ def get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday):
             holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
         elif is_cad_holiday and not is_us_holiday:
             holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
-    
+
     if not holiday_df.empty:
         holiday_date = holiday_df['holiday_date'].dt.date
     else:
         holiday_date = pd.Series([])
-    
+
     return holiday_df, holiday_date
 
+def get_res_table_df(input_year, result_dict):
+    sdate = datetime(input_year, 1, 1)
+    edate = datetime(input_year, 12, 31)
+    dates = pd.date_range(start=sdate, end=edate)
+    res_reason_df = pd.DataFrame(
+        {'bmprices': dates.isin(result_dict['bmprices']['result']),
+        'portreturn': dates.isin(result_dict['portreturn']['result']),
+        'bmc_monthly': dates.isin(result_dict['bmc_monthly']['rdate']),
+        'bmc_monthly_is_monthly': dates.isin(result_dict['bmc_monthly_is_monthly']['result']),
+        'portholding': dates.isin(result_dict['portholding']['rdate']),
+        'portholding_is_daily':  dates.isin(result_dict['portholding_is_daily']['result']),
+        'univsnapshot': dates.isin(result_dict['univsnapshot']['rdate']),
+        'univsnapshot_is_monthly': dates.isin(result_dict['univsnapshot_is_monthly']['result']),
+        'univ_notin_id': dates.isin(result_dict['univ_notin_id']['rdate']),
+        'div_ltm': dates.isin(result_dict['div_ltm']['date']),
+        'div_ltm_is_monthly': dates.isin(result_dict['div_ltm_is_monthly']['result'])}, index=dates.date)
 
+    res_table_df = pd.DataFrame([], columns=['bmprices', 'portreturn', 'bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm'], index=dates.date)
+    for col in res_reason_df.columns:
+        if col in ['bmprices', 'portreturn']:
+            res_table_df[col][res_reason_df[col]] = 1 
+        elif col == 'bmc_monthly_is_monthly':
+            res_table_df['bmc_monthly'][res_reason_df[col]] = 2
+        elif col == 'univsnapshot_is_monthly':
+            res_table_df['univsnapshot'][res_reason_df[col]] = 2
+        elif col == 'div_ltm_is_monthly':
+            res_table_df['div_ltm'][res_reason_df[col]] = 2
+            # 'portholding_is_daily'
+        elif col in ['bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm']:
+            res_table_df[col][res_reason_df[col]] = 3
+        elif col == 'univ_notin_id':
+            res_table_df['univsnapshot'][res_reason_df[col]] = 4
+    return res_table_df.fillna(0)
+    
+    
 # =============================================================================
 # Functions - Show Calendar for Summary View
 # =============================================================================
@@ -321,17 +391,26 @@ def get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday):
 def week_of_month(dt):
     """ Returns the week of the month for the specified date."""
     first_day = dt.replace(day=1)
-
     dom = dt.day
     adjusted_dom = dom + first_day.weekday()
     return int(np.ceil(adjusted_dom/7.0))
 
 
 # Return a dataframe of month, weeks, days in the given year
-def year_cal(input_year):
-    """Return a dataframe of yearly calendar."""
+def year_cal(input_year:int):
+    """
+    Return a dataframe of yearly calendar.
 
-    sdate = datetime(input_year, 1, 1)  
+    Parameters
+    ----------
+    input_year : int
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+    """
+    sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
 
     dates = pd.date_range(start=sdate, end=edate)
@@ -340,55 +419,40 @@ def year_cal(input_year):
                        'day': pd.DatetimeIndex(dates).day.astype(int),
                        'date': dates})
 
-    
+
     week = df['date'].apply(week_of_month)
     df.insert(loc=1, column='week', value=week)
     return df
 
 def weekday_dates(input_year, holiday_date):
-    sdate = datetime(input_year, 1, 1)  
+    """Get the business dates of the given year"""
+    sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
     dates = dates[dates.weekday < 5]
     dates = dates[~dates.isin(holiday_date)]
     return dates
-  
+
 
 def get_res_day(res_date, month):
+    """Get the days in the given month for the input dataframe"""
     res_date_df = pd.DataFrame({
-                'month': pd.DatetimeIndex(res_date).month_name(),
-                'day': pd.DatetimeIndex(res_date).day,
-                'date': res_date})
+                            'month': pd.DatetimeIndex(res_date).month_name(),
+                            'day': pd.DatetimeIndex(res_date).day,
+                            'date': res_date})
     res_date_df = res_date_df[res_date_df['month'] == month]
     return res_date_df['day']
-    
-# month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-# year_df = pd.DataFrame({'year': range(1990, datetime.now.year)}, columns=month_names)
 
-# Show a dataframe with bad dates highlighted for the given month
-def show_month_df(input_year, df, holiday_df, month):
+
+def show_month_df(input_year, df, res_table_df, holiday_df, month) -> None:
+    """Show a dataframe with bad dates highlighted for the given month"""
     df = df[df['month'] == month]
     df = df.pivot(index='week', columns='weekday', values='day')
     dayOfWeek={0:'M', 1:'T', 2:'W', 3:'Th', 4:'F', 5:'S', 6:'Su'}
     df.columns = [df.columns.map(dayOfWeek)]
-    
-    df = df.fillna("")
-    df = df.drop(['S', 'Su'], axis = 1)
-    
-    res_bmprices_day = get_res_day(res_bmprices, month)
-    res_portreturn_day = get_res_day(res_portreturn, month)
 
-    res_bmc_monthly_day = get_res_day(res_bmc_monthly['rdate'], month)
-    res_portholding_day = get_res_day(res_portholding['rdate'], month)
-    res_univsnapshot_day = get_res_day(res_univsnapshot['rdate'], month)
-    res_div_ltm_day = get_res_day(res_div_ltm['date'], month)
-        
-    res_portholding_is_daily_day = get_res_day(res_portholding_is_daily, month)
-    res_bmc_monthly_is_monthly_day = get_res_day(res_bmc_monthly_is_monthly, month)
-    res_div_ltm_is_monthly_day = get_res_day(res_div_ltm_is_monthly, month)
-    res_univsnapshot_is_monthly_day = get_res_day(res_univsnapshot_is_monthly, month)
-    res_univ_notin_id_day = get_res_day(res_univ_notin_id['rdate'], month)
-    holiday_df = holiday_df[holiday_df['month'] == month]
+    df = df.fillna("")
+    df = df.drop(['S', 'Su'], axis = 1, level = 0)
     
     today = datetime.today()
     months = dict(January=1, February=2, March=3, April=4, May=5,
@@ -396,83 +460,79 @@ def show_month_df(input_year, df, holiday_df, month):
                   November=11, December=12)
     isToday = ((month == today.strftime("%B")) and input_year == today.year)
     isMonthLaterThanToday = months[month] > today.month
-    st.dataframe(df.style.apply(highlight_bad_day, 
+    res_table_df = res_table_df[pd.DatetimeIndex(res_table_df.index).month_name() == month]
+    res_table_df.index = pd.DatetimeIndex(res_table_df.index).day
+    holiday_df = holiday_df[holiday_df['month'] == month]
+
+    st.dataframe(df.style.apply(highlight_bad_day,
                                 args=[isToday, isMonthLaterThanToday, holiday_df['day'],
-                                      res_bmprices_day, res_portreturn_day,
-                                      res_bmc_monthly_day, res_portholding_day,
-                                      res_univsnapshot_day, res_div_ltm_day,
-                                      res_portholding_is_daily_day, res_bmc_monthly_is_monthly_day,
-                                      res_div_ltm_is_monthly_day, res_univsnapshot_is_monthly_day,
-                                      res_univ_notin_id_day], axis=1).set_precision(0))
+                                      res_table_df], axis=1).set_precision(0))
 
 
-def show_months(input_year, holiday_df, m1, m2, m3):
+def show_months(input_year, holiday_df,res_table_df, m1, m2, m3):
     """ Show monthly calendars for three months in a row"""
     col1, col2, col3 = st.beta_columns(3)
     year_calendar = year_cal(input_year)
+
     with col1:
         st.header(m1)
-        show_month_df(input_year, year_calendar, holiday_df, m1)
+        show_month_df(input_year, year_calendar, res_table_df, holiday_df, m1)
     with col2:
         st.header(m2)
-        show_month_df(input_year, year_calendar,holiday_df, m2)
+        show_month_df(input_year, year_calendar,res_table_df,holiday_df, m2)
     with col3:
         st.header(m3)
-        show_month_df(input_year, year_calendar,holiday_df, m3)
+        show_month_df(input_year, year_calendar,res_table_df,holiday_df, m3)
 
 
-def highlight_bad_day(days, isToday, isMonthLaterThanToday, holiday_days, res_bmprices_day, res_portreturn_day, 
-                      res_bmc_monthly_day, res_portholding_day,
-                      res_univsnapshot_day, res_div_ltm_day,
-                        res_portholding_is_daily_day, res_bmc_monthly_is_monthly_day,
-                        res_div_ltm_is_monthly_day, res_univsnapshot_is_monthly_day,
-                        res_univ_notin_id_day):
+def highlight_bad_day(days, isToday, isMonthLaterThanToday, holiday_days, res_df):
     """Helper function to highlight dates with bad data quality in the calendar df"""
 
     if isToday:
         today_day = datetime.today().date().day
     else:
-        today_day = None        
+        today_day = None
 
-    colors = []
+    res_colors = []
     for day in days:
         if day != "":
             if isMonthLaterThanToday:
-                colors.append(background_color)
+                res_colors.append(colors['background'])
             elif today_day is None or int(day) <= today_day:
+                # st.write(res_df)
                 if day in holiday_days.values:
-                    colors.append(holiday_color)
+                    res_colors.append(colors['holiday'])
                 elif day == today_day:
-                    colors.append(today_color)
-                elif day in res_bmprices_day.values:
-                    colors.append(res_bmprices_color)
-                elif day in res_portreturn_day.values:
-                    colors.append(res_portreturn_color)
-                elif day in res_bmc_monthly_day.values:
-                    colors.append(res_bmc_monthly_color)
-                elif day in res_portholding_day.values:
-                    colors.append(res_portholding_color)
-                elif day in res_univsnapshot_day.values:
-                    colors.append(res_univsnapshot_color)
-                elif day in res_div_ltm_day.values:
-                    colors.append(res_div_ltm_color)
-                elif day in res_bmc_monthly_is_monthly_day.values:
-                    colors.append(res_bmc_monthly_is_monthly_color)
-                elif day in res_portholding_is_daily_day.values:
-                    colors.append(res_portholding_is_daily_color)
-                elif day in res_univsnapshot_is_monthly_day.values:
-                    colors.append(res_univsnapshot_is_monthly_color)
-                elif day in res_univ_notin_id_day.values:
-                    colors.append(res_univ_notin_id_color)
-                elif day in res_div_ltm_is_monthly_day.values:
-                    colors.append(res_div_ltm_is_monthly_color) 
-                else: 
-                    colors.append(background_color)
+                    res_colors.append(colors['today'])
+                elif res_df.at[day, 'bmprices'] == 1:
+                    res_colors.append(colors['bmprices'])
+                elif res_df.at[day, 'portreturn'] == 1:
+                    res_colors.append(colors['portreturn'])
+                elif res_df.at[day, 'portholding'] == 3:
+                    res_colors.append(colors['portholding_is_daily'])
+                elif res_df.at[day, 'bmc_monthly'] == 3:
+                    res_colors.append(colors['bmc_monthly'])
+                elif res_df.at[day, 'portholding'] == 3:
+                    res_colors.append(colors['portholding'])
+                elif res_df.at[day, 'univsnapshot'] == 3:
+                    res_colors.append(colors['univsnapshot'])
+                elif res_df.at[day, 'div_ltm'] == 3:
+                    res_colors.append(colors['div_ltm'])
+                elif res_df.at[day, 'bmc_monthly'] == 2:
+                    res_colors.append(colors['bmc_monthly_is_monthly'])
+                elif res_df.at[day, 'univsnapshot'] == 2:
+                    res_colors.append(colors['univsnapshot_is_monthly'])
+                elif res_df.at[day, 'div_ltm'] == 2:
+                    res_colors.append(colors['div_ltm_is_monthly_color'])                    
+                elif res_df.at[day, 'univsnapshot'] == 4:
+                    res_colors.append(colors['univ_notin_id_color'])
+                else:
+                    res_colors.append(colors['background'])
             else:
-                colors.append(background_color)
+                res_colors.append(colors['background'])
         else:
-            colors.append(background_color)
-    return colors
+            res_colors.append(colors['background'])
+    return res_colors
 
 
 def highlight_color(row):
@@ -481,35 +541,36 @@ def highlight_color(row):
     reason = row.Reason
 
     if table == bmprices_label:
-        return 2 * [res_bmprices_color]
+        return 2 * [colors['bmprices']]
     if table == portreturn_label:
-        return 2 * [res_portreturn_color]
+        return 2 * [colors['portreturn']]
     if table == portholding_label:
         if reason == not_updated_daily_reason:
-            return 2 * [res_portholding_is_daily_color]
+            return 2 * [colors['portholding_is_daily']]
         if reason == prob_row_reason:
-            return 2 *  [res_portholding_color]
+            return 2 *  [colors['portholding']]
     if table == bmc_monthly_label:
         if reason == not_updated_monthly_reason:
-            return 2 * [res_bmc_monthly_is_monthly_color]
+            return 2 * [colors['bmc_monthly_is_monthly']]
         if reason == prob_row_reason:
-            return 2 *  [res_bmc_monthly_color]
+            return 2 *  [colors['bmc_monthly']]
     if table == univsnapshot_label:
         if reason == not_updated_monthly_reason:
-            return 2 * [res_univsnapshot_is_monthly_color]
+            return 2 * [colors['univsnapshot_is_monthly']]
         if reason == large_port_diff_reason:
-            return 2 * [res_univ_notin_id_color]
+            return 2 * [colors['univ_notin_id']]
         if reason == prob_row_reason:
-            return 2 *  [res_univsnapshot_color]
+            return 2 *  [colors['univsnapshot']]
     if table == div_ltm_label:
         if reason == not_updated_monthly_reason:
-            return 2 * [res_div_ltm_is_monthly_color]
+            return 2 * [colors['div_ltm_is_monthly']]
         if reason == prob_row_reason:
-            return 2 *  [res_div_ltm_color]
+            return 2 *  [colors['div_ltm']]
     if table == holiday_label:
-        return 2 * [holiday_color]
+        return 2 * [colors['holiday']]
     if table == today_label:
-        return 2 * [today_color]
+        return 2 * [colors['today']]
+
 
 # =============================================================================
 # Code
@@ -520,16 +581,16 @@ st.set_page_config(layout="wide")
 st.title('Data Quality Checker')
 
 # Load data
-portholding = load_data(query_portholding)
-bmprices = load_data(query_bmprices)
-portreturn = load_data(query_portreturn)
-bmc_monthly = load_data(query_bmc_monthly)
-div_ltm = load_data(query_div_ltm)
-univsnapshot = load_data(query_univsnapshot)
-holiday = load_data(query_holiday)
-adjpricet = load_data(query_adjpricet)
+data = {'portholding': load_data(query_portholding),
+        'bmprices': load_data(query_bmprices),
+        'portreturn': load_data(query_portreturn),
+        'bmc_monthly': load_data(query_bmc_monthly),
+        'div_ltm': load_data(query_div_ltm),
+        'univsnapshot': load_data(query_univsnapshot),
+        'adjpricet': load_data(query_adjpricet),
+        'holiday': load_data(query_holiday)}
 
-
+# Side bar
 st.sidebar.subheader('Other views:')
 date_view = st.sidebar.checkbox(checkbox_date)
 
@@ -540,91 +601,58 @@ is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
 
 # Sum view
 st.header(checkbox_sum)
+
+# '%d' here refers to integer format, not date format.
 input_year = st.number_input(
     'Select a year', min_value = 1990, max_value=datetime.now().year,
     value=datetime.now().year, format='%d')
 
-holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
+holiday_df, holiday_date = get_holiday(input_year, data['holiday'], is_us_holiday, is_cad_holiday)
 
 selected = st.multiselect('Select a table to view details.', lst_tables, [portholding_label])
 
 show_table_color_ref = st.checkbox('Show color references')
+
 if show_table_color_ref:
     st.dataframe(color_df.style.apply(highlight_color, axis=1))
+
 st.info('There is a 1 day data update lag for some tables.')
 
-res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
+result_dict = find_res_tables(selected, input_year, data)
+res_table_df = get_res_table_df(input_year, result_dict)
 
-show_months(input_year, holiday_df, 'January', 'February', 'March')
-show_months(input_year, holiday_df, 'April', 'May', 'June')
-show_months(input_year, holiday_df, 'July', 'August', 'September')
-show_months(input_year, holiday_df, 'October', 'November', 'December')
+show_months(input_year, holiday_df, res_table_df, 'January', 'February', 'March')
+show_months(input_year, holiday_df, res_table_df, 'April', 'May', 'June')
+show_months(input_year, holiday_df, res_table_df,'July', 'August', 'September')
+show_months(input_year, holiday_df, res_table_df,'October', 'November', 'December')
 
-    
+
 if date_view:
 
     st.header('View by Date')
-    
-    input_date = st.date_input("Choose a date", max_value=datetime.today())
-    
-    input_year = input_date.year    
-    holiday_df, holiday_date = get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday)
 
-    res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    res_div_ltm = div_ltm[div_ltm['date'].dt.year == input_year]
-    res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
-    
-    # Updated daily
-    res_bmprices['rdate'] = res_bmprices['rdate'].dt.date
-    res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-    res_portholding['rdate'] = res_portholding['rdate'].dt.date
-
-    res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
-    res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
-    res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
-    res_portholding = find_null(res_portholding, 'secid')
+    input_date = st.date_input("Choose a date", 
+                               min_value = datetime(input_year, 1, 1), 
+                               max_value=datetime.today())
 
 
-    # Updated monthly     
-    res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
-    res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
-    res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
-    res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    res_univ_notin_id = not_in_adjpricest(res_univsnapshot)
-    res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
-    res_div_ltm = find_null(res_div_ltm, 'date')
-    
-    # res_portholding, res_portholding_is_daily, res_bmprices, res_portreturn,res_bmc_monthly, res_bmc_monthly_is_monthly, res_univsnapshot, res_univsnapshot_is_monthly,res_univ_notin_id, res_div_ltm, res_div_ltm_is_monthly = find_res_tables(selected, input_year)
-    res_bmprices = res_bmprices.date
-    res_bmprices = pd.Series(res_bmprices)
-    res_portreturn = res_portreturn.date
-    res_portreturn = pd.Series(res_portreturn)
-    res_portholding_is_daily = res_portholding_is_daily.date
-    res_portholding_is_daily = pd.Series(res_portholding_is_daily)
-    
-    res_bmprices_daily = res_bmprices[res_bmprices == input_date]
-    res_portreturn_daily = res_portreturn[res_portreturn == input_date]
-    res_portholding_daily = res_portholding[res_portholding['rdate'] == input_date]
-    res_portholding_is_daily_daily = res_portholding_is_daily[res_portholding_is_daily == input_date]
+    res_bmprices_daily = result_dict['bmprices'][result_dict['bmprices']['result'] == input_date]    
+    res_portreturn_daily = result_dict['portreturn'][result_dict['portreturn']['result'] == input_date]
+    res_portholding_daily = result_dict['portholding'][result_dict['portholding']['rdate'] == input_date]
+    res_portholding_is_daily_daily = result_dict['portholding_is_daily'][result_dict['portholding_is_daily']['result'] == input_date]
 
-
-    res_bmc_monthly_daily = res_bmc_monthly[(res_bmc_monthly['rdate'].dt.year == input_date.year) &
-                                      (res_bmc_monthly['rdate'].dt.month == input_date.month)]
-    res_bmc_monthly_is_monthly_daily = res_bmc_monthly_is_monthly[(res_bmc_monthly_is_monthly.dt.year == input_date.year) &
-                                      (res_bmc_monthly_is_monthly.dt.month == input_date.month)]
-    res_div_ltm_daily = res_div_ltm[(res_div_ltm['date'].dt.year == input_date.year) &
-                              (res_div_ltm['date'].dt.month == input_date.month)]
-    res_div_ltm_is_monthly_daily = res_div_ltm_is_monthly[(res_div_ltm_is_monthly.dt.year == input_date.year) &
-                              (res_div_ltm_is_monthly.dt.month == input_date.month)]
-    res_univsnapshot_daily = res_univsnapshot[(res_univsnapshot['rdate'].dt.year == input_date.year) &
-                              (res_univsnapshot['rdate'].dt.month == input_date.month)]
-    res_univsnapshot_is_monthly_daily = res_univsnapshot_is_monthly[(res_univsnapshot_is_monthly.dt.year == input_date.year) &
-                              (res_univsnapshot_is_monthly.dt.month == input_date.month)]
-    res_univ_notin_id_daily = res_univ_notin_id[(res_univ_notin_id['rdate'].dt.year == input_date.year) &
-                              (res_univ_notin_id['rdate'].dt.month == input_date.month)]
-
+    res_bmc_monthly_daily = result_dict['bmc_monthly'][(pd.DatetimeIndex(result_dict['bmc_monthly']['rdate']).year == input_date.year) &
+                                      (pd.DatetimeIndex(result_dict['bmc_monthly']['rdate']).month == input_date.month)]
+    res_bmc_monthly_is_monthly_daily = result_dict['bmc_monthly_is_monthly'][(pd.DatetimeIndex(result_dict['bmc_monthly_is_monthly']['result']).year == input_date.year) &
+                                      (pd.DatetimeIndex(result_dict['bmc_monthly_is_monthly']['result']).month == input_date.month)]
+    res_div_ltm_daily = result_dict['div_ltm'][(pd.DatetimeIndex(result_dict['div_ltm']['date']).year == input_date.year) &
+                              (pd.DatetimeIndex(result_dict['div_ltm']['date']).month == input_date.month)]
+    res_div_ltm_is_monthly_daily = result_dict['div_ltm_is_monthly'][(pd.DatetimeIndex(result_dict['div_ltm_is_monthly']['result']).year == input_date.year) &
+                              (pd.DatetimeIndex(result_dict['div_ltm_is_monthly']['result']).month == input_date.month)]
+    res_univsnapshot_daily = result_dict['univsnapshot'][(pd.DatetimeIndex(result_dict['univsnapshot']['rdate']).year == input_date.year) &
+                              (pd.DatetimeIndex(result_dict['univsnapshot']['rdate']).month == input_date.month)]
+    res_univsnapshot_is_monthly_daily = result_dict['univsnapshot_is_monthly'][(pd.DatetimeIndex(result_dict['univsnapshot_is_monthly']['result']).year == input_date.year) &
+                              (pd.DatetimeIndex(result_dict['univsnapshot_is_monthly']['result']).month == input_date.month)]
+    res_univ_notin_id_daily = result_dict['univ_notin_id'][(pd.DatetimeIndex(result_dict['univ_notin_id']['rdate']).year == input_date.year) &
+                              (pd.DatetimeIndex(result_dict['univ_notin_id']['rdate']).month == input_date.month)]
     show_res_daily_view(selected)
-    
