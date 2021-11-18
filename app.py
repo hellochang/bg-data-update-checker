@@ -138,21 +138,65 @@ colors = {'bmprices': 'background-color: orange',
 # Perform query and fetch data from SQL server.
 @st.cache(allow_output_mutation=True, ttl=60*60)
 def load_data(query: str) -> pd.DataFrame:
-    """Load data from SQL database based on query and returns a dataframe"""
+    """
+    Load data from SQL database based on query and returns a dataframe
+
+    Parameters
+    ----------
+    query : str
+        SQL query.
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe of data loaded from MS SQL DB.
+
+    """
     data = DataImporter(verbose=False)
     return data.load_data(query)
+
+
 # =============================================================================
 # Functions - Check Data Quality
 # =============================================================================
 
 @st.cache
 def find_null(df: pd.DataFrame, col: str) -> pd.DataFrame:
-    """Filters dataframe for rows that contain null values in input column"""
+    """
+    Filters dataframe for rows that contain null values in input column
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Dataframe of data that we need to check, loaded from DB
+    col : str
+        Column of the table we need to check.
+
+    Returns
+    -------
+    pd.DataFrame
+        Rows containing null values for the given column.
+
+    """
     return df[df[col].isnull()]
+
 
 @st.cache
 def find_univsnapshot(df: pd.DataFrame) -> pd.DataFrame:
-    """Filters dataframe for rows with monthly company count larger than tolerance"""
+    """
+    Filters dataframe for rows with monthly company count larger than tolerance
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Dataframe of data that we need to check, loaded from DB
+
+    Returns
+    -------
+    pd.DataFrame
+        Rows with monthly company count larger than tolerance
+
+    """
     tol = 300
     df = df.copy()
     df = df.groupby(df['rdate'])['univ_id'].value_counts()
@@ -163,19 +207,54 @@ def find_univsnapshot(df: pd.DataFrame) -> pd.DataFrame:
 
 @st.cache
 def check_daily(input_year: int, holiday_date: pd.Series, 
-                res_df_date: pd.Series) -> pd.DataFrame:
-    """Returns business dates not included in input df"""
+                df_date: pd.Series) -> pd.DataFrame:
+    """
+    Returns business dates not included in input df
+
+    Parameters
+    ----------
+    input_year : int
+        The year that we need to check (that the user selected).
+    holiday_date : pd.Series
+        Holiday dates.
+    df_date : pd.Series
+        Dataframe of data that we need to check, loaded from DB
+
+    Returns
+    -------
+    res : pd.DataFrame
+         Business dates not present in input df that we need to check.
+
+    """
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
     weekday_dates = dates[dates.weekday < 5]
     business_dates = weekday_dates[~weekday_dates.isin(holiday_date)]
-    res = pd.DataFrame({'result': business_dates[~business_dates.isin(res_df_date)].date})
+    res = pd.DataFrame({'result': business_dates[~business_dates.isin(df_date)].date})
     return res
 
 @st.cache
 def check_monthly(input_year: int, 
-                  res_df_date: pd.Series, col: str) -> pd.DataFrame:
+                  df_date: pd.Series, col: str) -> pd.DataFrame:
+    """
+    Returns business dates not included in input df
+
+    Parameters
+    ----------
+    input_year : int
+        The year that we need to check.
+    df_date : pd.Series
+        Dataframe of data that we need to check, loaded from DB
+    col : str
+        Column of the table we need to check.
+
+    Returns
+    -------
+    res : pd.DataFrame
+        Dates in month that are not present in input_df.
+
+    """
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     monthly_dates_uniq = pd.date_range(start=sdate, end=edate, freq='M')
@@ -183,16 +262,34 @@ def check_monthly(input_year: int,
     monthly_dates_uniq = pd.Series(monthly_dates_uniq)
     monthly_dates = pd.Series(monthly_dates)
 
-    res_df_date = res_df_date.copy()
+    df_date = df_date.copy()
     monthly_dates_not_in_res = pd.Series(monthly_dates_uniq[
-        ~monthly_dates_uniq.dt.month.isin(res_df_date[col].dt.month)])
+        ~monthly_dates_uniq.dt.month.isin(df_date[col].dt.month)])
     res = monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)]
     res = res.dt.date.to_frame('result')
     return res
 
 def get_result_tables(selected: List[str], input_year: str, 
                       data: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
-    """Find errors of every table based on the input year and input table """
+    """
+    Find errors of every table based on the input year and input table
+
+
+    Parameters
+    ----------
+    selected : List[str]
+        Tables selected in the Streamlit multiselect widget.
+    input_year : str
+        Year we need to check.
+    data : Dict[str, pd.DataFrame]
+        Data loaded from DB.
+
+    Returns
+    -------
+    result_dict : Dict[str, pd.DataFrame]
+        Error entries in data after performing the checks.
+
+    """
     if portholding_label in selected:
         portholding =  data['portholding']
         res_portholding = portholding[portholding['rdate'].dt.year == input_year]
@@ -276,7 +373,25 @@ def get_result_tables(selected: List[str], input_year: str,
 def show_res_df(header: str, res_daily_df: pd.DataFrame, 
                 res_df: Optional[pd.DataFrame]=None, 
                 res_df_2: Optional[pd.DataFrame]=None) -> None:
-    """Dispaly results for daily view based on items each table is checking"""
+    """
+    Dispaly results for daily view based on items each table is checking
+
+    Parameters
+    ----------
+    header : str
+        The header displayed on the dashboard.
+    res_daily_df : pd.DataFrame
+        Problematic entries of a table for not updated daily or monthly.
+    res_df : Optional[pd.DataFrame], optional
+        Problematic entries of a table for another reason.
+    res_df_2 : Optional[pd.DataFrame], optional
+        Problematic entries of a table for the third reason, if needed.
+
+    Returns
+    -------
+    None
+
+    """
     st.subheader(header)
     if (res_daily_df is not None and res_df is None) and res_df_2 is None:
         if res_daily_df.empty:
@@ -338,7 +453,21 @@ def show_res_df(header: str, res_daily_df: pd.DataFrame,
 
 def show_res_daily_view(selected: List[str], 
                         result_dict_daily: Dict['str', pd.DataFrame]) -> None:
-    """Display result for Daily View"""
+    """
+    Display result for Daily View
+
+    Parameters
+    ----------
+    selected : List[str]
+        Selected tables by the user.
+    result_dict_daily : Dict['str', pd.DataFrame]
+        Dictionary storing problematic entries for a given date.
+
+    Returns
+    -------
+    None
+
+    """
     for table in selected:
         if table == bmprices_label:
             show_res_df(bmprices_label, result_dict_daily['bmprices'])
@@ -365,8 +494,22 @@ def show_res_daily_view(selected: List[str],
 
 def get_result_daily(input_date: datetime.date, 
                      result_dict: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
-        
-    """Get problematic entries for each table for a given date"""
+    """
+    Get problematic entries for each table for a given date.
+
+    Parameters
+    ----------
+    input_date : datetime.date
+        Date that we need to check.
+    result_dict : Dict[str, pd.DataFrame]
+        Dictionary that contains problematic entries for each table
+
+    Returns
+    -------
+    result_dict_daily : Dict[str, pd.DataFrame]
+        Dictionary of problematic entries for each table for a given date".
+
+    """
     bmprices = result_dict['bmprices']
     portreturn = result_dict['portreturn']
     bmc_monthly = result_dict['bmc_monthly']
@@ -417,7 +560,28 @@ def get_result_daily(input_date: datetime.date,
 def get_holiday(input_year: int, holiday: pd.Series, 
                 is_us_holiday: bool, 
                 is_cad_holiday: bool) -> Tuple[pd.DataFrame, pd.Series]:
-    """Return holidays in the given year based on which holiday calendar is selected"""
+    """
+    Return holidays in the given year based on which holiday calendar is selected
+
+    Parameters
+    ----------
+    input_year : int
+        The year that we need to check.
+    holiday : pd.Series
+        The holidays loaded from SQL.
+    is_us_holiday : bool
+        If we need to check for US holidays.
+    is_cad_holiday : bool
+        If we need to check for Canadian holidays.
+
+    Returns
+    -------
+    holiday_df : pd.DataFrame
+        Dataframe of holidays for the given year for the given country.
+    holiday_date : pd.Series
+        Series of holiday dates for the given year for the given country.
+
+    """
     holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
     if not is_cad_holiday and not is_us_holiday:
         holiday_df = pd.DataFrame([], columns = ['fref_exchange_code',
@@ -440,7 +604,23 @@ def get_holiday(input_year: int, holiday: pd.Series,
 
 def get_result_sum_df(input_year: str, 
                       result_dict: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """Get a summary df to show result in calendar view"""
+    """
+    Get a summary df to show result in calendar view
+
+    Parameters
+    ----------
+    input_year : str
+        The year that the user selected.
+    result_dict : Dict[str, pd.DataFrame]
+        Dictionary that contains problematic entries for each table
+
+    Returns
+    -------
+    pd.DataFrame
+        Dataframe that contains the error code for each table and date in the
+        given year.
+
+    """
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
@@ -488,8 +668,21 @@ def get_result_sum_df(input_year: str,
 # =============================================================================
 
 # Output week of the month based on the date
-def week_of_month(dt: datetime):
-    """ Returns the week of the month for the specified date."""
+def week_of_month(dt: datetime) -> int:
+    """
+    Returns the week of the month for the specified date.
+
+    Parameters
+    ----------
+    dt : datetime
+        A date.
+
+    Returns
+    -------
+    int
+        The week of the month for the given date.
+
+    """
     first_day = dt.replace(day=1)
     dom = dt.day
     adjusted_dom = dom + first_day.weekday()
@@ -504,7 +697,7 @@ def year_cal(input_year: int) -> pd.DataFrame:
     Parameters
     ----------
     input_year : int
-        DESCRIPTION.
+        The year that the user selected to view.
 
     Returns
     -------
@@ -524,25 +717,35 @@ def year_cal(input_year: int) -> pd.DataFrame:
     df.insert(loc=1, column='week', value=week)
     return df
 
-def weekday_dates(input_year: int, holiday_date: pd.Series) -> pd.Series:
-    """Get the business dates of the given year"""
-    sdate = datetime(input_year, 1, 1)
-    edate = datetime(input_year, 12, 31)
-    dates = pd.date_range(start=sdate, end=edate)
-    dates = dates[dates.weekday < 5]
-    dates = dates[~dates.isin(holiday_date)]
-    return dates
-
 
 def show_month_df(input_year: str, df: pd.DataFrame,
                   res_table_df: pd.DataFrame, 
                   holiday_df: pd.DataFrame, month: str) -> None:
-    """Show a dataframe with bad dates highlighted for the given month"""
+    """
+    Show a dataframe with bad dates highlighted for the given month
+
+    Parameters
+    ----------
+    input_year : str
+        The year that the user selected to view.
+    df : pd.DataFrame
+        The dataframe of the given year.
+    res_table_df : pd.DataFrame
+        Dataframe contains the error code for each table.
+    holiday_df : pd.DataFrame
+        Dataframe contains the holidays this year.
+    month : str
+        The month we want to display.
+
+    Returns
+    -------
+    None
+
+    """
     df = df[df['month'] == month]
     df = df.pivot(index='week', columns='weekday', values='day')
     dayOfWeek={0:'M', 1:'T', 2:'W', 3:'Th', 4:'F', 5:'S', 6:'Su'}
     df.columns = [df.columns.map(dayOfWeek)]
-
     df = df.fillna("")
     df = df.drop(['S', 'Su'], axis = 1, level = 0)
     
@@ -564,7 +767,29 @@ def show_month_df(input_year: str, df: pd.DataFrame,
 def show_months(input_year: str, holiday_df: pd.DataFrame,
                 res_table_df: pd.DataFrame, m1: str,
                 m2: str, m3: str) -> None:
-    """ Show monthly calendars for three months in a row"""
+    """
+    Show monthly calendars for three months in a row
+
+    Parameters
+    ----------
+    input_year : str
+        The year that the user selected to view.
+    holiday_df : pd.DataFrame
+        Dataframe contains the holidays this year.
+    res_table_df : pd.DataFrame
+        Dataframe contains the error code for each table.
+    m1 : str
+        First month we wanted to display.
+    m2 : str
+        Second month we wanted to display.
+    m3 : str
+        Third month we wanted to display.
+
+    Returns
+    -------
+    None
+
+    """
     col1, col2, col3 = st.beta_columns(3)
     year_calendar = year_cal(input_year)
 
@@ -581,8 +806,28 @@ def show_months(input_year: str, holiday_df: pd.DataFrame,
 
 def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: bool,
                       holiday_days: pd.Series, res_df: pd.DataFrame) -> List[str]:
-    """Helper function to highlight dates with bad data quality in the calendar df"""
+    """
+    Helper function to highlight dates with bad data quality in the calendar df
 
+    Parameters
+    ----------
+    days : pd.Series
+        The days in a week.
+    isToday : bool
+        Whether today is in the month that this function is highlighting.
+    isMonthLaterThanToday : bool
+        Whether the month that this function is highlighting is later than today.
+    holiday_days : pd.Series
+        The holidays this month, if any.
+    res_df : pd.DataFrame
+        Dataframe contains the error code for each table.
+
+    Returns
+    -------
+    List[str]
+        List of colors to color a week in the monthly dataframe.
+
+    """
     if isToday:
         today_day = datetime.today().date().day
     else:
@@ -594,7 +839,6 @@ def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: boo
             if isMonthLaterThanToday:
                 res_colors.append(colors['background'])
             elif today_day is None or int(day) <= today_day:
-                # st.write(res_df)
                 if day in holiday_days.values:
                     res_colors.append(colors['holiday'])
                 elif day == today_day:
@@ -631,7 +875,20 @@ def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: boo
 
 
 def highlight_color(row: pd.Series) -> List[str]:
-    """Highlight color reference dataframe in different color"""
+    """
+    Highlight color reference dataframe in different color
+
+    Parameters
+    ----------
+    row : pd.Series
+        A row in the color reference dataframe.
+
+    Returns
+    -------
+    List[str]
+        List of colors for the current row.
+
+    """
     table = row.Table
     reason = row.Reason
     if table == bmprices_label:
