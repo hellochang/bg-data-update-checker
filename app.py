@@ -13,6 +13,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime
+from typing import Optional, List, Tuple, Dict
 
 import sys
 sys.path.insert(0, r'C:\Users\Chang.Liu\Documents\dev\Data_Importer')
@@ -150,7 +151,7 @@ def find_null(df: pd.DataFrame, col: str) -> pd.DataFrame:
     return df[df[col].isnull()]
 
 @st.cache
-def find_univsnapshot(df):
+def find_univsnapshot(df: pd.DataFrame) -> pd.DataFrame:
     """Filters dataframe for rows with monthly company count larger than tolerance"""
     tol = 300
     df = df.copy()
@@ -161,7 +162,8 @@ def find_univsnapshot(df):
 
 
 @st.cache
-def check_daily(input_year, holiday_date, res_df_date) -> pd.DataFrame:
+def check_daily(input_year: int, holiday_date: pd.Series, 
+                res_df_date: pd.Series) -> pd.DataFrame:
     """Returns business dates not included in input df"""
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
@@ -172,7 +174,8 @@ def check_daily(input_year, holiday_date, res_df_date) -> pd.DataFrame:
     return res
 
 @st.cache
-def check_monthly(input_year:int, res_df_date, col) -> pd.DataFrame:
+def check_monthly(input_year: int, 
+                  res_df_date: pd.Series, col: str) -> pd.DataFrame:
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     monthly_dates_uniq = pd.date_range(start=sdate, end=edate, freq='M')
@@ -187,7 +190,8 @@ def check_monthly(input_year:int, res_df_date, col) -> pd.DataFrame:
     res = res.dt.date.to_frame('result')
     return res
 
-def get_result_tables(selected, input_year, data):
+def get_result_tables(selected: List[str], input_year: str, 
+                      data: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
     """Find errors of every table based on the input year and input table """
     if portholding_label in selected:
         portholding =  data['portholding']
@@ -269,7 +273,9 @@ def get_result_tables(selected, input_year, data):
     return result_dict
 
 
-def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
+def show_res_df(header: str, res_daily_df: pd.DataFrame, 
+                res_df: Optional[pd.DataFrame]=None, 
+                res_df_2: Optional[pd.DataFrame]=None) -> None:
     """Dispaly results for daily view based on items each table is checking"""
     st.subheader(header)
     if (res_daily_df is not None and res_df is None) and res_df_2 is None:
@@ -330,7 +336,8 @@ def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
             st.write(res_df_2)
 
 
-def show_res_daily_view(selected, result_dict_daily):
+def show_res_daily_view(selected: List[str], 
+                        result_dict_daily: Dict['str', pd.DataFrame]) -> None:
     """Display result for Daily View"""
     for table in selected:
         if table == bmprices_label:
@@ -356,73 +363,9 @@ def show_res_daily_view(selected, result_dict_daily):
                         result_dict_daily['div_ltm_is_monthly'],
                         result_dict_daily['div_ltm'])
 
-@st.cache
-def get_holiday(input_year: str, holiday, is_us_holiday, is_cad_holiday):
-    """Return holidays in the given year based on which holiday calendar is selected"""
-    holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
-    if not is_cad_holiday and not is_us_holiday:
-        holiday_df = pd.DataFrame([], columns = ['fref_exchange_code',
-                                                 'holiday_date', 'month', 'day'])
-    else:
-        holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
-        holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
-        if is_us_holiday and not is_cad_holiday:
-            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
-        elif is_cad_holiday and not is_us_holiday:
-            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
-
-    if not holiday_df.empty:
-        holiday_date = holiday_df['holiday_date'].dt.date
-    else:
-        holiday_date = pd.Series([])
-
-    return holiday_df, holiday_date
-
-
-def get_result_sum_df(input_year: str, result_dict):
-    """Get a summary df to show result in calendar view"""
-    sdate = datetime(input_year, 1, 1)
-    edate = datetime(input_year, 12, 31)
-    dates = pd.date_range(start=sdate, end=edate)
-    res_reason_df = pd.DataFrame(
-        {'bmprices': dates.isin(result_dict['bmprices']['result']),
-        'portreturn': dates.isin(result_dict['portreturn']['result']),
-        'bmc_monthly': dates.isin(result_dict['bmc_monthly']['rdate']),
-        'bmc_monthly_is_monthly': 
-            dates.isin(result_dict['bmc_monthly_is_monthly']['result']),
-        'portholding': dates.isin(result_dict['portholding']['rdate']),
-        'portholding_is_daily':  
-            dates.isin(result_dict['portholding_is_daily']['result']),
-        'univsnapshot': dates.isin(result_dict['univsnapshot']['rdate']),
-        'univsnapshot_is_monthly': 
-            dates.isin(result_dict['univsnapshot_is_monthly']['result']),
-        'univ_notin_id': dates.isin(result_dict['univ_notin_id']['rdate']),
-        'div_ltm': dates.isin(result_dict['div_ltm']['date']),
-        'div_ltm_is_monthly': 
-            dates.isin(result_dict['div_ltm_is_monthly']['result'])},
-        index=dates.date)
-    
-    res_table_df_col = ['bmprices', 'portreturn', 'bmc_monthly',
-                        'portholding', 'univsnapshot', 'div_ltm']
-    res_table_df = pd.DataFrame([], columns=res_table_df_col, index=dates.date)
-    
-    for col in res_reason_df.columns:
-        if col in ['bmprices', 'portreturn']:
-            res_table_df[col][res_reason_df[col]] = 1 
-        elif col == 'bmc_monthly_is_monthly':
-            res_table_df['bmc_monthly'][res_reason_df[col]] = 2
-        elif col == 'univsnapshot_is_monthly':
-            res_table_df['univsnapshot'][res_reason_df[col]] = 2
-        elif col == 'div_ltm_is_monthly':
-            res_table_df['div_ltm'][res_reason_df[col]] = 2
-        elif col in ['bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm']:
-            res_table_df[col][res_reason_df[col]] = 3
-        elif col == 'univ_notin_id':
-            res_table_df['univsnapshot'][res_reason_df[col]] = 4
-    return res_table_df.fillna(0)
-    
-
-def get_result_daily(input_date, result_dict):
+def get_result_daily(input_date: datetime.date, 
+                     result_dict: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
+        
     """Get problematic entries for each table for a given date"""
     bmprices = result_dict['bmprices']
     portreturn = result_dict['portreturn']
@@ -470,13 +413,82 @@ def get_result_daily(input_date, result_dict):
                 (pd.DatetimeIndex(div_ltm_is_monthly['result']).month == input_date.month)]}
     return result_dict_daily
 
+@st.cache
+def get_holiday(input_year: int, holiday: pd.Series, 
+                is_us_holiday: bool, 
+                is_cad_holiday: bool) -> Tuple[pd.DataFrame, pd.Series]:
+    """Return holidays in the given year based on which holiday calendar is selected"""
+    holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
+    if not is_cad_holiday and not is_us_holiday:
+        holiday_df = pd.DataFrame([], columns = ['fref_exchange_code',
+                                                 'holiday_date', 'month', 'day'])
+    else:
+        holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
+        holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
+        if is_us_holiday and not is_cad_holiday:
+            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
+        elif is_cad_holiday and not is_us_holiday:
+            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
+
+    if not holiday_df.empty:
+        holiday_date = holiday_df['holiday_date'].dt.date
+    else:
+        holiday_date = pd.Series([])
+
+    return holiday_df, holiday_date
+
+
+def get_result_sum_df(input_year: str, 
+                      result_dict: Dict[str, pd.DataFrame]) -> pd.DataFrame:
+    """Get a summary df to show result in calendar view"""
+    sdate = datetime(input_year, 1, 1)
+    edate = datetime(input_year, 12, 31)
+    dates = pd.date_range(start=sdate, end=edate)
+    res_reason_df = pd.DataFrame(
+        {'bmprices': dates.isin(result_dict['bmprices']['result']),
+        'portreturn': dates.isin(result_dict['portreturn']['result']),
+        'bmc_monthly': dates.isin(result_dict['bmc_monthly']['rdate']),
+        'bmc_monthly_is_monthly': 
+            dates.isin(result_dict['bmc_monthly_is_monthly']['result']),
+        'portholding': dates.isin(result_dict['portholding']['rdate']),
+        'portholding_is_daily':  
+            dates.isin(result_dict['portholding_is_daily']['result']),
+        'univsnapshot': dates.isin(result_dict['univsnapshot']['rdate']),
+        'univsnapshot_is_monthly': 
+            dates.isin(result_dict['univsnapshot_is_monthly']['result']),
+        'univ_notin_id': dates.isin(result_dict['univ_notin_id']['rdate']),
+        'div_ltm': dates.isin(result_dict['div_ltm']['date']),
+        'div_ltm_is_monthly': 
+            dates.isin(result_dict['div_ltm_is_monthly']['result'])},
+        index=dates.date)
+    
+    res_table_df_col = ['bmprices', 'portreturn', 'bmc_monthly',
+                        'portholding', 'univsnapshot', 'div_ltm']
+    res_table_df = pd.DataFrame([], columns=res_table_df_col, index=dates.date)
+    
+    for col in res_reason_df.columns:
+        if col in ['bmprices', 'portreturn']:
+            res_table_df[col][res_reason_df[col]] = 1 
+        elif col == 'bmc_monthly_is_monthly':
+            res_table_df['bmc_monthly'][res_reason_df[col]] = 2
+        elif col == 'univsnapshot_is_monthly':
+            res_table_df['univsnapshot'][res_reason_df[col]] = 2
+        elif col == 'div_ltm_is_monthly':
+            res_table_df['div_ltm'][res_reason_df[col]] = 2
+        elif col in ['bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm']:
+            res_table_df[col][res_reason_df[col]] = 3
+        elif col == 'univ_notin_id':
+            res_table_df['univsnapshot'][res_reason_df[col]] = 4
+    return res_table_df.fillna(0)
+    
+
 
 # =============================================================================
 # Functions - Show Calendar for Summary View
 # =============================================================================
 
 # Output week of the month based on the date
-def week_of_month(dt):
+def week_of_month(dt: datetime):
     """ Returns the week of the month for the specified date."""
     first_day = dt.replace(day=1)
     dom = dt.day
@@ -485,7 +497,7 @@ def week_of_month(dt):
 
 
 # Return a dataframe of month, weeks, days in the given year
-def year_cal(input_year:int) -> pd.DataFrame:
+def year_cal(input_year: int) -> pd.DataFrame:
     """
     Return a dataframe of yearly calendar.
 
@@ -512,7 +524,7 @@ def year_cal(input_year:int) -> pd.DataFrame:
     df.insert(loc=1, column='week', value=week)
     return df
 
-def weekday_dates(input_year, holiday_date):
+def weekday_dates(input_year: int, holiday_date: pd.Series) -> pd.Series:
     """Get the business dates of the given year"""
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
@@ -522,7 +534,8 @@ def weekday_dates(input_year, holiday_date):
     return dates
 
 
-def show_month_df(input_year: str, df, res_table_df: pd.DataFrame, 
+def show_month_df(input_year: str, df: pd.DataFrame,
+                  res_table_df: pd.DataFrame, 
                   holiday_df: pd.DataFrame, month: str) -> None:
     """Show a dataframe with bad dates highlighted for the given month"""
     df = df[df['month'] == month]
@@ -566,7 +579,8 @@ def show_months(input_year: str, holiday_df: pd.DataFrame,
         show_month_df(input_year, year_calendar,res_table_df,holiday_df, m3)
 
 
-def highlight_bad_day(days, isToday, isMonthLaterThanToday, holiday_days, res_df):
+def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: bool,
+                      holiday_days: pd.Series, res_df: pd.DataFrame) -> List[str]:
     """Helper function to highlight dates with bad data quality in the calendar df"""
 
     if isToday:
@@ -616,11 +630,10 @@ def highlight_bad_day(days, isToday, isMonthLaterThanToday, holiday_days, res_df
     return res_colors
 
 
-def highlight_color(row):
+def highlight_color(row: pd.Series) -> List[str]:
     """Highlight color reference dataframe in different color"""
     table = row.Table
     reason = row.Reason
-
     if table == bmprices_label:
         return 2 * [colors['bmprices']]
     if table == portreturn_label:
@@ -713,10 +726,9 @@ show_months(input_year, holiday_df, res_table_df,'October', 'November', 'Decembe
 if date_view:
 
     st.header('View by Date')
-
     input_date = st.date_input("Choose a date", 
                                min_value = datetime(input_year, 1, 1), 
                                max_value=datetime.today())
-    
+
     result_dict_daily = get_result_daily(input_date, result_dict)
     show_res_daily_view(selected, result_dict_daily)
