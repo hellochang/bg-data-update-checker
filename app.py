@@ -110,7 +110,8 @@ color_df = pd.DataFrame({'Table': lst_tables_colors,
 error_dict = { 1: not_updated_daily_reason,
                2: not_updated_monthly_reason,
                3: prob_row_reason,
-               4: large_port_diff_reason}
+               4: large_port_diff_reason,
+               5: holiday_label}
 
 # Colors for highlights and reference table
 colors = {'bmprices': 'background-color: orange',
@@ -576,33 +577,25 @@ def get_holiday(input_year: int, holiday: pd.Series,
 
     Returns
     -------
-    holiday_df : pd.DataFrame
-        Dataframe of holidays for the given year for the given country.
     holiday_date : pd.Series
         Series of holiday dates for the given year for the given country.
 
     """
     holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
     if not is_cad_holiday and not is_us_holiday:
-        holiday_df = pd.DataFrame([], columns = ['fref_exchange_code',
-                                                 'holiday_date', 'month', 'day'])
-    else:
-        holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
-        holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
-        if is_us_holiday and not is_cad_holiday:
-            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
-        elif is_cad_holiday and not is_us_holiday:
-            holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
-
-    if not holiday_df.empty:
-        holiday_date = holiday_df['holiday_date'].dt.date
-    else:
         holiday_date = pd.Series([])
+        return holiday_date
+    if is_us_holiday and not is_cad_holiday:
+        holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'NYS']
+    if is_cad_holiday and not is_us_holiday:
+        holiday_df = holiday_df[holiday_df['fref_exchange_code'] == 'TSE']
+    holiday_date = holiday_df['holiday_date'].dt.date
 
-    return holiday_df, holiday_date
+    return holiday_date
 
 
 def get_result_sum_df(input_year: str, 
+                      holiday_date: pd.Series,
                       result_dict: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     """
     Get a summary df to show result in calendar view
@@ -611,6 +604,8 @@ def get_result_sum_df(input_year: str,
     ----------
     input_year : str
         The year that the user selected.
+    holiday_date : pd.Series
+        Series contains the holidays this year.
     result_dict : Dict[str, pd.DataFrame]
         Dictionary that contains problematic entries for each table
 
@@ -639,11 +634,12 @@ def get_result_sum_df(input_year: str,
         'univ_notin_id': dates.isin(result_dict['univ_notin_id']['rdate']),
         'div_ltm': dates.isin(result_dict['div_ltm']['date']),
         'div_ltm_is_monthly': 
-            dates.isin(result_dict['div_ltm_is_monthly']['result'])},
+            dates.isin(result_dict['div_ltm_is_monthly']['result']),
+        'holiday': dates.isin(holiday_date)},
         index=dates.date)
     
     res_table_df_col = ['bmprices', 'portreturn', 'bmc_monthly',
-                        'portholding', 'univsnapshot', 'div_ltm']
+                        'portholding', 'univsnapshot', 'div_ltm', 'holiday']
     res_table_df = pd.DataFrame([], columns=res_table_df_col, index=dates.date)
     
     for col in res_reason_df.columns:
@@ -659,6 +655,8 @@ def get_result_sum_df(input_year: str,
             res_table_df[col][res_reason_df[col]] = 3
         elif col == 'univ_notin_id':
             res_table_df['univsnapshot'][res_reason_df[col]] = 4
+        elif col == 'holiday':
+            res_table_df[col][res_reason_df[col]] = 5
     return res_table_df.fillna(0)
     
 
@@ -718,9 +716,45 @@ def year_cal(input_year: int) -> pd.DataFrame:
     return df
 
 
+def show_months(input_year: str, res_table_df: pd.DataFrame, m1: str,
+                m2: str, m3: str) -> None:
+    """
+    Show monthly calendars for three months in a row
+
+    Parameters
+    ----------
+    input_year : str
+        The year that the user selected to view.
+    res_table_df : pd.DataFrame
+        Dataframe contains the error code for each table.
+    m1 : str
+        First month we wanted to display.
+    m2 : str
+        Second month we wanted to display.
+    m3 : str
+        Third month we wanted to display.
+
+    Returns
+    -------
+    None
+
+    """
+    col1, col2, col3 = st.beta_columns(3)
+    year_calendar = year_cal(input_year)
+
+    with col1:
+        st.header(m1)
+        show_month_df(input_year, year_calendar, res_table_df, m1)
+    with col2:
+        st.header(m2)
+        show_month_df(input_year, year_calendar, res_table_df, m2)
+    with col3:
+        st.header(m3)
+        show_month_df(input_year, year_calendar, res_table_df, m3)
+
+
 def show_month_df(input_year: str, df: pd.DataFrame,
-                  res_table_df: pd.DataFrame, 
-                  holiday_df: pd.DataFrame, month: str) -> None:
+                  res_table_df: pd.DataFrame, month: str) -> None:
     """
     Show a dataframe with bad dates highlighted for the given month
 
@@ -732,8 +766,6 @@ def show_month_df(input_year: str, df: pd.DataFrame,
         The dataframe of the given year.
     res_table_df : pd.DataFrame
         Dataframe contains the error code for each table.
-    holiday_df : pd.DataFrame
-        Dataframe contains the holidays this year.
     month : str
         The month we want to display.
 
@@ -757,55 +789,13 @@ def show_month_df(input_year: str, df: pd.DataFrame,
     isMonthLaterThanToday = months[month] > today.month
     res_table_df = res_table_df[pd.DatetimeIndex(res_table_df.index).month_name() == month]
     res_table_df.index = pd.DatetimeIndex(res_table_df.index).day
-    holiday_df = holiday_df[holiday_df['month'] == month]
-
     st.dataframe(df.style.apply(highlight_bad_day,
-                                args=[isToday, isMonthLaterThanToday, holiday_df['day'],
+                                args=[isToday, isMonthLaterThanToday,
                                       res_table_df], axis=1).set_precision(0))
 
 
-def show_months(input_year: str, holiday_df: pd.DataFrame,
-                res_table_df: pd.DataFrame, m1: str,
-                m2: str, m3: str) -> None:
-    """
-    Show monthly calendars for three months in a row
-
-    Parameters
-    ----------
-    input_year : str
-        The year that the user selected to view.
-    holiday_df : pd.DataFrame
-        Dataframe contains the holidays this year.
-    res_table_df : pd.DataFrame
-        Dataframe contains the error code for each table.
-    m1 : str
-        First month we wanted to display.
-    m2 : str
-        Second month we wanted to display.
-    m3 : str
-        Third month we wanted to display.
-
-    Returns
-    -------
-    None
-
-    """
-    col1, col2, col3 = st.beta_columns(3)
-    year_calendar = year_cal(input_year)
-
-    with col1:
-        st.header(m1)
-        show_month_df(input_year, year_calendar, res_table_df, holiday_df, m1)
-    with col2:
-        st.header(m2)
-        show_month_df(input_year, year_calendar,res_table_df,holiday_df, m2)
-    with col3:
-        st.header(m3)
-        show_month_df(input_year, year_calendar,res_table_df,holiday_df, m3)
-
-
 def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: bool,
-                      holiday_days: pd.Series, res_df: pd.DataFrame) -> List[str]:
+                      res_df: pd.DataFrame) -> List[str]:
     """
     Helper function to highlight dates with bad data quality in the calendar df
 
@@ -817,8 +807,6 @@ def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: boo
         Whether today is in the month that this function is highlighting.
     isMonthLaterThanToday : bool
         Whether the month that this function is highlighting is later than today.
-    holiday_days : pd.Series
-        The holidays this month, if any.
     res_df : pd.DataFrame
         Dataframe contains the error code for each table.
 
@@ -839,7 +827,7 @@ def highlight_bad_day(days: pd.Series, isToday: bool, isMonthLaterThanToday: boo
             if isMonthLaterThanToday:
                 res_colors.append(colors['background'])
             elif today_day is None or int(day) <= today_day:
-                if day in holiday_days.values:
+                if res_df.at[day, 'holiday'] == 5:
                     res_colors.append(colors['holiday'])
                 elif day == today_day:
                     res_colors.append(colors['today'])
@@ -953,12 +941,12 @@ is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
 # Sum view
 st.header(checkbox_sum)
 
-# '%d' here refers to integer format, not date format.
+# '%d' here refers to C-style integer format, not date format.
 input_year = st.number_input(
     year_selection_msg, min_value = 1990, max_value=datetime.now().year,
     value=datetime.now().year, format='%d')
 
-holiday_df, holiday_date = get_holiday(input_year, data['holiday'],
+holiday_date = get_holiday(input_year, data['holiday'],
                                        is_us_holiday, is_cad_holiday)
 
 selected = st.multiselect('Select a table to view details.', 
@@ -972,12 +960,12 @@ if show_table_color_ref:
 st.info('There is a 1 day data update lag for some tables.')
 
 result_dict = get_result_tables(selected, input_year, data)
-res_table_df = get_result_sum_df(input_year, result_dict)
+res_table_df = get_result_sum_df(input_year, holiday_date, result_dict)
 
-show_months(input_year, holiday_df, res_table_df, 'January', 'February', 'March')
-show_months(input_year, holiday_df, res_table_df, 'April', 'May', 'June')
-show_months(input_year, holiday_df, res_table_df,'July', 'August', 'September')
-show_months(input_year, holiday_df, res_table_df,'October', 'November', 'December')
+show_months(input_year, res_table_df, 'January', 'February', 'March')
+show_months(input_year, res_table_df, 'April', 'May', 'June')
+show_months(input_year, res_table_df, 'July', 'August', 'September')
+show_months(input_year, res_table_df, 'October', 'November', 'December')
 
 # Daily view
 if date_view:
