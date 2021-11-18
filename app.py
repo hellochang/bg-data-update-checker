@@ -50,68 +50,86 @@ query_holiday = """SELECT [fref_exchange_code]
   FROM [FSTest].[ref_v2].[ref_calendar_holidays]
 WHERE fref_exchange_code IN ('NYS', 'TSE')"""
 
-# Widget Labels
-checkbox_sum = 'Summary'
-checkbox_date = 'View by Date'
-portholding_label = 'Portfolio Holding'
-portreturn_label = 'Portfolio Return'
-bmprices_label = 'BM Prices'
-bmc_monthly_label = 'BMC Monthly'
-univsnapshot_label = 'Universe Snapshot'
-div_ltm_label = 'Div LTM'
-holiday_label = 'Holiday'
-today_label = 'Today'
-year_selection_msg = 'Select a year'
-holiday_header = 'Holidays:'
-view_header = 'Other views:'
 
 # Messages
-not_updated_daily_reason ='Not Updated Daily'
-not_updated_monthly_reason ='Not Updated Monthly'
-prob_row_reason ='Problematic Rows'
-large_port_diff_reason = 'Large monthly portfolio count differences'
-success_msg = 'No problematic rows found.'
-error_msg_prob_rows = 'Found problematic rows.'
+reason_dict = { 'not_updated_daily': 'Not Updated Daily',
+           'not_updated_monthly': 'Not Updated Monthly',
+           'prob_row': 'Problematic Rows',
+           'large_port_diff': 'Large monthly portfolio count differences',
+           }
+        
+msg = { 'success': 'No problematic rows found.',
+        'error_prob_rows': 'Found problematic rows.',
+        'multiselect_table': 'Select a table to view details.',
+        'update_lag': 'There is a 1 day data update lag for some tables.',
+        'year_selection': 'Select a year'
+       }
+
+
+# Widget Labels
+header = {
+    'holiday': 'Holidays:',
+    'other_view': 'Other views:',
+    'sum_view': 'Summary'
+    }
+checkbox_label = {
+    'date_view': 'View by Date',
+    'us_holiday': 'Show US Holiday',
+    'cad_holiday': 'Show Canadian Holiday',
+    'color_ref': 'Show color references',
+    }
+
+table_label = {
+    'portholding': 'Portfolio Holding',
+    'portreturn': 'Portfolio Return',
+    'bmprices': 'BM Prices',
+    'bmc_monthly': 'BMC Monthly',
+    'univsnapshot': 'Universe Snapshot',
+    'div_ltm': 'Div LTM',
+    'holiday': 'Holiday',
+    'today': 'Today'
+    }
+
 
 # Setup
-lst_tables = [bmc_monthly_label,
-              portholding_label,
-              portreturn_label,
-              bmprices_label,
-              univsnapshot_label,
-              div_ltm_label]
-lst_tables_colors = [bmprices_label,
-                     portreturn_label,
-                     portholding_label,
-                     portholding_label,
-                     bmc_monthly_label,
-                     bmc_monthly_label,
-                     univsnapshot_label,
-                     univsnapshot_label,
-                     univsnapshot_label,
-                     div_ltm_label,
-                     div_ltm_label,
-                     holiday_label,
-                     today_label]
+lst_tables = [table_label['bmc_monthly'],
+              table_label['portholding'],
+              table_label['portreturn'],
+              table_label['bmprices'],
+              table_label['univsnapshot'],
+              table_label['div_ltm']]
+lst_tables_colors = [table_label['bmprices'],
+                     table_label['portreturn'],
+                     table_label['portholding'],
+                     table_label['portholding'],
+                     table_label['bmc_monthly'],
+                     table_label['bmc_monthly'],
+                     table_label['univsnapshot'],
+                     table_label['univsnapshot'],
+                     table_label['univsnapshot'],
+                     table_label['div_ltm'],
+                     table_label['div_ltm'],
+                     table_label['holiday'],
+                     table_label['today']]
 color_df = pd.DataFrame({'Table': lst_tables_colors,
-                        'Reason': [not_updated_daily_reason,
-                                   not_updated_daily_reason,
-                                   prob_row_reason,
-                                   not_updated_daily_reason,
-                                   prob_row_reason,
-                                   not_updated_monthly_reason,
-                                   prob_row_reason,
-                                   large_port_diff_reason,
-                                   not_updated_monthly_reason,
-                                   prob_row_reason,
-                                   not_updated_monthly_reason,
-                                   holiday_label,
-                                   today_label]})
-error_dict = { 1: not_updated_daily_reason,
-               2: not_updated_monthly_reason,
-               3: prob_row_reason,
-               4: large_port_diff_reason,
-               5: holiday_label}
+                        'Reason': [reason_dict['not_updated_daily'],
+                                   reason_dict['not_updated_daily'],
+                                   reason_dict['prob_row'],
+                                   reason_dict['not_updated_daily'],
+                                   reason_dict['prob_row'],
+                                   reason_dict['not_updated_monthly'],
+                                   reason_dict['prob_row'],
+                                   reason_dict['large_port_diff'],
+                                   reason_dict['not_updated_monthly'],
+                                   reason_dict['prob_row'],
+                                   reason_dict['not_updated_monthly'],
+                                   table_label['holiday'],
+                                   table_label['today']]})
+error_dict = { 1: reason_dict['not_updated_daily'],
+               2: reason_dict['not_updated_monthly'],
+               3: reason_dict['prob_row'],
+               4: reason_dict['large_port_diff'],
+               5: table_label['holiday']}
 
 # Colors for highlights and reference table
 colors = {'bmprices': 'background-color: orange',
@@ -291,7 +309,7 @@ def get_result_tables(selected: List[str], input_year: str,
         Error entries in data after performing the checks.
 
     """
-    if portholding_label in selected:
+    if table_label['portholding'] in selected:
         portholding =  data['portholding']
         res_portholding = portholding[portholding['rdate'].dt.year == input_year]
         res_portholding = res_portholding.copy()
@@ -303,7 +321,7 @@ def get_result_tables(selected: List[str], input_year: str,
         res_portholding = pd.DataFrame([], columns = data['portholding'].columns)
         res_portholding_is_daily = pd.DataFrame([], columns = ['result'])
 
-    if bmprices_label in selected:
+    if table_label['bmprices'] in selected:
         bmprices = data['bmprices']
         res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
         res_bmprice = res_bmprices.copy()
@@ -313,7 +331,7 @@ def get_result_tables(selected: List[str], input_year: str,
     else:
         res_bmprices = pd.DataFrame([], columns = ['result'])
     
-    if portreturn_label in selected:
+    if table_label['portreturn'] in selected:
         portreturn = data['portreturn']
         res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
         res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
@@ -322,7 +340,7 @@ def get_result_tables(selected: List[str], input_year: str,
     else:
         res_portreturn = pd.DataFrame([], columns = ['result'])
     
-    if bmc_monthly_label in selected:
+    if table_label['bmc_monthly'] in selected:
         bmc_monthly = data['bmc_monthly']
         res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
         res_bmc_monthly_is_monthly = check_monthly(input_year, 
@@ -332,7 +350,7 @@ def get_result_tables(selected: List[str], input_year: str,
         res_bmc_monthly = pd.DataFrame([], columns = data['bmc_monthly'].columns)
         res_bmc_monthly_is_monthly = pd.DataFrame([], columns = ['result'])
 
-    if univsnapshot_label in selected:
+    if table_label['univsnapshot'] in selected:
         univsnapshot = data['univsnapshot']
         res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
         res_univsnapshot_is_monthly = check_monthly(input_year, 
@@ -349,7 +367,7 @@ def get_result_tables(selected: List[str], input_year: str,
         res_univsnapshot_is_monthly = pd.DataFrame([], columns = ['result'])
         res_univ_notin_id = pd.DataFrame([], columns = data['univsnapshot'].columns)
 
-    if div_ltm_label in selected:
+    if table_label['div_ltm'] in selected:
         res_div_ltm = data['div_ltm'][data['div_ltm']['date'].dt.year == input_year]
         res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm, 'date')
         res_div_ltm = find_null(res_div_ltm, 'date')
@@ -370,128 +388,6 @@ def get_result_tables(selected: List[str], input_year: str,
                     'div_ltm_is_monthly': res_div_ltm_is_monthly }
     return result_dict
 
-
-def show_res_df(header: str, res_daily_df: pd.DataFrame, 
-                res_df: Optional[pd.DataFrame]=None, 
-                res_df_2: Optional[pd.DataFrame]=None) -> None:
-    """
-    Dispaly results for daily view based on items each table is checking
-
-    Parameters
-    ----------
-    header : str
-        The header displayed on the dashboard.
-    res_daily_df : pd.DataFrame
-        Problematic entries of a table for not updated daily or monthly.
-    res_df : Optional[pd.DataFrame], optional
-        Problematic entries of a table for another reason.
-    res_df_2 : Optional[pd.DataFrame], optional
-        Problematic entries of a table for the third reason, if needed.
-
-    Returns
-    -------
-    None
-
-    """
-    st.subheader(header)
-    if (res_daily_df is not None and res_df is None) and res_df_2 is None:
-        if res_daily_df.empty:
-            st.success(success_msg)
-        if not res_daily_df.empty:
-            st.error('No data found on ' + str(input_date))
-
-    if (res_daily_df is not None and res_df is not None) and res_df_2 is None:
-        if res_daily_df.empty and res_df.empty:
-            st.success(success_msg)
-        if res_daily_df.empty and not res_df.empty:
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-        if not res_daily_df.empty and res_df.empty:
-            st.error('No data found on ' + str(input_date))
-        if not res_daily_df.empty and not res_df.empty:
-            st.error('No data found on ' + str(input_date))
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-
-    if (res_daily_df is not None and res_df is not None) and res_df_2 is not None:
-        if (res_daily_df.empty and res_df.empty) and res_df_2.empty:
-            st.success(success_msg)
-        if res_daily_df.empty and ((not res_df.empty) and not res_df_2.empty):
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-            st.error(error_msg_prob_rows)
-            st.write(res_df_2)
-
-        if res_daily_df.empty and ((not res_df.empty) and
-                                                        (res_df_2.empty)):
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-        if res_daily_df.empty and ((res_df.empty) and
-                                                        (not res_df_2.empty)):
-            st.error(error_msg_prob_rows)
-            st.write(res_df_2)
-        if not res_daily_df.empty and (( res_df.empty) and
-                                                        (res_df_2.empty)):
-            st.error('No data found on ' + str(input_date))
-        if not res_daily_df.empty and ((res_df.empty) and
-                                                        (not res_df_2.empty)):
-            st.error('No data found on ' + str(input_date))
-            st.error(error_msg_prob_rows)
-            st.write(res_df_2)
-        if not res_daily_df.empty and ((not res_df.empty) and
-                                                        res_df_2.empty):
-            st.error('No data found on ' + str(input_date))
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-        if not res_daily_df.empty and ((not res_df.empty) and
-                                                        (not res_df_2.empty)):
-            st.error('No data found on ' + str(input_date))
-            st.error(error_msg_prob_rows)
-            st.write(res_df)
-            st.error(error_msg_prob_rows)
-            st.write(res_df_2)
-
-
-def show_res_daily_view(selected: List[str], 
-                        result_dict_daily: Dict['str', pd.DataFrame]) -> None:
-    """
-    Display result for Daily View
-
-    Parameters
-    ----------
-    selected : List[str]
-        Selected tables by the user.
-    result_dict_daily : Dict['str', pd.DataFrame]
-        Dictionary storing problematic entries for a given date.
-
-    Returns
-    -------
-    None
-
-    """
-    for table in selected:
-        if table == bmprices_label:
-            show_res_df(bmprices_label, result_dict_daily['bmprices'])
-        elif table == portreturn_label:
-            show_res_df(portreturn_label, 
-                        result_dict_daily['portreturn'])
-        elif table == portholding_label:
-            show_res_df(portholding_label,
-                        result_dict_daily['portholding_is_daily'],
-                        result_dict_daily['portholding'])
-        elif table == bmc_monthly_label:
-            show_res_df(bmc_monthly_label, 
-                        result_dict_daily['bmc_monthly_is_monthly'], 
-                        result_dict_daily['bmc_monthly'])
-        elif table == univsnapshot_label:
-            show_res_df(univsnapshot_label, 
-                        result_dict_daily['univsnapshot_is_monthly'], 
-                        result_dict_daily['univ_notin_id'], 
-                        result_dict_daily['univsnapshot'])
-        elif table == div_ltm_label:
-            show_res_df(div_ltm_label, 
-                        result_dict_daily['div_ltm_is_monthly'],
-                        result_dict_daily['div_ltm'])
 
 def get_result_daily(input_date: datetime.date, 
                      result_dict: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
@@ -879,36 +775,163 @@ def highlight_color(row: pd.Series) -> List[str]:
     """
     table = row.Table
     reason = row.Reason
-    if table == bmprices_label:
+    if table == table_label['bmprices']:
         return 2 * [colors['bmprices']]
-    if table == portreturn_label:
+    if table == table_label['portreturn']:
         return 2 * [colors['portreturn']]
-    if table == portholding_label:
-        if reason == not_updated_daily_reason:
+    if table == table_label['portholding']:
+        if reason == reason_dict['not_updated_daily']:
             return 2 * [colors['portholding_is_daily']]
-        if reason == prob_row_reason:
+        if reason == reason_dict['prob_row']:
             return 2 *  [colors['portholding']]
-    if table == bmc_monthly_label:
-        if reason == not_updated_monthly_reason:
+    if table == table_label['bmc_monthly']:
+        if reason == reason_dict['not_updated_monthly']:
             return 2 * [colors['bmc_monthly_is_monthly']]
-        if reason == prob_row_reason:
+        if reason == reason_dict['prob_row']:
             return 2 *  [colors['bmc_monthly']]
-    if table == univsnapshot_label:
-        if reason == not_updated_monthly_reason:
+    if table == table_label['univsnapshot']:
+        if reason == reason_dict['not_updated_monthly']:
             return 2 * [colors['univsnapshot_is_monthly']]
-        if reason == large_port_diff_reason:
+        if reason == reason_dict['large_port_diff']:
             return 2 * [colors['univ_notin_id']]
-        if reason == prob_row_reason:
+        if reason == reason_dict['prob_row']:
             return 2 *  [colors['univsnapshot']]
-    if table == div_ltm_label:
-        if reason == not_updated_monthly_reason:
+    if table == table_label['div_ltm']:
+        if reason == reason_dict['not_updated_monthly']:
             return 2 * [colors['div_ltm_is_monthly']]
-        if reason == prob_row_reason:
+        if reason == reason_dict['prob_row']:
             return 2 *  [colors['div_ltm']]
-    if table == holiday_label:
+    if table == table_label['holiday']:
         return 2 * [colors['holiday']]
-    if table == today_label:
+    if table == table_label['today']:
         return 2 * [colors['today']]
+
+
+# =============================================================================
+# Functions - Show Result for Daily View
+# =============================================================================
+
+def show_res_df(header: str, res_daily_df: pd.DataFrame, 
+                res_df: Optional[pd.DataFrame]=None, 
+                res_df_2: Optional[pd.DataFrame]=None) -> None:
+    """
+    Dispaly results for daily view based on items each table is checking
+
+    Parameters
+    ----------
+    header : str
+        The header displayed on the dashboard.
+    res_daily_df : pd.DataFrame
+        Problematic entries of a table for not updated daily or monthly.
+    res_df : Optional[pd.DataFrame], optional
+        Problematic entries of a table for another reason.
+    res_df_2 : Optional[pd.DataFrame], optional
+        Problematic entries of a table for the third reason, if needed.
+
+    Returns
+    -------
+    None
+
+    """
+    st.subheader(header)
+    if (res_daily_df is not None and res_df is None) and res_df_2 is None:
+        if res_daily_df.empty:
+            st.success(msg['success'])
+        if not res_daily_df.empty:
+            st.error('No data found on ' + str(input_date))
+
+    if (res_daily_df is not None and res_df is not None) and res_df_2 is None:
+        if res_daily_df.empty and res_df.empty:
+            st.success(msg['success'])
+        if res_daily_df.empty and not res_df.empty:
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+        if not res_daily_df.empty and res_df.empty:
+            st.error('No data found on ' + str(input_date))
+        if not res_daily_df.empty and not res_df.empty:
+            st.error('No data found on ' + str(input_date))
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+
+    if (res_daily_df is not None and res_df is not None) and res_df_2 is not None:
+        if (res_daily_df.empty and res_df.empty) and res_df_2.empty:
+            st.success(msg['success'])
+        if res_daily_df.empty and ((not res_df.empty) and not res_df_2.empty):
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+            st.error(msg['error_prob_rows'])
+            st.write(res_df_2)
+
+        if res_daily_df.empty and ((not res_df.empty) and
+                                                        (res_df_2.empty)):
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+        if res_daily_df.empty and ((res_df.empty) and
+                                                        (not res_df_2.empty)):
+            st.error(msg['error_prob_rows'])
+            st.write(res_df_2)
+        if not res_daily_df.empty and (( res_df.empty) and
+                                                        (res_df_2.empty)):
+            st.error('No data found on ' + str(input_date))
+        if not res_daily_df.empty and ((res_df.empty) and
+                                                        (not res_df_2.empty)):
+            st.error('No data found on ' + str(input_date))
+            st.error(msg['error_prob_rows'])
+            st.write(res_df_2)
+        if not res_daily_df.empty and ((not res_df.empty) and
+                                                        res_df_2.empty):
+            st.error('No data found on ' + str(input_date))
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+        if not res_daily_df.empty and ((not res_df.empty) and
+                                                        (not res_df_2.empty)):
+            st.error('No data found on ' + str(input_date))
+            st.error(msg['error_prob_rows'])
+            st.write(res_df)
+            st.error(msg['error_prob_rows'])
+            st.write(res_df_2)
+
+
+def show_res_daily_view(selected: List[str], 
+                        result_dict_daily: Dict['str', pd.DataFrame]) -> None:
+    """
+    Display result for Daily View
+
+    Parameters
+    ----------
+    selected : List[str]
+        Selected tables by the user.
+    result_dict_daily : Dict['str', pd.DataFrame]
+        Dictionary storing problematic entries for a given date.
+
+    Returns
+    -------
+    None
+
+    """
+    for table in selected:
+        if table == table_label['bmprices']:
+            show_res_df(table_label['bmprices'], result_dict_daily['bmprices'])
+        elif table == table_label['portreturn']:
+            show_res_df(table_label['portreturn'], 
+                        result_dict_daily['portreturn'])
+        elif table == table_label['portholding']:
+            show_res_df(table_label['portholding'],
+                        result_dict_daily['portholding_is_daily'],
+                        result_dict_daily['portholding'])
+        elif table == table_label['bmc_monthly']:
+            show_res_df(table_label['bmc_monthly'], 
+                        result_dict_daily['bmc_monthly_is_monthly'], 
+                        result_dict_daily['bmc_monthly'])
+        elif table == table_label['univsnapshot']:
+            show_res_df(table_label['univsnapshot'], 
+                        result_dict_daily['univsnapshot_is_monthly'], 
+                        result_dict_daily['univ_notin_id'], 
+                        result_dict_daily['univsnapshot'])
+        elif table == table_label['div_ltm']:
+            show_res_df(table_label['div_ltm'], 
+                        result_dict_daily['div_ltm_is_monthly'],
+                        result_dict_daily['div_ltm'])
 
 
 # =============================================================================
@@ -930,34 +953,33 @@ data = {'portholding': load_data(query_portholding),
         'holiday': load_data(query_holiday)}
 
 # Side bar
-st.sidebar.subheader(view_header)
-date_view = st.sidebar.checkbox(checkbox_date)
+st.sidebar.subheader(header['other_view'])
+date_view = st.sidebar.checkbox(checkbox_label['date_view'])
 
-st.sidebar.subheader(holiday_header)
-is_us_holiday = st.sidebar.checkbox('Show US Holiday', value=True)
-is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
-
+st.sidebar.subheader(header['sum_view'])
+is_us_holiday = st.sidebar.checkbox(checkbox_label['us_holiday'], value=True)
+is_cad_holiday = st.sidebar.checkbox(checkbox_label['cad_holiday'])
 
 # Sum view
-st.header(checkbox_sum)
+st.header(header['sum_view'])
 
 # '%d' here refers to C-style integer format, not date format.
 input_year = st.number_input(
-    year_selection_msg, min_value = 1990, max_value=datetime.now().year,
+    msg['year_selection'], min_value = 1990, max_value=datetime.now().year,
     value=datetime.now().year, format='%d')
 
 holiday_date = get_holiday(input_year, data['holiday'],
                                        is_us_holiday, is_cad_holiday)
 
-selected = st.multiselect('Select a table to view details.', 
-                          lst_tables, [portholding_label])
+selected = st.multiselect(msg['multiselect_table'], 
+                          lst_tables, [table_label['portholding']])
 
-show_table_color_ref = st.checkbox('Show color references')
+show_table_color_ref = st.checkbox(checkbox_label['color_ref'])
 
 if show_table_color_ref:
     st.dataframe(color_df.style.apply(highlight_color, axis=1))
 
-st.info('There is a 1 day data update lag for some tables.')
+st.info(msg['update_lag'])
 
 result_dict = get_result_tables(selected, input_year, data)
 res_table_df = get_result_sum_df(input_year, holiday_date, result_dict)
