@@ -60,6 +60,9 @@ univsnapshot_label = 'Universe Snapshot'
 div_ltm_label = 'Div LTM'
 holiday_label = 'Holiday'
 today_label = 'Today'
+year_selection_msg = 'Select a year'
+holiday_header = 'Holidays:'
+view_header = 'Other views:'
 
 # Messages
 not_updated_daily_reason ='Not Updated Daily'
@@ -68,7 +71,6 @@ prob_row_reason ='Problematic Rows'
 large_port_diff_reason = 'Large monthly portfolio count differences'
 success_msg = 'No problematic rows found.'
 error_msg_prob_rows = 'Found problematic rows.'
-
 
 # Setup
 lst_tables = [bmc_monthly_label,
@@ -152,7 +154,8 @@ def find_univsnapshot(df):
     """Filters dataframe for rows with monthly company count larger than tolerance"""
     tol = 300
     df = df.copy()
-    df = df.groupby(df['rdate'])['univ_id'].value_counts().reset_index(name='monthly_company_count')
+    df = df.groupby(df['rdate'])['univ_id'].value_counts()
+    df = df.reset_index(name='monthly_company_count')
     df['diff_monthly'] = df.groupby(['monthly_company_count'])['univ_id'].diff()
     return df[df['diff_monthly'] > tol]
 
@@ -165,7 +168,8 @@ def check_daily(input_year, holiday_date, res_df_date) -> pd.DataFrame:
     dates = pd.date_range(start=sdate, end=edate)
     weekday_dates = dates[dates.weekday < 5]
     business_dates = weekday_dates[~weekday_dates.isin(holiday_date)]
-    return pd.DataFrame({'result': business_dates[~business_dates.isin(res_df_date)].date})
+    res = pd.DataFrame({'result': business_dates[~business_dates.isin(res_df_date)].date})
+    return res
 
 @st.cache
 def check_monthly(input_year:int, res_df_date, col) -> pd.DataFrame:
@@ -177,52 +181,65 @@ def check_monthly(input_year:int, res_df_date, col) -> pd.DataFrame:
     monthly_dates = pd.Series(monthly_dates)
 
     res_df_date = res_df_date.copy()
-    monthly_dates_not_in_res = pd.Series(monthly_dates_uniq[~monthly_dates_uniq.dt.month.isin(res_df_date[col].dt.month)])
-    return monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)].dt.date.to_frame('result')
+    monthly_dates_not_in_res = pd.Series(monthly_dates_uniq[
+        ~monthly_dates_uniq.dt.month.isin(res_df_date[col].dt.month)])
+    res = monthly_dates[monthly_dates.dt.month.isin(monthly_dates_not_in_res.dt.month)]
+    res = res.dt.date.to_frame('result')
+    return res
 
-
-def find_res_tables(selected, input_year, data):
+def get_result_tables(selected, input_year, data):
     """Find errors of every table based on the input year and input table """
     if portholding_label in selected:
-        res_portholding = data['portholding'][data['portholding']['rdate'].dt.year == input_year]
+        portholding =  data['portholding']
+        res_portholding = portholding[portholding['rdate'].dt.year == input_year]
         res_portholding = res_portholding.copy()
         res_portholding['rdate'] = res_portholding['rdate'].dt.date
-        res_portholding_is_daily = check_daily(input_year, holiday_date, res_portholding['rdate'])
+        res_portholding_is_daily = check_daily(input_year, holiday_date,
+                                               res_portholding['rdate'])
         res_portholding = find_null(res_portholding, 'secid')
     else:
         res_portholding = pd.DataFrame([], columns = data['portholding'].columns)
         res_portholding_is_daily = pd.DataFrame([], columns = ['result'])
 
     if bmprices_label in selected:
-        res_bmprices = data['bmprices'][data['bmprices']['rdate'].dt.year == input_year]
+        bmprices = data['bmprices']
+        res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
         res_bmprice = res_bmprices.copy()
         res_bmprice['rdate'] = res_bmprices['rdate'].dt.date
-        res_bmprices = check_daily(input_year, holiday_date, res_bmprices['rdate'])
+        res_bmprices = check_daily(input_year, holiday_date,
+                                   res_bmprices['rdate'])
     else:
         res_bmprices = pd.DataFrame([], columns = ['result'])
     
     if portreturn_label in selected:
-        res_portreturn = data['portreturn'][data['portreturn']['rdate'].dt.year == input_year].copy()
+        portreturn = data['portreturn']
+        res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
         res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-        res_portreturn = check_daily(input_year, holiday_date, res_portreturn['rdate'])
+        res_portreturn = check_daily(input_year, holiday_date,
+                                     res_portreturn['rdate'])
     else:
         res_portreturn = pd.DataFrame([], columns = ['result'])
     
     if bmc_monthly_label in selected:
-        res_bmc_monthly = data['bmc_monthly'][data['bmc_monthly']['rdate'].dt.year == input_year]
-        res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly, 'rdate')
+        bmc_monthly = data['bmc_monthly']
+        res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+        res_bmc_monthly_is_monthly = check_monthly(input_year, 
+                                                   res_bmc_monthly, 'rdate')
         res_bmc_monthly = find_null(res_bmc_monthly, 'fsym_id')
     else:
         res_bmc_monthly = pd.DataFrame([], columns = data['bmc_monthly'].columns)
         res_bmc_monthly_is_monthly = pd.DataFrame([], columns = ['result'])
 
     if univsnapshot_label in selected:
-        res_univsnapshot = data['univsnapshot'][data['univsnapshot']['rdate'].dt.year == input_year]
-        res_univsnapshot_is_monthly = check_monthly(input_year, res_univsnapshot, 'rdate')
+        univsnapshot = data['univsnapshot']
+        res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+        res_univsnapshot_is_monthly = check_monthly(input_year, 
+                                                    res_univsnapshot, 'rdate')
         
         # Filters dataframe for rows not also in Adj Price table
         adjpricet_fsym_id = data['adjpricet']['fsym_id'].unique()
-        res_univ_notin_id = res_univsnapshot[~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
+        res_univ_notin_id = res_univsnapshot[
+            ~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
         
         res_univsnapshot = find_univsnapshot(res_univsnapshot)
     else:
@@ -251,8 +268,9 @@ def find_res_tables(selected, input_year, data):
                     'div_ltm_is_monthly': res_div_ltm_is_monthly }
     return result_dict
 
+
 def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
-    """Dispaly results for daily view based on how many things each table is checking"""
+    """Dispaly results for daily view based on items each table is checking"""
     st.subheader(header)
     if (res_daily_df is not None and res_df is None) and res_df_2 is None:
         if res_daily_df.empty:
@@ -274,22 +292,22 @@ def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
             st.write(res_df)
 
     if (res_daily_df is not None and res_df is not None) and res_df_2 is not None:
-        if (res_daily_df.empty and res_df.empty) and res_univsnapshot_is_monthly_daily.empty:
-                st.success(success_msg)
+        if (res_daily_df.empty and res_df.empty) and res_df_2.empty:
+            st.success(success_msg)
         if res_daily_df.empty and ((not res_df.empty) and not res_df_2.empty):
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)
+            st.write(res_df)
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)
+            st.write(res_df_2)
 
         if res_daily_df.empty and ((not res_df.empty) and
                                                         (res_df_2.empty)):
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)
+            st.write(res_df)
         if res_daily_df.empty and ((res_df.empty) and
                                                         (not res_df_2.empty)):
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)
+            st.write(res_df_2)
         if not res_daily_df.empty and (( res_df.empty) and
                                                         (res_df_2.empty)):
             st.error('No data found on ' + str(input_date))
@@ -297,42 +315,54 @@ def show_res_df(header, res_daily_df, res_df=None, res_df_2=None):
                                                         (not res_df_2.empty)):
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)
+            st.write(res_df_2)
         if not res_daily_df.empty and ((not res_df.empty) and
                                                         res_df_2.empty):
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)
+            st.write(res_df)
         if not res_daily_df.empty and ((not res_df.empty) and
                                                         (not res_df_2.empty)):
             st.error('No data found on ' + str(input_date))
             st.error(error_msg_prob_rows)
-            st.write(res_univsnapshot_daily)
+            st.write(res_df)
             st.error(error_msg_prob_rows)
-            st.write(res_univ_notin_id_daily)
+            st.write(res_df_2)
 
-def show_res_daily_view(selected):
+
+def show_res_daily_view(selected, result_dict_daily):
     """Display result for Daily View"""
     for table in selected:
         if table == bmprices_label:
-            show_res_df(bmprices_label, res_bmprices_daily)
+            show_res_df(bmprices_label, result_dict_daily['bmprices'])
         elif table == portreturn_label:
-            show_res_df(portreturn_label, res_portreturn_daily)
+            show_res_df(portreturn_label, 
+                        result_dict_daily['portreturn'])
         elif table == portholding_label:
-            show_res_df(portholding_label, res_portholding_is_daily_daily, res_portholding_daily)
+            show_res_df(portholding_label,
+                        result_dict_daily['portholding_is_daily'],
+                        result_dict_daily['portholding'])
         elif table == bmc_monthly_label:
-            show_res_df(bmc_monthly_label, res_bmc_monthly_is_monthly_daily, res_bmc_monthly_daily)
+            show_res_df(bmc_monthly_label, 
+                        result_dict_daily['bmc_monthly_is_monthly'], 
+                        result_dict_daily['bmc_monthly'])
         elif table == univsnapshot_label:
-            show_res_df(univsnapshot_label, res_univsnapshot_is_monthly_daily, res_univ_notin_id_daily, res_univsnapshot_daily)
+            show_res_df(univsnapshot_label, 
+                        result_dict_daily['univsnapshot_is_monthly'], 
+                        result_dict_daily['univ_notin_id'], 
+                        result_dict_daily['univsnapshot'])
         elif table == div_ltm_label:
-            show_res_df(div_ltm_label, res_div_ltm_is_monthly_daily, res_div_ltm_daily)
+            show_res_df(div_ltm_label, 
+                        result_dict_daily['div_ltm_is_monthly'],
+                        result_dict_daily['div_ltm'])
 
 @st.cache
-def get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday):
+def get_holiday(input_year: str, holiday, is_us_holiday, is_cad_holiday):
     """Return holidays in the given year based on which holiday calendar is selected"""
     holiday_df = holiday[holiday['holiday_date'].dt.year == input_year]
     if not is_cad_holiday and not is_us_holiday:
-        holiday_df = pd.DataFrame([], columns = ['fref_exchange_code', 'holiday_date', 'month', 'day'])
+        holiday_df = pd.DataFrame([], columns = ['fref_exchange_code',
+                                                 'holiday_date', 'month', 'day'])
     else:
         holiday_df.loc[:, 'month'] = holiday_df['holiday_date'].dt.month_name()
         holiday_df.loc[:, 'day'] = holiday['holiday_date'].dt.day
@@ -348,7 +378,9 @@ def get_holiday(input_year, holiday, is_us_holiday, is_cad_holiday):
 
     return holiday_df, holiday_date
 
-def get_res_table_df(input_year, result_dict):
+
+def get_result_sum_df(input_year: str, result_dict):
+    """Get a summary df to show result in calendar view"""
     sdate = datetime(input_year, 1, 1)
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
@@ -356,16 +388,24 @@ def get_res_table_df(input_year, result_dict):
         {'bmprices': dates.isin(result_dict['bmprices']['result']),
         'portreturn': dates.isin(result_dict['portreturn']['result']),
         'bmc_monthly': dates.isin(result_dict['bmc_monthly']['rdate']),
-        'bmc_monthly_is_monthly': dates.isin(result_dict['bmc_monthly_is_monthly']['result']),
+        'bmc_monthly_is_monthly': 
+            dates.isin(result_dict['bmc_monthly_is_monthly']['result']),
         'portholding': dates.isin(result_dict['portholding']['rdate']),
-        'portholding_is_daily':  dates.isin(result_dict['portholding_is_daily']['result']),
+        'portholding_is_daily':  
+            dates.isin(result_dict['portholding_is_daily']['result']),
         'univsnapshot': dates.isin(result_dict['univsnapshot']['rdate']),
-        'univsnapshot_is_monthly': dates.isin(result_dict['univsnapshot_is_monthly']['result']),
+        'univsnapshot_is_monthly': 
+            dates.isin(result_dict['univsnapshot_is_monthly']['result']),
         'univ_notin_id': dates.isin(result_dict['univ_notin_id']['rdate']),
         'div_ltm': dates.isin(result_dict['div_ltm']['date']),
-        'div_ltm_is_monthly': dates.isin(result_dict['div_ltm_is_monthly']['result'])}, index=dates.date)
-
-    res_table_df = pd.DataFrame([], columns=['bmprices', 'portreturn', 'bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm'], index=dates.date)
+        'div_ltm_is_monthly': 
+            dates.isin(result_dict['div_ltm_is_monthly']['result'])},
+        index=dates.date)
+    
+    res_table_df_col = ['bmprices', 'portreturn', 'bmc_monthly',
+                        'portholding', 'univsnapshot', 'div_ltm']
+    res_table_df = pd.DataFrame([], columns=res_table_df_col, index=dates.date)
+    
     for col in res_reason_df.columns:
         if col in ['bmprices', 'portreturn']:
             res_table_df[col][res_reason_df[col]] = 1 
@@ -375,14 +415,62 @@ def get_res_table_df(input_year, result_dict):
             res_table_df['univsnapshot'][res_reason_df[col]] = 2
         elif col == 'div_ltm_is_monthly':
             res_table_df['div_ltm'][res_reason_df[col]] = 2
-            # 'portholding_is_daily'
         elif col in ['bmc_monthly', 'portholding', 'univsnapshot', 'div_ltm']:
             res_table_df[col][res_reason_df[col]] = 3
         elif col == 'univ_notin_id':
             res_table_df['univsnapshot'][res_reason_df[col]] = 4
     return res_table_df.fillna(0)
     
-    
+
+def get_result_daily(input_date, result_dict):
+    """Get problematic entries for each table for a given date"""
+    bmprices = result_dict['bmprices']
+    portreturn = result_dict['portreturn']
+    bmc_monthly = result_dict['bmc_monthly']
+    bmc_monthly_is_monthly = result_dict['bmc_monthly_is_monthly']
+    portholding = result_dict['portholding']
+    portholding_is_daily = result_dict['portholding_is_daily']
+    univsnapshot = result_dict['univsnapshot']
+    univsnapshot_is_monthly = result_dict['univsnapshot_is_monthly']
+    univ_notin_id = result_dict['univ_notin_id']
+    div_ltm = result_dict['div_ltm']
+    div_ltm_is_monthly = result_dict['div_ltm_is_monthly']
+    result_dict_daily = {
+        'bmprices': bmprices[bmprices['result'] == input_date],
+        'portreturn':portreturn[portreturn['result'] == input_date],
+        'bmc_monthly': 
+            bmc_monthly[
+                (pd.DatetimeIndex(bmc_monthly['rdate']).year == input_date.year) &
+                (pd.DatetimeIndex(bmc_monthly['rdate']).month == input_date.month)],
+        'bmc_monthly_is_monthly': 
+            bmc_monthly_is_monthly[
+                (pd.DatetimeIndex(bmc_monthly_is_monthly['result']).year == input_date.year) &
+                (pd.DatetimeIndex(bmc_monthly_is_monthly['result']).month == input_date.month)],
+        'portholding': portholding[portholding['rdate'] == input_date],
+        'portholding_is_daily': 
+            portholding_is_daily[portholding_is_daily['result'] == input_date],
+        'univsnapshot': 
+            univsnapshot[
+                (pd.DatetimeIndex(univsnapshot['rdate']).year == input_date.year) &
+                (pd.DatetimeIndex(univsnapshot['rdate']).month == input_date.month)],
+        'univsnapshot_is_monthly': 
+            univsnapshot_is_monthly[
+                (pd.DatetimeIndex(univsnapshot_is_monthly['result']).year == input_date.year) &
+                (pd.DatetimeIndex(univsnapshot_is_monthly['result']).month == input_date.month)],
+        'univ_notin_id': 
+            univ_notin_id[
+                (pd.DatetimeIndex(univ_notin_id['rdate']).year == input_date.year) &
+                (pd.DatetimeIndex(univ_notin_id['rdate']).month == input_date.month)],
+        'div_ltm': 
+            div_ltm[(pd.DatetimeIndex(div_ltm['date']).year == input_date.year) &
+                    (pd.DatetimeIndex(div_ltm['date']).month == input_date.month)],
+        'div_ltm_is_monthly': 
+            div_ltm_is_monthly[
+                (pd.DatetimeIndex(div_ltm_is_monthly['result']).year == input_date.year) &
+                (pd.DatetimeIndex(div_ltm_is_monthly['result']).month == input_date.month)]}
+    return result_dict_daily
+
+
 # =============================================================================
 # Functions - Show Calendar for Summary View
 # =============================================================================
@@ -397,7 +485,7 @@ def week_of_month(dt):
 
 
 # Return a dataframe of month, weeks, days in the given year
-def year_cal(input_year:int):
+def year_cal(input_year:int) -> pd.DataFrame:
     """
     Return a dataframe of yearly calendar.
 
@@ -434,17 +522,8 @@ def weekday_dates(input_year, holiday_date):
     return dates
 
 
-def get_res_day(res_date, month):
-    """Get the days in the given month for the input dataframe"""
-    res_date_df = pd.DataFrame({
-                            'month': pd.DatetimeIndex(res_date).month_name(),
-                            'day': pd.DatetimeIndex(res_date).day,
-                            'date': res_date})
-    res_date_df = res_date_df[res_date_df['month'] == month]
-    return res_date_df['day']
-
-
-def show_month_df(input_year, df, res_table_df, holiday_df, month) -> None:
+def show_month_df(input_year: str, df, res_table_df: pd.DataFrame, 
+                  holiday_df: pd.DataFrame, month: str) -> None:
     """Show a dataframe with bad dates highlighted for the given month"""
     df = df[df['month'] == month]
     df = df.pivot(index='week', columns='weekday', values='day')
@@ -469,7 +548,9 @@ def show_month_df(input_year, df, res_table_df, holiday_df, month) -> None:
                                       res_table_df], axis=1).set_precision(0))
 
 
-def show_months(input_year, holiday_df,res_table_df, m1, m2, m3):
+def show_months(input_year: str, holiday_df: pd.DataFrame,
+                res_table_df: pd.DataFrame, m1: str,
+                m2: str, m3: str) -> None:
     """ Show monthly calendars for three months in a row"""
     col1, col2, col3 = st.beta_columns(3)
     year_calendar = year_cal(input_year)
@@ -591,10 +672,10 @@ data = {'portholding': load_data(query_portholding),
         'holiday': load_data(query_holiday)}
 
 # Side bar
-st.sidebar.subheader('Other views:')
+st.sidebar.subheader(view_header)
 date_view = st.sidebar.checkbox(checkbox_date)
 
-st.sidebar.subheader('Holidays:')
+st.sidebar.subheader(holiday_header)
 is_us_holiday = st.sidebar.checkbox('Show US Holiday', value=True)
 is_cad_holiday = st.sidebar.checkbox('Show Canadian Holiday')
 
@@ -604,12 +685,14 @@ st.header(checkbox_sum)
 
 # '%d' here refers to integer format, not date format.
 input_year = st.number_input(
-    'Select a year', min_value = 1990, max_value=datetime.now().year,
+    year_selection_msg, min_value = 1990, max_value=datetime.now().year,
     value=datetime.now().year, format='%d')
 
-holiday_df, holiday_date = get_holiday(input_year, data['holiday'], is_us_holiday, is_cad_holiday)
+holiday_df, holiday_date = get_holiday(input_year, data['holiday'],
+                                       is_us_holiday, is_cad_holiday)
 
-selected = st.multiselect('Select a table to view details.', lst_tables, [portholding_label])
+selected = st.multiselect('Select a table to view details.', 
+                          lst_tables, [portholding_label])
 
 show_table_color_ref = st.checkbox('Show color references')
 
@@ -618,15 +701,15 @@ if show_table_color_ref:
 
 st.info('There is a 1 day data update lag for some tables.')
 
-result_dict = find_res_tables(selected, input_year, data)
-res_table_df = get_res_table_df(input_year, result_dict)
+result_dict = get_result_tables(selected, input_year, data)
+res_table_df = get_result_sum_df(input_year, result_dict)
 
 show_months(input_year, holiday_df, res_table_df, 'January', 'February', 'March')
 show_months(input_year, holiday_df, res_table_df, 'April', 'May', 'June')
 show_months(input_year, holiday_df, res_table_df,'July', 'August', 'September')
 show_months(input_year, holiday_df, res_table_df,'October', 'November', 'December')
 
-
+# Daily view
 if date_view:
 
     st.header('View by Date')
@@ -634,25 +717,6 @@ if date_view:
     input_date = st.date_input("Choose a date", 
                                min_value = datetime(input_year, 1, 1), 
                                max_value=datetime.today())
-
-
-    res_bmprices_daily = result_dict['bmprices'][result_dict['bmprices']['result'] == input_date]    
-    res_portreturn_daily = result_dict['portreturn'][result_dict['portreturn']['result'] == input_date]
-    res_portholding_daily = result_dict['portholding'][result_dict['portholding']['rdate'] == input_date]
-    res_portholding_is_daily_daily = result_dict['portholding_is_daily'][result_dict['portholding_is_daily']['result'] == input_date]
-
-    res_bmc_monthly_daily = result_dict['bmc_monthly'][(pd.DatetimeIndex(result_dict['bmc_monthly']['rdate']).year == input_date.year) &
-                                      (pd.DatetimeIndex(result_dict['bmc_monthly']['rdate']).month == input_date.month)]
-    res_bmc_monthly_is_monthly_daily = result_dict['bmc_monthly_is_monthly'][(pd.DatetimeIndex(result_dict['bmc_monthly_is_monthly']['result']).year == input_date.year) &
-                                      (pd.DatetimeIndex(result_dict['bmc_monthly_is_monthly']['result']).month == input_date.month)]
-    res_div_ltm_daily = result_dict['div_ltm'][(pd.DatetimeIndex(result_dict['div_ltm']['date']).year == input_date.year) &
-                              (pd.DatetimeIndex(result_dict['div_ltm']['date']).month == input_date.month)]
-    res_div_ltm_is_monthly_daily = result_dict['div_ltm_is_monthly'][(pd.DatetimeIndex(result_dict['div_ltm_is_monthly']['result']).year == input_date.year) &
-                              (pd.DatetimeIndex(result_dict['div_ltm_is_monthly']['result']).month == input_date.month)]
-    res_univsnapshot_daily = result_dict['univsnapshot'][(pd.DatetimeIndex(result_dict['univsnapshot']['rdate']).year == input_date.year) &
-                              (pd.DatetimeIndex(result_dict['univsnapshot']['rdate']).month == input_date.month)]
-    res_univsnapshot_is_monthly_daily = result_dict['univsnapshot_is_monthly'][(pd.DatetimeIndex(result_dict['univsnapshot_is_monthly']['result']).year == input_date.year) &
-                              (pd.DatetimeIndex(result_dict['univsnapshot_is_monthly']['result']).month == input_date.month)]
-    res_univ_notin_id_daily = result_dict['univ_notin_id'][(pd.DatetimeIndex(result_dict['univ_notin_id']['rdate']).year == input_date.year) &
-                              (pd.DatetimeIndex(result_dict['univ_notin_id']['rdate']).month == input_date.month)]
-    show_res_daily_view(selected)
+    
+    result_dict_daily = get_result_daily(input_date, result_dict)
+    show_res_daily_view(selected, result_dict_daily)
