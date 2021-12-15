@@ -64,9 +64,15 @@ def get_all_data(input_year):
                          where year(rdate)={input_year}
                          order by bm_id,rdate""",
         'adjpricet' : """SELECT [fsym_id] FROM [FSTest].[dbo].[AdjustedPriceTickers]""",
-        'bg_div': """SELECT *
-                        FROM [FSTest].[dbo].[BG_Div]
-                        WHERE fsym_id IN (SELECT DISTINCT fsym_id FROM [FSTest].[dbo].[BG_Div] WHERE div_type='suspension')""",
+        'bg_div': """SELECT [fsym_id]
+                      ,[exdate]
+                      ,[div_type]
+                      ,[div_initiation]
+                      FROM [FSTest].[dbo].[BG_Div]
+                      WHERE fsym_id IN (SELECT DISTINCT fsym_id FROM [FSTest].[dbo].[BG_Div] 
+                                        WHERE div_type='suspension')
+                      AND div_type IN ('suspension', 'regular')
+                      ORDER BY fsym_id, exdate""",
         'holiday' : f"""SELECT [fref_exchange_code] ,[holiday_date] ,[holiday_name]
                         FROM [FSTest].[ref_v2].[ref_calendar_holidays]
                         WHERE fref_exchange_code IN ('NYS', 'TSE')
@@ -250,7 +256,7 @@ def get_result_tables(today:str,
     results['univsnapshot']['no_adjprice'] = \
         pd.Series(list(set(data['univsnapshot']['fsym_id']).\
                        difference(set(data['adjpricet']['fsym_id'].values))), dtype='float64')
-    # check if the universe changes dramatically from the previous month
+    # Check if the universe changes dramatically from the previous month
     counts = data['univsnapshot'].groupby('univ_id')['rdate'].value_counts().sort_index()
     counts = counts.to_frame('count').groupby('univ_id')['count'].diff() / counts
     results['univsnapshot']['universe_size'] = counts[counts>0.01]
@@ -258,20 +264,16 @@ def get_result_tables(today:str,
     # check if the datasets for dividend screen is updated on a weekly basis.
     # results['div_screen'] = {'no_data':check_div_screen(check_point, calendar)}
     
-    df_div = data['bg_div']
-    grouped = df_div.groupby('fsym_id')
-    df_div = df_div[grouped.cumcount(ascending=False) > 0]
-    st.write(df_div)
+    
+    # Remove most recent entry for each group
+    df_div = data['bg_div'][data['bg_div'].groupby('fsym_id').cumcount(ascending=False) > 0]
     idx_div_ini = df_div[df_div['div_type']=='suspension'].index+1
-    st.write(idx_div_ini)
-    div_ini_true = df_div[df_div.index.isin(idx_div_ini)]
-    st.write(div_ini_true)
-    num_bad = 11
-    idx_div_ini_true = div_ini_true[~div_ini_true['div_initiation']].index
-    num_bad = idx_div_ini_true.size
+    # Get the row after suspension
+    df_div_ini_true = df_div[df_div.index.isin(idx_div_ini)]
+    # Find if the row after suspension has div_initiation flag set
+    idx_div_ini_true = df_div_ini_true[~df_div_ini_true['div_initiation']].index
     res = df_div[df_div.index.isin(idx_div_ini_true) | df_div.index.isin(idx_div_ini_true-1)]
-    results['bg_div'] = {'no_div_init_flag': res.rename(columns= {'exdate': 'rdate'})}
-    st.write(results['bg_div']['no_div_init_flag'])
+    results['bg_div'] = {'no_div_init_flag': res.reset_index(drop=True)}
     return results
 
 def summary_stats(results:Dict)->Dict:
@@ -586,7 +588,6 @@ if __name__ == '__main__':
                               # index=3,
                               format_func=lambda x:table_label[x]['description'])
         
-        st.write(results[selected].items())
         if (summary[selected]['Total Number of Quality Issues'] > 0) and\
         (selected != 'bg_div'):
             tmp = pd.concat([v.assign(issue_type=k).set_index('issue_type',append=True)
@@ -594,10 +595,12 @@ if __name__ == '__main__':
                 reorder_levels(['issue_type','rdate']).reset_index()
             tmp['rdate'] = tmp['rdate'].dt.strftime('%Y-%m-%d')
             col2.table(tmp)
-#.groupby('fsym_id').count() .groupby('fsym_id')['fsym_id', 'exdate'].count()
+
         if selected == 'bg_div':
+            st.info('Checks the entire history of the BG Div table.')
             df = results[selected]['no_div_init_flag']
-            st.write(df)
+            df['exdate']= df['exdate'].dt.strftime('%Y-%m-%d')
+            st.table(df)
         else: 
             show_months(year_calendar,
                         results[selected],
