@@ -64,6 +64,9 @@ def get_all_data(input_year):
                          where year(rdate)={input_year}
                          order by bm_id,rdate""",
         'adjpricet' : """SELECT [fsym_id] FROM [FSTest].[dbo].[AdjustedPriceTickers]""",
+        'bg_div': """SELECT *
+                        FROM [FSTest].[dbo].[BG_Div]
+                        WHERE fsym_id IN (SELECT DISTINCT fsym_id FROM [FSTest].[dbo].[BG_Div] WHERE div_type='suspension')""",
         'holiday' : f"""SELECT [fref_exchange_code] ,[holiday_date] ,[holiday_name]
                         FROM [FSTest].[ref_v2].[ref_calendar_holidays]
                         WHERE fref_exchange_code IN ('NYS', 'TSE')
@@ -231,7 +234,7 @@ def get_result_tables(today:str,
                        'univsnapshot':'univ_id'}
     results = {}
     # check missing data on a specific day
-    for tbl in list(table_label.keys())[:-3]:
+    for tbl in list(table_label.keys())[:-4]:
         results[tbl] = {'no_data':check_existance(data[tbl],
                                                   bdays, month_ends,
                                                   table_label[tbl]['frequency'],
@@ -254,6 +257,21 @@ def get_result_tables(today:str,
 
     # check if the datasets for dividend screen is updated on a weekly basis.
     # results['div_screen'] = {'no_data':check_div_screen(check_point, calendar)}
+    
+    df_div = data['bg_div']
+    grouped = df_div.groupby('fsym_id')
+    df_div = df_div[grouped.cumcount(ascending=False) > 0]
+    st.write(df_div)
+    idx_div_ini = df_div[df_div['div_type']=='suspension'].index+1
+    st.write(idx_div_ini)
+    div_ini_true = df_div[df_div.index.isin(idx_div_ini)]
+    st.write(div_ini_true)
+    num_bad = 11
+    idx_div_ini_true = div_ini_true[~div_ini_true['div_initiation']].index
+    num_bad = idx_div_ini_true.size
+    res = df_div[df_div.index.isin(idx_div_ini_true) | df_div.index.isin(idx_div_ini_true-1)]
+    results['bg_div'] = {'no_div_init_flag': res.rename(columns= {'exdate': 'rdate'})}
+    st.write(results['bg_div']['no_div_init_flag'])
     return results
 
 def summary_stats(results:Dict)->Dict:
@@ -284,7 +302,12 @@ def summary_stats(results:Dict)->Dict:
         results[tbl]['no_adjprice'].shape[0] + results[tbl]['universe_size'].shape[0]
     summary[tbl]['Missing Adjusted Price Ticker'] = results[tbl]['no_adjprice'].shape[0]
     summary[tbl]['Dramatic Universe Size Change'] = results[tbl]['universe_size'].shape[0]
-
+    
+    tbl = 'bg_div'
+    summary[tbl]['Total Number of Quality Issues'] += \
+        results[tbl]['no_div_init_flag'].shape[0] // 2
+    summary[tbl]['Missing Dividend Initiation Flag'] = \
+        results[tbl]['no_div_init_flag'].shape[0] // 2 
     return summary
 
 
@@ -520,6 +543,7 @@ table_label = {
     'bmprices':{'description':'BM Prices','frequency':'daily'},
     'bmc_monthly':{'description':'BMC Monthly','frequency':'monthly'},
     'univsnapshot':{'description':'Universe Snapshot','frequency':'monthly'},
+    'bg_div':{'description':'BG Div'}, #,'frequency':'history'},
     'div_screen':{'description':'Dividend Screen'},#,'frequency':'monthly'},
     'holiday':'Holiday',
     'today':'Today',
@@ -561,14 +585,20 @@ if __name__ == '__main__':
                               list(table_label.keys())[:-2],
                               # index=3,
                               format_func=lambda x:table_label[x]['description'])
-
-        if summary[selected]['Total Number of Quality Issues']>0:
+        
+        st.write(results[selected].items())
+        if (summary[selected]['Total Number of Quality Issues'] > 0) and\
+        (selected != 'bg_div'):
             tmp = pd.concat([v.assign(issue_type=k).set_index('issue_type',append=True)
-                                  for k, v in results[selected].items()]).\
-                       reorder_levels(['issue_type','rdate']).reset_index()
+                                   for k, v in results[selected].items()]).\
+                reorder_levels(['issue_type','rdate']).reset_index()
             tmp['rdate'] = tmp['rdate'].dt.strftime('%Y-%m-%d')
             col2.table(tmp)
-
-        show_months(year_calendar,
-                    results[selected],
-                    table_label[selected]['frequency'])
+#.groupby('fsym_id').count() .groupby('fsym_id')['fsym_id', 'exdate'].count()
+        if selected == 'bg_div':
+            df = results[selected]['no_div_init_flag']
+            st.write(df)
+        else: 
+            show_months(year_calendar,
+                        results[selected],
+                        table_label[selected]['frequency'])
