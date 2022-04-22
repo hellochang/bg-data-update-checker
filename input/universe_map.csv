@@ -1,0 +1,4 @@
+﻿univ_id,region,pid,bm_id,strategy,univ_size,port_size
+CA,Canada,BG013,SPTSX,CA,55,22
+Global,Global,BG100,MSCIACWI,Global,100,22
+US,US,BG001,SP500,US,65,22

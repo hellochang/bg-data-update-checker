@@ -192,8 +192,6 @@ def find_univsnapshot(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df = df.groupby('rdate')['univ_id'].value_counts()
     df = df.reset_index(name='monthly_company_count')
-    st.write(df['monthly_company_count'].dtype)
-    st.write( df.groupby('monthly_company_count')['univ_id'].dtype)
     df['diff_monthly'] = df.groupby('monthly_company_count')['univ_id'].diff()
     return df[df['diff_monthly'] > tol]
 
@@ -264,7 +262,7 @@ def check_monthly(input_year: int,
     return res
 
 
-def get_result_tables(selected: List[str], input_year: int,
+def get_result_tables(selected: List[str], input_year: str,
                       data: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
     """
     Find errors of every table based on the input year and input table
@@ -285,132 +283,86 @@ def get_result_tables(selected: List[str], input_year: int,
         Error entries in data after performing the checks.
 
     """
-    adjpricet_fsym_id = data['adjpricet']['fsym_id'].unique()
+    if table_label['portholding'] in selected:
+        portholding = data['portholding']
+        res_portholding = portholding[portholding['rdate'].dt.year == input_year]
+        res_portholding = res_portholding.copy()
+        res_portholding['rdate'] = res_portholding['rdate'].dt.date
+        res_portholding_is_daily = check_daily(input_year, holiday_date,
+                                               res_portholding['rdate'])
+        res_portholding = res_portholding[res_portholding['secid'].isnull()]
+    else:
+        res_portholding = pd.DataFrame([], columns=data['portholding'].columns)
+        res_portholding_is_daily = pd.DataFrame([], columns=['rdate'])
 
-    data = {key: data[key] for key in data.keys() if (key != 'holiday') and (key != 'adjpricet')}
-    data = {tbl: data[tbl][data[tbl]['rdate'].dt.year == input_year] for tbl in data.keys()}
-    result_dict = {tbl: pd.DataFrame([], columns=data[tbl].columns) for tbl in data.keys()}
+    if table_label['bmprices'] in selected:
+        bmprices = data['bmprices']
+        res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
+        res_bmprice = res_bmprices.copy()
+        res_bmprice['rdate'] = res_bmprices['rdate'].dt.date
+        res_bmprices = check_daily(input_year, holiday_date,
+                                   res_bmprices['rdate'])
+    else:
+        res_bmprices = pd.DataFrame([], columns=['rdate'])
 
-    tables_is_null = ['portholding', 'bmc_monthly', 'div_ltm']
-    columns_is_null = ['secid', 'fsym_id', 'rdate']
-    for tbl, col in zip(tables_is_null, columns_is_null):
-        if table_label[tbl] in selected:
-            result_dict.update({tbl: data[tbl][data[tbl][col].isnull()]})
-        else:
-            result_dict.update({tbl: pd.DataFrame([], columns=data[tbl].columns)})
-    
-    tables_daily = ['bmprices', 'portreturn']
-    for tbl in tables_daily:
-        if table_label[tbl] in selected:
-            result_dict.update({tbl: check_daily(input_year, holiday_date,
-                                    data[tbl]['rdate'])})
-        else:
-            result_dict.update({tbl: pd.DataFrame([], columns=['rdate'])})
-    
-    result_dict.update({'portholding_is_daily': check_daily(input_year, holiday_date,
-                                    data['portholding']['rdate'])})
-    
-    
-    tables_monthly = ['bmc_monthly', 'univsnapshot', 'div_ltm']    
-    for tbl in tables_monthly:
-        if table_label[tbl] in selected:
-            result_dict.update({f'{tbl}_is_monthly':
-                                                check_monthly(input_year, data[tbl])})
-        else:
-            result_dict.update({f'{tbl}_is_monthly': pd.DataFrame([], columns=data[tbl].columns)})
-    
+    if table_label['portreturn'] in selected:
+        portreturn = data['portreturn']
+        res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
+        res_portreturn = res_portreturn.copy()
+        res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
+        res_portreturn = check_daily(input_year, holiday_date,
+                                     res_portreturn['rdate'])
+    else:
+        res_portreturn = pd.DataFrame([], columns=['rdate'])
+
+    if table_label['bmc_monthly'] in selected:
+        bmc_monthly = data['bmc_monthly']
+        res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
+        res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly)
+        res_bmc_monthly = res_bmc_monthly[res_bmc_monthly['fsym_id'].isnull()]
+    else:
+        res_bmc_monthly = pd.DataFrame([], columns=data['bmc_monthly'].columns)
+        res_bmc_monthly_is_monthly = pd.DataFrame([], columns=['rdate'])
+
+    if table_label['univsnapshot'] in selected:
+        univsnapshot = data['univsnapshot']
+        res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
+        res_univsnapshot_is_monthly = check_monthly(
+            input_year, res_univsnapshot)
+
         # Filters dataframe for rows not also in Adj Price table
+        adjpricet_fsym_id = data['adjpricet']['fsym_id'].unique()
+        res_univ_notin_id = res_univsnapshot[
+            ~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
 
-    # res_univ_notin_id = res_univsnapshot[
-    #     ~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
+        res_univsnapshot = find_univsnapshot(res_univsnapshot)
+    else:
+        res_univsnapshot = pd.DataFrame(
+            [], columns=data['univsnapshot'].columns)
+        res_univsnapshot_is_monthly = pd.DataFrame([], columns=['rdate'])
+        res_univ_notin_id = pd.DataFrame(
+            [], columns=data['univsnapshot'].columns)
 
-    # res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    result_dict.update({'univsnapshot': find_univsnapshot(data['univsnapshot'])})
-    result_dict.update({'univ_notin_id': data['univsnapshot'][
-            ~data['univsnapshot']['fsym_id'].isin(adjpricet_fsym_id)]})
-       
-    st.write(result_dict.values())
-    
-    # if table_label['portholding'] in selected:
-    #     portholding = data['portholding']
-    #     res_portholding = portholding[portholding['rdate'].dt.year == input_year]
-    #     res_portholding = res_portholding.copy()
-    #     res_portholding['rdate'] = res_portholding['rdate'].dt.date
-    #     res_portholding_is_daily = check_daily(input_year, holiday_date,
-    #                                            res_portholding['rdate'])
-    #     res_portholding = res_portholding[res_portholding['secid'].isnull()]
-    # else:
-    #     res_portholding = pd.DataFrame([], columns=data['portholding'].columns)
-    #     res_portholding_is_daily = pd.DataFrame([], columns=['rdate'])
+    if table_label['div_ltm'] in selected:
+        res_div_ltm = data['div_ltm'][data['div_ltm']
+                                      ['rdate'].dt.year == input_year]
+        res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm)
+        res_div_ltm = res_div_ltm[res_div_ltm['rdate'].isnull()]
+    else:
+        res_div_ltm = pd.DataFrame([], columns=data['div_ltm'].columns)
+        res_div_ltm_is_monthly = pd.DataFrame([], columns=['rdate'])
 
-    # if table_label['bmprices'] in selected:
-    #     bmprices = data['bmprices']
-    #     res_bmprices = bmprices[bmprices['rdate'].dt.year == input_year]
-    #     res_bmprice = res_bmprices.copy()
-    #     res_bmprice['rdate'] = res_bmprices['rdate'].dt.date
-    #     res_bmprices = check_daily(input_year, holiday_date,
-    #                                res_bmprices['rdate'])
-    # else:
-    #     res_bmprices = pd.DataFrame([], columns=['rdate'])
-
-    # if table_label['portreturn'] in selected:
-    #     portreturn = data['portreturn']
-    #     res_portreturn = portreturn[portreturn['rdate'].dt.year == input_year]
-    #     res_portreturn = res_portreturn.copy()
-    #     res_portreturn['rdate'] = res_portreturn['rdate'].dt.date
-    #     res_portreturn = check_daily(input_year, holiday_date,
-    #                                  res_portreturn['rdate'])
-    # else:
-    #     res_portreturn = pd.DataFrame([], columns=['rdate'])
-
-    # if table_label['bmc_monthly'] in selected:
-    #     bmc_monthly = data['bmc_monthly']
-    #     res_bmc_monthly = bmc_monthly[bmc_monthly['rdate'].dt.year == input_year]
-    #     res_bmc_monthly_is_monthly = check_monthly(input_year, res_bmc_monthly)
-    #     res_bmc_monthly = res_bmc_monthly[res_bmc_monthly['fsym_id'].isnull()]
-    # else:
-    #     res_bmc_monthly = pd.DataFrame([], columns=data['bmc_monthly'].columns)
-    #     res_bmc_monthly_is_monthly = pd.DataFrame([], columns=['rdate'])
-
-    # if table_label['univsnapshot'] in selected:
-    #     univsnapshot = data['univsnapshot']
-    #     res_univsnapshot = univsnapshot[univsnapshot['rdate'].dt.year == input_year]
-    #     res_univsnapshot_is_monthly = check_monthly(
-    #         input_year, res_univsnapshot)
-
-    #     # Filters dataframe for rows not also in Adj Price table
-    #     adjpricet_fsym_id = data['adjpricet']['fsym_id'].unique()
-    #     res_univ_notin_id = res_univsnapshot[
-    #         ~res_univsnapshot['fsym_id'].isin(adjpricet_fsym_id)]
-
-    #     res_univsnapshot = find_univsnapshot(res_univsnapshot)
-    # else:
-    #     res_univsnapshot = pd.DataFrame(
-    #         [], columns=data['univsnapshot'].columns)
-    #     res_univsnapshot_is_monthly = pd.DataFrame([], columns=['rdate'])
-    #     res_univ_notin_id = pd.DataFrame(
-    #         [], columns=data['univsnapshot'].columns)
-
-    # if table_label['div_ltm'] in selected:
-    #     res_div_ltm = data['div_ltm'][data['div_ltm']
-    #                                   ['rdate'].dt.year == input_year]
-    #     res_div_ltm_is_monthly = check_monthly(input_year, res_div_ltm)
-    #     res_div_ltm = res_div_ltm[res_div_ltm['rdate'].isnull()]
-    # else:
-    #     res_div_ltm = pd.DataFrame([], columns=data['div_ltm'].columns)
-    #     res_div_ltm_is_monthly = pd.DataFrame([], columns=['rdate'])
-
-    # result_dict = {'portholding': res_portholding,
-    #                'portholding_is_daily': res_portholding_is_daily,
-    #                'bmprices': res_bmprices,
-    #                'portreturn': res_portreturn,
-    #                'bmc_monthly': res_bmc_monthly,
-    #                'bmc_monthly_is_monthly': res_bmc_monthly_is_monthly,
-    #                'univsnapshot': res_univsnapshot,
-    #                'univsnapshot_is_monthly': res_univsnapshot_is_monthly,
-    #                'univ_notin_id': res_univ_notin_id,
-    #                'div_ltm': res_div_ltm,
-    #                'div_ltm_is_monthly': res_div_ltm_is_monthly}
+    result_dict = {'portholding': res_portholding,
+                   'portholding_is_daily': res_portholding_is_daily,
+                   'bmprices': res_bmprices,
+                   'portreturn': res_portreturn,
+                   'bmc_monthly': res_bmc_monthly,
+                   'bmc_monthly_is_monthly': res_bmc_monthly_is_monthly,
+                   'univsnapshot': res_univsnapshot,
+                   'univsnapshot_is_monthly': res_univsnapshot_is_monthly,
+                   'univ_notin_id': res_univ_notin_id,
+                   'div_ltm': res_div_ltm,
+                   'div_ltm_is_monthly': res_div_ltm_is_monthly}
     return result_dict
 
 
@@ -513,7 +465,7 @@ def get_result_sum_df(input_year: str,
     edate = datetime(input_year, 12, 31)
     dates = pd.date_range(start=sdate, end=edate)
     res_table_df = pd.DataFrame([], index=dates.date)
-    st.write(result_dict)
+
     for tbl in result_dict.keys():
         res_table_df[tbl] = dates.isin(result_dict[tbl]['rdate'])
 
@@ -599,7 +551,7 @@ def show_months(input_year: str, res_table_df: pd.DataFrame, m1: str,
     None
 
     """
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.beta_columns(3)
     year_calendar = year_cal(input_year)
 
     with col1:
@@ -650,7 +602,6 @@ def show_month_df(input_year: str, df: pd.DataFrame,
     res_table_df = res_table_df[pd.DatetimeIndex(res_table_df.index)
                                   .month_name() == month]
     res_table_df.index = pd.DatetimeIndex(res_table_df.index).day
-    st.write(res_table_df)
     st.dataframe(df.style.apply(highlight_bad_day,
                                 args=[isToday, isMonthLaterThanToday,
                                       res_table_df], axis=1).set_precision(0))

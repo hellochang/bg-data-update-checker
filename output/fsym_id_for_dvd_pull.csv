@@ -1,0 +1,1468 @@
+,fsym_id,bbg_id,proper_name
+0,B01DPB-R,BBG000DRZH81,Guidant Corporation
+1,B04V7K-R,BBG000C0R327,Northland Power Inc.
+2,B0TXKG-R,BBG001J2R5H3,Marriott Vacations Worldwide Corporation
+3,B19ST9-R,BBG000BNBDC2,Eli Lilly and Company
+4,B1C27H-R,BBG000BJ5SS8,NewMarket Corporation
+5,B29NTD-R,BBG000MG3Y65,Two Harbors Investment Corp.
+6,B2F8KN-R,BBG000BLJWF3,"Sun Communities, Inc."
+7,B2G826-R,BBG006BFYZP8,"Parsley Energy, Inc. Class A"
+8,B3DVXC-R,BBG000BJDB15,"Freeport-McMoRan, Inc."
+9,B3G4BK-R,BBG00D0Y81M1,"Ashland Global Holdings, Inc."
+10,B4L66G-R,BBG000BQT4L6,"People's United Financial, Inc."
+11,B4PGFJ-R,BBG00FN64XT9,DXC Technology Co.
+12,B4PJKL-R,BBG000FJP263,Allegheny Energy
+13,B4PMRP-R,BBG000BFWKC0,Monsanto Company
+14,B5PHMN-R,BBG000BGPG26,Compuware Corporation
+15,B6TD5D-R,BBG000C4H302,BJ Services Co
+16,B6V0BZ-R,BBG000BCVG28,Pool Corporation
+17,B6YVPL-R,BBG000BSSL26,Scientific-Atlanta Inc.
+18,B6ZP8C-R,BBG000BKY1G5,"Welltower, Inc."
+19,B6ZXQL-R,BBG000DHPN63,Realty Income Corporation
+20,B71DJZ-R,BBG000CHWP52,"Discovery, Inc. Class A"
+21,B81TLL-R,BBG00KHY5S69,Broadcom Inc.
+22,B82VFF-R,BBG000H50PN8,Coventry Health Care Inc.
+23,B8350Q-R,BBG000BZNSD8,Metro Inc.
+24,B8374S-R,BBG00B3T3HD3,Alcoa Corp.
+25,B83YJG-R,BBG00H433CR2,"Evergy, Inc."
+26,B873PK-R,BBG000BCSPR5,CoreSite Realty Corporation
+27,B973PJ-R,BBG000F964B6,American States Water Company
+28,B97MP0-R,BBG000B9Z0J8,"Prologis, Inc."
+29,BCD4JF-R,BBG000BJP882,FMC Corporation
+30,BCD5LG-R,BBG000CTV4N4,"Entegris, Inc."
+31,BCDK9T-R,BBG000BNMHS4,ManpowerGroup Inc.
+32,BCDP5K-R,BBG002WMH2F2,"ServiceMaster Global Holdings, Inc."
+33,BCHRDT-R,BBG000BV7ZW8,First Capital Real Estate Investment Trust
+34,BCMFYS-R,BBG005WQVVH4,Sabre Corp.
+35,BDP5X0-R,BBG000BD43C4,Briggs & Stratton Corporation
+36,BDQDB8-R,BBG000NV1KK7,Dollar General Corporation
+37,BFMPK2-R,BBG00RDKMTW8,WPT Industrial Real Estate Investment Trust
+38,BFSQSF-R,BBG000BMT0R7,Keyera Corp.
+39,BFSY5M-R,BBG000BNJHS8,Southwest Airlines Co.
+40,BGT6TZ-R,BBG000NW5409,Richards Packaging Income Fund
+41,BGW3FR-R,BBG000BWTY64,Warner-Lambert Co.
+42,BGYBPV-R,BBG000BDTNN1,Anheuser-Busch Companies Inc.
+43,BJ2HRV-R,BBG000BT41Q8,Schlumberger NV
+44,BK136M-R,BBG000C42VL3,"Life Storage, Inc."
+45,BK1GXZ-R,BBG000BVK2W6,Tribune Company
+46,BK2FRW-R,BBG000MDCQC2,AmerisourceBergen Corporation
+47,BK6JKQ-R,BBG000BVDLH9,Thermo Fisher Scientific Inc.
+48,BL5KVX-R,BBG000F6H8W8,Costco Wholesale Corporation
+49,BL85VC-R,BBG000BGRB25,"Medical Properties Trust, Inc."
+50,BLB2G4-R,BBG000BDWKC5,"CA, Inc."
+51,BM9QXX-R,BBG000DKCC19,"Tyson Foods, Inc. Class A"
+52,BMF3C2-R,BBG000MM5VL9,Herbalife Nutrition Ltd.
+53,BNLKX9-R,BBG000BW0R88,Unisys Corporation
+54,BNMLW8-R,BBG000D5BDF6,AltaGas Ltd.
+55,BPRHF0-R,BBG000BHGDH5,Duke Energy Corporation
+56,BQ7YD0-R,BBG0077WYXF0,Columbia Pipeline Group Inc
+57,BQQGL4-R,BBG00B8NWRF5,"Avangrid, Inc."
+58,BQWWY7-R,BBG000BMW2Z0,Kimberly-Clark Corporation
+59,BRWC0T-R,BBG000BXPZB7,Ingredion Incorporated
+60,BRWKF0-R,BBG000BLXZN1,Tractor Supply Company
+61,BT4P4V-R,BBG000TJM7F0,Keurig Dr Pepper Inc.
+62,BV3N5V-R,BBG000C46HM9,Macy's Inc
+63,BV4P4T-R,BBG000BB6M98,FirstEnergy Corp.
+64,BV52Y6-R,BBG000BLR3Y7,"IDACORP, Inc."
+65,BV8GCC-R,BBG000F15NW9,"St. Jude Medical, Inc."
+66,BV8JHF-R,BBG000BC4JJ4,"Air Products and Chemicals, Inc."
+67,BW8YDX-R,BBG000F41W93,MI 2009 Inc.
+68,BW92P1-R,BBG000FFC0B3,New York Times Company Class A
+69,BWDZ2P-R,BBG000D9D830,Accenture Plc Class A
+70,BWHWNF-R,BBG000K1BLV1,Mallinckrodt Inc.
+71,BWZ93Y-R,BBG001B4BV87,"Fortune Brands Home & Security, Inc."
+72,BXKWLD-R,BBG000BDKN87,Burlington Northern Santa Fe Corp.
+73,BXWZVW-R,BBG000P2TYL8,LPL Financial Holdings Inc.
+74,BYJYYM-R,BBG000BVMGF2,Allstate Corporation
+75,BYKL46-R,BBG000BB5B84,Lennox International Inc.
+76,BYKM67-R,BBG000BSHJ96,"Sanderson Farms, Inc."
+77,BYNP13-R,BBG000DQTXY6,"D.R. Horton, Inc."
+78,BZNSC9-R,BBG000BK7SL0,Genzyme Corp.
+79,BZPFLX-R,BBG000BL46Q4,Regency Centers Corporation
+80,BZPTB8-R,BBG000FSMWC3,"Williams-Sonoma, Inc."
+81,BZT8YJ-R,BBG000BF8BH2,Clear Channel Communications Inc.
+82,C0ZKS6-R,BBG006FD67J9,PrairieSky Royalty Ltd
+83,C1XRTZ-R,BBG000C0H6Z5,Kinder Morgan Inc.
+84,C1Y5MC-R,BBG000BTVX24,AT&T Corp.
+85,C1Z2B6-R,BBG000BPS2V2,Navistar International Corporation
+86,C239D5-R,BBG000C7WZ16,Jones Group Inc.
+87,C326F7-R,BBG000BSHHP2,Safeco Corp
+88,C32SJS-R,BBG000BCZH22,Black & Decker Corporation
+89,C46DK8-R,BBG000BPPN67,Public Storage
+90,C46GQC-R,BBG003641015,ADT Corporation
+91,C4CVZD-R,BBG000BZ4N31,Heroux-Devtek Inc.
+92,C4HBRT-R,BBG0025Y4RY4,"AbbVie, Inc."
+93,C5BGF5-R,BBG000F3F385,Conseco Inc.
+94,C5CPSB-R,BBG000BQWPC5,PG&E Corporation
+95,C5GXYC-R,BBG000BM6788,Trane Technologies plc
+96,C5L77G-R,BBG000HZ4DM6,Central and South West Corporation
+97,C5P72D-R,BBG000BGLFP7,"STAG Industrial, Inc."
+98,C6M66G-R,BBG000F0CD91,HEICO Corporation Class A
+99,C6N75F-R,BBG000BLMXN8,Kilroy Realty Corporation
+100,C7C9TP-R,BBG00BN96922,"Dow, Inc."
+101,C7M58J-R,BBG000BCX7G1,OfficeMax Incorporated
+102,C7M7DL-R,BBG000D9DMK0,Laboratory Corporation of America Holdings
+103,C8WF4C-R,BBG000FV1Z23,Crown Castle International Corp
+104,C8WRSP-R,BBG000BQ6S47,Nortel Networks Corporation
+105,C8XJ7D-R,BBG000BRDSX5,Pinnacle West Capital Corporation
+106,C9XQRP-R,BBG000DBR6Y0,Nuveen AMT-Free Municipal Credit Income Fund of Benef Interest
+107,CD4N6C-R,BBG000BK1WF4,Gillette Company
+108,CD94SL-R,BBG000G5FQQ8,TFI International Inc.
+109,CDHX5F-R,BBG00265T6Q4,STORE Capital Corporation
+110,CF92SM-R,BBG000BMWHS5,Kerr-McGee Corporation
+111,CFG1CD-R,BBG000TRJ294,"American Water Works Company, Inc."
+112,CFJ279-R,BBG000QBM0Z3,NorthWest Healthcare Properties Real Estate Investment Trust
+113,CG3M36-R,BBG00B0VKL16,Hydro One Limited
+114,CGDY8B-R,BBG000BZGJZ2,Linamar Corporation
+115,CGGG4R-R,BBG000BPWXK1,Newmont Corporation
+116,CGKFVK-R,BBG000BYMDW4,E-L Financial Corporation Limited
+117,CGLRBS-R,BBG000BSLLB3,SCANA Corporation
+118,CHK9QJ-R,BBG000BMDBZ1,"J.B. Hunt Transport Services, Inc."
+119,CHKH1P-R,BBG000BL21Z7,Helen of Troy Limited
+120,CHKL7S-R,BBG000BNDN65,"Lowe's Companies, Inc."
+121,CHP9B8-R,BBG000DW4LB1,"Armstrong World Industries, Inc."
+122,CHR1NX-R,BBG000C5Z1S3,"Micron Technology, Inc."
+123,CJ5TFB-R,BBG008LJ4TF3,"Clearway Energy, Inc. Class C"
+124,CJQN0M-R,BBG000BBMT95,Dean Foods Company
+125,CJSZGT-R,BBG000BHPKG0,Eastern Enterprises
+126,CJTQXJ-R,BBG000N746D6,E*TRADE Financial Corporation
+127,CJVKH9-R,BBG000BFS7D3,Clorox Company
+128,CL0BQW-R,BBG000BH5K72,Dow Jones & Company Inc.
+129,CLZ09Q-R,BBG000BD1VR9,George Weston Limited
+130,CN3ZYH-R,BBG000BJ5R00,Lucent Technologies Inc.
+131,CN4ZZK-R,BBG000TWC2V5,Mead Johnson Nutrition Company
+132,CP777M-R,BBG000BGF8B5,ManTech International Corporation Class A
+133,CP8GLS-R,BBG000BQYFR9,Placer Dome Inc.
+134,CPCW2Z-R,BBG000BGPTV6,Cummins Inc.
+135,CQCV51-R,BBG000BY34Q2,Canadian Imperial Bank of Commerce
+136,CQJ4C2-R,BBG000HQVS07,Pason Systems Inc.
+137,CRHPMR-R,BBG000C221G9,Pentair plc
+138,CRL9M6-R,BBG000BT4C39,Lazard Ltd Class A
+139,CRM0ZW-R,BBG000BS8DF2,Reynolds Metals Company
+140,CRNHT8-R,BBG000BDF0G4,Richelieu Hardware Ltd
+141,CRP3ZV-R,BBG000BX9WL1,"Zions Bancorporation, N.A."
+142,CSFJSZ-R,BBG005P7Q881,"American Airlines Group, Inc."
+143,CSMTMQ-R,BBG000BWXBC2,Walmart Inc.
+144,CSS5YT-R,BBG000BGBTC2,"Omega Healthcare Investors, Inc."
+145,CTYNJ1-R,BBG000BK6MB5,General Electric Company
+146,CW0MCZ-R,BBG000Q1NMJ4,NorthWestern Corporation
+147,CX6P1R-R,BBG000PY5XQ1,Granite Real Estate Investment Trust Stapled Units - 1 Granite RE Inc + 1 TU Granite REIT
+148,CY644B-R,BBG000BLZRJ2,Morgan Stanley
+149,CY9XBW-R,BBG000BZ6FG2,IGM Financial Inc.
+150,CYB1M0-R,BBG000BBS2Y0,Amgen Inc.
+151,CYB6Y5-R,BBG000BMX289,Coca-Cola Company
+152,CYBC69-R,BBG000BLF8D2,Hormel Foods Corporation
+153,CYC4Q1-R,BBG000DD3510,Apartment Investment & Management Co Class A
+154,CZ9VBX-R,BBG000BCKC47,"AGL Resources, Inc."
+155,CZBYFY-R,BBG000BMTFR4,KLA Corporation
+156,CZG3GX-R,BBG000BC4782,Norbord Inc.
+157,CZGY1P-R,BBG000FXYZF9,"Washington Mutual, Inc."
+158,D0H09V-R,BBG000BYTR65,Finning International Inc.
+159,D0LDT1-R,BBG000BQBYR3,"NVR, Inc."
+160,D1P43P-R,BBG000BWJFZ4,"CF Industries Holdings, Inc."
+161,D1RCCS-R,BBG000BNBPQ0,"Legg Mason, Inc."
+162,D1RQ13-R,BBG000BKF737,Great Lakes Chemical Corporation
+163,D2RP35-R,BBG000BCNYT9,"Avon Products, Inc."
+164,D2WW33-R,BBG000BLVRT5,Baytex Energy Corp.
+165,D3VZJC-R,BBG000BS5DR2,Robert Half International Inc.
+166,D3X1KC-R,BBG000BS9103,Russell Corporation
+167,D3ZY22-R,BBG000BLCPY4,"Helmerich & Payne, Inc."
+168,D403D7-R,BBG000HQ7GC7,RS Legacy Corporation
+169,D41CTF-R,BBG000BFXH09,Comverse Technology Inc.
+170,D4VRCD-R,BBG001LFLZZ1,"Brixmor Property Group, Inc."
+171,D4VZNG-R,BBG001KY3845,"Allison Transmission Holdings, Inc."
+172,D502G9-R,BBG000BB9KF2,"American Electric Power Company, Inc."
+173,D545SN-R,BBG004WQKD07,"ONE Gas, Inc."
+174,D54BL9-R,BBG000CSY9H9,Bed Bath & Beyond Inc.
+175,D54YRW-R,BBG000BCRMB0,Toronto-Dominion Bank
+176,D64187-R,BBG000BC9938,"VMware, Inc. Class A"
+177,D68983-R,BBG000BFVXX0,CMS Energy Corporation
+178,D78YMT-R,BBG000BGPVW0,"Taubman Centers, Inc."
+179,D79MYG-R,BBG000BCT053,Toromont Industries Ltd.
+180,D8D820-R,BBG000BS9489,Omnicom Group Inc
+181,D8DLQB-R,BBG000BG7423,Crane Co.
+182,D8FPTC-R,BBG000BKNX95,Goodyear Tire & Rubber Company
+183,D8HQP8-R,BBG000GMM115,Associates First Capital Corporation
+184,DBNVQ8-R,BBG000BC5WJ4,"MAXIMUS, Inc."
+185,DBPQC2-R,BBG000FL1TC8,DIRECTV
+186,DBRKWT-R,BBG000BCRVC9,ALZA Corporation
+187,DCKZCP-R,BBG003NXJNH6,American Homes 4 Rent Class A
+188,DF2CV6-R,BBG000QDVR53,"Cinemark Holdings, Inc."
+189,DF2L7D-R,BBG000BYWTX7,Marvell Technology Group Ltd.
+190,DF3WQM-R,BBG000BYDP11,Canadian Utilities Limited Class A
+191,DF9PT2-R,BBG000BD8PN9,Bank of New York Mellon Corporation
+192,DG27Q5-R,BBG000BHX7N2,Emerson Electric Co.
+193,DG6SCF-R,BBG000BMZ7P7,Kansas City Southern
+194,DG71WP-R,BBG000FH5YM1,Frontier Communications Corporation Class B
+195,DG885T-R,BBG000BMW2R9,Kmart Corporation
+196,DGBZCC-R,BBG000R7Z112,"Delta Air Lines, Inc."
+197,DH6WPM-R,BBG000BTHH16,Service Corporation International
+198,DH79H0-R,BBG000BWSV34,Whirlpool Corporation
+199,DH7WLK-R,BBG000BHD8S7,Duke Realty Corporation
+200,DH962S-R,BBG000CH2BG4,Transat A.T. Inc.
+201,DH9ZLJ-R,BBG000FL3BB6,Union Pacific Resources Group Inc.
+202,DHBWFH-R,BBG000PHCBW1,"CIT Group, Inc."
+203,DHC1MJ-R,BBG000BGR5J0,Cablevision Systems Corporation Class A
+204,DJC2TN-R,BBG000BB5006,Adobe Inc.
+205,DJC60R-R,BBG000BDXGP9,"Conagra Brands, Inc."
+206,DJCHM1-R,BBG000C6CM73,MBNA Corporation
+207,DJD3SM-R,BBG000BPYD87,National Fuel Gas Company
+208,DJHD0P-R,BBG000BYMXV1,Empire Co. Ltd. Class A
+209,DJJ9XP-R,BBG000PFLGY2,Chimera Investment Corporation
+210,DKJ8VM-R,BBG000BS4MP5,"Dillard's, Inc. Class A"
+211,DKTB77-R,BBG0015XMW40,Targa Resources Corp.
+212,DLSMXK-R,BBG000BX3BL3,Weyerhaeuser Company
+213,DMR8FC-R,BBG000FL1XJ2,Polaroid Corporation
+214,DMR9HD-R,BBG000C3QSJ9,North Fork Bancorporation Inc.
+215,DMRWLY-R,BBG000BJ26K7,Albemarle Corporation
+216,DMSDLF-R,BBG000BXWF96,CAE Inc.
+217,DMX4QY-R,BBG000BC2C10,Apache Corporation
+218,DNWLTJ-R,BBG000BD9ZM7,Black Hills Corporation
+219,DNXNVJ-R,BBG000BV95H9,Timken Company
+220,DNY1KW-R,BBG000BQTMJ9,Pitney Bowes Inc.
+221,DPRH3S-R,BBG004P33PN3,"Clearway Energy, Inc. Class A"
+222,DQ13JV-R,BBG000CQZ1D3,New Look Vision Group Inc. Class A
+223,DQ510J-R,BBG000CZ8PQ6,Agnico Eagle Mines Limited
+224,DQ8HMS-R,BBG000HF28Q9,CubeSmart
+225,DQ8Q0Z-R,BBG000BQ5TD6,National Service Industries Inc.
+226,DR9KSW-R,BBG000BHC2S1,"PetSmart, Inc."
+227,DRBC9M-R,BBG000BKR1D6,"W.W. Grainger, Inc."
+228,DTKPJP-R,BBG000B9XYV2,American Tower Corporation
+229,DTKZ1Y-R,BBG000BCTLF6,Bank of America Corp
+230,DVKG6K-R,BBG000CNWGM0,ShawCor Ltd.
+231,DXTTDL-R,BBG000HJ82S6,Superior Plus Corp
+232,DXV51X-R,BBG000J0XLS5,Morguard Corporation
+233,DXV75Z-R,BBG000BSZXM0,Smith International
+234,DXVDJ4-R,BBG000KLB4Q1,"Skyworks Solutions, Inc."
+235,DXW84Y-R,BBG000BT7JW9,Snap-on Incorporated
+236,DXZQS6-R,BBG000NSCNT7,"Principal Financial Group, Inc."
+237,DY0VKX-R,BBG00GK8H5D0,Kinder Morgan Canada Ltd.
+238,DYZT1C-R,BBG000CTM4J9,"Carter's, Inc."
+239,DZ4XT5-R,BBG000BJTBJ9,Westshore Terminals Investment Corporation
+240,DZ776B-R,BBG000BFJ645,"Windstream Holdings, Inc."
+241,F03Z3C-R,BBG000CVQ2M0,Killam Apartment Real Estate Investment Trust
+242,F04QK2-R,BBG000BX1R49,"Watsco, Inc. Class B"
+243,F05QG0-R,BBG000P458P3,"Domino's Pizza, Inc."
+244,F07DSQ-R,BBG000QMKDM7,Tricon Capital Group Inc.
+245,F07Q7W-R,BBG000H3YXF8,Cintas Corporation
+246,F0M88Q-R,BBG000BP22B2,Marshall & Ilsley
+247,F17RG0-R,BBG000GXPGB4,Siebel Systems Inc.
+248,F17SJ1-R,BBG000BB6G37,"Analog Devices, Inc."
+249,F18L0S-R,BBG000BB41G8,Alberto-Culver
+250,F1DFCD-R,BBG000BR54L0,"PulteGroup, Inc."
+251,F1DMRL-R,BBG000D7HF89,Sonoco Products Company
+252,F1DNTM-R,BBG000BS73J1,"Raymond James Financial, Inc."
+253,F1F5T3-R,BBG000BB1QF7,Armstrong Holdings Inc.
+254,F2D739-R,BBG000BCPB71,"Avnet, Inc."
+255,F2DFHH-R,BBG000BB07P9,Barrick Gold Corporation
+256,F3HW5T-R,BBG000BT9174,TransAlta Corporation
+257,F3NM78-R,BBG000BFTJ91,Comcast Corporation Class A Special
+258,F4NL9B-R,BBG000BD53V2,"Woodward, Inc."
+259,F4NVTL-R,BBG000BGBRG2,Encompass Health Corporation
+260,F5WQ03-R,BBG000BQ1490,Niagara Mohawk Holdings Inc.
+261,F722C7-R,BBG000BN3P70,Longs Drug Stores Corp.
+262,F725KB-R,BBG000BW1M06,Unilever NV ADR
+263,F72PJT-R,BBG000BPNP00,"Maxim Integrated Products, Inc."
+264,F86GWG-R,BBG000BVHBM1,"Toll Brothers, Inc."
+265,F87563-R,BBG000JM3G01,Enron Corp.
+266,F96WSY-R,BBG000C3CNZ7,Husky Energy Inc.
+267,F96XVZ-R,BBG000BH13K9,E. I. du Pont de Nemours and Company
+268,F9GRFZ-R,BBG00KMXKWF9,"Perspecta, Inc."
+269,F9VYPD-R,BBG0078W3NQ3,Hewlett Packard Enterprise Co.
+270,FBB432-R,BBG000BQSQ38,"Paychex, Inc."
+271,FBBBH8-R,BBG000G5H5S0,Constellation Energy Group Inc.
+272,FBC2XZ-R,BBG000BB8PG1,W R Grace & Co
+273,FBC521-R,BBG000C12NL7,Union Planters Corporation
+274,FBCHQC-R,BBG000BNGTQ7,"L Brands, Inc."
+275,FCCHG2-R,BBG00B5CBKJ6,Brookfield Business Partners LP
+276,FCHQXF-R,BBG000BW1022,Endeavour Mining Corporation
+277,FCHV3J-R,BBG000GFD3R8,Badger Daylighting Ltd.
+278,FCK6QT-R,BBG000QY3XZ2,"Expedia Group, Inc."
+279,FCPGVT-R,BBG000KLLSK3,TORC Oil & Gas Ltd.
+280,FDN05J-R,BBG000BYFPY3,Canadian Western Bank
+281,FDQM4Z-R,BBG000DLD469,Extendicare Inc.
+282,FDS1XB-R,BBG000BJVN28,Federal Realty Investment Trust
+283,FDS65G-R,BBG000Q3JN03,Regions Financial Corporation
+284,FGW76H-R,BBG000BF6756,"Crown Holdings, Inc."
+285,FH0TZT-R,BBG000BRDFF3,"PNM Resources, Inc."
+286,FH1NKL-R,BBG000BN5HF7,Lennar Corporation Class A
+287,FJ1B1C-R,BBG000BBHXQ3,Arthur J. Gallagher & Co.
+288,FJ4J4C-R,BBG000BHKYH4,Ecolab Inc.
+289,FJ4NDH-R,BBG000BSBZH7,"Ross Stores, Inc."
+290,FJ4S87-R,BBG0068KVV91,Ares Management Corporation
+291,FJ7TFG-R,BBG000BT66K1,"Springs Industries, Inc."
+292,FK7P9F-R,BBG000BFHDG9,Coastal Corporation
+293,FK9ZPL-R,BBG000BMJYW8,Prologis
+294,FLDWBD-R,BBG000BZTW70,Nabors Industries Ltd.
+295,FLF3SM-R,BBG000BC8G88,"Airgas, Inc."
+296,FLFNV4-R,BBG000BVS043,Equity Office Properties Trust
+297,FMDS8D-R,BBG000BTCH57,"C.H. Robinson Worldwide, Inc."
+298,FMFR39-R,BBG000BMXK89,NCR Corporation
+299,FNKNQ2-R,BBG000BQGLS5,OGE Energy Corp.
+300,FPP2BC-R,BBG000C1J0Q4,"Plum Creek Timber Company, Inc."
+301,FPP9SL-R,BBG000G8N9C6,"Nordstrom, Inc."
+302,FPPSQ1-R,BBG000C4LN67,Garmin Ltd.
+303,FPTJVK-R,BBG000BT1715,J.M. Smucker Company
+304,FPVHPG-R,BBG000BLKC01,SmartCentres Real Estate Investment Trust
+305,FPVVBS-R,BBG000BL9439,H. J. Heinz Company
+306,FQJDL3-R,BBG0035M2ZB7,News Corporation Class B
+307,FQTTHX-R,BBG000FBK808,Denbury Resources Inc.
+308,FQZF97-R,BBG000F1ZSN5,"Roper Technologies, Inc."
+309,FR4YZK-R,BBG0088CYPX8,Nielsen Holdings Plc
+310,FR5M42-R,BBG003HBPFW4,Hudson's Bay Company
+311,FRZ5Z3-R,BBG000BL0P40,"Hawaiian Electric Industries, Inc."
+312,FS2TXJ-R,BBG000BG2MS0,3Com Corp
+313,FS319Q-R,BBG000BJ81C1,"Travelers Companies, Inc."
+314,FS32CR-R,BBG000BJ8YN7,Fastenal Company
+315,FT34MX-R,BBG000DZMH32,Wyeth
+316,FT7VMB-R,BBG000BRNGM2,Atmos Energy Corporation
+317,FT8DNV-R,BBG000BP52R2,3M Company
+318,FT8FQW-R,BBG000HS77T5,Verizon Communications Inc.
+319,FV800K-R,BBG000BTN971,Sunoco Inc.
+320,FV824M-R,BBG000FDBX90,"CenterPoint Energy, Inc."
+321,FV85BQ-R,BBG000C1CPP7,Maple Leaf Foods Inc.
+322,FV9XPC-R,BBG000HPX6W0,Crombie Real Estate Investment Trust
+323,FVDJNT-R,BBG000BDQNT8,CI Financial Corp.
+324,FW388C-R,BBG0058YL7G9,Essent Group Ltd.
+325,FWD88N-R,BBG000BSZYR3,EPR Properties
+326,FWHC5K-R,BBG000C2V3D6,"Agilent Technologies, Inc."
+327,FWHKKR-R,BBG000CBMH27,MGIC Investment Corporation
+328,FWJSXX-R,BBG000BJ5HK0,"Acuity Brands, Inc."
+329,FXCW90-R,BBG00CK391H4,MGM Growth Properties LLC Class A
+330,FXH4XG-R,BBG000CGC1X8,QUALCOMM Incorporated
+331,FXRCL5-R,BBG000QTT087,Molson Coors Canada Inc. Class A
+332,FYMJCN-R,BBG000BHVJJ3,EMC Corporation
+333,FYRXRS-R,BBG000BDGGH7,Biomet Inc.
+334,FYT21Z-R,BBG000TPV2Y6,B2Gold Corp.
+335,FYT41X-R,BBG000D898T9,"Cardinal Health, Inc."
+336,FZRL7K-R,BBG000BB8SW7,Packaging Corporation of America
+337,FZVN2F-R,BBG006N7S6K9,"Fidelity National Financial, Inc. - FNF Group"
+338,FZX1RR-R,BBG000BJW241,Eagle Materials Inc.
+339,G115RQ-R,BBG000BB67F4,Healthcare Realty Trust Incorporated
+340,G35BYT-R,BBG000H6K1B0,"Penske Automotive Group, Inc."
+341,G3949H-R,BBG000QH56C1,Cboe Global Markets Inc
+342,G3ZPT3-R,BBG002Q7J5Z1,TransUnion
+343,G49BPN-R,BBG000BWTBX4,Winn-Dixie Stores Inc.
+344,G49K2V-R,BBG000DGPR66,Bunge Limited
+345,G4GB6B-R,BBG000BV4DR6,"Teradyne, Inc."
+346,G4H6X5-R,BBG000DST2V3,El Paso Corp.
+347,G5JHGG-R,BBG000DQV8M1,Mirant Corp
+348,G5M19V-R,BBG000BVP5P2,SL Green Realty Corp.
+349,G6KS0R-R,BBG000BMWV95,Radian Group Inc.
+350,G6QSLG-R,BBG000BD2C18,Brown-Forman Corporation Class A
+351,G7QVVM-R,BBG000BGKJ70,"Blackstone Mortgage Trust, Inc. Class A"
+352,G7VZQH-R,BBG000BKWSR6,Huntington Bancshares Incorporated
+353,G8WDMZ-R,BBG000BBVJZ8,Devon Energy Corporation
+354,G90MPY-R,BBG000BV75B7,Tiffany & Co.
+355,G92RX2-R,BBG000RJ2J04,"SS&C Technologies Holdings, Inc."
+356,GC9695-R,BBG000BSXQV7,Sherwin-Williams Company
+357,GCCR8P-R,BBG000P87B57,Dollarama Inc.
+358,GFJC62-R,BBG000C3J3C9,"Cisco Systems, Inc."
+359,GFJGD5-R,BBG000BQC9V2,Newell Brands Inc
+360,GFKQTC-R,BBG000BLMDQ9,Hexcel Corporation
+361,GGKMRC-R,BBG000GRZDV1,"Strategic Education, Inc."
+362,GGPDYX-R,BBG000BHLYP4,CME Group Inc. Class A
+363,GGPTR9-R,BBG000FJRZ68,"Diamond Offshore Drilling, Inc."
+364,GGPVTB-R,BBG000CH5208,UnitedHealth Group Incorporated
+365,GGS0YC-R,BBG000JL0ZT3,Mirage Resorts Incorporated
+366,GJZ5YB-R,BBG000CS7CT9,Kohl's Corporation
+367,GM32M5-R,BBG000BCBCM7,"Staples, Inc."
+368,GM3DBL-R,BBG00FWQ4VD6,Ulta Beauty Inc
+369,GN6KCJ-R,BBG000BKTFN2,Halliburton Company
+370,GN6RRQ-R,BBG000BVVQQ8,Textron Inc.
+371,GN7G2C-R,BBG000BDHNB7,"Bemis Company, Inc."
+372,GPL7SL-R,BBG000DSBY06,Summit Bancorp.
+373,GQGP3B-R,BBG000BP0929,"Federated Hermes, Inc. Class B"
+374,GQGQ5C-R,BBG000BLW530,Eastman Chemical Company
+375,GQHWDG-R,BBG000BST2P2,"First National of Nebraska, Inc."
+376,GRLQZ7-R,BBG000D0FMX3,Methanex Corporation
+377,GRMY8C-R,BBG000BH3JF8,Danaher Corporation
+378,GRN6SM-R,BBG000DG5735,Sapient Corporation
+379,GRQMJ0-R,BBG000WCFV84,LyondellBasell Industries NV
+380,GRRFYN-R,BBG000BX3TD3,United States Steel Corporation
+381,GRRPDW-R,BBG000BPX9M1,IMS Health Inc.
+382,GRS9LG-R,BBG000BBNYF6,"Darden Restaurants, Inc."
+383,GRSDSK-R,BBG000B9X8C0,Ameren Corporation
+384,GS3RJ8-R,BBG000BY2Y78,Invesco Ltd.
+385,GSRK8V-R,BBG000D0SMY8,Cogent Communications Holdings Inc
+386,GTWXR1-R,BBG000CZ62D3,Barrick Gold Corporation
+387,GVCLVY-R,BBG000SR92R6,Enerflex Ltd.
+388,GW4QWL-R,BBG000H6CF00,U.S. Bancorp
+389,GW5LD8-R,BBG000BXYMJ8,Cameco Corporation
+390,GW7J66-R,BBG000FT86F1,Cenovus Energy Inc.
+391,GWY3WZ-R,BBG00D7J4Y12,Partners Value Investments LP Partnership Units
+392,GX5LJC-R,BBG000BYYLS8,Truist Financial Corporation
+393,GXCQ63-R,BBG000FYNK80,Cargojet Inc.
+394,GYJ1QD-R,BBG000QDT8Z5,Sienna Senior Living Inc.
+395,GYM5PB-R,BBG0019LSQ49,First Republic Bank
+396,GZF20K-R,BBG000BM5SR2,International Paper Company
+397,GZFZSF-R,BBG000CC53X1,Oshkosh Corp
+398,GZG0VG-R,BBG000BTCFP9,SouthTrust Corporation
+399,GZG77N-R,BBG000F76JZ1,New York Times Company Class B
+400,GZKHGQ-R,BBG000C1XVK6,"Everest Re Group, Ltd."
+401,H0P6P9-R,BBG000D2ZTS8,Hanesbrands Inc.
+402,H0PH6K-R,BBG000BLH2H9,goeasy Ltd.
+403,H1PKGQ-R,BBG000BBVK30,AMR Corporation
+404,H1PMLS-R,BBG000BFQYY3,Colgate-Palmolive Company
+405,H1PTZZ-R,BBG000KQF9D9,US Airways Group Inc.
+406,H2VPCM-R,BBG000BBGGQ1,Valero Energy Corporation
+407,H32PR6-R,BBG000KBCNV4,Molson Coors Beverage Company Class A
+408,H53QZC-R,BBG000CNFQW6,Perrigo Co. Plc
+409,H5490W-R,BBG000BK9W84,Graco Inc.
+410,H679XT-R,BBG00NNG2ZJ8,Xerox Holdings Corporation
+411,H68NH2-R,BBG000BN9WT5,Linear Technology Corporation
+412,H69CWS-R,BBG002PHSYX9,"Diamondback Energy, Inc."
+413,H6L5S4-R,BBG001J94C33,Element Fleet Management Corporation
+414,H7DGWR-R,BBG000BKVJK4,"Hasbro, Inc."
+415,H8HVG0-R,BBG000BQK1M0,Bank One Corporation
+416,H8JXH0-R,BBG000BL4504,Chesapeake Energy Corporation
+417,H8P4JZ-R,BBG000BGX2S0,"Aptargroup, Inc."
+418,H8PG48-R,BBG000BT0093,"Sirius XM Holdings, Inc."
+419,H9NX6V-R,BBG000C240W1,Sprint Nextel Corporation
+420,H9SPFD-R,BBG000BK6L72,Golden West Financial Corporation
+421,HCXCQ1-R,BBG000BH2W88,Stella-Jones Inc.
+422,HD1PZ3-R,BBG000BDF0T0,BellSouth Corporation
+423,HD2KLX-R,BBG000DQN9R3,Middleby Corporation
+424,HF1P15-R,BBG000BJ49H3,BorgWarner Inc.
+425,HF23WL-R,BBG000C4Z6C2,"Watts Water Technologies, Inc. Class A"
+426,HF4YDC-R,BBG000LX4D19,Capital Power Corporation
+427,HF5SX1-R,BBG000C17X76,Biogen Inc.
+428,HF6097-R,BBG000BCLYL9,"MSC Industrial Direct Co., Inc. Class A"
+429,HGBJ0K-R,BBG000BC40Y8,Anadarko Petroleum Corporation
+430,HHB3C8-R,BBG000D4LWF6,"Mondelez International, Inc. Class A"
+431,HHDN6N-R,BBG000BGFLL5,NYSE Euronext
+432,HHGP2K-R,BBG000C43744,"Highwoods Properties, Inc."
+433,HJG212-R,BBG000BL8804,"Host Hotels & Resorts, Inc."
+434,HJG575-R,BBG000CCZXJ8,Clairvest Group Inc.
+435,HJGCMC-R,BBG000D0BPV2,Primo Water Corporation
+436,HJXXH4-R,BBG001KJ2HM9,"Huntington Ingalls Industries, Inc."
+437,HJY4YC-R,BBG000R3NPZ4,Air Lease Corporation Class A
+438,HKLJPC-R,BBG000BQ8KV2,Nucor Corporation
+439,HKRSQ9-R,BBG000BS7ZF4,RLI Corp.
+440,HLRKD5-R,BBG000BYD2V9,"Canadian Tire Corporation, Limited Class A"
+441,HLTRL7-R,BBG000D2C051,Conoco Inc.
+442,HMVVTC-R,BBG000BD0TF8,"Franklin Resources, Inc."
+443,HMWK40-R,BBG000BSKFP2,Silvercorp Metals Inc.
+444,HMWRJ6-R,BBG000K3T543,Bethlehem Steel Corp.
+445,HMWTN8-R,BBG000G9PPD5,IAMGOLD Corporation
+446,HMZXK5-R,BBG000C5CCM0,John Hancock Financial Services Inc.
+447,HN01T9-R,BBG000BF2KK4,Cooper Industries PLC Cl A
+448,HN0LVT-R,BBG000PQ6YJ3,Sears Holdings Corporation
+449,HN0ZL5-R,BBG000C20FG0,Corus Entertainment Inc. Class B
+450,HNZVK6-R,BBG000BF6LY3,Carnival Corporation
+451,HP13ZD-R,BBG008NXC572,WestRock Company
+452,HP55Q6-R,BBG000BJCC41,Wheaton Precious Metals Corp
+453,HP58X9-R,BBG000F7RCJ1,"Advance Auto Parts, Inc."
+454,HQ2MHF-R,BBG00LNJRQ09,Amcor PLC
+455,HQ4DBK-R,BBG000BQLTW7,Oracle Corporation
+456,HQ7BZB-R,BBG000FG7KX9,Fort James Corporation
+457,HQ87P5-R,BBG000BVV7G1,Texas Instruments Incorporated
+458,HSDM8G-R,BBG000BCP4L1,WellPoint Health Networks Inc.
+459,HSF35X-R,BBG000BNNKG9,Masco Corporation
+460,HSFL3C-R,BBG000BRJ809,"PPG Industries, Inc."
+461,HSFQHM-R,BBG000QHV8S1,"CVR Energy, Inc."
+462,HSFSHK-R,BBG000BVXC87,"United Bankshares, Inc."
+463,HSKDCY-R,BBG000DZJVH0,"Nexstar Media Group, Inc. Class A"
+464,HSKR18-R,BBG000CCBBV8,Rogers Sugar Inc.
+465,HVP6XQ-R,BBG000BF1PD2,Liberty Property Trust
+466,HVV49B-R,BBG000BR37X2,Progressive Corporation
+467,HWZQ4Q-R,BBG000BCXN76,United Corporations Limited
+468,HXYSHY-R,BBG000CVD440,Transcontinental Inc. Class A
+469,HZ2GNH-R,BBG000BSVL59,Silicon Graphics Inc.
+470,HZ6Z7Q-R,BBG000C0G1D1,Intel Corporation
+471,J06Y9S-R,BBG000BWSGF4,"Brown & Brown, Inc."
+472,J0FV3X-R,BBG00HTVK2F9,"Stelco Holdings, Inc."
+473,J0FVH8-R,BBG000F7L5N7,"Discovery, Inc. Class B"
+474,J1BPLD-R,BBG000BCJT60,Alltel Corp.
+475,J1CRMD-R,BBG000BF7XZ5,Countrywide Financial Corp.
+476,J1J74L-R,BBG000BH02B2,Dana Corp.
+477,J2J1YJ-R,BBG000BF4D19,"Community Bank System, Inc."
+478,J2LVSN-R,BBG004MN1R41,Navient Corp
+479,J2MLPV-R,BBG000BFDXW1,Broadcom Corporation Class A
+480,J2MW73-R,BBG000L4M7F1,ResMed Inc.
+481,J2NHZ7-R,BBG00F5NYT81,Frontera Energy Corporation
+482,J2NPSW-R,BBG000CPQZ77,"Whole Foods Market, Inc."
+483,J5XSLR-R,BBG000FL7N17,CCL Industries Inc. Class B
+484,J61GM6-R,BBG000BRF322,Computer Modelling Group Ltd.
+485,J70N5J-R,BBG000BQVTF5,PACCAR Inc
+486,J70WMR-R,BBG000DYXD23,"MasTec, Inc."
+487,J70ZTV-R,BBG000BH1NH9,Deere & Company
+488,J71550-R,BBG000BCQV12,Fiera Capital Corporation Class A
+489,J71671-R,BBG000BWMX63,Webster Financial Corporation
+490,J75D6Z-R,BBG000BMLWX8,KB Home
+491,J89J6Y-R,BBG000BNWG87,Medtronic Plc
+492,J994MP-R,BBG000H8TVT2,Target Corporation
+493,J998WT-R,BBG000PM84L3,Hudbay Minerals Inc
+494,J9F59G-R,BBG000BB5373,Western Union Company
+495,J9FK0T-R,BBG000HL7499,"Worthington Industries, Inc."
+496,J9KGMM-R,BBG000Q4NZ54,"Envestnet, Inc."
+497,J9NNLH-R,BBG000MTDW24,"Sabra Health Care REIT, Inc."
+498,JBG9LM-R,BBG000BCYP43,"C. R. Bard, Inc."
+499,JBJGQN-R,BBG000PCQQL6,"Qurate Retail, Inc. Class A"
+500,JBXH5G-R,BBG00KDYT8C4,GrafTech International Ltd.
+501,JCPT0R-R,BBG000LD9JQ8,"Wynn Resorts, Limited"
+502,JCR7S3-R,BBG00JRRXNR3,Sprott Physical Gold and Silver Trust Units
+503,JDDDQJ-R,BBG009CL5J76,Sleep Country Canada Holdings Inc
+504,JDJR0M-R,BBG00PD5TW42,BSR Real Estate Investment Trust
+505,JDV16T-R,BBG000BZTJQ8,Quebecor Inc. Class B
+506,JDVJ48-R,BBG000BDRQL8,Conexant Systems Inc.
+507,JDVMBC-R,BBG000C665J4,Allied Properties Real Estate Investment Trust
+508,JDYHV2-R,BBG000BRX7N0,Ralston Purina Company
+509,JFVMGG-R,BBG000BJ98Z0,"Keurig Green Mountain, Inc."
+510,JFW5HZ-R,BBG000FP1N32,"NetApp, Inc."
+511,JFW6L0-R,BBG000BSZ738,"Selective Insurance Group, Inc."
+512,JFW9S3-R,BBG000BHZ5J9,EQT Corporation
+513,JFXM8B-R,BBG000CGQ4F7,"Morningstar, Inc."
+514,JH0BKZ-R,BBG000BHQ1H0,"Allergan, Inc."
+515,JH1XLG-R,BBG000G81SV7,Columbia Energy Group
+516,JH4JKX-R,BBG000BQ5TK8,National Semiconductor Corp
+517,JJ7V03-R,BBG000CKVSG8,CNX Resources Corporation
+518,JJ81D9-R,BBG000BRVP70,"Ryder System, Inc."
+519,JJ8MHV-R,BBG000CL9JV4,SYNNEX Corporation
+520,JJ8QPY-R,BBG000BJ27C4,Progress Energy Inc.
+521,JK7JJX-R,BBG000BLNZL4,Synovus Financial Corp.
+522,JKD9ND-R,BBG000C0PBV9,National City Corp.
+523,JKDM7P-R,BBG000BMFFQ0,Jacobs Engineering Group Inc.
+524,JKGP5M-R,BBG000C1FB75,"Intercontinental Exchange, Inc."
+525,JLJ0VZ-R,BBG000C6CFJ5,"Goldman Sachs Group, Inc."
+526,JLJN1K-R,BBG000JGQ3K6,Massey Energy Co.
+527,JLK511-R,BBG000CLDL71,"Universal Health Services, Inc. Class D"
+528,JLMJK8-R,BBG000BHW4Z7,Young & Rubicam Inc.
+529,JM9MDP-R,BBG00CWWQGZ5,Timbercreek Financial Corp.
+530,JMHSJV-R,BBG000C0F570,"Xilinx, Inc."
+531,JMHYW0-R,BBG000BR14K5,Chubb Limited
+532,JMJFSG-R,BBG000BRHBP7,Delphi Corporation
+533,JMNLQC-R,BBG000BFT2L4,Comcast Corporation Class A
+534,JNTPK7-R,BBG000BKSL41,"Hudson City Bancorp, Inc."
+535,JPTF52-R,BBG000BMKDM3,Kellogg Company
+536,JPXNB3-R,BBG00DBBG1M0,XL Group Ltd
+537,JQZ00G-R,BBG000BKFBD7,State Street Corporation
+538,JRFYNM-R,BBG001DCCGR8,Marathon Petroleum Corporation
+539,JS1YSB-R,BBG000DZ8BC1,"Waste Connections, Inc."
+540,JS2P50-R,BBG000BSR5N9,Shaw Communications Inc. Class B
+541,JS30TB-R,BBG000FKYVH4,"Lexmark International, Inc. Class A"
+542,JS6B3F-R,BBG000BK5DP1,"TEGNA, Inc."
+543,JT71M6-R,BBG000C060M4,"Affiliated Managers Group, Inc."
+544,JT792F-R,BBG000C0QCK8,Manulife Financial Corporation
+545,JTC04X-R,BBG000BGRY34,CVS Health Corporation
+546,JVFR13-R,BBG00FX58Q66,Hamilton Lane Incorporated Class A
+547,JVL1QM-R,BBG000F4LN28,Willamette Industries Inc.
+548,JWFM05-R,BBG0046LJYT2,"First Hawaiian, Inc."
+549,JWGNCJ-R,BBG000BJ9B29,F.N.B. Corporation
+550,JWH12W-R,BBG000BLMY92,"Mid-America Apartment Communities, Inc."
+551,JXMLY8-R,BBG000BM7HL0,"Autodesk, Inc."
+552,JXPMT5-R,BBG000PCS7S9,"Qurate Retail, Inc. Class B"
+553,JXV7LH-R,BBG000CV11C0,Homestake Mining Company
+554,JYQXCG-R,BBG000BCMWM1,"Vail Resorts, Inc."
+555,JYRG0L-R,BBG006G063F9,IHS Markit Ltd.
+556,JYWMBW-R,BBG000CKGBP2,"Gilead Sciences, Inc."
+557,JZGFGR-R,BBG0049FN2L5,Brookfield Property Partners LP
+558,JZWLDY-R,BBG000C2H3F0,"CoreLogic, Inc."
+559,K1049C-R,BBG000BJ41X2,"Insperity, Inc."
+560,K10TM0-R,BBG000BG1DH3,"Coherent, Inc."
+561,K14T6R-R,BBG000BLK267,Hubbell Incorporated Class B
+562,K24537-R,BBG000BKFZM4,Corning Inc
+563,K24Q4R-R,BBG000BGLRN3,"CenturyLink, Inc."
+564,K36637-R,BBG000BH3F20,Carlyle Group Inc
+565,K38HHD-R,BBG000BGD7W6,"Marriott International, Inc. Class A"
+566,K38JKF-R,BBG000BH8RD7,DNP Select Income Fund Inc
+567,K38W6R-R,BBG000DW76Y6,Fair Isaac Corporation
+568,K3DD15-R,BBG000D86F25,"BWX Technologies, Inc."
+569,K3FDW0-R,BBG000BZ1C10,Golden Star Resources Ltd.
+570,K4NMRW-R,BBG000FXJTH8,Old Kent Financial Corporation
+571,K5JXTH-R,BBG00R2JZG39,O-I Glass Inc
+572,K5PFDQ-R,BBG000CKGDS5,"First Industrial Realty Trust, Inc."
+573,K6Q83L-R,BBG000BCG226,Rogers Communications Inc. Class B
+574,K6RW63-R,BBG000C496P7,ViacomCBS Inc. Class B
+575,K6TS68-R,BBG00QVJVYB5,Reynolds Consumer Products Inc
+576,K6VMFP-R,BBG000BNXLK1,Mellon Financial Corp.
+577,K7TD6M-R,BBG000BB72K8,"Lincoln Electric Holdings, Inc."
+578,K7TPSX-R,BBG000BBJQV0,NVIDIA Corporation
+579,K7TZB5-R,BBG00R4SQJ13,Weatherford International Plc
+580,K7YTNS-R,BBG000BP7JB0,Viavi Solutions Inc
+581,K8YRNT-R,BBG000BT0CM2,SVB Financial Group
+582,K8ZVRV-R,BBG000F6ZWH2,"Dick's Sporting Goods, Inc."
+583,K8ZYYY-R,BBG000C4ZFV1,MeadWestvaco Corporation
+584,K916G7-R,BBG000Q0BPZ4,CIT Group Inc.
+585,K93YKP-R,BBG000BV52H0,Keyspan Corporation
+586,K9460X-R,BBG000MW0PF2,CIT Group Inc. (Old)
+587,KB2QBM-R,BBG000CVWGS6,"Activision Blizzard, Inc."
+588,KB3SCM-R,BBG000BT5PG5,Scotts Miracle-Gro Company Class A
+589,KB3YPS-R,BBG000BJSBJ0,"NextEra Energy, Inc."
+590,KB74SS-R,BBG000BKWCS0,"Hill-Rom Holdings, Inc."
+591,KB75VT-R,BBG000JMH788,Arbitron Inc.
+592,KB791X-R,BBG000BCTQ65,Xcel Energy Inc.
+593,KC6VBL-R,BBG000BC9DK0,Agree Realty Corporation
+594,KC6WDM-R,BBG000C1BW00,Lockheed Martin Corporation
+595,KCCLD1-R,BBG000BV1Y93,"TECO Energy, Inc."
+596,KCDMC0-R,BBG000FGMKY1,Lamar Advertising Company Class A
+597,KDBZBK-R,BBG000BZJQL8,Integra LifeSciences Holdings Corporation
+598,KDC2JN-R,BBG00K6988R4,iA Financial Corporation Inc.
+599,KDCD3Y-R,BBG000BQ5DS5,Norfolk Southern Corporation
+600,KDHCQP-R,BBG000BH2JM1,NortonLifeLock Inc.
+601,KDJGTQ-R,BBG000G1JDF4,Morguard REIT
+602,KDJL0T-R,BBG000BCQ4P6,Avery Dennison Corporation
+603,KDJSF0-R,BBG000BBL0Y1,"Alaska Air Group, Inc."
+604,KFJFWS-R,BBG000C1HN22,IDEX Corporation
+605,KFMHQN-R,BBG000BHBGN6,"Continental Resources, Inc."
+606,KFMMZS-R,BBG000FKJRC5,Estee Lauder Companies Inc. Class A
+607,KFP2R4-R,BBG000C41023,"UDR, Inc."
+608,KG1JQ0-R,BBG001P3K000,"Dunkin' Brands Group, Inc."
+609,KGNM2X-R,BBG000T6XY76,StorageVault Canada Inc.
+610,KGQLRN-R,BBG000NC8DB8,Embarq Corp.
+611,KGSD5B-R,BBG000BLG1L7,Equity Commonwealth
+612,KGSZF0-R,BBG000RSS169,Aurora Cannabis Inc.
+613,KHSZDZ-R,BBG000CL1FG7,Bruker Corporation
+614,KHT2M2-R,BBG000BPBVW5,Cognex Corporation
+615,KHX8Q2-R,BBG000BN84F3,Quest Diagnostics Incorporated
+616,KHYCT3-R,BBG000D7RJJ8,HCA Inc.
+617,KHZRFD-R,BBG000FFVZT6,Altus Group Limited
+618,KK1SFD-R,BBG000DW4Q75,Alliant Energy Corp
+619,KK1YRK-R,BBG000CX0P89,Global Payments Inc.
+620,KK2P47-R,BBG000BL8GJ6,AK Steel Holding Corporation
+621,KK9RS0-R,BBG001QYGP38,Dream Global Real Estate Investment Trust
+622,KM5Q58-R,BBG000BSLZY7,Charles Schwab Corporation
+623,KM84B2-R,BBG00R02H8D5,Hess Midstream LP Class A
+624,KMBPNY-R,BBG000BMDZF0,L3 Technologies Inc
+625,KMBRT0-R,BBG000BLPBL5,"AvalonBay Communities, Inc."
+626,KNB5TK-R,BBG000BV9X97,"Tellabs, Inc."
+627,KP3HBJ-R,BBG004MB7Q16,DREAM Unlimited Corp. Class A
+628,KPFMHW-R,BBG000L9CV04,"United Parcel Service, Inc. Class B"
+629,KPFV16-R,BBG000BB6MM3,WABCO Holdings Inc.
+630,KRQTDT-R,BBG000J2XL74,Philip Morris International Inc.
+631,KRTZ9N-R,BBG000H89QJ6,Time Warner Cable Inc.
+632,KSVLMB-R,BBG000BB4D72,"Flowers Foods, Inc."
+633,KSVQWG-R,BBG000BNVNY4,Meredith Corporation
+634,KSWML9-R,BBG000BL9JQ1,HollyFrontier Corporation
+635,KTPK4Q-R,BBG0035LY913,News Corporation Class A
+636,KV0J41-R,BBG000BMHYD1,Johnson & Johnson
+637,KV0K62-R,BBG000BRWGG9,Rite Aid Corporation
+638,KW432H-R,BBG000BMH2Q7,"Jack Henry & Associates, Inc."
+639,KWBVZV-R,BBG000CW2GN2,Chorus Aviation Inc.
+640,KXDMGL-R,BBG000F0KF42,Seagate Technology PLC
+641,KYCY91-R,BBG000BLGFJ9,L3Harris Technologies Inc
+642,KYJFW8-R,BBG000BQZMH4,Public Service Enterprise Group Inc
+643,KZKFX9-R,BBG000C4WXH1,Inco Limited
+644,KZKK3D-R,BBG000BG4202,Campbell Soup Company
+645,KZMN3C-R,BBG000BQD1J2,"Twenty-First Century Fox, Inc. Class B"
+646,KZNLFS-R,BBG00DXDL6Q1,Vistra Energy Corp.
+647,KZNLY8-R,BBG000BL40C2,Household International Inc.
+648,KZNS8F-R,BBG000BCY878,Balchem Corporation
+649,L0ND5P-R,BBG00C7Q12N7,ECN Capital Corp.
+650,L0NDP5-R,BBG000DPZC04,Russel Metals Inc.
+651,L1TD9Y-R,BBG000BKJ092,Gentex Corporation
+652,L1TYCG-R,BBG000BQVHQ9,"Pep Boys--Manny, Moe & Jack"
+653,L1XD4W-R,BBG000QF05R6,Americold Realty Trust
+654,L1XNK0-R,BBG000M44VW8,Owens Corning
+655,L2XPR4-R,BBG000JLC8L8,"Simpson Manufacturing Co., Inc."
+656,L32L1Q-R,BBG000HHJLP9,Sabre Holdings Corporation
+657,L32LM8-R,BBG00DYNJGH9,Howmet Aerospace Inc.
+658,L474X3-R,BBG000BB4WY0,Convergys Corporation
+659,L4PC3K-R,BBG001R72SR9,Ubiquiti Inc.
+660,L56306-R,BBG000BC1LY5,Suncor Energy Inc.
+661,L57MYN-R,BBG000BD7W19,Titanium Metals Corp.
+662,L5H9R0-R,BBG002832GV8,"PBF Energy, Inc. Class A"
+663,L6BT3Q-R,BBG000BL9C59,Macerich Company
+664,L6CPTK-R,BBG000BH5DV1,Intuit Inc.
+665,L6F9DL-R,BBG000DR87M7,"Schneider National, Inc. Class B"
+666,L6GXZL-R,BBG000C0ZW33,Umpqua Holdings Corporation
+667,L6H03N-R,BBG000BS5170,"Royal Gold, Inc."
+668,L6J5BR-R,BBG000BFK8Y6,TCF Financial Corporation
+669,L6NQKK-R,BBG000BP9WJ1,"ADT, Inc."
+670,L7HQMF-R,BBG000BBK3Y6,Sprint Corporation
+671,L7LP86-R,BBG000C23PB0,"Leidos Holdings, Inc."
+672,L7M79Q-R,BBG000LC1FS4,Allegheny Technologies Incorporated
+673,L7N0TG-R,BBG000BZQ983,National Bank of Canada
+674,L7NHQX-R,BBG000H3GDJ8,Kemper Corporation
+675,L8M6CS-R,BBG000BXJ2L6,"HLS Therapeutics, Inc."
+676,L8N68Q-R,BBG000DJN7L9,"Watsco, Inc."
+677,L8SB4L-R,BBG000BD3LM4,"Nuance Communications, Inc."
+678,L8SKLT-R,BBG000DQLV23,Bristol-Myers Squibb Company
+679,L9X4K8-R,BBG000BB6F57,AVX Corporation
+680,LBWNRX-R,BBG000BNC3Y9,Lincoln National Corporation
+681,LC1BTF-R,BBG000PSKYX7,Visa Inc. Class A
+682,LC3ZQS-R,BBG000GY7ZR3,GPU Inc.
+683,LD0WYZ-R,BBG000BGKTF9,Capital One Financial Corporation
+684,LD1K6L-R,BBG000CZX2P0,Magna International Inc.
+685,LF4HZG-R,BBG000BH2VM4,XTO Energy Inc
+686,LF4WPT-R,BBG000BJNGN9,Jabil Inc.
+687,LF5N4J-R,BBG000BVXRR3,Unocal Corporation
+688,LF95DC-R,BBG00DRGKLZ9,European Residential Real Estate Investment Trust
+689,LF9ZDL-R,BBG000H21KT9,ARC Resources Ltd.
+690,LGH1W3-R,BBG00GTR08C2,"Jamieson Wellness, Inc."
+691,LHFJF3-R,BBG000BW29L1,UniFirst Corporation
+692,LHKN8Z-R,BBG000BQ2C28,Northrop Grumman Corporation
+693,LHY6VB-R,BBG007PN0JL1,Restaurant Brands International LP
+694,LJPXK2-R,BBG000C0BT45,H&R Real Estate Investment Trust
+695,LJQYJ1-R,BBG000BKPL53,"Zimmer Biomet Holdings, Inc."
+696,LKPWM4-R,BBG000BTQR96,"Stanley Black & Decker, Inc."
+697,LKST5W-R,BBG000DWYF03,"Twenty-First Century Fox, Inc. Class A"
+698,LKVSZR-R,BBG000BNW1S8,"McDermott International, Inc."
+699,LKVW3T-R,BBG000BRZBT3,Rowan Cos. Plc Class A
+700,LKVX5V-R,BBG000D17GK7,Cominar Real Estate Investment Trust
+701,LN04J0-R,BBG000BMQCP6,Kirby Corporation
+702,LN3P8B-R,BBG000BY29C7,"Tapestry, Inc."
+703,LN3YSL-R,BBG000DCNK80,RPM International Inc.
+704,LPBY77-R,BBG000BBCHT0,American General Corporation
+705,LPRN3T-R,BBG00JHNJW99,Fox Corporation Class A
+706,LPVC46-R,BBG008473T87,Recipe Unlimited Corporation
+707,LQ766T-R,BBG00GVR8YQ9,Linde plc
+708,LQ7KY5-R,BBG000BLDV98,"H&R Block, Inc."
+709,LQBB5R-R,BBG000F1ZSQ2,Mastercard Incorporated Class A
+710,LQCGBT-R,BBG000F63ZX2,Nextel Communications Inc.
+711,LRDGCV-R,BBG000C4WJT9,Kate Spade & Co
+712,LRHQLX-R,BBG000BH6360,Deluxe Corporation
+713,LRHWY2-R,BBG000BJCDS3,"First Citizens BancShares, Inc. Class A"
+714,LRJBXM-R,BBG000VGZPL2,Sprott Inc.
+715,LRJYZ2-R,BBG000BT4T69,Hillshire Brands Company
+716,LRK013-R,BBG000BJL3N0,Fifth Third Bancorp
+717,LRMCKB-R,BBG000M34GG1,Macquarie Infrastructure Corporation
+718,LTN366-R,BBG00KXRCDP0,Cigna Corporation
+719,LTN487-R,BBG000DMM476,Canadian Pacific Railway Limited
+720,LTP0Z2-R,BBG000BGJRC8,CSX Corporation
+721,LTP334-R,BBG000BK67C7,General Dynamics Corporation
+722,LTR512-R,BBG000BFHXY5,Champion International Corporation
+723,LVYTWF-R,BBG000KCZPC3,"Iron Mountain, Inc."
+724,LWXGD7-R,BBG000BZCN41,"Lassonde Industries, Inc. Class A"
+725,LX237L-R,BBG000BD2NY8,Brown-Forman Corporation Class B
+726,LY653H-R,BBG000C23KJ3,AES Corporation
+727,LYB9P1-R,BBG00HCY3Q67,"Wyndham Hotels & Resorts, Inc."
+728,LZBB5H-R,BBG000BGZ832,SITE Centers Corp.
+729,LZBPWV-R,BBG000BPQD31,Mylan N.V.
+730,LZFJDM-R,BBG000Q0SZJ2,"LogMeIn, Inc."
+731,M0C1P8-R,BBG000BV59Y6,Teleflex Incorporated
+732,M0G2G3-R,BBG000BSL2D3,Symbol Technologies Inc.
+733,M0GKCK-R,BBG000BCHX45,Archstone-Smith Trust
+734,M0H6M5-R,BBG000BBPFB9,"Applied Materials, Inc."
+735,M1FW60-R,BBG000BW3299,Union Pacific Corporation
+736,M1H0C2-R,BBG000BJ2D31,"Simon Property Group, Inc."
+737,M2LCXB-R,BBG000DYTTG8,Owens Corning
+738,M3QDQ6-R,BBG000BGHJ83,Canadian Apartment Properties Real Estate Investment Trust
+739,M4L90G-R,BBG004MB82R0,"Rexford Industrial Realty, Inc."
+740,M4VLV7-R,BBG000BNNYW1,"Mattel, Inc."
+741,M4VYHK-R,BBG000BRY8B0,Reebok International Ltd.
+742,M4YLK1-R,BBG000BCRMW7,Portland General Electric Company
+743,M506MK-R,BBG000BV3594,Tektronix Inc.
+744,M64WP1-R,BBG000H1RYG7,Pegasystems Inc.
+745,M67VFY-R,BBG000BCZL41,Verisk Analytics Inc
+746,M7439D-R,BBG000BFDLV8,Cerner Corporation
+747,M77CJG-R,BBG000FQVNV6,Wachovia Corp.
+748,M79B89-R,BBG000C2BXK4,MGM Resorts International
+749,M79R1P-R,BBG000BPD168,"Merck & Co., Inc."
+750,M813QP-R,BBG002Q8RXQ9,Morguard North American Residential Real Estate Investment Trust
+751,M8CS1P-R,BBG000G8Y0Q8,Nabisco Group Holdings Corp.
+752,M8FZ7R-R,BBG000JTYFB2,CVB Financial Corp.
+753,M8XT6B-R,BBG00JHNKJY8,Fox Corporation Class B
+754,M9DGHF-R,BBG000BPT0C6,"Noble Energy, Inc."
+755,M9JF58-R,BBG000V78V75,First American Financial Corporation
+756,M9KTQG-R,BBG000BYR208,"American Capital, Ltd."
+757,MBJNMG-R,BBG0014LGC02,Canadian Natural Resources Limited
+758,MBK7R0-R,BBG000DB3KT1,Willis Towers Watson Public Limited Company
+759,MBNBMX-R,BBG000BMWKJ8,Evertz Technologies Limited
+760,MBP20L-R,BBG000BJCSJ0,"First Citizens BancShares, Inc. Class B"
+761,MBP9GT-R,BBG000JXM895,Open Text Corporation
+762,MDYC2K-R,BBG000F86GP6,Moody's Corporation
+763,MF2J0G-R,BBG000FW2TZ8,Hershey Co. Cl B
+764,MFQVZQ-R,BBG0058KMH30,Hilton Worldwide Holdings Inc
+765,MFYB4M-R,BBG000BF7Y65,Freddie Mac
+766,MFZ7XH-R,BBG000BXYW97,Corby Spirit and Wine Limited Class A
+767,MG2TQV-R,BBG000BMQPL1,KeyCorp
+768,MGN5FR-R,BBG009H04M17,"Planet Fitness, Inc. Class A"
+769,MH2KBP-R,BBG00B6BFWH9,Coca-Cola European Partners Plc
+770,MH33D6-R,BBG000B9XRY4,Apple Inc.
+771,MH3J5L-R,BBG000BPBTL2,"Choice Hotels International, Inc."
+772,MH3TRW-R,BBG000BVPPM1,Andeavor
+773,MH6176-R,BBG00QX875V5,"Andlauer Healthcare Group, Inc."
+774,MH7TCM-R,BBG000BJF1Z8,FedEx Corporation
+775,MJCGG4-R,BBG000BLHRS2,Hershey Company
+776,MKBN0G-R,BBG000BH30X9,Dollar General Corp.
+777,MKC1SV-R,BBG000BW8S60,Raytheon Technologies Corporation
+778,MKCXFN-R,BBG000BCNST2,SNC-Lavalin Group Inc.
+779,MKH9XV-R,BBG000BY07V2,Canfor Corporation
+780,MKJ8WW-R,BBG000RTDY25,MSCI Inc. Class A
+781,MLF0NS-R,BBG000PRJCX9,"Healthcare Trust of America, Inc. Class A"
+782,MMMG1X-R,BBG009HT65R1,Alamos Gold Inc.
+783,MMN39J-R,BBG000BSD7C2,Raytheon Company
+784,MMRZQ5-R,BBG000BP8Z50,"Motorola Solutions, Inc."
+785,MMSHPN-R,BBG000BKLVK8,Goodrich Corp.
+786,MNWT3V-R,BBG000BPDDB6,Silgan Holdings Inc.
+787,MPXJMM-R,BBG000BH4R78,Walt Disney Company
+788,MQ0Y3T-R,BBG000BWGYF8,Vulcan Materials Company
+789,MQ119X-R,BBG000BB6WG8,Archer-Daniels-Midland Company
+790,MQRG2Z-R,BBG004MF59H0,Physicians Realty Trust
+791,MR5BN1-R,BBG000BFK1R9,Thomson Reuters Corporation
+792,MS57L1-R,BBG000KHWT55,HP Inc.
+793,MS963R-R,BBG000BBQRN9,El Paso Electric Company
+794,MS9DHY-R,BBG000DR5QP5,Brink's Company
+795,MS9FKZ-R,BBG000BS5CM9,"Boston Properties, Inc."
+796,MTBCGY-R,BBG000HGYNZ9,"Steel Dynamics, Inc."
+797,MTFF9T-R,BBG000BYD720,Janus Capital Group Inc.
+798,MTGRW2-R,BBG00CVQZQ96,"ITT, Inc."
+799,MVKZ35-R,BBG000BQ87N0,Eversource Energy
+800,MVLTQZ-R,BBG000BCQZS4,American Express Company
+801,MWKTZ4-R,BBG000FBR384,Beam Suntory Inc.
+802,MWRCJB-R,BBG000BFLXV3,Pilgrim's Pride Corporation
+803,MXPPFV-R,BBG000CNZC55,"Office Depot, Inc."
+804,MXT1W0-R,BBG000BC82K5,Atlantic Richfield Company
+805,MXW701-R,BBG000N57QL4,Northview Apartment Real Estate Investment Trust
+806,MXZ7RW-R,BBG000PPFKQ7,"Broadridge Financial Solutions, Inc."
+807,MY3SK8-R,BBG000R2YFG7,Booz Allen Hamilton Holding Corporation Class A
+808,MYW502-R,BBG000BS1YV5,"Take-Two Interactive Software, Inc."
+809,MYYY9P-R,BBG000PN5CZ1,Park Lawn Corporation
+810,MYZ7WZ-R,BBG000BX8DC4,"Foot Locker, Inc."
+811,MZJHY9-R,BBG001QD41M9,Aptiv PLC
+812,MZZ0KV-R,BBG000DGZ1B6,"Monster Worldwide, Inc."
+813,MZZT2L-R,BBG000JXRXK2,Sovereign Bancorp Inc.
+814,N03DYZ-R,BBG000DQ7170,BCE Inc.
+815,N13NK9-R,BBG000BMF5J0,"J. C. Penney Company, Inc."
+816,N17TH6-R,BBG000BYTHG6,Fortis Inc.
+817,N18P40-R,BBG000C0MF34,Precision Castparts Corp.
+818,N286BN-R,BBG000BJJ834,Emera Incorporated
+819,N2GNNQ-R,BBG000BXM6V2,"Under Armour, Inc. Class A"
+820,N2VGP9-R,BBG0064N2T78,"Virtu Financial, Inc. Class A"
+821,N3CXK7-R,BBG000BPWGR1,Nordson Corporation
+822,N3DZL7-R,BBG000BW73T1,UST Inc.
+823,N4K9ZD-R,BBG000BZ2Y20,Great-West Lifeco Inc.
+824,N4P9L4-R,BBG000BX57K1,"DENTSPLY SIRONA, Inc."
+825,N5NG2F-R,BBG000PKZFB3,MARTINREA International Inc.
+826,N5T0SQ-R,BBG000H4NZQ1,FleetBoston Financial Corporation
+827,N5VYGJ-R,BBG000PXZFW2,Westlake Chemical Corporation
+828,N6SQBJ-R,BBG000BCFXT0,AMERCO
+829,N6Z3ML-R,BBG000BMDV41,"Johnson Controls, Inc."
+830,N70LFZ-R,BBG000J00LT0,Pollard Banknote Limited
+831,N7119D-R,BBG000BD3J49,Bestfoods Co.
+832,N712CF-R,BBG000BCV185,Pharmacia & Upjohn Inc.
+833,N7YFL5-R,BBG000BDLCQ0,"Reinsurance Group of America, Incorporated"
+834,N829B5-R,BBG004T0YC41,"Santander Consumer USA Holdings, Inc."
+835,N93NK1-R,BBG000J5Q6L2,"Genworth Financial, Inc. Class A"
+836,NB5RP3-R,BBG000BXSFH2,Boralex Inc. Class A
+837,NB6XX6-R,BBG000BHKCQ2,Engelhard Corporation
+838,NB76FG-R,BBG000BGKHZ3,"VeriSign, Inc."
+839,NBCR2Q-R,BBG000BFF1J4,Charter One Financial Inc.
+840,NCCJTM-R,BBG000BKQG80,IAC/InterActiveCorp.
+841,NCL5GV-R,BBG000BS7KS3,Molson Coors Beverage Company Class B
+842,NDG727-R,BBG000BC4HW3,American Power Conversion Corporation
+843,NDGT5S-R,BBG000BP2H92,Millipore Corp
+844,NDGZHY-R,BBG000BZYZB2,TELUS Corporation
+845,NDLVXL-R,BBG000BHRBT4,"EastGroup Properties, Inc."
+846,NDMDZ3-R,BBG000BN3832,Palm Inc.
+847,NDN5DT-R,BBG000BFNR17,Alliance Data Systems Corporation
+848,NFLZ7S-R,BBG000BHWHV2,Cogeco Communications Inc.
+849,NFMH78-R,BBG00GBVBK51,Baker Hughes Company Class A
+850,NFRN55-R,BBG000BQY289,"Patterson Companies, Inc."
+851,NGR5CT-R,BBG000DZK6N6,National Instruments Corporation
+852,NGVZND-R,BBG000BSQLT9,SEI Investments Company
+853,NGW97P-R,BBG000BQHGR6,"ONEOK, Inc."
+854,NHV4Q7-R,BBG00BN969C1,Corteva Inc
+855,NHX98Q-R,BBG000BH23R1,Dell Inc.
+856,NK0V54-R,BBG000C7P7N2,Enbridge Inc.
+857,NK4NFQ-R,BBG000BC6SL9,Onex Corporation
+858,NK5PDP-R,BBG000BWQLY4,PacWest Bancorp
+859,NKGZ7J-R,BBG000QW7VC1,HCA Healthcare Inc
+860,NL5NGR-R,BBG000BF33K1,"Cracker Barrel Old Country Store, Inc."
+861,NL8WMS-R,BBG000BYQVJ5,Fairfax Financial Holdings Limited
+862,NNKD2Y-R,BBG000DMBXR2,JPMorgan Chase & Co.
+863,NNKRT9-R,BBG000BYWTL0,Guardian Capital Group Limited Class A
+864,NNL4JN-R,BBG000G2K371,Enterasys Networks Inc.
+865,NNMSP6-R,BBG000Q1KFH4,Western Alliance Bancorp
+866,NNNM7Z-R,BBG000BQF887,Quaker Oats Company
+867,NPJW7K-R,BBG000BB6KF5,"MetLife, Inc."
+868,NPK3PS-R,BBG000J6XT05,Exelon Corporation
+869,NPK7YX-R,BBG000BPXVJ6,"Republic Services, Inc."
+870,NPP5KQ-R,BBG000BNXHG5,Mead Corporation
+871,NQTR8Z-R,BBG000BNHSP9,Jefferies Financial Group Inc.
+872,NRTP90-R,BBG000HX3Y19,"Jostens, Inc."
+873,NT37R4-R,BBG000BC33T9,"Alexandria Real Estate Equities, Inc."
+874,NT38T5-R,BBG000BBDV81,Cognizant Technology Solutions Corporation Class A
+875,NV79M1-R,BBG000BWCKB6,V.F. Corporation
+876,NV7K28-R,BBG000BLSL58,International Flavors & Fragrances Inc.
+877,NW728X-R,BBG000FQ6PY6,"Citrix Systems, Inc."
+878,NW7K6C-R,BBG000C96839,First Data Corp.
+879,NW8BQ3-R,BBG000G6Y5W4,"McCormick & Company, Incorporated"
+880,NWCQ48-R,BBG000BWPN99,Wendy's International Inc.
+881,NWGNS1-R,BBG000C2W0R6,"Time, Inc."
+882,NXD9CX-R,BBG000BHL1P6,Providian Financial Corporation
+883,NXHLP0-R,BBG000BGVW60,Dominion Energy Inc
+884,NXHX89-R,BBG000BBRPL4,"EMCOR Group, Inc."
+885,NYJB5S-R,BBG000BZG9D8,Leon's Furniture Limited
+886,NYJHHY-R,BBG000DYGNW7,McKesson Corporation
+887,NYN4GC-R,BBG000BB0V03,Camden Property Trust
+888,NYNSPZ-R,BBG000C12RY4,Canacol Energy Ltd.
+889,NZMC3R-R,BBG0027Z6X10,"Spirit Realty Capital, Inc."
+890,NZMV05-R,BBG000D7RKJ5,Edison International
+891,P0RK6R-R,BBG000F5YH15,"World Wrestling Entertainment, Inc. Class A"
+892,P0SXV1-R,BBG000FW00S1,Peabody Energy Corporation
+893,P0XT7P-R,BBG000BKRK35,Lehman Brothers Holdings Inc.
+894,P1P032-R,BBG00BLVZ228,Fortive Corp.
+895,P1WWLX-R,BBG000DKQDS3,Wesdome Gold Mines Ltd.
+896,P1X666-R,BBG000BDLLR9,Bausch & Lomb Inc.
+897,P1X787-R,BBG000G7PNS8,White Mountains Insurance Group Ltd
+898,P20812-R,BBG000Q5BQ63,"Ormat Technologies, Inc."
+899,P224MV-R,BBG000PXGT62,Tempur Sealy International Inc
+900,P31DB7-R,BBG000G0Z878,"Hartford Financial Services Group, Inc."
+901,P4BSC4-R,BBG000BMFD58,TD Ameritrade Holding Corporation
+902,P4VXRX-R,BBG008S3V4G5,"CSRA, Inc."
+903,P5BP94-R,BBG000BKZTP3,"Harley-Davidson, Inc."
+904,P5F9DQ-R,BBG000BLCL55,"QEP Resources, Inc."
+905,P5GYF4-R,BBG000FGKW59,Pharmacia Corp.
+906,P8R3C2-R,BBG000BPH459,Microsoft Corporation
+907,P9ZJN4-R,BBG000BKKMZ3,Georgia-Pacific Corp.
+908,P9ZMV7-R,BBG000CPHYL4,Tenet Healthcare Corporation
+909,PB04TQ-R,BBG000BMYS63,Knight-Ridder Inc.
+910,PB0T2B-R,BBG000D3C0S4,North American Palladium Ltd.
+911,PBZKZD-R,BBG000RG1PM3,OceanaGold Corporation
+912,PC0KR6-R,BBG000BSYXJ5,Canoe EIT Income Fund Trust Units
+913,PC0NY9-R,BBG000CG0HP5,Manor Care Inc.
+914,PC2KK2-R,BBG000BMZ5P1,Constellation Software Inc.
+915,PC4Y29-R,BBG000BP3NW2,Cabot Microelectronics Corporation
+916,PC58QM-R,BBG000HD3DW5,Wintrust Financial Corporation
+917,PD98GG-R,BBG000BKZB36,"Home Depot, Inc."
+918,PFD89C-R,BBG000F79GY5,Service Properties Trust
+919,PFF98B-R,BBG000BQX2N3,PotlatchDeltic Corporation
+920,PGDZT4-R,BBG000DBVBY4,Eaton Vance Corp.
+921,PGJW6S-R,BBG000BZC425,Loblaw Companies Limited
+922,PGKD68-R,BBG000BB7SX7,"Equity LifeStyle Properties, Inc."
+923,PGMTVK-R,BBG000BVTNR7,Texaco Inc.
+924,PGQCV2-R,BBG0017DRN10,Tourmaline Oil Corp.
+925,PHJ2V4-R,BBG000BKTT89,"Harman International Industries, Incorporated"
+926,PHP2BT-R,BBG000BS6M19,Pembina Pipeline Corporation
+927,PHQ4CT-R,BBG000LHD7R9,Exchange Income Corporation
+928,PJNB5B-R,BBG000QBR5J5,Discover Financial Services
+929,PJPRSK-R,BBG000BGKXV2,Cooper Tire & Rubber Company
+930,PJTSGB-R,BBG000BBXLW4,"AutoNation, Inc."
+931,PKCPQ6-R,BBG001J4J8T9,"VEREIT, Inc. Class A"
+932,PKY50L-R,BBG000BFPK65,Cincinnati Financial Corporation
+933,PKY86P-R,BBG000BX3B60,WM Wrigley Jr. Co.
+934,PKZ3VH-R,BBG000DQX1D4,"Pepco Holdings, Inc."
+935,PKZ95N-R,BBG000BW2QX0,Unum Group
+936,PLY66Q-R,BBG000BW4BT6,SEMAFO Inc.
+937,PM2QVZ-R,BBG000D5S4M0,Polaris Inc.
+938,PM3F9R-R,BBG000TGLV00,EchoStar Corporation Class A
+939,PM6DWF-R,BBG000F7GST7,TFS Financial Corporation
+940,PN37ZK-R,BBG000BHPL78,Equifax Inc.
+941,PN66MB-R,BBG000LV0836,"Interactive Brokers Group, Inc. Class A"
+942,PN6Y00-R,BBG000BP6LJ8,Altria Group Inc
+943,PP7H5M-R,BBG000BCHXF3,AmSouth Bancorporation
+944,PPBQBN-R,BBG000BGX601,Delta Air Lines Inc.
+945,PPCTFP-R,BBG000DH7JK6,"PepsiCo, Inc."
+946,PQH2SV-R,BBG000BTS7D3,GDI Integrated Facility Services Inc
+947,PQLF4Z-R,BBG000BJRZ26,Florida Progress Corporation
+948,PRGN6N-R,BBG000R7RDB4,Concho Resources Inc.
+949,PRGQ6L-R,BBG000BP1Q11,"S&P Global, Inc."
+950,PRHBD5-R,BBG00R2NHR63,Ovintiv Inc
+951,PRKZKS-R,BBG000M1J270,"Starwood Property Trust, Inc."
+952,PRMD3Z-R,BBG000D0PTF7,Imperial Oil Limited
+953,PRR12D-R,BBG000C460K8,Vermilion Energy Inc.
+954,PSLKQB-R,BBG0054B20Z8,"QTS Realty Trust, Inc. Class A"
+955,PSRH1X-R,BBG000K3BC83,"Lithia Motors, Inc. Class A"
+956,PTRY1F-R,BBG000BZX1N5,"Assurant, Inc."
+957,PTS6KP-R,BBG000C3MXG5,Amdocs Limited
+958,PTVCPQ-R,BBG000JK79L4,J.P. Morgan & Co. Incorporated
+959,PTVPZP-R,BBG00HPDM5Z2,"Switch, Inc. Class A"
+960,PVW48J-R,BBG000C90DH9,"Interpublic Group of Companies, Inc."
+961,PVWPB1-R,BBG000BJ5GK2,"Expeditors International of Washington, Inc."
+962,PWVY5L-R,BBG003MSMCS6,"Gaming and Leisure Properties, Inc."
+963,PX3T0T-R,BBG000BWHVM5,Seagram Company Ltd.
+964,PX63DZ-R,BBG000LS68P3,Sun Life Financial Inc.
+965,PX8K28-R,BBG000PHQ3V5,First National Financial Corporation
+966,PY50G1-R,BBG000BRD0D8,"PNC Financial Services Group, Inc."
+967,PY5KHK-R,BBG000BF0K17,Caterpillar Inc.
+968,PY5NPN-R,BBG00SSQFPK6,Aon Plc Class A
+969,PY63K2-R,BBG000PKMTW4,Ag Growth International Inc.
+970,PY63P6-R,BBG0015YTF57,Maverix Metals Inc
+971,PZ917X-R,BBG000BLKK03,Humana Inc.
+972,PZF9CX-R,BBG000BGZP70,"Donaldson Company, Inc."
+973,PZHJN0-R,BBG000PWGV23,Centerra Gold Inc.
+974,Q0F8FZ-R,BBG000BYQ2G2,Economic Investment Trust Limited
+975,Q0JDDX-R,BBG000DC3LT7,Shared Medical Systems Corporation
+976,Q1LDBW-R,BBG000C78J55,E. W. Scripps Company Class A
+977,Q1Q3FC-R,BBG000F9N9Q0,Travelers Property Casualty Corp. Cl B
+978,Q2TXV1-R,BBG000BF6VR9,Wall Financial Corporation
+979,Q2W445-R,BBG000BSY3K9,Sigma-Aldrich Corporation
+980,Q2W7B8-R,BBG000GQ7K93,Graphic Packaging Holding Company
+981,Q2XGTK-R,BBG000PTLGZ1,Lear Corporation
+982,Q3VTNZ-R,BBG000FXW512,"PerkinElmer, Inc."
+983,Q3ZHPF-R,BBG000BBMSJ6,Altera Corporation
+984,Q4YP8S-R,BBG005CPNTQ2,Kraft Heinz Company
+985,Q4ZYNY-R,BBG000D17XL9,MTY Food Group Inc.
+986,Q53D75-R,BBG000BB5BF6,GameStop Corp. Class A
+987,Q53KKB-R,BBG000B9ZWJ8,Albertson's Inc.
+988,Q774MW-R,BBG000BB1TH9,Fluor Corporation
+989,Q78D01-R,BBG000BBD070,Hess Corporation
+990,Q78KB6-R,BBG000BN1XR3,"Rockwell Collins, Inc."
+991,Q7CHYZ-R,BBG000BCNF74,Avista Corporation
+992,Q7CL31-R,BBG000BZCZJ8,Laurentian Bank of Canada
+993,Q7GYJ6-R,BBG000BRSL64,Paine Webber Group Inc.
+994,Q7WZWY-R,BBG00688QWF5,"Baxalta, Inc."
+995,Q8CPF7-R,BBG000BFFW79,Savaria Corporation
+996,Q8G78M-R,BBG000L8CBX4,TransDigm Group Incorporated
+997,Q8J4YF-R,BBG000BVFFV4,Thomas & Betts Corp.
+998,Q9G7JV-R,BBG00384XTD2,True North Commercial REIT
+999,Q9J1WF-R,BBG000BL6888,Hilton Hotels Corp.
+1000,QCS6P8-R,BBG000F0PF65,Time Warner Inc.
+1001,QCSBYD-R,BBG000BNY0W3,Merrill Lynch & Co. Inc.
+1002,QCSD0F-R,BBG000DPKKK0,"American Financial Group, Inc."
+1003,QCWXCC-R,BBG006B6PVN9,CDK Global Inc
+1004,QCXGT8-R,BBG000FJH8W0,"Hanover Insurance Group, Inc."
+1005,QD8WKZ-R,BBG000C4ZZ10,Signet Jewelers Limited
+1006,QDX24Z-R,BBG000BN1M88,Lancaster Colony Corporation
+1007,QDYDQ7-R,BBG000C2L2L0,Jones Lang LaSalle Incorporated
+1008,QF1XDJ-R,BBG000F3CWW7,"J2 Global, Inc."
+1009,QG1HR7-R,BBG000GZQ728,Exxon Mobil Corporation
+1010,QG2Q1C-R,BBG000BH93Y6,R.R. Donnelley & Sons Company
+1011,QG6QQ4-R,BBG000BY0KW2,Canadian General Investments Ltd
+1012,QH2H8S-R,BBG000BQDF10,Levi Strauss & Co. Class A
+1013,QHBXV5-R,BBG000BZ9223,"EOG Resources, Inc."
+1014,QJ9QP4-R,BBG000BG8M31,Equity Residential
+1015,QJBZ19-R,BBG000BVD6X4,Globe Life Inc.
+1016,QJHLWN-R,BBG000C4PLF7,Old Republic International Corporation
+1017,QJKQYN-R,BBG000QDQ4F9,Intact Financial Corporation
+1018,QJL7Y4-R,BBG000GW06J7,Emergent BioSolutions Inc.
+1019,QKJS7V-R,BBG000M65M61,"United Airlines Holdings, Inc."
+1020,QKM4S2-R,BBG000FBVQT5,Alacer Gold Corp.
+1021,QKMC58-R,BBG000BCBSC3,Paramount Resources Ltd. Class A
+1022,QLRPKF-R,BBG000BD1HP2,W. R. Berkley Corporation
+1023,QMQV1Q-R,BBG000C8H633,Marathon Oil Corporation
+1024,QMW47R-R,BBG000BC5DJ6,Novagold Resources Inc
+1025,QMX32N-R,BBG000CYW7N5,"ALLETE, Inc."
+1026,QNWQHD-R,BBG000BD3XR3,PeopleSoft Inc.
+1027,QP3LLV-R,BBG000JYP7L8,Celanese Corporation
+1028,QQ00XL-R,BBG000BWYFX9,"Integrys Energy Group, Inc."
+1029,QQ42ND-R,BBG000K1XDF3,Lundin Mining Corporation
+1030,QQ56TG-R,BBG000BBP0X8,American Greetings Corporation Class A
+1031,QR3WD9-R,BBG000FRBSS9,Wachovia Corp.
+1032,QR56YK-R,BBG000BG3HG3,"GGP, Inc."
+1033,QSDQCP-R,BBG000BWVCP8,"Williams Companies, Inc."
+1034,QTK2TW-R,BBG000BCGY17,"Lorillard, Inc."
+1035,QTKYGP-R,BBG000F1FSV8,Burlington Resources Inc.
+1036,QVJJXG-R,BBG000F1M8C5,Magellan Aerospace Corporation
+1037,QVQ1DM-R,BBG000BCC284,Power Corporation of Canada
+1038,QVQ2GN-R,BBG000BBTJZ1,Erie Indemnity Company Class A
+1039,QZ3ZG1-R,BBG000BN53G7,"Leggett & Platt, Incorporated"
+1040,R22FJJ-R,BBG00DB0XYC4,Owl Rock Capital Corp.
+1041,R2CVVQ-R,BBG000BFP2F5,Cinergy Corp.
+1042,R2D15W-R,BBG000L3R3H5,Caremark Rx Inc.
+1043,R2H78W-R,BBG000BDRQ10,Bear Stearns Companies
+1044,R2J99W-R,BBG000BMY992,Kroger Co.
+1045,R3HBM2-R,BBG000C1JTL6,"Total System Services, Inc."
+1046,R3J43T-R,BBG000FG3C43,SanDisk Corporation
+1047,R3MHJZ-R,BBG000GB1NC2,Boyd Group Services Inc
+1048,R4M2WP-R,BBG000BBCDZ2,"Rockwell Automation, Inc."
+1049,R4S089-R,BBG000DH4YM4,Chemtrade Logistics Income Fund
+1050,R4SK9T-R,BBG000BXSQ97,Bank of Montreal
+1051,R5RD6T-R,BBG000BKLH74,"Gap, Inc."
+1052,R5XGXL-R,BBG000BKCFC2,"General Mills, Inc."
+1053,R6XPFW-R,BBG000BCS9D6,Teck Resources Limited Class B
+1054,R71MZL-R,BBG000FH8PX5,Allergan plc
+1055,R81DNG-R,BBG000BF1R66,Chubb Corporation
+1056,R852NX-R,BBG000D1JJ55,WestJet
+1057,R867X0-R,BBG003FSTZ60,Dynegy Inc.
+1058,R95W9R-R,BBG000C3FGH9,Graham Holdings Co.
+1059,R998SY-R,BBG000BQQ2S6,Occidental Petroleum Corporation
+1060,RBB7RY-R,BBG000H9G7X2,Abercrombie & Fitch Co. Class A
+1061,RBCWXH-R,BBG000BWDFD4,ViacomCBS Inc. Class A
+1062,RBDXWG-R,BBG000PV2L86,"Wyndham Destinations, Inc."
+1063,RBHHTX-R,BBG0039G71V4,Dream Industrial Real Estate Investment Trust
+1064,RBJXH6-R,BBG000Q5ZRM7,"Digital Realty Trust, Inc."
+1065,RC9616-R,BBG00582TDZ7,CT Real Estate Investment Trust
+1066,RCM4WD-R,BBG000PC4J09,Nuveen AMT-Free Quality Municipal Income Fund of Benef Interest
+1067,RDKCLT-R,BBG000BWHD54,Vornado Realty Trust
+1068,RDM4N4-R,BBG00H2FLP61,Sagicor Financial Co. Ltd. Class A
+1069,RDQZ92-R,BBG000GHZSZ6,First Horizon National Corporation
+1070,RF86WY-R,BBG00B6WH9G3,"Match Group, Inc."
+1071,RFPMVX-R,BBG000BWP7D9,WEC Energy Group Inc
+1072,RFQX93-R,BBG000CWQ765,Alimentation Couche-Tard Inc. Class B
+1073,RGTY61-R,BBG000BK2F42,"Fidelity National Information Services, Inc."
+1074,RH0GWC-R,BBG000TRN6Z1,Franco-Nevada Corporation
+1075,RHVDR3-R,BBG00NK8H8T2,"Tradeweb Markets, Inc. Class A"
+1076,RJ022Y-R,BBG000C75N77,Comerica Incorporated
+1077,RJ0FT9-R,BBG000BS0ZF1,Ralph Lauren Corporation Class A
+1078,RJ3WCJ-R,BBG000BJ2VQ6,Valaris PLC Class A
+1079,RJMXG2-R,BBG000F02T51,"Cable One, Inc."
+1080,RJVBBR-R,BBG003PS7JV1,Allegion PLC
+1081,RK3DL5-R,BBG000FY4S11,Citigroup Inc.
+1082,RK3HS8-R,BBG000J1QLT0,"Constellation Brands, Inc. Class A"
+1083,RK3XKN-R,BBG000KKVD81,Lennar Corporation Class B
+1084,RK4MYB-R,BBG000C2NV89,Electronic Data Systems Corp.
+1085,RK8Z6D-R,BBG000C1FQS9,Entergy Corporation
+1086,RKZJ9M-R,BBG000H8R0N8,Rexnord Corporation
+1087,RLFBNL-R,BBG000BB94G7,Trane Inc.
+1088,RMD5KL-R,BBG000BY18P6,Cogeco Inc.
+1089,RMFR2L-R,BBG00DL8NMV2,TechnipFMC Plc
+1090,RMJKYQ-R,BBG000D9P720,"PS Business Parks, Inc."
+1091,RMJM0R-R,BBG000BPZVW9,New Jersey Resources Corporation
+1092,RNHYX7-R,BBG000BJDPC2,"Family Dollar Stores, Inc."
+1093,RPNJRM-R,BBG000C2PW58,"BlackRock, Inc."
+1094,RPSRYQ-R,BBG000C3W281,Masimo Corporation
+1095,RPTY1P-R,BBG000BRJL00,PPL Corporation
+1096,RPVXYM-R,BBG000M9KP89,"American Campus Communities, Inc."
+1097,RQSKKH-R,BBG000BF0672,"Casey's General Stores, Inc."
+1098,RQXL78-R,BBG000BNMMJ3,"Henry Schein, Inc."
+1099,RRXTTL-R,BBG000BMBL90,Illinois Tool Works Inc.
+1100,RS288R-R,BBG000BVYN55,UGI Corporation
+1101,RSQN90-R,BBG001D8R5D0,Xylem Inc.
+1102,RT2ZSJ-R,BBG000BNFLM9,Lam Research Corporation
+1103,RT66YK-R,BBG000BBQCY0,"Advanced Micro Devices, Inc."
+1104,RT78ZK-R,BBG000CGWSJ3,"National Health Investors, Inc."
+1105,RT7HCR-R,BBG000BVWZF9,"Tyler Technologies, Inc."
+1106,RTXD8D-R,BBG001P63B80,CDW Corp.
+1107,RVBRQX-R,BBG000KN5J90,InterRent Real Estate Investment Trust
+1108,RVC5J9-R,BBG000D8RG11,"NRG Energy, Inc."
+1109,RWBV02-R,BBG000BK4N16,Kinross Gold Corporation
+1110,RXG6KB-R,BBG000C22QV7,Sealed Air Corporation
+1111,RXH4B6-R,BBG000BDTV08,Dream Office Real Estate Investment Trust Class A
+1112,RXHCSF-R,BBG000BVMG26,"MKS Instruments, Inc."
+1113,RXHN9P-R,BBG000BCSST7,Boeing Company
+1114,RYLVJS-R,BBG000C6F3T8,International Game Technology
+1115,RYRC40-R,BBG000BPZBB6,NiSource Inc
+1116,RZQS4K-R,BBG000BH5LT6,Transocean Ltd.
+1117,RZXDWV-R,BBG000BR2TH3,Procter & Gamble Company
+1118,S107DL-R,BBG000F2XXP2,"Sinclair Broadcast Group, Inc. Class A"
+1119,S1ZZ0F-R,BBG000BY0R66,North West Company Inc.
+1120,S2111F-R,BBG000BGFGT8,"Littelfuse, Inc."
+1121,S254X9-R,BBG000BX6BJ3,Alleghany Corporation
+1122,S25R0V-R,BBG000BJQ328,Federal National Mortgage Association
+1123,S277X8-R,BBG000BSH5L2,Sears Roebuck & Co.
+1124,S38C4D-R,BBG000PN1SJ8,"Douglas Emmett, Inc"
+1125,S390D0-R,BBG000BVW841,TXU Corporation
+1126,S3DBR4-R,BBG000NS26Q8,Huntsman Corporation
+1127,S48YD1-R,BBG000BTKGG8,"SunTrust Banks, Inc."
+1128,S49CQZ-R,BBG00FGXCJX5,"Park Hotels & Resorts, Inc."
+1129,S4FRKK-R,BBG000BTPCL6,Cineplex Inc.
+1130,S4J8BX-R,BBG000BJBZ23,MarketAxess Holdings Inc.
+1131,S5KTFG-R,BBG000BGSPS5,Curtiss-Wright Corporation
+1132,S7P87W-R,BBG000BBL8V7,"Quanta Services, Inc."
+1133,S7RV59-R,BBG000DHSPT0,Viacom Inc. Class B
+1134,S8TZCD-R,BBG000BK3M37,"Great Atlantic & Pacific Tea Company, Inc."
+1135,S8YXX3-R,BBG000CFZ003,BOK Financial Corporation
+1136,S8Z499-R,BBG000BX24N8,"West Pharmaceutical Services, Inc."
+1137,S8ZM6R-R,BBG000LZZSW3,IBERIABANK Corporation
+1138,S8ZPBT-R,BBG000BV8DN6,TJX Companies Inc
+1139,SD0F4T-R,BBG004RXCMJ7,"TransAlta Renewables, Inc."
+1140,SD29B5-R,BBG003DNHV56,Valvoline Inc.
+1141,SD8B66-R,BBG000FJ52G4,"McCormick & Company, Incorporated"
+1142,SDD54F-R,BBG006JNW321,NextEra Energy Partners LP
+1143,SDDH43-R,BBG000BWLMJ4,Walgreens Boots Alliance Inc
+1144,SDKY5W-R,BBG00L07HDN5,Minto Apartment Real Estate Investment Trust
+1145,SFC1HV-R,BBG000BV7YT5,Temple-Inland Inc
+1146,SFDM4Z-R,BBG00F5FNKJ7,JBG SMITH Properties
+1147,SFLZN9-R,BBG000BVHT97,Tosco Corporation
+1148,SHMHWZ-R,BBG000DCCZW2,AGCO Corporation
+1149,SHNDLT-R,BBG000B9ZXB4,Abbott Laboratories
+1150,SHNSB5-R,BBG000C3L4T6,Fisher Scientific International Inc.
+1151,SHNVG7-R,BBG000HCJMF9,"Prudential Financial, Inc."
+1152,SHRZF5-R,BBG000BFJT36,"Church & Dwight Co., Inc."
+1153,SJS2RC-R,BBG000BKL348,Genuine Parts Company
+1154,SJSMSW-R,BBG000BCB3K9,Parkland Corporation
+1155,SJX192-R,BBG000BT9T73,LSI Corporation
+1156,SJX7P8-R,BBG000BVJ926,Texas Pacific Land Trust
+1157,SJY281-R,BBG000BLNNH6,International Business Machines Corporation
+1158,SKX4M8-R,BBG000BXF5W1,ATCO Ltd. Class I
+1159,SKZRLQ-R,BBG000G3QLY3,"Ameriprise Financial, Inc."
+1160,SM0Z0Y-R,BBG000D9V7T4,"Aaron's, Inc."
+1161,SM1NBL-R,BBG000C19QW1,Chemed Corporation
+1162,SMQ3XB-R,BBG00LYNKNL9,AltaGas Canada Inc.
+1163,SN5CK5-R,BBG000BLRP41,Universal Display Corporation
+1164,SNBZ7F-R,BBG000BJDX44,Pepsi Bottling
+1165,SNC4KL-R,BBG000M6TR37,Signature Bank
+1166,SPGL7X-R,BBG00MRHG523,STERIS Plc
+1167,SQ7BQC-R,BBG001KY4N87,Aramark
+1168,SQFMK3-R,BBG000BDJL83,FactSet Research Systems Inc.
+1169,SQGTV7-R,BBG000BD1GP4,West Fraser Timber Co. Ltd.
+1170,SQGY1B-R,BBG000BLBXT4,"Starwood Hotels & Resorts Worldwide, Inc."
+1171,SRL24C-R,BBG000BSBB99,Rohm & Haas Co.
+1172,SRR5X5-R,BBG000BHGZT3,Saputo Inc.
+1173,STW6V4-R,BBG000BMJT68,Jefferson-Pilot Corporation
+1174,SW2SHD-R,BBG000BX8P91,"New Century Energies, Inc."
+1175,SYD3JB-R,BBG000BRZBL1,Royal Dutch Petroleum Co. ADR
+1176,SYJ221-R,BBG000PRJ2Z9,"Spirit AeroSystems Holdings, Inc. Class A"
+1177,SYS0R0-R,BBG007PN0489,Restaurant Brands International Inc
+1178,SZDB1M-R,BBG000BSPWD3,Seaboard Corporation
+1179,SZJK3L-R,BBG001QG2N64,TMX Group Ltd.
+1180,SZJL5M-R,BBG000BJ3PD2,Eaton Corp. Plc
+1181,SZLVHR-R,BBG000BGGTW5,"Blackbaud, Inc."
+1182,T0J5JB-R,BBG000C3KB84,"Glacier Bancorp, Inc."
+1183,T0JK7P-R,BBG000BGXMG9,Churchill Downs Incorporated
+1184,T0JL9Q-R,BBG000FVXD63,Range Resources Corporation
+1185,T0PLWF-R,BBG000D4YTR6,Valley National Bancorp
+1186,T0SQZH-R,BBG000NDYB67,General Motors Company
+1187,T1N9NF-R,BBG000RGM5P1,TE Connectivity Ltd.
+1188,T1NTHS-R,BBG000CLP0Y4,"National Retail Properties, Inc."
+1189,T2T0MT-R,BBG000BQY1C6,Phelps Dodge Corporation
+1190,T2TKPB-R,BBG000BQYCB3,Inter Pipeline Ltd.
+1191,T2TNWF-R,BBG000BTVJ25,Sysco Corporation
+1192,T2XF84-R,BBG000BLTVN5,Premium Brands Holdings Corporation
+1193,T2Z5LS-R,BBG000TSWM66,Innergex Renewable Energy Inc.
+1194,T2ZH1Y-R,BBG000D6L294,Cimarex Energy Co.
+1195,T3Y7TW-R,BBG000BWLKT7,Nuveen Quality Municipal Income Fund of Benef.Interest
+1196,T3YH93-R,BBG000BKYDP9,"Healthpeak Properties, Inc."
+1197,T4259K-R,BBG000BC1X33,Stantec Inc
+1198,T43Q80-R,BBG000G9HTM6,Dundee Precious Metals Inc.
+1199,T67DJN-R,BBG000BB65D0,"Gartner, Inc."
+1200,T6C8Y9-R,BBG000BNQN34,MBIA Inc.
+1201,T6CPQP-R,BBG000CHSS88,"Old Dominion Freight Line, Inc."
+1202,T7CGDK-R,BBG000BBCQD7,SLM Corp
+1203,T7GQMM-R,BBG000KP4WB4,WorldCom Inc.
+1204,T7H5H1-R,BBG000BG3445,"Cooper Companies, Inc."
+1205,T8GMPR-R,BBG000RQBFV2,Genpact Limited
+1206,T8Q3VN-R,BBG000BCQ6J8,KKR & Co. Inc.
+1207,T8X2RS-R,BBG00JM9SL98,Nutrien Ltd.
+1208,TB9J64-R,BBG001M8HHB7,"TripAdvisor, Inc."
+1209,TBRYLK-R,BBG000BPTTM2,"NACCO Industries, Inc. Class A"
+1210,TBS1SN-R,BBG000BXNJ07,Cypress Semiconductor Corporation
+1211,TCX5SM-R,BBG000BM1Q09,RioCan Real Estate Investment Trust
+1212,TDZFBZ-R,BBG000BC2R71,Ally Financial Inc
+1213,TG94W1-R,BBG000CLNSF6,Sterling Bancorp
+1214,TGK8GS-R,BBG0020B54Q8,NFI Group Inc.
+1215,TH8S8S-R,BBG000BBJQH6,Alcan Inc.
+1216,THB4X2-R,BBG000FRVHB9,"Ventas, Inc."
+1217,THCR1P-R,BBG000PV3J62,Terreno Realty Corporation
+1218,TJL23L-R,BBG000D2M6H4,"Manitowoc Company, Inc."
+1219,TKKPJB-R,BBG000BXRPH1,Pioneer Natural Resources Company
+1220,TKSJKR-R,BBG000GN4ZY2,Morneau Shepell Inc.
+1221,TLQ31K-R,BBG000BVQRY3,Toro Company
+1222,TLY9TB-R,BBG000BVPML9,TRW Inc.
+1223,TMTGLT-R,BBG000B9XG87,"AMETEK, Inc."
+1224,TMTXG7-R,BBG000BD2407,Winpak Ltd.
+1225,TMVLRW-R,BBG000BGGBT8,Carlisle Companies Incorporated
+1226,TMZSRT-R,BBG000PTNWS2,NuVista Energy Ltd.
+1227,TP07RB-R,BBG000BKKQ84,Columbia Sportswear Company
+1228,TP3XRS-R,BBG000BFC848,Knight-Swift Transportation Holdings Inc. Class A
+1229,TP420X-R,BBG000BYCJJ7,Chartwell Retirement Residences
+1230,TQ33B3-R,BBG000BZH3D0,Mullen Group Ltd.
+1231,TQ7GN6-R,BBG000CQHM38,Visteon Corp
+1232,TQ8V8H-R,BBG000BXJSH4,Aecon Group Inc.
+1233,TR8891-R,BBG000C40QG2,Brookfield Renewable Partners LP
+1234,TR8GP7-R,BBG000F5VJX9,IKON Office Solutions Inc.
+1235,TRD8YT-R,BBG000BPDXF8,"MSA Safety, Inc."
+1236,TRDSY9-R,BBG000BC8SH2,Pan American Silver Corp.
+1237,TSCJN6-R,BBG000BJFJ98,"Annaly Capital Management, Inc."
+1238,TSDJK4-R,BBG009L730J7,Kirkland Lake Gold Ltd.
+1239,TSHY1B-R,BBG000BKGCP1,Motors Liquidation Co
+1240,TTDQ0D-R,BBG00286S4N9,Phillips 66
+1241,TTHJD1-R,BBG000C2YHG9,DISH Network Corporation Class A
+1242,TTN57D-R,BBG000C4ZNF2,Ambac Financial Group Inc.
+1243,TTNZT5-R,BBG000BVXPZ8,"New York Community Bancorp, Inc."
+1244,TVTFDF-R,BBG000BCVJ77,Baxter International Inc.
+1245,TVTQ1T-R,BBG000HWKL01,Alaris Royalty Corp.
+1246,TW6KKV-R,BBG0039320N9,"Zoetis, Inc. Class A"
+1247,TWS77D-R,BBG000BHK836,"FLIR Systems, Inc."
+1248,TWSFML-R,BBG000BCD3D5,"Arrow Electronics, Inc."
+1249,TWTDGH-R,BBG000CTQBF3,Starbucks Corporation
+1250,TWTFJJ-R,BBG000BCWSS3,Brunswick Corporation
+1251,TWVMYS-R,BBG000CVRFS4,Hyatt Hotels Corporation Class A
+1252,TWXW2R-R,BBG000BQQH30,ConocoPhillips
+1253,TX0WZQ-R,BBG000BDSCP4,Genworth MI Canada Inc.
+1254,TXXC7C-R,BBG000BFYB47,CNA Financial Corporation
+1255,TXY0GZ-R,BBG000PPJTH4,Crescent Point Energy Corp.
+1256,TY1SPJ-R,BBG000BB2PW9,Dun & Bradstreet Corporation
+1257,TY1WWM-R,BBG000DN7P92,Stryker Corporation
+1258,TY202Q-R,BBG000JG0547,"Automatic Data Processing, Inc."
+1259,TY2XVL-R,BBG000BP8KR9,Molex Incorporated
+1260,TY311P-R,BBG000BN6KG8,Spire Inc.
+1261,TYPLZM-R,BBG0093LLBM8,FirstService Corp
+1262,TYSRJ3-R,BBG004P8YQ01,Choice Properties Real Estate Investment Trust
+1263,TZ1G59-R,BBG000BDVP80,"Ryman Hospitality Properties, Inc."
+1264,TZ1NKH-R,BBG000DTMH63,Noble Corporation plc
+1265,TZ2TSL-R,BBG000BWVSR1,"Waste Management, Inc."
+1266,TZ654Q-R,BBG000BLD2P4,Hercules Inc.
+1267,TZ93SH-R,BBG000BKPBJ0,GTE Corporation
+1268,V05L58-R,BBG000C0HQ54,Endo International Plc
+1269,V1H7QF-R,BBG000FJLFX8,Aetna Inc.
+1270,V1HC1N-R,BBG000VC6WR2,Brookfield Infrastructure Partners L.P.
+1271,V2G2MF-R,BBG000BK40L4,Nicor Inc
+1272,V2H5QG-R,BBG000B9YJ35,Amphenol Corporation Class A
+1273,V2KMCR-R,BBG000DGLTG5,"Dolby Laboratories, Inc. Class A"
+1274,V3L076-R,BBG000CQV2N4,"ICU Medical, Inc."
+1275,V3LF0L-R,BBG000BB7PP2,Steel Excel Inc.
+1276,V3MK5N-R,BBG000BBB3K1,Reynolds American Inc.
+1277,V3ML7P-R,BBG00FWP4JW4,"Southwest Gas Holdings, Inc."
+1278,V4QM4M-R,BBG000BCQM58,W. P. Carey Inc.
+1279,V5WMVF-R,BBG000BHCP19,Microchip Technology Incorporated
+1280,V60F1Z-R,BBG000BYZ0Q5,"Tetra Tech, Inc."
+1281,V60VXD-R,BBG000BBW9W2,Artis Real Estate Investment Trust
+1282,V6ZMTG-R,BBG000GC80B4,Covidien Plc
+1283,V6ZQWF-R,BBG000BGYMH7,"Martin Marietta Materials, Inc."
+1284,V759HN-R,BBG000HRCTX8,Labrador Iron Ore Royalty Corporation
+1285,V75BKP-R,BBG000BHB3M6,Dover Corporation
+1286,V84DXX-R,BBG000BWZBT2,Weingarten Realty Investors
+1287,V9977J-R,BBG000MBDGM6,"Equinix, Inc."
+1288,V9DZD1-R,BBG000C7B436,Terex Corporation
+1289,VBJY1V-R,BBG000BTLMX5,Questar Corporation
+1290,VBK29Z-R,BBG000C45984,Loews Corporation
+1291,VBL38Y-R,BBG000BJX8C8,"National Oilwell Varco, Inc."
+1292,VBMVML-R,BBG000P4R174,WSP Global Inc.
+1293,VBN9H0-R,BBG000JWD753,Las Vegas Sands Corp.
+1294,VCNXSP-R,BBG000BH3GZ2,"Yum! Brands, Inc."
+1295,VDPDV7-R,BBG000CN3S73,Kimco Realty Corporation
+1296,VDT2VP-R,BBG000J0D904,"Big Lots, Inc."
+1297,VDT85V-R,BBG000BR3KL6,Parker-Hannifin Corporation
+1298,VF1XZ6-R,BBG0038V5TX1,"CyrusOne, Inc."
+1299,VFT0VQ-R,BBG000BDDNH5,Ball Corporation
+1300,VFY8ZQ-R,BBG000BC1L02,A. O. Smith Corporation
+1301,VGYKN2-R,BBG000BCJG31,Royal Bank of Canada
+1302,VHXWMP-R,BBG005497GZ3,"OneMain Holdings, Inc."
+1303,VJ0NT5-R,BBG003BW05K6,Science Applications International Corp.
+1304,VJ2LFY-R,BBG000BD6WM7,"Bio-Rad Laboratories, Inc. Class B"
+1305,VJ3F0Q-R,BBG000BV6R84,"Thor Industries, Inc."
+1306,VK7M4R-R,BBG000BR2B91,Pfizer Inc.
+1307,VKHGSS-R,BBG00J7CBVW8,"Equitable Holdings, Inc."
+1308,VKTP36-R,BBG0086BLKY6,Tallgrass Energy LP Class A
+1309,VLH7Z4-R,BBG000BH0106,Blackstone Group Inc. Class A
+1310,VLHKF9-R,BBG000BSJK37,AT&T Inc.
+1311,VMM9PX-R,BBG000CJ2181,Reliance Steel & Aluminum Co.
+1312,VNMTTH-R,BBG000C5HS04,"NIKE, Inc. Class B"
+1313,VNN3BR-R,BBG000CK8Q69,Summit Industrial Income REIT
+1314,VNRDMV-R,BBG000BVMPN3,T. Rowe Price Group
+1315,VNRHTY-R,BBG000FJJW82,Applied Biosystems Inc.
+1316,VQXNXZ-R,BBG000BRMJN6,"Essential Utilities, Inc."
+1317,VQXR21-R,BBG00BN961G4,"DuPont de Nemours, Inc."
+1318,VQYTRP-R,BBG00658F3P3,Synchrony Financial
+1319,VR1F2H-R,BBG000BWBZN1,"Varian Medical Systems, Inc."
+1320,VR4SHN-R,BBG000DCGRL8,IPG Photonics Corporation
+1321,VRK9JK-R,BBG003T1GM03,New Residential Investment Corp.
+1322,VS1X41-R,BBG000FLPRH1,"Avis Budget Group, Inc."
+1323,VS59M7-R,BBG000BBDZG3,"American International Group, Inc."
+1324,VS5NDP-R,BBG000TJ8XZ7,AGNC Investment Corp.
+1325,VS8MZC-R,BBG000BW13Q0,Union Carbide Corporation
+1326,VSC82Y-R,BBG001LRKS55,Apollo Global Management Inc. Class A
+1327,VT4SWZ-R,BBG000BVWLJ6,Johnson Controls International plc
+1328,VT66G5-R,BBG000BCG930,"Anthem, Inc."
+1329,VT67J6-R,BBG000G0LND3,Ritchie Bros. Auctioneers Incorporated
+1330,VT8FQ8-R,BBG000BLYWS2,Immunex Corporation
+1331,VTBDG3-R,BBG000QFJJW0,Bank OZK
+1332,VTBLV9-R,BBG000BNSZP1,McDonald's Corporation
+1333,VTBNZC-R,BBG000BTQ9G8,SUPERVALU INC.
+1334,VV9LP2-R,BBG006L2SZC7,Osisko Gold Royalties Ltd
+1335,VVCWDL-R,BBG000DHM3H8,Viacom Inc. Class A
+1336,VWF970-R,BBG000BWQFY7,Wells Fargo & Company
+1337,VWGLQ7-R,BBG000BFXHL6,Mosaic Company
+1338,VXKKH3-R,BBG000C15114,Bio-Techne Corporation
+1339,VXQ46D-R,BBG000D52545,Wendy's Company
+1340,VY9HW8-R,BBG000CZTB66,"Houlihan Lokey, Inc. Class A"
+1341,VYQ02C-R,BBG000FFH4P5,Flowserve Corporation
+1342,VYR23C-R,BBG000DPW6P3,Anixter International Inc.
+1343,VYWGHH-R,BBG000BXPP29,Bombardier Inc. Class B
+1344,VZYGFG-R,BBG000C30L48,"Monolithic Power Systems, Inc."
+1345,W000CX-R,BBG000F31Z34,"Exponent, Inc."
+1346,W005V6-R,BBG000TVRB50,"LendingTree, Inc."
+1347,W00MKH-R,BBG000BWNFZ9,Western Digital Corporation
+1348,W0ZT3T-R,BBG00R2NHQ65,Ovintiv Inc
+1349,W103Q3-R,BBG000DC8RC7,Bausch Health Companies Inc.
+1350,W13F06-R,BBG000BGNM16,Centex Corp.
+1351,W13NGF-R,BBG000BLZFL5,Algonquin Power & Utilities Corp.
+1352,W14WTL-R,BBG000DQBZJ7,Adtalem Global Education Inc.
+1353,W234M1-R,BBG000CT56K1,"Health Management Associates, Inc. Class A"
+1354,W235P2-R,BBG000BH2VW3,Colliers International Group Inc.
+1355,W239Y6-R,BBG000BWNV93,WD-40 Company
+1356,W3F6YL-R,BBG000BTJ2T7,Enghouse Systems Limited
+1357,W4H2MF-R,BBG000BW7VG3,US WEST Inc.
+1358,W4HJLZ-R,BBG000QC4T33,"Hudson Pacific Properties, Inc."
+1359,W5NBSG-R,BBG000BNF508,Louisiana-Pacific Corporation
+1360,W5QQ9P-R,BBG000NDV1D4,"T-Mobile US, Inc."
+1361,W6N4JC-R,BBG000BB29X4,DTE Energy Company
+1362,W6SXMV-R,BBG000C43RR5,eBay Inc.
+1363,W6SYPW-R,BBG000K14Q84,Joy Global Inc.
+1364,W6TWGR-R,BBG000BHY4D9,"Prosperity Bancshares, Inc.(R)"
+1365,W6VZ29-R,BBG00FQH6BS9,"Invitation Homes, Inc."
+1366,W6XKL8-R,BBG000P28YZ6,"KBR, Inc."
+1367,W7S6D8-R,BBG000BXSXH3,Bank of Nova Scotia
+1368,W7XS3K-R,BBG000BSS5C0,Stifel Financial Corp.
+1369,W800CN-R,BBG000Q32RJ2,Canaccord Genuity Group Inc.
+1370,W8YRN3-R,BBG003CVMLQ2,"Lamb Weston Holdings, Inc."
+1371,W8YZJS-R,BBG000GT6BT6,Equitable Group Inc.
+1372,W91W1H-R,BBG000BV7LP7,Safeway Inc.
+1373,W95DST-R,BBG000PD6X77,Ares Capital Corporation
+1374,WB1V3K-R,BBG000C4Y9D6,Qwest Communications International Inc
+1375,WB34LS-R,BBG000BCD844,Power Financial Corporation
+1376,WBGJFL-R,BBG000D13GN8,"Zillow Group, Inc. Class A"
+1377,WC5Y1H-R,BBG000GLP2C0,Canadian National Railway Company
+1378,WDC30F-R,BBG000BKRHQ7,"Aerojet Rocketdyne Holdings, Inc."
+1379,WDG05S-R,BBG006Q0HY77,"Citizens Financial Group, Inc."
+1380,WDGX90-R,BBG000BFRF55,Cleveland-Cliffs Inc
+1381,WFH94G-R,BBG000BBH1K9,Eldorado Gold Corporation
+1382,WFKC6J-R,BBG000T8ZF80,"Primerica, Inc."
+1383,WFLMHL-R,BBG000BCZYD3,"Becton, Dickinson and Company"
+1384,WFMVVR-R,BBG000F5VVB6,"Nasdaq, Inc."
+1385,WG7T4P-R,BBG000BCWKD6,"Voya Financial, Inc."
+1386,WGLQTS-R,BBG000H556T9,Honeywell International Inc.
+1387,WHW86W-R,BBG000BNX3R4,MDU Resources Group Inc
+1388,WJXZ76-R,BBG006KY8KV2,"TerraForm Power, Inc. Class A"
+1389,WJYPGR-R,BBG004S69ZX4,OUTFRONT Media Inc.
+1390,WL1C5V-R,BBG000DSZHQ9,Whitecap Resources Inc.
+1391,WL4J6T-R,BBG000BPQCQ8,Maytag Corporation
+1392,WM5212-R,BBG00GFK4M37,Safehold Inc.
+1393,WM5BXP-R,BBG000C3GN47,Cabot Oil & Gas Corporation
+1394,WM8ZW3-R,BBG000NV1YC6,Enerplus Corporation
+1395,WN8BRL-R,BBG000D07ZQ1,TC Energy Corporation
+1396,WNG4V1-R,BBG000DGM399,Commerce Bancorp NJ
+1397,WPFS7S-R,BBG000K4ND22,Chevron Corporation
+1398,WPKF66-R,BBG000BCWCG1,"Best Buy Co., Inc."
+1399,WPL09R-R,BBG000C2PL98,"Cullen/Frost Bankers, Inc."
+1400,WPLD13-R,BBG000BF3G77,"Commerce Bancshares, Inc."
+1401,WQK5W2-R,BBG000C2ZCH8,Sempra Energy
+1402,WQP8NX-R,BBG000CR20B1,"East West Bancorp, Inc."
+1403,WQQK33-R,BBG000BL8476,First Financial Bankshares Inc
+1404,WRTQ85-R,BBG000BQ5ZN1,Gildan Activewear Inc.
+1405,WRVHRX-R,BBG000BSBBP1,"Rollins, Inc."
+1406,WRVQ53-R,BBG000C1TTV4,Harrah's Entertainment Corp.
+1407,WRYB4K-R,BBG000DNTSP4,Spectra Energy Corp
+1408,WV1ZC5-R,BBG000BKSRH4,Harcourt General Inc.
+1409,WW3NPV-R,BBG000C1XKF6,"Pinnacle Financial Partners, Inc."
+1410,WW7DBW-R,BBG009PN0C87,Adient plc
+1411,WW88H5-R,BBG000BR37J8,Peoples Energy Corporation
+1412,WXD74Z-R,BBG000BXX6N9,Cascades Inc.
+1413,WXGMR7-R,BBG000DLD3J7,Unicom Corporation
+1414,WYCPCP-R,BBG000RQW961,"Scripps Networks Interactive, Inc. Class A"
+1415,WYHB5Z-R,BBG000BF3VN6,Compass Bancshares
+1416,WYJT0C-R,BBG000FFDM15,U.S. Bancorp
+1417,WZHGL6-R,BBG000BZ3B38,Home Capital Group Inc.
+1418,X0MNQ7-R,BBG000C06730,Intertape Polymer Group Inc.
+1419,X0N4MP-R,BBG000BHLYS1,"Consolidated Edison, Inc."
+1420,X0QJ91-R,BBG000QC1MD0,Secure Energy Services Inc.
+1421,X0RZZ9-R,BBG000CXXCX4,May Department Stores Company
+1422,X1RJ5Y-R,BBG000BQ74K1,Northern Trust Corporation
+1423,X1SH0V-R,BBG000C44CB4,Yamana Gold Inc.
+1424,X2DZC9-R,BBG004G493C6,"BRP, Inc."
+1425,X42HGH-R,BBG000BX7818,First Quantum Minerals Ltd.
+1426,X44KDF-R,BBG000PSJMV7,"Texas Roadhouse, Inc."
+1427,X44SZS-R,BBG000Q9JW82,ADVANZ PHARMA Corp. Ltd.
+1428,X46VSL-R,BBG000BB2KN0,"Landstar System, Inc."
+1429,X4JD2N-R,BBG001NQ7774,Gibson Energy Inc.
+1430,X59HZ5-R,BBG000BY33P5,"Juniper Networks, Inc."
+1431,X59RFD-R,BBG000BL16Q7,HEICO Corporation
+1432,X69BS3-R,BBG000CW9BM7,Cousins Properties Incorporated
+1433,X6B73L-R,BBG00GFMPRK0,"Altice USA, Inc. Class A"
+1434,X6DBGX-R,BBG000GMGNB3,RBC Bearings Incorporated
+1435,X6FP15-R,BBG000BM2C18,Freehold Royalties Ltd.
+1436,X6K6SH-R,BBG000BVCDS6,Times Mirror Company
+1437,X7FTFD-R,BBG000J1R1Z6,"Constellation Brands, Inc. Class B"
+1438,X7GQ47-R,BBG000BRB2F4,Pall Corporation
+1439,X7K4SJ-R,BBG000BG5X85,Compaq Computer Corporation
+1440,X8KZHD-R,BBG000BG7L34,Rayonier Inc.
+1441,X8LB4Q-R,BBG000D9KWL9,M&T Bank Corporation
+1442,X9Q3HC-R,BBG000CGJMB9,"Essex Property Trust, Inc."
+1443,XBZT6M-R,BBG000DNF659,"FirstCash, Inc."
+1444,XC2LNC-R,BBG000PQ4W72,Generac Holdings Inc.
+1445,XCZXJT-R,BBG000BF4VY3,"Circuit City Stores, Inc."
+1446,XD67LR-R,BBG000PV27K3,Extra Space Storage Inc.
+1447,XF43NV-R,BBG000BDD940,Westinghouse Air Brake Technologies Corporation
+1448,XF814J-R,BBG000C9K6K8,Brookfield Asset Management Inc. Class A
+1449,XGFDHN-R,BBG000BT9DW0,Southern Company
+1450,XHD46K-R,BBG000BP4MH0,"Marsh & McLennan Companies, Inc."
+1451,XKPF5G-R,BBG000BTR593,Southwestern Energy Company
+1452,XKPH9J-R,BBG000BRRG02,PVH Corp.
+1453,XKPX2X-R,BBG000BBHGQ0,Boardwalk REIT
+1454,XKT8J2-R,BBG000D2M0Z7,SBA Communications Corp. Class A
+1455,XL8Z1C-R,BBG006473QX9,Apple Hospitality REIT Inc
+1456,XLT03X-R,BBG000BB5792,Royal Caribbean Cruises Ltd.
+1457,XLV24X-R,BBG000BQPC32,Ford Motor Company
+1458,XLY63V-R,BBG000BBBNC6,Aflac Incorporated
+1459,XM0T39-R,BBG000FL9569,CBS Corporation
+1460,XM8P7T-R,BBG0019JZ882,Kinder Morgan Inc Class P
+1461,XMYTFJ-R,BBG000CB8Q50,"Universal Health Services, Inc. Class B"
+1462,XNRMXZ-R,BBG000F395V1,Coty Inc. Class A
+1463,XQ6H9X-R,BBG000BHRRV6,Eastman Kodak Company
+1464,XQCN4R-R,BBG000BPMH90,Murphy Oil Corporation
+1465,XQCWLZ-R,BBG000GQ1G25,Tupperware Brands Corporation
+1466,XQF8XY-R,BBG00HVVB499,VICI Properties Inc

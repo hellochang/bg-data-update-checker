@@ -1,0 +1,2855 @@
+,fsym_id,ticker_orig,
+0,WM8ZW3-R,ERF CN Equity,Energy
+1,FDN05J-R,CWB CT Equity,Financials
+2,FPTJVK-R,SJM UN Equity,Consumer Staples
+3,NT38T5-R,CTSH UW Equity,Information Technology
+4,LTN366-R,CI US Equity,Health Care
+5,NM9DRC-R,DDV CT Equity,#N/A N/A
+6,F82H8Q-R,ZBRA US Equity,Information Technology
+7,RZQS4K-R,RIG UN Equity,Energy
+8,T7H5H1-R,COO UN Equity,Health Care
+9,PVWPB1-R,EXPD UW Equity,Industrials
+10,WPFS7S-R,CVX UN Equity,Energy
+11,MH33D6-R,AAPL UW Equity,Information Technology
+12,C7M7DL-R,LH UN Equity,Health Care
+13,WJYLFT-R,ERO CN Equity,Materials
+14,CHK9QJ-R,JBHT UW Equity,Industrials
+15,NCL5GV-R,TAP US Equity,Consumer Staples
+16,SFC1HV-R,TIN UN Equity,#N/A N/A
+17,RMCLL5-R,LCE UN Equity,#N/A N/A
+18,MJ0XB7-R,NOW US Equity,Information Technology
+19,TB9J64-R,TRIP UW Equity,Communication Services
+20,SHQGJR-R,8285449Q CT Equity,#N/A N/A
+21,RT20YM-R,CLS CN Equity,Information Technology
+22,MS9FKZ-R,BXP US Equity,Real Estate
+23,WZHGL6-R,HCG CT Equity,Financials
+24,Q53KKB-R,1312089D UN Equity,#N/A N/A
+25,GV1D87-R,HUM CT Equity,#N/A N/A
+26,MMN39J-R,RTN US Equity,Industrials
+27,HF1P15-R,BWA UN Equity,Consumer Discretionary
+28,KXCLHM-R,548227Q UN Equity,#N/A N/A
+29,T8H08Z-R,TRQ CT Equity,Materials
+30,D2WW33-R,BTE CN Equity,Energy
+31,RK3DL5-R,C UN Equity,Financials
+32,FV9XPC-R,CRR-U CT Equity,Real Estate
+33,MMRZQ5-R,MSI UN Equity,Information Technology
+34,VK6WS2-R,CS CT Equity,Materials
+35,XF43NV-R,WAB US Equity,Industrials
+36,RT66YK-R,AMD UW Equity,Information Technology
+37,R85LND-R,UNS CT Equity,Consumer Discretionary
+38,M0GKCK-R,0574018D UN Equity,#N/A N/A
+39,FS319Q-R,TRV US Equity,Financials
+40,D8D864-R,231330Q UN Equity,#N/A N/A
+41,J2M6ZH-R,WED CT Equity,Financials
+42,SDDH43-R,WBA UN Equity,Consumer Staples
+43,WRVHRX-R,ROL UN Equity,Industrials
+44,TX0WZQ-R,MIC CN Equity,Financials
+45,B1DND3-R,TSGI CT Equity,Consumer Discretionary
+46,QW0LRQ-R,1417090D CT Equity,#N/A N/A
+47,SL2N3F-R,MERQ UQ Equity,#N/A N/A
+48,LKPWM4-R,SWK US Equity,Industrials
+49,S8ZPBT-R,TJX UN Equity,Consumer Discretionary
+50,H679XT-R,XRX UN Equity,Information Technology
+51,PPCTFP-R,PEP UN Equity,Consumer Staples
+52,R4N0NK-R,GMP CT Equity,Financials
+53,RRXTTL-R,ITW UN Equity,Industrials
+54,RT4T87-R,LEG CT Equity,Energy
+55,DJHD0P-R,EMP/A CN Equity,Consumer Staples
+56,FPP2BC-R,PCL UN Equity,Real Estate
+57,WRTQ85-R,GIL CN Equity,Consumer Discretionary
+58,D68983-R,CMS UN Equity,Utilities
+59,NM9SGQ-R,GBU CT Equity,Materials
+60,D4C1S0-R,HEXO CN Equity,Health Care
+61,RWBV02-R,K CN Equity,Materials
+62,PY5NPN-R,9991734D UN Equity,Financials
+63,GRRFYN-R,X UN Equity,Materials
+64,XHD46K-R,MMC US Equity,Financials
+65,V6ZMTG-R,COV UN Equity,Health Care
+66,KK1YRK-R,GPN US Equity,Information Technology
+67,CD8FDX-R,PMG CT Equity,#N/A N/A
+68,X6FP15-R,FRU CN Equity,Energy
+69,GW7J66-R,CVE CN Equity,Energy
+70,QLGSL2-R,FB UW Equity,Communication Services
+71,FBC2XZ-R,GRA UN Equity,Materials
+72,DXVDJ4-R,SWKS UW Equity,Information Technology
+73,PP7QRZ-R,VEN CT Equity,#N/A N/A
+74,H9NX6V-R,0848680D US Equity,#N/A N/A
+75,TQ33B3-R,MTL CN Equity,Industrials
+76,VQ0G3H-R,TDM UN Equity,#N/A N/A
+77,D1MM78-R,2276645Q CT Equity,#N/A N/A
+78,PC0NY9-R,1719868D UN Equity,#N/A N/A
+79,R3MHJZ-R,BYD-U CN Equity,Industrials
+80,TW6KKV-R,ZTS US Equity,Health Care
+81,QCBKSL-R,WPX UN Equity,Energy
+82,PGQCV2-R,TOU CT Equity,Energy
+83,GXCQ63-R,CJT CN Equity,Industrials
+84,K6RW63-R,VIAC UA Equity,Communication Services
+85,KFJJ0V-R,1255459D UW Equity,#N/A N/A
+86,MZZT2L-R,SOV UN Equity,Financials
+87,N4K9ZD-R,GWO CT Equity,Financials
+88,BCD4JF-R,FMC US Equity,Materials
+89,TJG1FT-R,RHT UN Equity,Information Technology
+90,RH0GWC-R,FNV CN Equity,Materials
+91,WYJT0C-R,USB US Equity,Financials
+92,CC62TM-R,FPL CT Equity,#N/A N/A
+93,MZJHY9-R,APTV US Equity,Consumer Discretionary
+94,SJX192-R,1431816D UW Equity,#N/A N/A
+95,HP13ZD-R,WRK UN Equity,Materials
+96,G43630-R,1323Q US Equity,#N/A N/A
+97,G3949H-R,CBOE UW Equity,Financials
+98,H0P6P9-R,HBI US Equity,Consumer Discretionary
+99,LRHNLZ-R,1558530D UN Equity,#N/A N/A
+100,GNCP4B-R,0894274D CT Equity,#N/A N/A
+101,KFQHFG-R,CMG UN Equity,Consumer Discretionary
+102,T2ZH1Y-R,XEC UN Equity,Energy
+103,X1SCTR-R,CDNS UW Equity,Information Technology
+104,QVJJXG-R,MAL CT Equity,Industrials
+105,WW7DBW-R,ADNT UN Equity,Consumer Discretionary
+106,MFQVZQ-R,HLT UN Equity,Consumer Discretionary
+107,MXZ7RW-R,BR UN Equity,Information Technology
+108,XF814J-R,BAM/A CT Equity,Financials
+109,LD13C5-R,INCY UW Equity,Health Care
+110,CTYNJ1-R,GE UN Equity,Industrials
+111,CPCW2Z-R,CMI US Equity,Industrials
+112,SHNVG7-R,PRU UN Equity,Financials
+113,PRHBD5-R,OVV CT Equity,Energy
+114,MKC1SV-R,RTX US Equity,Industrials
+115,HVV49B-R,PGR US Equity,Financials
+116,VMMBRY-R,TNX CT Equity,Materials
+117,CZG3GX-R,OSB CT Equity,Materials
+118,CX6P1R-R,GRT-U CT Equity,Real Estate
+119,BDQDB8-R,DG US Equity,Consumer Discretionary
+120,N3DZL7-R,3517233Q UN Equity,#N/A N/A
+121,LQ766T-R,LIN UN Equity,Materials
+122,HY13GN-R,GOOS CN Equity,Consumer Discretionary
+123,F07DSQ-R,TCN CT Equity,Real Estate
+124,TR8GP7-R,IKN UN Equity,#N/A N/A
+125,XM0T39-R,667517Q UN Equity,#N/A N/A
+126,M0G2G3-R,2987536Q UN Equity,#N/A N/A
+127,NHV4Q7-R,CTVA US Equity,Materials
+128,C5LR6Y-R,BLY UN Equity,#N/A N/A
+129,H68NH2-R,LLTC UW Equity,Information Technology
+130,BFSY5M-R,LUV UN Equity,Industrials
+131,D69C93-R,AUP CN Equity,Health Care
+132,GCCR8P-R,DOL CT Equity,Consumer Discretionary
+133,BHX6NW-R,TH CT Equity,Health Care
+134,LJQYJ1-R,ZBH UN Equity,Health Care
+135,WW7FXD-R,SVN CT Equity,#N/A N/A
+136,LF5N4J-R,UCL UN Equity,Communication Services
+137,VBCQMG-R,UA UN Equity,Consumer Discretionary
+138,P6FZQB-R,GOSHA UQ Equity,#N/A N/A
+139,DF2NCG-R,TCW CT Equity,Energy
+140,D2RP35-R,AVP UN Equity,Consumer Staples
+141,HLRKD5-R,CTC/A CT Equity,Consumer Discretionary
+142,BNMLW8-R,ALA CT Equity,Utilities
+143,TXY0GZ-R,CPG CT Equity,Energy
+144,P1WWLX-R,WDO CN Equity,Materials
+145,HQ2MHF-R,AMCR UN Equity,Materials
+146,PD98GG-R,HD UN Equity,Consumer Discretionary
+147,VBL38Y-R,NOV UN Equity,Energy
+148,LC0H1H-R,BKNG US Equity,Consumer Discretionary
+149,CC0SQN-R,LVLT UN Equity,Communication Services
+150,C8XJ7D-R,PNW UN Equity,Utilities
+151,RGJSSH-R,MST-U CT Equity,Real Estate
+152,FGSXYG-R,GQ UN Equity,#N/A N/A
+153,SQGZ3C-R,991804Q CT Equity,#N/A N/A
+154,F17SJ1-R,ADI UW Equity,Information Technology
+155,N92X3B-R,1247479D CT Equity,#N/A N/A
+156,NDG727-R,2307532Q UW Equity,#N/A N/A
+157,W5QQ9P-R,TMUS US Equity,Communication Services
+158,CGKFVK-R,ELF CT Equity,Financials
+159,CGNT8Q-R,DMM/B CT Equity,#N/A N/A
+160,M4VLV7-R,MAT UN Equity,Consumer Discretionary
+161,B4PMRP-R,MON UN Equity,Materials
+162,SDDH43-R,WBA US Equity,Consumer Staples
+163,GPH5YQ-R,SBY CT Equity,#N/A N/A
+164,RBDXWG-R,WYND UN Equity,Consumer Discretionary
+165,VT4SWZ-R,JCI UN Equity,Industrials
+166,K7YTNS-R,VIAV UW Equity,Information Technology
+167,TWXW2R-R,COP UN Equity,Energy
+168,DLSMXK-R,WY UN Equity,Real Estate
+169,FBB432-R,PAYX UW Equity,Information Technology
+170,JDDDQJ-R,ZZZ CN Equity,Consumer Discretionary
+171,PN6Y00-R,MO UN Equity,Consumer Staples
+172,JCPT0R-R,WYNN UW Equity,Consumer Discretionary
+173,DZ776B-R,WINMQ UN Equity,Communication Services
+174,B97MP0-R,PLD UN Equity,Real Estate
+175,C5GXYC-R,TT UN Equity,Industrials
+176,L0ND5P-R,ECN CT Equity,Financials
+177,V05L58-R,ENDP UW Equity,Health Care
+178,L7H19S-R,WLBAQ US Equity,Energy
+179,PN37ZK-R,EFX UN Equity,Industrials
+180,NCL5GV-R,TAP UQ Equity,Consumer Staples
+181,NNFR4J-R,MNST US Equity,Consumer Staples
+182,FT8FQW-R,VZ US Equity,Communication Services
+183,LTT932-R,ELR CT Equity,Materials
+184,QQ42ND-R,LUN CT Equity,Materials
+185,X420K1-R,ANDW UW Equity,#N/A N/A
+186,H0P6P9-R,HBI UN Equity,Consumer Discretionary
+187,L474X3-R,CVG UN Equity,Information Technology
+188,W00PPK-R,1025240D CT Equity,#N/A N/A
+189,H7CL5X-R,MDZ/A CT Equity,Communication Services
+190,V2H5QG-R,APH US Equity,Information Technology
+191,PX1NYT-R,AKAM US Equity,Information Technology
+192,P32F96-R,SANM UQ Equity,Information Technology
+193,LD13C5-R,INCY US Equity,Health Care
+194,J1J3YH-R,GBLXQ UN Equity,#N/A N/A
+195,NNNM7Z-R,OAT UN Equity,#N/A N/A
+196,MR5BN1-R,TRI CN Equity,Industrials
+197,LTN487-R,CP CT Equity,Industrials
+198,NMD0QT-R,47002Q CT Equity,#N/A N/A
+199,TWS77D-R,FLIR UW Equity,Information Technology
+200,R81DNG-R,9876566D UN Equity,Financials
+201,R86G96-R,CPA-U CT Equity,#N/A N/A
+202,TTDQ0D-R,PSX US Equity,Energy
+203,S8T3VQ-R,FBO UN Equity,#N/A N/A
+204,F71F3M-R,1974Q UA Equity,#N/A N/A
+205,FCHV3J-R,BAD CN Equity,Industrials
+206,L7N0TG-R,NA CT Equity,Financials
+207,N03DYZ-R,BCE CN Equity,Communication Services
+208,L6CPTK-R,INTU UW Equity,Information Technology
+209,F2F3T4-R,VSN CT Equity,Energy
+210,PKXXKC-R,3669121Q CT Equity,#N/A N/A
+211,BLB2G4-R,CA UW Equity,Information Technology
+212,M2LK7H-R,BLDP CT Equity,Industrials
+213,TF5FNG-R,GAU CT Equity,Materials
+214,VNMTTH-R,NKE UN Equity,Consumer Discretionary
+215,V60VXD-R,AX-U CN Equity,Real Estate
+216,LQ766T-R,PX UN Equity,Materials
+217,W81J82-R,896661Q UN Equity,#N/A N/A
+218,X1SH0V-R,YRI CN Equity,Materials
+219,RQ9F5S-R,PYPL US Equity,Information Technology
+220,S7RV59-R,VIAB US Equity,Communication Services
+221,K8YRNT-R,SIVB US Equity,Financials
+222,MMN39J-R,RTN/B UN Equity,Industrials
+223,KK1SFD-R,LNT US Equity,Utilities
+224,J998WT-R,HBM CT Equity,Materials
+225,NPK3PS-R,EXC UW Equity,Utilities
+226,DMR9HD-R,NFB UN Equity,#N/A N/A
+227,WJYLFT-R,ERO CT Equity,Materials
+228,DG71WP-R,FTR UN Equity,Communication Services
+229,FYRXRS-R,0964591D UQ Equity,#N/A N/A
+230,DTKPJP-R,AMT UN Equity,Real Estate
+231,HJG212-R,HST US Equity,Real Estate
+232,WGXV7D-R,FLT UN Equity,Information Technology
+233,R998SY-R,OXY UN Equity,Energy
+234,TW6KKV-R,ZTS UN Equity,Health Care
+235,JJ81D9-R,R UN Equity,Industrials
+236,G5GDGH-R,GBG CT Equity,Materials
+237,KHZRFD-R,AIF CN Equity,Real Estate
+238,LTSNXH-R,CNC US Equity,Health Care
+239,CF8Q6D-R,693365Q UN Equity,#N/A N/A
+240,N4P9L4-R,XRAY UW Equity,Health Care
+241,K7TPSX-R,NVDA UQ Equity,Information Technology
+242,JWH12W-R,MAA UN Equity,Real Estate
+243,VLHKF9-R,T US Equity,Communication Services
+244,X4JD2N-R,GEI CN Equity,Energy
+245,WRVHRX-R,ROL US Equity,Industrials
+246,FQTTHX-R,DNR UN Equity,Energy
+247,RTXD8D-R,CDW US Equity,Information Technology
+248,VT66G5-R,ANTM UN Equity,Health Care
+249,SGVRLP-R,1736514D CT Equity,#N/A N/A
+250,V4RQ7N-R,CIEN UW Equity,Information Technology
+251,T7CGDK-R,SLM UW Equity,Financials
+252,CJTQXJ-R,ETFC UN Equity,Financials
+253,P4VXRX-R,CSRA UN Equity,Information Technology
+254,MH33D6-R,AAPL UQ Equity,Information Technology
+255,S3DDW6-R,2822069Q UN Equity,#N/A N/A
+256,FQYW7Q-R,DVA US Equity,Health Care
+257,FJ4J4C-R,ECL UN Equity,Materials
+258,QTKYGP-R,929530Q UN Equity,#N/A N/A
+259,V2LK4M-R,9500632Q CT Equity,#N/A N/A
+260,HQ4DBK-R,ORCL US Equity,Information Technology
+261,BZPFLX-R,REG US Equity,Real Estate
+262,VH61Y3-R,383332Q CT Equity,#N/A N/A
+263,JFVMGG-R,GMCR UW Equity,Consumer Staples
+264,CY9XBW-R,IGM CN Equity,Financials
+265,SZJK3L-R,X CT Equity,Financials
+266,P1WWLX-R,WDO CT Equity,Materials
+267,F1DNTM-R,RJF US Equity,Financials
+268,F96XVZ-R,1715651D UN Equity,Materials
+269,J1CQKC-R,TS/B CT Equity,Communication Services
+270,CC0C0C-R,183291Q UN Equity,#N/A N/A
+271,BYNP13-R,DHI US Equity,Consumer Discretionary
+272,TNZ1G6-R,EA US Equity,Communication Services
+273,JT71M6-R,AMG UN Equity,Financials
+274,BM9QXX-R,TSN US Equity,Consumer Staples
+275,NB76FG-R,VRSN UQ Equity,Information Technology
+276,DF3WQM-R,CU CN Equity,Utilities
+277,DH79H0-R,WHR UN Equity,Consumer Discretionary
+278,DMSDLF-R,CAE CN Equity,Industrials
+279,CZ9VBX-R,GAS UN Equity,Utilities
+280,GRS9LG-R,DRI US Equity,Consumer Discretionary
+281,LKVX5V-R,CUF-U CT Equity,Real Estate
+282,M4VR3C-R,UALAQ UN Equity,#N/A N/A
+283,B01DPB-R,GDT UN Equity,#N/A N/A
+284,HZ6Z7Q-R,INTC UQ Equity,Information Technology
+285,SM0XYX-R,CHM/B CT Equity,#N/A N/A
+286,BWZ93Y-R,FBHS UN Equity,Industrials
+287,FVC51J-R,IFP CT Equity,Materials
+288,F0M88Q-R,MI UN Equity,#N/A N/A
+289,GRSDSK-R,AEE UN Equity,Utilities
+290,L5BZ9S-R,VTSS UQ Equity,Information Technology
+291,RT20YM-R,CLS CT Equity,Information Technology
+292,HQ7BZB-R,FJ UN Equity,#N/A N/A
+293,C0YRLT-R,TEO CT Equity,Energy
+294,LRK013-R,FITB US Equity,Financials
+295,SJS2RC-R,GPC US Equity,Consumer Discretionary
+296,PP7H5M-R,3133754Q UN Equity,#N/A N/A
+297,JYRG0L-R,INFO UN Equity,Industrials
+298,LZBPWV-R,MYL UW Equity,Health Care
+299,DTKZ1Y-R,BAC UN Equity,Financials
+300,FMDS8D-R,CHRW UW Equity,Industrials
+301,QMW47R-R,NG CN Equity,Materials
+302,TMTGLT-R,AME US Equity,Industrials
+303,WL4J6T-R,3080867Q UN Equity,#N/A N/A
+304,P8R3C2-R,MSFT UQ Equity,Information Technology
+305,QWT5HN-R,TEN UN Equity,Consumer Discretionary
+306,WXGMR7-R,UCM UN Equity,#N/A N/A
+307,HR96N5-R,G CT Equity,Materials
+308,L5GH02-R,GFS/A UA Equity,#N/A N/A
+309,WJSPKP-R,MCAWA US Equity,#N/A N/A
+310,KWBVZV-R,CHR CN Equity,Industrials
+311,G90MPY-R,TIF US Equity,Consumer Discretionary
+312,M3QDQ6-R,CAR-U CN Equity,Real Estate
+313,X59HZ5-R,JNPR UQ Equity,Information Technology
+314,VBJY1V-R,STR UN Equity,Utilities
+315,F72PJT-R,MXIM UQ Equity,Information Technology
+316,FGWFLP-R,CVGYQ US Equity,#N/A N/A
+317,SQGY1B-R,HOT UN Equity,Consumer Discretionary
+318,C5L77G-R,45200Q UN Equity,#N/A N/A
+319,N13NK9-R,JCP UN Equity,Consumer Discretionary
+320,W103Q3-R,BHC CT Equity,Health Care
+321,K7TPSX-R,NVDA UW Equity,Information Technology
+322,W6SXMV-R,EBAY UW Equity,Consumer Discretionary
+323,NHX98Q-R,1683997D UQ Equity,#N/A N/A
+324,RPTY1P-R,PPL UN Equity,Utilities
+325,B3KFMN-R,NT CT Equity,#N/A N/A
+326,J998WT-R,HBM CN Equity,Materials
+327,NCHMMG-R,1412585D CT Equity,Communication Services
+328,B963SL-R,SHOY US Equity,#N/A N/A
+329,S4J8BX-R,MKTX US Equity,Financials
+330,C7M58J-R,OMX UN Equity,#N/A N/A
+331,N2GNNQ-R,UAA UN Equity,Consumer Discretionary
+332,C4C0BL-R,NFLX UW Equity,Communication Services
+333,JNTQM8-R,CLT CT Equity,#N/A N/A
+334,GC4MKW-R,NFX UN Equity,Energy
+335,BGW3FR-R,WLA UN Equity,#N/A N/A
+336,CFJ279-R,NWH-U CN Equity,Real Estate
+337,PJPRSK-R,CTB UN Equity,Consumer Discretionary
+338,GHNHB4-R,FLY/A CT Equity,#N/A N/A
+339,GFJC62-R,CSCO UW Equity,Information Technology
+340,NW8BQ3-R,MKC UN Equity,Consumer Staples
+341,LKVSZR-R,MDRIQ UN Equity,Energy
+342,B4QKJK-R,AMCC UQ Equity,Information Technology
+343,G3949H-R,CBOE US Equity,Financials
+344,NS7RQS-R,WILD CT Equity,Communication Services
+345,BLB2G4-R,CA UN Equity,Information Technology
+346,BK6JKQ-R,TMO US Equity,Health Care
+347,JMNLQC-R,CMCSA UW Equity,Communication Services
+348,PRGN6N-R,CXO UN Equity,Energy
+349,GSR6MJ-R,2901134Q CT Equity,#N/A N/A
+350,Q1LDBW-R,SSP UN Equity,Communication Services
+351,JTC04X-R,CVS UN Equity,Health Care
+352,FCPGVT-R,TOG CT Equity,Energy
+353,T73TZJ-R,1456Q UN Equity,#N/A N/A
+354,J71YNR-R,3371363Q CT Equity,#N/A N/A
+355,C7C9TP-R,DOW UN Equity,Materials
+356,F17RG0-R,SEBL UQ Equity,#N/A N/A
+357,Q8J4YF-R,TNB UN Equity,#N/A N/A
+358,K24537-R,GLW UN Equity,Information Technology
+359,LD09ZK-R,62553Q UN Equity,#N/A N/A
+360,PPCR9M-R,KRY CT Equity,#N/A N/A
+361,TYSRJ3-R,CHP-U CT Equity,Real Estate
+362,M79R1P-R,MRK UN Equity,Health Care
+363,R2J99W-R,KR US Equity,Consumer Staples
+364,VQWVC6-R,SHN-U CT Equity,#N/A N/A
+365,NNKRT9-R,GCG/A CT Equity,Financials
+366,XKBMRH-R,IQV US Equity,Health Care
+367,V2FT79-R,MRNKQ US Equity,#N/A N/A
+368,LLZBW5-R,NKTR UW Equity,Health Care
+369,QD8WKZ-R,SIG UN Equity,Consumer Discretionary
+370,X1T00B-R,ST/A CT Equity,#N/A N/A
+371,F3HW5T-R,TA CN Equity,Utilities
+372,GW5LD8-R,CCO CT Equity,Energy
+373,JMHSJV-R,XLNX UQ Equity,Information Technology
+374,H7DGWR-R,HAS UN Equity,Consumer Discretionary
+375,VYWGHH-R,BBD/B CN Equity,Industrials
+376,JH07CW-R,APOL UW Equity,Consumer Discretionary
+377,KNB5TK-R,TLAB UW Equity,#N/A N/A
+378,BFSQSF-R,KEY CN Equity,Energy
+379,X8LB4Q-R,MTB US Equity,Financials
+380,W4CL28-R,AS UN Equity,#N/A N/A
+381,FQJDL3-R,NWS UW Equity,Communication Services
+382,GQGQ5C-R,EMN US Equity,Materials
+383,TSDJK4-R,KL CT Equity,Materials
+384,V83TYH-R,2755Q UN Equity,#N/A N/A
+385,VDT2VP-R,BIG UN Equity,Consumer Discretionary
+386,B4PGFJ-R,DXC US Equity,Information Technology
+387,LTP0Z2-R,CSX UN Equity,Industrials
+388,BZPFLX-R,REG UW Equity,Real Estate
+389,FV824M-R,CNP UN Equity,Utilities
+390,BYP0PF-R,PTC UQ Equity,Information Technology
+391,L7N0TG-R,NA CN Equity,Financials
+392,XKBMRH-R,IQV UN Equity,Health Care
+393,TY2CT2-R,ENF CT Equity,Energy
+394,LY84XC-R,1374430D CT Equity,#N/A N/A
+395,B5TG5C-R,ESRX UQ Equity,Health Care
+396,VNN3BR-R,SMU-U CT Equity,Real Estate
+397,JYWMBW-R,GILD US Equity,Health Care
+398,NL8WMS-R,FFH CT Equity,Financials
+399,CSFJSZ-R,AAL US Equity,Industrials
+400,KZKFX9-R,INCLF UN Equity,#N/A N/A
+401,BK6YC3-R,AAV CT Equity,Energy
+402,GM3DBL-R,ULTA US Equity,Consumer Discretionary
+403,WL1GCY-R,WAT UN Equity,Health Care
+404,BZV4LB-R,2246800Q UN Equity,#N/A N/A
+405,HHB3C8-R,MDLZ UW Equity,Consumer Staples
+406,DBPQC2-R,1448062D UN Equity,Communication Services
+407,CRP3ZV-R,ZION UQ Equity,Financials
+408,T2TKPB-R,IPL CN Equity,Energy
+409,PHQ4CT-R,EIF CN Equity,Industrials
+410,JS6B3F-R,TGNA UN Equity,Communication Services
+411,DSBCFQ-R,EVHC UN Equity,Health Care
+412,LVYTWF-R,IRM US Equity,Real Estate
+413,WZHGL6-R,HCG CN Equity,Financials
+414,D3ZY22-R,HP US Equity,Energy
+415,BDHNGY-R,AR CT Equity,Materials
+416,JML6TS-R,TRST CT Equity,Health Care
+417,SPGL7X-R,STE US Equity,Health Care
+418,QJKQYN-R,IFC CN Equity,Financials
+419,X45VWN-R,2266620Q CT Equity,Energy
+420,FS319Q-R,TRV UN Equity,Financials
+421,MYW502-R,TTWO UW Equity,Communication Services
+422,BXKWLD-R,BNI UN Equity,#N/A N/A
+423,PGJW6S-R,L CN Equity,Consumer Staples
+424,F4NVTL-R,EHC UN Equity,Health Care
+425,TCX5SM-R,REI-U CN Equity,Real Estate
+426,NRT4CM-R,1327Q UN Equity,#N/A N/A
+427,GXCQ63-R,CJT CT Equity,Industrials
+428,B3DVXC-R,FCX UN Equity,Materials
+429,TVTQ1T-R,AD CN Equity,Financials
+430,W3F6YL-R,ENGH CT Equity,Information Technology
+431,H9MNVP-R,MHM CT Equity,#N/A N/A
+432,D1TGCR-R,1051237D CT Equity,#N/A N/A
+433,HF1P15-R,BWA US Equity,Consumer Discretionary
+434,JJ39BV-R,FFIV US Equity,Information Technology
+435,PGMTVK-R,677004Q UN Equity,#N/A N/A
+436,PZ917X-R,HUM UN Equity,Health Care
+437,NFMH78-R,BKR UN Equity,Energy
+438,KDCD3Y-R,NSC UN Equity,Industrials
+439,QMQV1Q-R,MRO UN Equity,Energy
+440,MLHF81-R,OPY CT Equity,Financials
+441,Q3ZHPF-R,1541931D UW Equity,Information Technology
+442,NKGZ7J-R,HCA UN Equity,Health Care
+443,BCHRDT-R,FCR-U CT Equity,Real Estate
+444,KFQHFG-R,CMG US Equity,Consumer Discretionary
+445,M3ZJ5T-R,UPJ UN Equity,#N/A N/A
+446,PTWVJ3-R,LSG CT Equity,Materials
+447,GZMRSV-R,CRM UN Equity,Information Technology
+448,B97MP0-R,PLD US Equity,Real Estate
+449,PX1NYT-R,AKAM UW Equity,Information Technology
+450,TNZ6CZ-R,ANET UN Equity,Information Technology
+451,GPL7SL-R,3075558Q UN Equity,#N/A N/A
+452,J9FK0T-R,WOR US Equity,Materials
+453,T3YH93-R,PEAK UN Equity,Real Estate
+454,Q541GS-R,1414782D CT Equity,Materials
+455,HG5HKZ-R,3054Q UN Equity,#N/A N/A
+456,D548G7-R,DY CT Equity,#N/A N/A
+457,QLQKDC-R,FISV UQ Equity,Information Technology
+458,QWV5DL-R,EW US Equity,Health Care
+459,HZ76PY-R,CLC CT Equity,Energy
+460,WN99LH-R,CR CT Equity,Energy
+461,CRNHT8-R,RCH CN Equity,Industrials
+462,KK9RS0-R,DRG-U CN Equity,Real Estate
+463,PFFLVM-R,MEDI UW Equity,#N/A N/A
+464,FRZLRH-R,1382554D CT Equity,#N/A N/A
+465,CP8LVX-R,VT CT Equity,#N/A N/A
+466,CY644B-R,MS UN Equity,Financials
+467,KDHCQP-R,NLOK UW Equity,Information Technology
+468,TYPLZM-R,FSV CN Equity,Real Estate
+469,HWSZ6B-R,1482874D CT Equity,#N/A N/A
+470,R2H78W-R,2942331Q UN Equity,#N/A N/A
+471,TWXW2R-R,COP US Equity,Energy
+472,MMRFNN-R,1311483D CT Equity,#N/A N/A
+473,LJQYJ1-R,ZBH US Equity,Health Care
+474,G2Q5K4-R,SIL CN Equity,Materials
+475,DXTTDL-R,SPB CN Equity,Utilities
+476,H79F60-R,2292198Q UN Equity,#N/A N/A
+477,F2DFHH-R,GOLD UN Equity,Materials
+478,MFQVZQ-R,HLT US Equity,Consumer Discretionary
+479,J76LJ3-R,MWI UN Equity,#N/A N/A
+480,VQXR21-R,DD US Equity,Materials
+481,MQ0Y3T-R,VMC US Equity,Materials
+482,CZBYFY-R,KLAC UW Equity,Information Technology
+483,WB32GQ-R,SPE CT Equity,Energy
+484,NFMPMG-R,IDXX US Equity,Health Care
+485,KYJFW8-R,PEG US Equity,Utilities
+486,Q78D01-R,HES UN Equity,Energy
+487,RHZ062-R,0598884D UQ Equity,#N/A N/A
+488,BQWWY7-R,KMB US Equity,Consumer Staples
+489,DBNPJ7-R,ZRN UN Equity,#N/A N/A
+490,VYQ02C-R,FLS UN Equity,Industrials
+491,PKY50L-R,CINF US Equity,Financials
+492,XNRMXZ-R,COTY UN Equity,Consumer Staples
+493,SZJK3L-R,X CN Equity,Financials
+494,J06HGC-R,SGY CT Equity,Energy
+495,KHYBR2-R,CF-U CT Equity,#N/A N/A
+496,N286BN-R,EMA CN Equity,Utilities
+497,BV4P4T-R,FE US Equity,Utilities
+498,NPK3PS-R,EXC US Equity,Utilities
+499,FXLTXX-R,596912Q CT Equity,#N/A N/A
+500,K4FSQG-R,RNO CT Equity,#N/A N/A
+501,K6VMFP-R,MEL UN Equity,#N/A N/A
+502,MPXJMM-R,DIS US Equity,Communication Services
+503,PN37ZK-R,EFX US Equity,Industrials
+504,K93YKP-R,KSE UN Equity,#N/A N/A
+505,T8H08Z-R,TRQ CN Equity,Materials
+506,NM8DVF-R,FLMIQ UN Equity,#N/A N/A
+507,K6S3NB-R,0600326D CN Equity,#N/A N/A
+508,NV7K28-R,IFF US Equity,Materials
+509,XBV376-R,LGY-U CT Equity,#N/A N/A
+510,VQXR21-R,1697067D UN Equity,Materials
+511,G7XV87-R,CYS CT Equity,#N/A N/A
+512,JDVMBC-R,AP-U CT Equity,Real Estate
+513,CRRX9G-R,USHC US Equity,#N/A N/A
+514,GFJGD5-R,NWL UW Equity,Consumer Discretionary
+515,RLFBNL-R,5656565D UN Equity,#N/A N/A
+516,FDS1XB-R,FRT US Equity,Real Estate
+517,RQXL78-R,HSIC US Equity,Health Care
+518,M79B89-R,MGM US Equity,Consumer Discretionary
+519,M79R1P-R,MRK US Equity,Health Care
+520,SVZJ8B-R,ATA CN Equity,Industrials
+521,JZWRR3-R,LKQ UW Equity,Consumer Discretionary
+522,CN7V93-R,2299424Q CT Equity,#N/A N/A
+523,GJZ5YB-R,KSS US Equity,Consumer Discretionary
+524,JDDDQJ-R,ZZZ CT Equity,Consumer Discretionary
+525,FK9DL1-R,3134583Q CT Equity,#N/A N/A
+526,NCCJTM-R,IAC UW Equity,Communication Services
+527,SW42ZM-R,1445600D CT Equity,Materials
+528,TR8HR8-R,1523384D CT Equity,Information Technology
+529,DVKG6K-R,SCL CN Equity,Energy
+530,JPXNB3-R,XL UN Equity,Financials
+531,HSFL3C-R,PPG UN Equity,Materials
+532,LX237L-R,BF/B UA Equity,Consumer Staples
+533,HJG212-R,HST UN Equity,Real Estate
+534,B9310T-R,SSL CN Equity,Materials
+535,V8549L-R,BMC UW Equity,#N/A N/A
+536,NT38T5-R,CTSH US Equity,Information Technology
+537,LY8HKP-R,AIM CT Equity,Communication Services
+538,HJGXNW-R,1280452D CT Equity,#N/A N/A
+539,DXTTDL-R,SPB CT Equity,Utilities
+540,LMZKDG-R,RCM/RV/B CT Equity,#N/A N/A
+541,GSVL1P-R,SDH UN Equity,#N/A N/A
+542,FCHV3J-R,BAD CT Equity,Industrials
+543,FLDWBD-R,NBR UA Equity,Energy
+544,JQZ00G-R,STT US Equity,Financials
+545,NNKD2Y-R,JPM UN Equity,Financials
+546,J3WSFM-R,PONY CT Equity,Energy
+547,WPFS7S-R,CVX US Equity,Energy
+548,FZXHM5-R,1280712D UW Equity,#N/A N/A
+549,CG3M36-R,H CT Equity,Utilities
+550,FR4YZK-R,NLSN UN Equity,Industrials
+551,C0YGQ6-R,IR US Equity,Industrials
+552,HJGCMC-R,PRMW CT Equity,Consumer Staples
+553,VYPKC2-R,GIDL UQ Equity,#N/A N/A
+554,MJB531-R,CFN UN Equity,Health Care
+555,NGW97P-R,OKE US Equity,Energy
+556,V5WMVF-R,MCHP UW Equity,Information Technology
+557,BPRHF0-R,DUK UN Equity,Utilities
+558,QLQKDC-R,FISV UW Equity,Information Technology
+559,RT66YK-R,AMD UN Equity,Information Technology
+560,R6XPFW-R,TECK/B CT Equity,Materials
+561,RSQN90-R,XYL US Equity,Industrials
+562,DXW84Y-R,SNA US Equity,Industrials
+563,MCNYYL-R,AMZN UQ Equity,Consumer Discretionary
+564,F07Q7W-R,CTAS US Equity,Industrials
+565,HD54JB-R,KCH CT Equity,#N/A N/A
+566,VNMTTH-R,NKE US Equity,Consumer Discretionary
+567,RBJXH6-R,DLR US Equity,Real Estate
+568,JWH12W-R,MAA US Equity,Real Estate
+569,JVL1QM-R,228510Q UN Equity,#N/A N/A
+570,FT2LQJ-R,45861Q UN Equity,#N/A N/A
+571,SRR5X5-R,SAP CN Equity,Consumer Staples
+572,LPRN3T-R,FOXA UW Equity,Communication Services
+573,S4FRKK-R,CGX CN Equity,Communication Services
+574,WYJT0C-R,USB UN Equity,Financials
+575,WPKF66-R,BBY US Equity,Consumer Discretionary
+576,BWDZ2P-R,ACN US Equity,Information Technology
+577,CX4TJ0-R,UMGI UN Equity,#N/A N/A
+578,LD0WYZ-R,COF UN Equity,Financials
+579,WGLQTS-R,HON US Equity,Industrials
+580,NFMH78-R,BHI UN Equity,Energy
+581,MNWZG0-R,1003374D CT Equity,#N/A N/A
+582,LTSNXH-R,CNC UN Equity,Health Care
+583,CZBYFY-R,KLAC US Equity,Information Technology
+584,Q1BV1X-R,2340361Q UN Equity,#N/A N/A
+585,RPTY1P-R,PPL US Equity,Utilities
+586,SYD3JB-R,RDPL UN Equity,#N/A N/A
+587,FJ4J4C-R,ECL US Equity,Materials
+588,LGLG64-R,VII CT Equity,Energy
+589,J70ZTV-R,DE US Equity,Industrials
+590,WDG05S-R,CFG UN Equity,Financials
+591,P359SX-R,RRZ CT Equity,#N/A N/A
+592,SHNVG7-R,PRU US Equity,Financials
+593,FV800K-R,1086832D UN Equity,#N/A N/A
+594,DNXNVJ-R,TKR UN Equity,Industrials
+595,SBVKW8-R,SGP UN Equity,#N/A N/A
+596,N4LKBK-R,HPX CT Equity,#N/A N/A
+597,RQXL78-R,HSIC UW Equity,Health Care
+598,CMWR7T-R,1377Q UN Equity,#N/A N/A
+599,CY9XBW-R,IGM CT Equity,Financials
+600,PM5Z10-R,TF-U CT Equity,#N/A N/A
+601,K5Q6XG-R,RRX CT Equity,Energy
+602,B5P0VB-R,2288005Q US Equity,#N/A N/A
+603,FDS65G-R,355488Q UQ Equity,#N/A N/A
+604,KGSZF0-R,ACB CN Equity,Health Care
+605,MCVJKT-R,3343370Q CT Equity,#N/A N/A
+606,PLY66Q-R,SMF CT Equity,Materials
+607,W8YRN3-R,LW UN Equity,Consumer Staples
+608,T0SQZH-R,GM US Equity,Consumer Discretionary
+609,KZP2VQ-R,3467123Q CT Equity,#N/A N/A
+610,V9977J-R,EQIX UW Equity,Real Estate
+611,FXH4XG-R,QCOM US Equity,Information Technology
+612,FWHC5K-R,A UN Equity,Health Care
+613,K9460X-R,CITGQ UN Equity,#N/A N/A
+614,WXD74Z-R,CAS CT Equity,Materials
+615,KDJSF0-R,ALK US Equity,Industrials
+616,N2CYH5-R,0614717D CT Equity,#N/A N/A
+617,WB34LS-R,PWF CN Equity,Financials
+618,VDT85V-R,PH UN Equity,Industrials
+619,HQ87P5-R,TXN UN Equity,Information Technology
+620,FZVHYF-R,XG CT Equity,#N/A N/A
+621,F9VYPD-R,HPE UN Equity,Information Technology
+622,T67DJN-R,IT UN Equity,Information Technology
+623,GVCLVY-R,EFX CT Equity,Energy
+624,RXHN9P-R,BA US Equity,Industrials
+625,M4VLV7-R,MAT US Equity,Consumer Discretionary
+626,MJCGG4-R,HSY UN Equity,Consumer Staples
+627,MKH9XV-R,CFP CN Equity,Materials
+628,BYJYYM-R,ALL US Equity,Financials
+629,M0H6M5-R,AMAT UW Equity,Information Technology
+630,KPFMHW-R,UPS UN Equity,Industrials
+631,X47RHF-R,WCG US Equity,Health Care
+632,NDN5DT-R,ADS UN Equity,Information Technology
+633,MR0PSP-R,DLTR UW Equity,Consumer Discretionary
+634,DH962S-R,TRZ CT Equity,Consumer Discretionary
+635,HXYSHY-R,TCL/A CT Equity,Industrials
+636,XF814J-R,BAM/A CN Equity,Financials
+637,PRR12D-R,VET CN Equity,Energy
+638,TTHJD1-R,DISH UW Equity,Communication Services
+639,M4W5YS-R,MAG CT Equity,Materials
+640,BV3N5V-R,M UN Equity,Consumer Discretionary
+641,K2C16P-R,FPS CT Equity,#N/A N/A
+642,CJVKH9-R,CLX UN Equity,Consumer Staples
+643,PLY42N-R,VVI UN Equity,Industrials
+644,CHQS4N-R,DDC CT Equity,Materials
+645,RYMLZH-R,3414924Q US Equity,#N/A N/A
+646,K24Q4R-R,CTL US Equity,Communication Services
+647,FDS65G-R,RF US Equity,Financials
+648,MH33D6-R,AAPL US Equity,Information Technology
+649,HQ87P5-R,TXN UW Equity,Information Technology
+650,PTVCPQ-R,3277Q UN Equity,#N/A N/A
+651,LF4WPT-R,JBL UN Equity,Information Technology
+652,SX4M36-R,AE-U CT Equity,#N/A N/A
+653,M1FW60-R,UNP UN Equity,Industrials
+654,DJC2TN-R,ADBE UW Equity,Information Technology
+655,DH962S-R,1341836D CT Equity,Consumer Discretionary
+656,T4259K-R,STN CT Equity,Industrials
+657,TNZ1G6-R,EA UW Equity,Communication Services
+658,B04ZHP-R,1426897D CT Equity,#N/A N/A
+659,CRNHT8-R,RCH CT Equity,Industrials
+660,N5NG2F-R,MRE CT Equity,Consumer Discretionary
+661,GQGQ5C-R,EMN UN Equity,Materials
+662,H53QZC-R,PRGO UW Equity,Health Care
+663,V3Q5PM-R,PAYC US Equity,Information Technology
+664,QR3WD9-R,1255173D UN Equity,#N/A N/A
+665,T1PDMB-R,IPS CT Equity,#N/A N/A
+666,BPQB5X-R,RYAN UQ Equity,#N/A N/A
+667,BWDZ2P-R,ACN UN Equity,Information Technology
+668,SKZRLQ-R,AMP UN Equity,Financials
+669,HJXXH4-R,HII US Equity,Industrials
+670,GZMRSV-R,CRM US Equity,Information Technology
+671,TRDSY9-R,PAAS CT Equity,Materials
+672,FLFNV4-R,EOP UN Equity,#N/A N/A
+673,BZPFLX-R,REG UN Equity,Real Estate
+674,M2LCXB-R,OWENQ UN Equity,#N/A N/A
+675,DJBQ39-R,CPRT UW Equity,Industrials
+676,LPRN3T-R,FOXA US Equity,Communication Services
+677,BZT8YJ-R,2968900Q UN Equity,#N/A N/A
+678,D2WW33-R,8130871Q CN Equity,#N/A N/A
+679,HQ4DBK-R,ORCL UW Equity,Information Technology
+680,J1J3YH-R,GBLXQ US Equity,#N/A N/A
+681,MBP9GT-R,OTEX CT Equity,Information Technology
+682,RC9616-R,CRT-U CN Equity,Real Estate
+683,FQYW7Q-R,DVA UN Equity,Health Care
+684,JH07CW-R,APOL UQ Equity,Consumer Discretionary
+685,BK6JKQ-R,TMO UN Equity,Health Care
+686,BPQJL3-R,HTMXQ UN Equity,#N/A N/A
+687,G4FS4T-R,3023883Q CT Equity,#N/A N/A
+688,P32F96-R,SANM UW Equity,Information Technology
+689,SDBW1L-R,4529913Q CT Equity,#N/A N/A
+690,KDJL0T-R,AVY US Equity,Materials
+691,QR56YK-R,GGP UN Equity,Real Estate
+692,T7H5H1-R,COO US Equity,Health Care
+693,V6ZQWF-R,MLM US Equity,Materials
+694,P9ZMV7-R,THC UN Equity,Health Care
+695,G90MPY-R,TIF UN Equity,Consumer Discretionary
+696,HTM0LK-R,GOOGL US Equity,Communication Services
+697,T1NQ9P-R,SKLNQ UN Equity,#N/A N/A
+698,GRS9LG-R,DRI UN Equity,Consumer Discretionary
+699,VFV2WQ-R,0779012D CT Equity,#N/A N/A
+700,FLD1RM-R,2269464Q CT Equity,#N/A N/A
+701,HXYSHY-R,TCL/A CN Equity,Industrials
+702,NRTP90-R,JOSEA US Equity,#N/A N/A
+703,H9SPFD-R,GDW UN Equity,#N/A N/A
+704,GGPVTB-R,UNH US Equity,Health Care
+705,SHNDLT-R,ABT US Equity,Health Care
+706,X4JD2N-R,GEI CT Equity,Energy
+707,RVC5J9-R,NRG US Equity,Utilities
+708,B4PJKL-R,AYE UN Equity,#N/A N/A
+709,FYT41X-R,CAH UN Equity,Health Care
+710,NQP2CL-R,NVLN CT Equity,Health Care
+711,V6ZQWF-R,MLM UN Equity,Materials
+712,T1N9NF-R,TEL US Equity,Information Technology
+713,K6RW63-R,CBS US Equity,Communication Services
+714,FV824M-R,CNP US Equity,Utilities
+715,DH7WLK-R,DRE UN Equity,Real Estate
+716,FH1G5D-R,CJB CT Equity,#N/A N/A
+717,HKL2Z2-R,3619382Q UN Equity,#N/A N/A
+718,V9DZD1-R,TEX UN Equity,Industrials
+719,SZH9RF-R,TVX CT Equity,#N/A N/A
+720,JS2P50-R,SJR/B CN Equity,Communication Services
+721,DKGV7D-R,1624Q US Equity,#N/A N/A
+722,G6RN78-R,PMCS UQ Equity,Information Technology
+723,BW92P1-R,NYT UN Equity,Communication Services
+724,CLZ09Q-R,WN CN Equity,Consumer Staples
+725,C326F7-R,1649858D UQ Equity,#N/A N/A
+726,GTZMXL-R,UH UN Equity,#N/A N/A
+727,KW432H-R,JKHY UW Equity,Information Technology
+728,KM5Q58-R,SCHW US Equity,Financials
+729,TQ7GN6-R,VSTNQ UN Equity,#N/A N/A
+730,MKJ8WW-R,MSCI UN Equity,Financials
+731,BRWKF0-R,TSCO US Equity,Consumer Discretionary
+732,CHLPBT-R,QLGC UQ Equity,Information Technology
+733,J2NHZ7-R,FEC CN Equity,Energy
+734,M4VLV7-R,MAT UW Equity,Consumer Discretionary
+735,JXV7LH-R,HM UN Equity,#N/A N/A
+736,LJBVKT-R,1953Q UN Equity,#N/A N/A
+737,FBC2XZ-R,2009Q UN Equity,#N/A N/A
+738,PTRY1F-R,AIZ UN Equity,Financials
+739,DH79H0-R,WHR US Equity,Consumer Discretionary
+740,MZJHY9-R,APTV UN Equity,Consumer Discretionary
+741,LGLG64-R,VII CN Equity,Energy
+742,K2B3FT-R,2894750Q CT Equity,#N/A N/A
+743,JKD9ND-R,NCC UN Equity,#N/A N/A
+744,Q8G78M-R,TDG US Equity,Industrials
+745,KRQTDT-R,PM US Equity,Consumer Staples
+746,T3YH93-R,PEAK US Equity,Real Estate
+747,W14WTL-R,ATGE UN Equity,Consumer Discretionary
+748,NW728X-R,CTXS UQ Equity,Information Technology
+749,HMWK40-R,SVM CN Equity,Materials
+750,SFLZN9-R,TOS UN Equity,#N/A N/A
+751,W6N4JC-R,DTE UN Equity,Utilities
+752,QCYLZB-R,KMX UN Equity,Consumer Discretionary
+753,WGXV7D-R,FLT US Equity,Information Technology
+754,KM5N16-R,1683351D UQ Equity,#N/A N/A
+755,FJ1B1C-R,AJG US Equity,Financials
+756,V3RS7M-R,3162892Q CT Equity,#N/A N/A
+757,H69CWS-R,FANG US Equity,Energy
+758,WV1ZC5-R,739306Q US Equity,#N/A N/A
+759,HP7QKL-R,W CT Equity,#N/A N/A
+760,J2LVSN-R,NAVI UW Equity,Financials
+761,QG1HR7-R,XOM US Equity,Energy
+762,QQ56TG-R,0948669D UN Equity,#N/A N/A
+763,G7RK58-R,TEU CT Equity,#N/A N/A
+764,TQ33B3-R,MTL CT Equity,Industrials
+765,GN6RRQ-R,TXT UN Equity,Industrials
+766,HN0LVT-R,SHLDQ UQ Equity,Consumer Discretionary
+767,SHMBPY-R,PPW US Equity,#N/A N/A
+768,R2J99W-R,KR UN Equity,Consumer Staples
+769,MFZ7XH-R,CSW/A CT Equity,Consumer Staples
+770,JYWMBW-R,GILD UQ Equity,Health Care
+771,FYT21Z-R,BTO CN Equity,Materials
+772,W235P2-R,CIGI CT Equity,Real Estate
+773,PRR12D-R,VET CT Equity,Energy
+774,K8WB4N-R,CINL UN Equity,#N/A N/A
+775,KB3YPS-R,NEE US Equity,Utilities
+776,D40Z11-R,HKY CT Equity,#N/A N/A
+777,JNTPK7-R,HCBK UW Equity,Financials
+778,RTXD8D-R,CDW UW Equity,Information Technology
+779,KW9F7H-R,SPXC UN Equity,Industrials
+780,W7S6D8-R,BNS CN Equity,Financials
+781,KB2QBM-R,ATVI UW Equity,Communication Services
+782,P5BP94-R,HOG UN Equity,Consumer Discretionary
+783,GX5LJC-R,BBT US Equity,Financials
+784,HKLJPC-R,NUE UN Equity,Materials
+785,KK1SFD-R,LNT UW Equity,Utilities
+786,RFQX93-R,ATD/B CT Equity,Consumer Staples
+787,HR8X1W-R,0569091D CT Equity,#N/A N/A
+788,RVC5J9-R,NRG UN Equity,Utilities
+789,Q9J1WF-R,0910150D US Equity,Consumer Discretionary
+790,N17TH6-R,FTS CN Equity,Utilities
+791,K38HHD-R,MAR UN Equity,Consumer Discretionary
+792,DXZQS6-R,PFG US Equity,Financials
+793,PHJFHG-R,1690701D CT Equity,#N/A N/A
+794,R88PLB-R,IVN CN Equity,Materials
+795,F1B8CH-R,CHTR UW Equity,Communication Services
+796,RGW192-R,SGR/H CT Equity,Materials
+797,FPVHPG-R,SRU-U CT Equity,Real Estate
+798,S5FPKL-R,BAA CT Equity,Materials
+799,XLT03X-R,RCL UN Equity,Consumer Discretionary
+800,M0C1P8-R,TFX UN Equity,Health Care
+801,KGWH6C-R,1166879D CT Equity,#N/A N/A
+802,RJ0FT9-R,RL US Equity,Consumer Discretionary
+803,TJLTK9-R,EXF CT Equity,Information Technology
+804,B3LCDJ-R,DSG CT Equity,Information Technology
+805,M0H6M5-R,AMAT US Equity,Information Technology
+806,L7M79Q-R,ATI UN Equity,Materials
+807,H53QZC-R,PRGO US Equity,Health Care
+808,GN6RRQ-R,TXT US Equity,Industrials
+809,QLQKDC-R,FISV US Equity,Information Technology
+810,KC7CB2-R,MOL/A CT Equity,#N/A N/A
+811,WB9TB1-R,WAI UN Equity,#N/A N/A
+812,TZ2TSL-R,WM US Equity,Industrials
+813,N6Z3ML-R,1436513D UN Equity,#N/A N/A
+814,JS1YSB-R,WCN CT Equity,Industrials
+815,DMRWLY-R,ALB US Equity,Materials
+816,S1ZZ0F-R,NWC CT Equity,Consumer Staples
+817,RXG6KB-R,SEE UN Equity,Materials
+818,M67VFY-R,VRSK UW Equity,Industrials
+819,KFMMZS-R,EL US Equity,Consumer Staples
+820,B1C27H-R,NEU UN Equity,Materials
+821,FVC51J-R,IFP CN Equity,Materials
+822,WB1V3K-R,0772031D UN Equity,#N/A N/A
+823,QP3LLV-R,CE UN Equity,Materials
+824,TSCB80-R,FBNIQ US Equity,Consumer Discretionary
+825,FBCHQC-R,LB UN Equity,Consumer Discretionary
+826,C326F7-R,1649858D UN Equity,#N/A N/A
+827,TSJ29G-R,LUG CN Equity,Materials
+828,F05QG0-R,DPZ US Equity,Consumer Discretionary
+829,FCK6QT-R,EXPE US Equity,Consumer Discretionary
+830,G8WDMZ-R,DVN UN Equity,Energy
+831,P31DB7-R,HIG US Equity,Financials
+832,V759HN-R,LIF CN Equity,Materials
+833,LX237L-R,BF/B UN Equity,Consumer Staples
+834,T4227L-R,370506Q UN Equity,#N/A N/A
+835,S7P87W-R,PWR US Equity,Industrials
+836,T2Z5LS-R,INE CT Equity,Utilities
+837,LRHQLX-R,DLX UN Equity,Industrials
+838,RHZ062-R,0598884D US Equity,#N/A N/A
+839,DJBQ39-R,CPRT US Equity,Industrials
+840,Q0JDDX-R,2731112Q US Equity,#N/A N/A
+841,KCCLD1-R,1500785D UN Equity,Utilities
+842,DYZ4SR-R,563827Q CT Equity,#N/A N/A
+843,KT048L-R,8127395Q CT Equity,#N/A N/A
+844,WFJYTJ-R,GOOG US Equity,Communication Services
+845,RL8ZBH-R,TVE CT Equity,Energy
+846,RGTT21-R,2282655Q UN Equity,#N/A N/A
+847,R3MHJZ-R,BYD CT Equity,Industrials
+848,P1P032-R,FTV UN Equity,Industrials
+849,KNDVY2-R,0872237D UN Equity,#N/A N/A
+850,NL79M9-R,THI CT Equity,Consumer Discretionary
+851,WYHB5Z-R,8206908Q UW Equity,#N/A N/A
+852,WC5Y1H-R,CNR CN Equity,Industrials
+853,MBNTPH-R,263179Q UN Equity,#N/A N/A
+854,L6CPTK-R,INTU US Equity,Information Technology
+855,JMHYW0-R,CB US Equity,Financials
+856,HLRKD5-R,CTC/A CN Equity,Consumer Discretionary
+857,B8374S-R,AA UN Equity,Materials
+858,W95M60-R,TCOMA US Equity,#N/A N/A
+859,X42HGH-R,FM CT Equity,Materials
+860,CWRF0J-R,MNK UN Equity,Health Care
+861,D9PTF2-R,QEC CT Equity,Energy
+862,Q4ZZW3-R,1305588D CT Equity,#N/A N/A
+863,FJ4NDH-R,ROST UW Equity,Consumer Discretionary
+864,KB791X-R,XEL UW Equity,Utilities
+865,FS32CR-R,FAST US Equity,Industrials
+866,NPK7YX-R,RSG UN Equity,Industrials
+867,HF5SX1-R,BIIB US Equity,Health Care
+868,BNJBN6-R,DXCM US Equity,Health Care
+869,MMMCXV-R,TXG CT Equity,Materials
+870,H8JXH0-R,CHK UN Equity,Energy
+871,SYS0R0-R,QSR CT Equity,Consumer Discretionary
+872,CRRS1B-R,1237Q UN Equity,#N/A N/A
+873,F03Z3C-R,KMP-U CN Equity,Real Estate
+874,LQ7KY5-R,HRB US Equity,Consumer Discretionary
+875,RRXTTL-R,ITW US Equity,Industrials
+876,T8X2RS-R,NTR CN Equity,Materials
+877,TY2XVL-R,MOLX UQ Equity,#N/A N/A
+878,PHP2BT-R,PPL CT Equity,Energy
+879,W6N4JC-R,DTE US Equity,Utilities
+880,QQ152N-R,8208405Q CT Equity,#N/A N/A
+881,KK1YRK-R,GPN UN Equity,Information Technology
+882,G4GB6B-R,TER UN Equity,Information Technology
+883,RWHM3K-R,TKO CT Equity,Materials
+884,B5PV8Z-R,0376152D US Equity,#N/A N/A
+885,W13NGF-R,AQN CT Equity,Utilities
+886,MTFX78-R,4366605Q CT Equity,#N/A N/A
+887,HF5SX1-R,BIIB UQ Equity,Health Care
+888,HY2JNG-R,YRCW UQ Equity,Industrials
+889,VQYTRP-R,SYF UN Equity,Financials
+890,WYLZ4D-R,RATL UQ Equity,#N/A N/A
+891,L426GG-R,FLTWQ UN Equity,#N/A N/A
+892,H6L5S4-R,EFN CT Equity,Financials
+893,TWTFJJ-R,BC UN Equity,Consumer Discretionary
+894,W91F62-R,DGC CN Equity,Materials
+895,X7GQ47-R,1684442D UN Equity,Industrials
+896,CN7T72-R,ANSS US Equity,Information Technology
+897,SZJK3L-R,0609237D CT Equity,#N/A N/A
+898,JJ8QPY-R,0961514D UN Equity,#N/A N/A
+899,X1RJ5Y-R,NTRS UQ Equity,Financials
+900,JT71M6-R,AMG US Equity,Financials
+901,NYJB5S-R,LNF CT Equity,Consumer Discretionary
+902,NZMC6V-R,3891289Q UN Equity,#N/A N/A
+903,JXMLY8-R,ADSK US Equity,Information Technology
+904,GX5LJC-R,TFC US Equity,Financials
+905,Q8G78M-R,TDG UN Equity,Industrials
+906,LRDGCV-R,KATE UN Equity,Consumer Discretionary
+907,Q1KYHG-R,3284931Q CT Equity,#N/A N/A
+908,CRM0ZW-R,1621582D UN Equity,#N/A N/A
+909,K24Q4R-R,CTL UN Equity,Communication Services
+910,QG1HR7-R,XOM UN Equity,Energy
+911,M77CJG-R,41018Q US Equity,#N/A N/A
+912,KHX8Q2-R,DGX UN Equity,Health Care
+913,PBZKZD-R,OGC CT Equity,Materials
+914,G8WDMZ-R,DVN US Equity,Energy
+915,HXZ458-R,ILMN UW Equity,Health Care
+916,BQWQM2-R,HLG/C CT Equity,#N/A N/A
+917,KT2P3Z-R,VAT UN Equity,#N/A N/A
+918,WCFT1W-R,UDI CT Equity,#N/A N/A
+919,F07DSQ-R,TCN CN Equity,Real Estate
+920,LTP334-R,GD UN Equity,Industrials
+921,SW2SHD-R,NCE UN Equity,#N/A N/A
+922,M506MK-R,TEK UN Equity,#N/A N/A
+923,DBP9KP-R,SWG CT Equity,#N/A N/A
+924,SZDG9R-R,FJCC US Equity,#N/A N/A
+925,FH1NKL-R,LEN UN Equity,Consumer Discretionary
+926,NPJW7K-R,MET US Equity,Financials
+927,SHNQ63-R,HRG CT Equity,#N/A N/A
+928,D1RQ13-R,723588Q UN Equity,#N/A N/A
+929,NYJHHY-R,1199Q US Equity,#N/A N/A
+930,SYS0R0-R,QSR CN Equity,Consumer Discretionary
+931,GM69XB-R,3147Q UN Equity,#N/A N/A
+932,RFQX93-R,ATD/B CN Equity,Consumer Staples
+933,D7HXYC-R,827663Q UN Equity,#N/A N/A
+934,QKJS7V-R,UAL UW Equity,Industrials
+935,T7CFBJ-R,1617016D CT Equity,#N/A N/A
+936,KB36D6-R,1641774D CT Equity,Materials
+937,HGBJ0K-R,APC UN Equity,Energy
+938,RYRC40-R,NI UN Equity,Utilities
+939,T6C8Y9-R,MBI UN Equity,Financials
+940,J9F59G-R,WU US Equity,Information Technology
+941,WRTQ85-R,GIL CT Equity,Consumer Discretionary
+942,TKKPJB-R,PXD UN Equity,Energy
+943,HGBFWH-R,0334249Q CT Equity,#N/A N/A
+944,C1XRTZ-R,4621824Q UN Equity,#N/A N/A
+945,PSLT4J-R,FCP CT Equity,#N/A N/A
+946,XQCN4R-R,MUR UN Equity,Energy
+947,MMMCXV-R,TXG CN Equity,Materials
+948,X47RHF-R,WCG UN Equity,Health Care
+949,BV8GCC-R,STJ US Equity,Health Care
+950,GS3RJ8-R,IVZ US Equity,Financials
+951,LQBB5R-R,MA US Equity,Information Technology
+952,Q66JB6-R,7771503Q CT Equity,#N/A N/A
+953,RXG6KB-R,SEE US Equity,Materials
+954,TLY9TB-R,297504Q UN Equity,#N/A N/A
+955,K38HHD-R,MAR US Equity,Consumer Discretionary
+956,BGYBPV-R,3393199Q UN Equity,#N/A N/A
+957,NDMDZ3-R,PALM UQ Equity,#N/A N/A
+958,KJX3J0-R,MFE UN Equity,#N/A N/A
+959,B3LCDJ-R,DSG CN Equity,Information Technology
+960,R4M2WP-R,1513Q UN Equity,#N/A N/A
+961,P8Q3G4-R,MDI CT Equity,Materials
+962,SB2XMY-R,0212714D CT Equity,#N/A N/A
+963,RFPYG6-R,SWI CT Equity,Industrials
+964,VYYSYP-R,0943554D UN Equity,#N/A N/A
+965,H2VPCM-R,VLO US Equity,Energy
+966,KRTZ9N-R,TWC UN Equity,Communication Services
+967,FMDS8D-R,CHRW US Equity,Industrials
+968,LPBY77-R,950967Q UN Equity,#N/A N/A
+969,TTN57D-R,ABKFQ UN Equity,#N/A N/A
+970,Q7WZWY-R,BXLT UN Equity,Health Care
+971,JDVMBC-R,AP-U CN Equity,Real Estate
+972,GZKHGQ-R,RE UN Equity,Financials
+973,DXYMP5-R,IBR CT Equity,Energy
+974,DR9GLS-R,BVSN UQ Equity,Information Technology
+975,Q63955-R,AEZS CT Equity,Health Care
+976,WSTJ02-R,7587218Q CT Equity,#N/A N/A
+977,HMZXK5-R,JHF UN Equity,#N/A N/A
+978,P5GYF4-R,748957Q UN Equity,#N/A N/A
+979,KSWML9-R,HFC US Equity,Energy
+980,SQFRT7-R,0673937D CT Equity,#N/A N/A
+981,CN8LQT-R,NKO CT Equity,Energy
+982,X3JLR4-R,SHOP CN Equity,Information Technology
+983,B19ST9-R,LLY US Equity,Health Care
+984,T8NCJ0-R,3679940Q CT Equity,#N/A N/A
+985,T41BQS-R,279852Q CT Equity,#N/A N/A
+986,SHNSB5-R,FSH UN Equity,#N/A N/A
+987,NM96C5-R,WTO CT Equity,#N/A N/A
+988,CZGY1P-R,WAMUQ UQ Equity,#N/A N/A
+989,Q78KB6-R,COL UN Equity,Industrials
+990,S1ZZ0F-R,NWC CN Equity,Consumer Staples
+991,RBHW3V-R,CRON CN Equity,Health Care
+992,JJ7V03-R,CNX UN Equity,Energy
+993,R4SK9T-R,BMO CN Equity,Financials
+994,QVLWCN-R,EQN CT Equity,#N/A N/A
+995,XGFDHN-R,SO UN Equity,Utilities
+996,D54BL9-R,BBBY UW Equity,Consumer Discretionary
+997,J61GM6-R,CMG CT Equity,Energy
+998,NWGNS1-R,253647Q UN Equity,#N/A N/A
+999,N3DFJQ-R,NDM CT Equity,Materials
+1000,NPK7YX-R,RSG US Equity,Industrials
+1001,WC5Y1H-R,CNR CT Equity,Industrials
+1002,T4259K-R,STN CN Equity,Industrials
+1003,LTN366-R,CI UN Equity,Health Care
+1004,F1DNTM-R,RJF UN Equity,Financials
+1005,JDVJ48-R,1040983D UQ Equity,#N/A N/A
+1006,KPQ4X0-R,THO CT Equity,Materials
+1007,P1P032-R,FTV US Equity,Industrials
+1008,MCNYYL-R,AMZN UW Equity,Consumer Discretionary
+1009,C32SJS-R,BDK UN Equity,#N/A N/A
+1010,X0QJ91-R,SES CT Equity,Energy
+1011,LQ766T-R,LIN US Equity,Materials
+1012,J1BPLD-R,3692470Q UN Equity,#N/A N/A
+1013,M0DGHQ-R,PXT CN Equity,Energy
+1014,BNLKX9-R,UIS UN Equity,Information Technology
+1015,FT34MX-R,WYE UN Equity,#N/A N/A
+1016,KB75VT-R,1789494D US Equity,#N/A N/A
+1017,NBFPTK-R,BXE CT Equity,Energy
+1018,JS30TB-R,LXK UN Equity,Information Technology
+1019,J994MP-R,TGT US Equity,Consumer Discretionary
+1020,S48YD1-R,STI UN Equity,Financials
+1021,WM5BXP-R,COG UN Equity,Energy
+1022,MTGRW2-R,ITT UN Equity,Industrials
+1023,PFDQ4S-R,1042585Q CT Equity,#N/A N/A
+1024,SHRZF5-R,CHD US Equity,Consumer Staples
+1025,B04V7K-R,NPI CN Equity,Utilities
+1026,FR4YZK-R,9876549D UN Equity,Industrials
+1027,R867X0-R,DYNIQ UN Equity,#N/A N/A
+1028,KFJFWS-R,IEX US Equity,Industrials
+1029,CFJ279-R,NWH-U CT Equity,Real Estate
+1030,SKX4M8-R,ACO/X CT Equity,Utilities
+1031,GW63CR-R,CPNLQ UN Equity,#N/A N/A
+1032,Q3VTNZ-R,PKI US Equity,Health Care
+1033,W0731Q-R,NCLH UW Equity,Consumer Discretionary
+1034,VBK29Z-R,L UN Equity,Financials
+1035,HD2T24-R,PAS UN Equity,#N/A N/A
+1036,CG3M36-R,H CN Equity,Utilities
+1037,MXPPFV-R,ODP UN Equity,Consumer Discretionary
+1038,F73DXH-R,1293405D UN Equity,#N/A N/A
+1039,HLTRL7-R,COC UN Equity,#N/A N/A
+1040,W8YRN3-R,LW US Equity,Consumer Staples
+1041,T0SQZH-R,GM UN Equity,Consumer Discretionary
+1042,MCVD9P-R,THY CT Equity,#N/A N/A
+1043,W6SYPW-R,JOY UW Equity,Industrials
+1044,BYNP13-R,DHI UN Equity,Consumer Discretionary
+1045,D8D820-R,OMC UN Equity,Communication Services
+1046,FJ7TFG-R,304024Q UN Equity,#N/A N/A
+1047,M9L13N-R,TCM CT Equity,Materials
+1048,GS3RJ8-R,IVZ UN Equity,Financials
+1049,BV4P4T-R,1005945D US Equity,#N/A N/A
+1050,GX39SV-R,AALEA UN Equity,#N/A N/A
+1051,BXKJY2-R,0701623D CT Equity,Health Care
+1052,GFJGD5-R,NWL UN Equity,Consumer Discretionary
+1053,LX237L-R,BF/B US Equity,Consumer Staples
+1054,BV8GCC-R,STJ UN Equity,Health Care
+1055,MCNYYL-R,AMZN US Equity,Consumer Discretionary
+1056,PY5KHK-R,CAT US Equity,Industrials
+1057,R95W9R-R,GHC UN Equity,Consumer Discretionary
+1058,GZG0VG-R,2676187Q UQ Equity,#N/A N/A
+1059,P0T477-R,NVN CT Equity,#N/A N/A
+1060,V60VXD-R,AX-U CT Equity,Real Estate
+1061,MZZ0KV-R,MWW UQ Equity,Communication Services
+1062,S28H8F-R,OXG CT Equity,#N/A N/A
+1063,RGZN5G-R,MHK UN Equity,Consumer Discretionary
+1064,JKDM7P-R,JEC US Equity,Industrials
+1065,BWJ0XK-R,1455Q UN Equity,#N/A N/A
+1066,Q2W445-R,SIAL UW Equity,Materials
+1067,XHJJQT-R,2683Q US Equity,#N/A N/A
+1068,JLJ0VZ-R,GS US Equity,Financials
+1069,KYKCS8-R,DISCK US Equity,Communication Services
+1070,JLDZ13-R,FES CT Equity,#N/A N/A
+1071,NPP5KQ-R,544791Q UN Equity,#N/A N/A
+1072,HHDN6N-R,NYX UN Equity,#N/A N/A
+1073,TYPLZM-R,FSV CT Equity,Real Estate
+1074,JRFYNM-R,MPC UN Equity,Energy
+1075,W103Q3-R,BHC CN Equity,Health Care
+1076,KK9RS0-R,DRG-U CT Equity,Real Estate
+1077,JVL1QM-R,228510Q US Equity,#N/A N/A
+1078,WW3PDJ-R,REAL CN Equity,Real Estate
+1079,NW728X-R,CTXS UW Equity,Information Technology
+1080,TXXC7C-R,CNA UN Equity,Financials
+1081,N4LY1X-R,2500Q UN Equity,#N/A N/A
+1082,CN3ZYH-R,LU UN Equity,#N/A N/A
+1083,MWKTZ4-R,1752754D UN Equity,#N/A N/A
+1084,GZF20K-R,IP UN Equity,Materials
+1085,BB6XFF-R,NDN CT Equity,Health Care
+1086,W6SXMV-R,EBAY US Equity,Consumer Discretionary
+1087,C8WF4C-R,CCI US Equity,Real Estate
+1088,K7TZB5-R,WFTIQ UN Equity,Energy
+1089,GX4X6Q-R,EEE CT Equity,#N/A N/A
+1090,X5BL05-R,1397980D CT Equity,Industrials
+1091,DF3WQM-R,CU CT Equity,Utilities
+1092,KGKNG4-R,PNAA US Equity,#N/A N/A
+1093,HMWTN8-R,IMG CN Equity,Materials
+1094,HP55Q6-R,WPM CN Equity,Materials
+1095,R4SK9T-R,BMO CT Equity,Financials
+1096,BXJN77-R,3907086Q CT Equity,#N/A N/A
+1097,LBWB3L-R,RON CT Equity,Consumer Discretionary
+1098,KM5Q58-R,SCHW UN Equity,Financials
+1099,NGW97P-R,OKE UN Equity,Energy
+1100,W7S6D8-R,BNS CT Equity,Financials
+1101,P0XT7P-R,LEHMQ UN Equity,#N/A N/A
+1102,KPFMHW-R,UPS US Equity,Industrials
+1103,JLJN1K-R,MEE UN Equity,#N/A N/A
+1104,JLMJK8-R,YNR UN Equity,#N/A N/A
+1105,W234M1-R,HMA UN Equity,#N/A N/A
+1106,H1PMLS-R,CL UN Equity,Consumer Staples
+1107,TP420X-R,CSH-U CN Equity,Health Care
+1108,LC1BTF-R,V UN Equity,Information Technology
+1109,R3J43T-R,SNDK UW Equity,Information Technology
+1110,NXD9CX-R,PVN UN Equity,#N/A N/A
+1111,RK3DL5-R,C US Equity,Financials
+1112,XKT8J2-R,SBAC UW Equity,Real Estate
+1113,JXMLY8-R,ADSK UW Equity,Information Technology
+1114,KDHCQP-R,NLOK US Equity,Information Technology
+1115,JH0FS2-R,3153670Q UQ Equity,#N/A N/A
+1116,T6CPQP-R,ODFL US Equity,Industrials
+1117,W3F6YL-R,ENGH CN Equity,Information Technology
+1118,MTGSY3-R,TDY US Equity,Industrials
+1119,CTWKJ2-R,599972Q CT Equity,#N/A N/A
+1120,DY0VKX-R,KML CT Equity,Energy
+1121,HN0LVT-R,SHLDQ UW Equity,Consumer Discretionary
+1122,P36M94-R,ORLY UW Equity,Consumer Discretionary
+1123,MG2TQV-R,KEY UN Equity,Financials
+1124,NNFR4J-R,1288453D UW Equity,Consumer Staples
+1125,KNB5TK-R,TLAB UQ Equity,#N/A N/A
+1126,SD0F4T-R,RNW CT Equity,Utilities
+1127,B9310T-R,SSL CT Equity,Materials
+1128,K8ZYYY-R,MWV UN Equity,Materials
+1129,NSYBHN-R,1680Q UN Equity,#N/A N/A
+1130,FGW76H-R,CCK UN Equity,Materials
+1131,BWHWNF-R,MKG UN Equity,#N/A N/A
+1132,PC2KK2-R,CSU CT Equity,Information Technology
+1133,CY644B-R,MS US Equity,Financials
+1134,Q7H95J-R,1423Q UN Equity,#N/A N/A
+1135,T2Z5LS-R,INE CN Equity,Utilities
+1136,CFG1CD-R,AWK UN Equity,Utilities
+1137,P884Z5-R,1787873D CT Equity,Energy
+1138,CJVKH9-R,CLX US Equity,Consumer Staples
+1139,SZJL5M-R,ETN UN Equity,Industrials
+1140,PRL0HP-R,1013207D UN Equity,#N/A N/A
+1141,CQDKJQ-R,AVATQ US Equity,#N/A N/A
+1142,CQCD9M-R,ANP CT Equity,Health Care
+1143,BV4P4T-R,FE UN Equity,Utilities
+1144,S41Y4L-R,1166Q US Equity,#N/A N/A
+1145,B71DJZ-R,DISCA UW Equity,Communication Services
+1146,JJ39BV-R,FFIV UW Equity,Information Technology
+1147,N5T0SQ-R,FBF UN Equity,#N/A N/A
+1148,N5NG2F-R,MRE CN Equity,Consumer Discretionary
+1149,N7119D-R,236555Q UN Equity,#N/A N/A
+1150,M9NSC7-R,EFX-U CT Equity,#N/A N/A
+1151,RDKCLT-R,VNO UN Equity,Real Estate
+1152,SCC17N-R,PG CT Equity,Materials
+1153,WXD74Z-R,CAS CN Equity,Materials
+1154,G7VZQH-R,HBAN UQ Equity,Financials
+1155,MJCGG4-R,HSY US Equity,Consumer Staples
+1156,M2LK7H-R,BLDP CN Equity,Industrials
+1157,FV85BQ-R,MFI CT Equity,Consumer Staples
+1158,QF2V5D-R,INN-U CT Equity,Real Estate
+1159,RZR2QV-R,NAL CT Equity,Energy
+1160,QMJ28H-R,643319Q UN Equity,#N/A N/A
+1161,NV79M1-R,VFC US Equity,Consumer Discretionary
+1162,VNRDMV-R,TROW UW Equity,Financials
+1163,FYT41X-R,CAH US Equity,Health Care
+1164,BL5KVX-R,COST UQ Equity,Consumer Staples
+1165,D68983-R,CMS US Equity,Utilities
+1166,L4B8W1-R,ORX UN Equity,#N/A N/A
+1167,FNKD5T-R,FHR CT Equity,#N/A N/A
+1168,KPPLQC-R,3691661Q UN Equity,#N/A N/A
+1169,M3WQW6-R,1437076D CT Equity,#N/A N/A
+1170,FMGHK0-R,JEC CT Equity,Energy
+1171,VWGLQ7-R,MOS UN Equity,Materials
+1172,D0LDT1-R,NVR US Equity,Consumer Discretionary
+1173,HSF35X-R,MAS UN Equity,Industrials
+1174,N18P40-R,PCP UN Equity,Industrials
+1175,XM8P7T-R,KMI UN Equity,Energy
+1176,MTFF9T-R,JNS UN Equity,Financials
+1177,K6Q83L-R,RCI/B CT Equity,Communication Services
+1178,FYMD7N-R,2784Q UN Equity,#N/A N/A
+1179,D4C1S0-R,HEXO CT Equity,Health Care
+1180,HNZVK6-R,CCL US Equity,Consumer Discretionary
+1181,NFRN55-R,PDCO UQ Equity,Health Care
+1182,FYSWLP-R,1088308D CT Equity,#N/A N/A
+1183,JJ3Q47-R,BSET UQ Equity,Consumer Discretionary
+1184,KV0J41-R,JNJ UN Equity,Health Care
+1185,HMVVTC-R,BEN UN Equity,Financials
+1186,FJ4NDH-R,ROST US Equity,Consumer Discretionary
+1187,X3JLR4-R,SHOP CT Equity,Information Technology
+1188,MKC1SV-R,UTX US Equity,Industrials
+1189,TY2XVL-R,MOLX UW Equity,#N/A N/A
+1190,PY63K2-R,AFN CT Equity,Industrials
+1191,WL1GCY-R,WAT US Equity,Health Care
+1192,VDQ34W-R,CCR-U CT Equity,#N/A N/A
+1193,HTM0LK-R,GOOGL UW Equity,Communication Services
+1194,QMQV1Q-R,MRO US Equity,Energy
+1195,DHC1MJ-R,CVC UN Equity,Communication Services
+1196,WN8BRL-R,TRP CT Equity,Energy
+1197,R852NX-R,WJA CN Equity,Industrials
+1198,THG9TZ-R,PWER UQ Equity,#N/A N/A
+1199,W0Z4W6-R,URI UN Equity,Industrials
+1200,Q7CL31-R,LB CN Equity,Financials
+1201,L6H4CS-R,FRX UN Equity,#N/A N/A
+1202,TD1G1R-R,P CT Equity,Materials
+1203,V8549L-R,BMC UQ Equity,#N/A N/A
+1204,KDCD3Y-R,NSC US Equity,Industrials
+1205,F1B8CH-R,CHTR US Equity,Communication Services
+1206,CRN1YV-R,0623181D CT Equity,#N/A N/A
+1207,J2MLPV-R,BRCM UQ Equity,Information Technology
+1208,RZXDWV-R,PG US Equity,Consumer Staples
+1209,RW15L0-R,APHA CT Equity,Health Care
+1210,H8MX9Y-R,IK UN Equity,#N/A N/A
+1211,B5PHMN-R,1519128D UW Equity,Information Technology
+1212,C326F7-R,1649858D UW Equity,#N/A N/A
+1213,CSFJSZ-R,AAL UW Equity,Industrials
+1214,T2YF0Y-R,CEPH UW Equity,#N/A N/A
+1215,P5BP94-R,HOG US Equity,Consumer Discretionary
+1216,DMSLZM-R,APS CT Equity,Health Care
+1217,CQCV51-R,CM CN Equity,Financials
+1218,RBHHTX-R,DIR-U CT Equity,Real Estate
+1219,CD4N6C-R,1028411Q UN Equity,#N/A N/A
+1220,LRDGCV-R,KATE US Equity,Consumer Discretionary
+1221,BYJNCB-R,AOM CT Equity,#N/A N/A
+1222,TY202Q-R,ADP US Equity,Information Technology
+1223,RR1DHV-R,841273Q UQ Equity,#N/A N/A
+1224,P1X666-R,BOL UN Equity,#N/A N/A
+1225,GN7G2C-R,BMS UN Equity,Materials
+1226,KGSZF0-R,ACB CT Equity,Health Care
+1227,DF2WYT-R,TDC UN Equity,Information Technology
+1228,M8867B-R,QRVO US Equity,Information Technology
+1229,QP00SH-R,519239Q UQ Equity,#N/A N/A
+1230,J3QMLS-R,3069707Q CT Equity,#N/A N/A
+1231,TTDQ0D-R,PSX UN Equity,Energy
+1232,W0731Q-R,NCLH US Equity,Consumer Discretionary
+1233,BQR5YT-R,HOLX US Equity,Health Care
+1234,HHB3C8-R,MDLZ US Equity,Consumer Staples
+1235,VBN9H0-R,LVS US Equity,Consumer Discretionary
+1236,DVL9FZ-R,KXS CN Equity,Information Technology
+1237,D54YRW-R,TD CN Equity,Financials
+1238,J1HGV0-R,0649942D CT Equity,#N/A N/A
+1239,P7KT40-R,STE/A CT Equity,#N/A N/A
+1240,KWBVZV-R,CHR CT Equity,Industrials
+1241,DG885T-R,KMRTQ UN Equity,#N/A N/A
+1242,VBFHHM-R,DDS CT Equity,#N/A N/A
+1243,PKY86P-R,WWY UN Equity,#N/A N/A
+1244,XD67LR-R,EXR US Equity,Real Estate
+1245,L57MYN-R,TIE UN Equity,#N/A N/A
+1246,XCZXJT-R,CCTYQ UN Equity,#N/A N/A
+1247,J2MW73-R,RMD US Equity,Health Care
+1248,NL8WMS-R,FFH CN Equity,Financials
+1249,DG27Q5-R,EMR UN Equity,Industrials
+1250,PVWPB1-R,EXPD US Equity,Industrials
+1251,PJNB5B-R,DFS UN Equity,Financials
+1252,W91F62-R,DGC CT Equity,Materials
+1253,H7DGWR-R,HAS US Equity,Consumer Discretionary
+1254,B98D3Q-R,3312780Q CT Equity,#N/A N/A
+1255,HQ4DBK-R,ORCL UQ Equity,Information Technology
+1256,RPNJRM-R,BLK UN Equity,Financials
+1257,KK1SFD-R,LNT UN Equity,Utilities
+1258,SZJL5M-R,ETN US Equity,Industrials
+1259,LTP0Z2-R,CSX US Equity,Industrials
+1260,DBPJ30-R,TMB CT Equity,Materials
+1261,TSHY1B-R,MTLQQ UN Equity,#N/A N/A
+1262,NPJW7K-R,MET UN Equity,Financials
+1263,D65111-R,BRL UN Equity,#N/A N/A
+1264,KXDMGL-R,STX US Equity,Information Technology
+1265,GN6KCJ-R,HAL UN Equity,Energy
+1266,J5WL9M-R,LUB UN Equity,Consumer Discretionary
+1267,FDS1XB-R,FRT UN Equity,Real Estate
+1268,MVKZ35-R,ES US Equity,Utilities
+1269,CJTQXJ-R,ETFC UW Equity,Financials
+1270,FCHQXF-R,EDV CN Equity,Materials
+1271,RGYN8J-R,HFS UN Equity,#N/A N/A
+1272,BM9QXX-R,TSN UN Equity,Consumer Staples
+1273,PD3HL5-R,NEC UN Equity,#N/A N/A
+1274,B4PGFJ-R,DXC UN Equity,Information Technology
+1275,DZ4XT5-R,WTE CN Equity,Industrials
+1276,WTJ15D-R,CPRI UN Equity,Consumer Discretionary
+1277,PRGQ6L-R,SPGI US Equity,Financials
+1278,CN7T72-R,ANSS UW Equity,Information Technology
+1279,TZ2K8B-R,4624687Q CT Equity,#N/A N/A
+1280,X44SZS-R,ADVZ CT Equity,Health Care
+1281,NDGZHY-R,T CN Equity,Communication Services
+1282,DJD1NK-R,3305512Q CT Equity,#N/A N/A
+1283,KB6ZLR-R,3179Q UN Equity,#N/A N/A
+1284,F1DFCD-R,PHM UN Equity,Consumer Discretionary
+1285,F72PJT-R,MXIM US Equity,Information Technology
+1286,FWHC5K-R,A US Equity,Health Care
+1287,JXSKCX-R,0947035D CT Equity,#N/A N/A
+1288,M67VFY-R,VRSK US Equity,Industrials
+1289,TMZSRT-R,NVA CT Equity,Energy
+1290,S5LHR3-R,IE CT Equity,Energy
+1291,D3VZJC-R,RHI US Equity,Industrials
+1292,PPCTFP-R,PEP US Equity,Consumer Staples
+1293,K24537-R,GLW US Equity,Information Technology
+1294,CGFC5V-R,EQX CN Equity,Materials
+1295,SRL24C-R,ROH UN Equity,#N/A N/A
+1296,PY5KHK-R,CAT UN Equity,Industrials
+1297,B6ZP8C-R,WELL US Equity,Real Estate
+1298,KV0J41-R,JNJ US Equity,Health Care
+1299,HMWTN8-R,IMG CT Equity,Materials
+1300,N96M5T-R,FWLT US Equity,Industrials
+1301,KDC2JN-R,IAG CT Equity,Financials
+1302,RWBV02-R,K CT Equity,Materials
+1303,LRMHTG-R,363096Q UN Equity,#N/A N/A
+1304,MR5BN1-R,TRI CT Equity,Industrials
+1305,Q4YP8S-R,KHC UW Equity,Consumer Staples
+1306,VCSS49-R,2196Q UN Equity,#N/A N/A
+1307,C0SKV2-R,2770014Q UN Equity,#N/A N/A
+1308,G7VZQH-R,HBAN US Equity,Financials
+1309,GV10JW-R,WTN CT Equity,#N/A N/A
+1310,N5P6J4-R,4114559Q CT Equity,#N/A N/A
+1311,XLV24X-R,F US Equity,Consumer Discretionary
+1312,TZ654Q-R,HPC US Equity,#N/A N/A
+1313,J9FK0T-R,WOR UN Equity,Materials
+1314,JYRG0L-R,INFO UW Equity,Industrials
+1315,WNSC9M-R,JAVA UQ Equity,#N/A N/A
+1316,SJS2RC-R,GPC UN Equity,Consumer Discretionary
+1317,HVQ2KJ-R,SRCL UW Equity,Industrials
+1318,DQ8Q0Z-R,329556Q UN Equity,#N/A N/A
+1319,G25H2V-R,CNW UN Equity,Industrials
+1320,WL1C5V-R,WCP CN Equity,Energy
+1321,HNZVK6-R,CCL UN Equity,Consumer Discretionary
+1322,DMX4QY-R,APA US Equity,Energy
+1323,BGXVSD-R,1746513D UQ Equity,#N/A N/A
+1324,H6L5S4-R,EFN CN Equity,Financials
+1325,DBPQC2-R,1448062D UW Equity,Communication Services
+1326,NK4NFQ-R,ONEX CN Equity,Financials
+1327,WRVQ53-R,HET US Equity,#N/A N/A
+1328,DTKZ1Y-R,BAC US Equity,Financials
+1329,SD0F4T-R,RNW CN Equity,Utilities
+1330,DXZQS6-R,PFG UN Equity,Financials
+1331,S8ZQDV-R,REGN UW Equity,Health Care
+1332,BT4P4V-R,KDP UN Equity,Consumer Staples
+1333,LGFBYV-R,NSU CT Equity,Materials
+1334,PHQ4CT-R,EIF CT Equity,Industrials
+1335,C5H02F-R,0814429D CT Equity,Information Technology
+1336,PB04TQ-R,KRI UN Equity,#N/A N/A
+1337,RYTJNF-R,CARR US Equity,Industrials
+1338,LSP9C7-R,714552Q CT Equity,#N/A N/A
+1339,GFJGD5-R,NWL US Equity,Consumer Discretionary
+1340,F5WQ03-R,NMK UN Equity,#N/A N/A
+1341,X0QJ91-R,SES CN Equity,Energy
+1342,C46DK8-R,PSA UN Equity,Real Estate
+1343,RNNB7B-R,FRG CT Equity,#N/A N/A
+1344,N829VP-R,SSRM CN Equity,Materials
+1345,C8WF4C-R,CCI UN Equity,Real Estate
+1346,J2MLPV-R,BRCM UW Equity,Information Technology
+1347,D2RCHW-R,KG UN Equity,#N/A N/A
+1348,M9JQMF-R,3027169Q CT Equity,#N/A N/A
+1349,KHZRFD-R,AIF CT Equity,Real Estate
+1350,QSDQCP-R,WMB UN Equity,Energy
+1351,WFMVVR-R,NDAQ UW Equity,Financials
+1352,Q7GYJ6-R,301710Q UN Equity,#N/A N/A
+1353,W91W1H-R,SWY UN Equity,Consumer Staples
+1354,J70ZTV-R,DE UN Equity,Industrials
+1355,HKQTWD-R,ITW CT Equity,#N/A N/A
+1356,V75BKP-R,DOV US Equity,Industrials
+1357,RDKCQY-R,2168Q UQ Equity,#N/A N/A
+1358,TKSJKR-R,MSI CT Equity,Industrials
+1359,JCTNCC-R,69895Q US Equity,#N/A N/A
+1360,JGQD13-R,LSPD CN Equity,Information Technology
+1361,RB97W0-R,CAM CT Equity,Materials
+1362,QCKPC8-R,MCAI US Equity,#N/A N/A
+1363,JKDM7P-R,J US Equity,Industrials
+1364,CPCW2Z-R,CMI UN Equity,Industrials
+1365,NV79M1-R,VFC UN Equity,Consumer Discretionary
+1366,Q78D01-R,HES US Equity,Energy
+1367,X2WPD2-R,334702Q UN Equity,#N/A N/A
+1368,K7TPSX-R,NVDA US Equity,Information Technology
+1369,R4S089-R,CHE-U CN Equity,Materials
+1370,X0N4MP-R,ED US Equity,Utilities
+1371,LJPXK2-R,HR-U CN Equity,Real Estate
+1372,HSF35X-R,MAS US Equity,Industrials
+1373,NK0V54-R,ENB CN Equity,Energy
+1374,VS8MZC-R,1255177D UN Equity,#N/A N/A
+1375,FZXHM5-R,1280712D UQ Equity,#N/A N/A
+1376,Q9J76L-R,3197448Q CT Equity,#N/A N/A
+1377,GW5LD8-R,CCO CN Equity,Energy
+1378,BCHRDT-R,FCR CN Equity,Real Estate
+1379,FFZG7F-R,BMG UN Equity,#N/A N/A
+1380,FCCHG2-R,BBU-U CN Equity,Industrials
+1381,T7CGDK-R,SLM UN Equity,Financials
+1382,FT8FQW-R,VZ UN Equity,Communication Services
+1383,FR4YZK-R,NLSN US Equity,Industrials
+1384,S4DRNM-R,3097777Q CT Equity,#N/A N/A
+1385,GC9695-R,SHW US Equity,Materials
+1386,BHY4FR-R,8127531Q CT Equity,#N/A N/A
+1387,D1P43P-R,CF US Equity,Materials
+1388,G4H6X5-R,EP UN Equity,#N/A N/A
+1389,MPXJMM-R,DIS UN Equity,Communication Services
+1390,QR6LKV-R,TET CT Equity,Energy
+1391,H8RWSK-R,1958Q US Equity,#N/A N/A
+1392,JH1XLG-R,68335Q UN Equity,#N/A N/A
+1393,CYBC69-R,HRL UN Equity,Consumer Staples
+1394,RBHHTX-R,DIR-U CN Equity,Real Estate
+1395,V3LF0L-R,SXCL UQ Equity,Energy
+1396,M0DGHQ-R,PXT CT Equity,Energy
+1397,FH1NKL-R,LEN US Equity,Consumer Discretionary
+1398,MBK7R0-R,WLTW US Equity,Financials
+1399,PKY50L-R,CINF UW Equity,Financials
+1400,QCS6P8-R,TWX UN Equity,Communication Services
+1401,C46GQC-R,1566019D UN Equity,Industrials
+1402,H6CM3V-R,TPW-U CT Equity,#N/A N/A
+1403,N17TH6-R,FTS CT Equity,Utilities
+1404,RQ9F5S-R,PYPL UW Equity,Information Technology
+1405,CSMTMQ-R,WMT UN Equity,Consumer Staples
+1406,W95M60-R,TCOMA UQ Equity,#N/A N/A
+1407,LN3N69-R,CQL CT Equity,#N/A N/A
+1408,FR5M42-R,HBC CT Equity,Consumer Discretionary
+1409,RH34VR-R,AC CN Equity,Industrials
+1410,JZGFGR-R,BPY-U CN Equity,Real Estate
+1411,QG2Q1C-R,RRD UW Equity,Industrials
+1412,SVZ8Y7-R,0440296D UN Equity,#N/A N/A
+1413,NFMH78-R,BKR US Equity,Energy
+1414,VDPDV7-R,KIM US Equity,Real Estate
+1415,JDQ0K1-R,AZO US Equity,Consumer Discretionary
+1416,V1H7QF-R,3253Q UN Equity,#N/A N/A
+1417,VWPHWQ-R,PGF CT Equity,Energy
+1418,MQ119X-R,ADM US Equity,Consumer Staples
+1419,QCYLZB-R,KMX US Equity,Consumer Discretionary
+1420,D0QHLW-R,FSLR UW Equity,Information Technology
+1421,W7SBND-R,764144Q UN Equity,#N/A N/A
+1422,BFMPK2-R,WIR-U CN Equity,Real Estate
+1423,KM5Q58-R,SCHW UW Equity,Financials
+1424,D9GFG8-R,1856Q UN Equity,#N/A N/A
+1425,HP55Q6-R,WPM CT Equity,Materials
+1426,BRWKF0-R,TSCO UW Equity,Consumer Discretionary
+1427,GTX7BB-R,BPP CT Equity,#N/A N/A
+1428,LRK013-R,FITB UW Equity,Financials
+1429,TF1DZP-R,ALXN US Equity,Health Care
+1430,BNJHZC-R,CNE-U CT Equity,#N/A N/A
+1431,W6XB41-R,ZETHQ US Equity,#N/A N/A
+1432,WNCY3G-R,GUD CT Equity,Health Care
+1433,HJXXH4-R,HII UN Equity,Industrials
+1434,F725KB-R,UN UN Equity,Consumer Staples
+1435,W5QQ9P-R,TMUS UW Equity,Communication Services
+1436,VPX6YG-R,3419169Q CT Equity,#N/A N/A
+1437,QKP2FW-R,EEE-U CT Equity,#N/A N/A
+1438,HMCYDD-R,KEL CT Equity,Energy
+1439,KSV4X1-R,93916Q UN Equity,#N/A N/A
+1440,KFP1P3-R,SEA CN Equity,Materials
+1441,W6SXMV-R,EBAY UQ Equity,Consumer Discretionary
+1442,FS2TXJ-R,1778808D UQ Equity,#N/A N/A
+1443,MH2TVY-R,0759047D CT Equity,#N/A N/A
+1444,G7VZQH-R,HBAN UW Equity,Financials
+1445,J994MP-R,TGT UN Equity,Consumer Discretionary
+1446,HBT3BW-R,0227217Q CT Equity,#N/A N/A
+1447,RBHW3V-R,CRON CT Equity,Health Care
+1448,JMNLQC-R,CMCSA US Equity,Communication Services
+1449,FPP9SL-R,JWN UN Equity,Consumer Discretionary
+1450,BV8JHF-R,APD UN Equity,Materials
+1451,XMYTFJ-R,UHS UN Equity,Health Care
+1452,PD98GG-R,HD US Equity,Consumer Discretionary
+1453,RNHYX7-R,FDO UN Equity,Consumer Discretionary
+1454,KSVQWG-R,MDP UN Equity,Communication Services
+1455,D8DLQB-R,CR UN Equity,Industrials
+1456,FGVWK5-R,3521924Q CT Equity,#N/A N/A
+1457,B71DJZ-R,DISCA US Equity,Communication Services
+1458,QQ00XL-R,TEG UN Equity,Utilities
+1459,TSMGSN-R,DEC UN Equity,#N/A N/A
+1460,FCKBZY-R,139619Q CT Equity,#N/A N/A
+1461,N2DMST-R,QTRH CT Equity,Information Technology
+1462,M8XT6B-R,FOX UW Equity,Communication Services
+1463,TH8S8S-R,8214761Q UN Equity,#N/A N/A
+1464,PFFLVM-R,MEDI UQ Equity,#N/A N/A
+1465,L8SKLT-R,BMY UN Equity,Health Care
+1466,JR1TJ7-R,0289640Q UN Equity,#N/A N/A
+1467,PW14V7-R,GTG/B CT Equity,#N/A N/A
+1468,FWJSXX-R,AYI UN Equity,Industrials
+1469,GYM5PB-R,FRC UN Equity,Financials
+1470,FS46JT-R,ONY CT Equity,Health Care
+1471,LQDY56-R,PWI-U CT Equity,#N/A N/A
+1472,CYB1M0-R,AMGN UQ Equity,Health Care
+1473,TJL23L-R,MTW UN Equity,Industrials
+1474,GCCR8P-R,DOL CN Equity,Consumer Discretionary
+1475,X42HGH-R,FM CN Equity,Materials
+1476,JXMLY8-R,ADSK UQ Equity,Information Technology
+1477,PZG74S-R,1694944D CT Equity,Materials
+1478,CSMTMQ-R,WMT US Equity,Consumer Staples
+1479,LY653H-R,AES UN Equity,Utilities
+1480,PLY42N-R,VVI US Equity,Industrials
+1481,NW7K6C-R,1317355D UN Equity,Information Technology
+1482,MVLTQZ-R,AXP UN Equity,Financials
+1483,VR16P9-R,BSX US Equity,Health Care
+1484,Q4ZYNY-R,MTY CT Equity,Consumer Discretionary
+1485,PD79QM-R,ANRZQ UN Equity,Energy
+1486,VGYKN2-R,RY CN Equity,Financials
+1487,P9ZJN4-R,GP UN Equity,Industrials
+1488,R6XPFW-R,TECK/B CN Equity,Materials
+1489,J0CSKB-R,0743405D CT Equity,#N/A N/A
+1490,G7VWJD-R,NOVL UQ Equity,#N/A N/A
+1491,R4MFK0-R,AVR CT Equity,#N/A N/A
+1492,C46DK8-R,PSA US Equity,Real Estate
+1493,NXD9CX-R,1618Q US Equity,#N/A N/A
+1494,DZ776B-R,WINMQ UW Equity,Communication Services
+1495,LVS9GC-R,AAR-U CT Equity,Real Estate
+1496,HMWK40-R,SVM CT Equity,Materials
+1497,PP472P-R,JWPI UN Equity,#N/A N/A
+1498,VR1F2H-R,VAR UN Equity,Health Care
+1499,DBRKWT-R,AZA UA Equity,#N/A N/A
+1500,XM8P7T-R,KMI US Equity,Energy
+1501,FBB432-R,PAYX UQ Equity,Information Technology
+1502,JFW5HZ-R,NTAP UQ Equity,Information Technology
+1503,G26CSP-R,UWH-U CT Equity,#N/A N/A
+1504,PTVCPQ-R,3277Q US Equity,#N/A N/A
+1505,TCX5SM-R,REI-U CT Equity,Real Estate
+1506,DBRKWT-R,AZA UN Equity,#N/A N/A
+1507,DH6WPM-R,SCI UN Equity,Consumer Discretionary
+1508,K38HHD-R,MAR UW Equity,Consumer Discretionary
+1509,LJKG0W-R,1073675D UQ Equity,#N/A N/A
+1510,FCK6QT-R,EXPE UW Equity,Consumer Discretionary
+1511,CRP3ZV-R,ZION US Equity,Financials
+1512,MVLTQZ-R,AXP US Equity,Financials
+1513,LHK9RS-R,2691Q UN Equity,#N/A N/A
+1514,DJC60R-R,CAG UN Equity,Consumer Staples
+1515,TF1DZP-R,ALXN UW Equity,Health Care
+1516,J5XSLR-R,CCL/B CT Equity,Materials
+1517,L0ND5P-R,ECN CN Equity,Financials
+1518,PFDKWN-R,2907256Q CT Equity,#N/A N/A
+1519,QXSZ7K-R,USG UN Equity,Industrials
+1520,DG27Q5-R,EMR US Equity,Industrials
+1521,QVGCXK-R,54279Q UN Equity,#N/A N/A
+1522,TY1WWM-R,SYK UN Equity,Health Care
+1523,H1PKGQ-R,AAMRQ UN Equity,Industrials
+1524,FDN17K-R,QUX CT Equity,#N/A N/A
+1525,J9FK0T-R,WOR UQ Equity,Materials
+1526,P36M94-R,ORLY US Equity,Consumer Discretionary
+1527,HHB3C8-R,MDLZ UN Equity,Consumer Staples
+1528,B8350Q-R,MRU CN Equity,Consumer Staples
+1529,BDP5X0-R,BGG UN Equity,Industrials
+1530,DQ49MV-R,ELK CT Equity,#N/A N/A
+1531,NBCR2Q-R,605018Q UN Equity,#N/A N/A
+1532,BFSQSF-R,KEY CT Equity,Energy
+1533,NK0C7P-R,ATP CT Equity,Utilities
+1534,CFF3GD-R,GWOW UN Equity,#N/A N/A
+1535,MBNTPH-R,263179Q US Equity,#N/A N/A
+1536,PHPSQH-R,MTD UN Equity,Health Care
+1537,WNG4V1-R,1520415D UN Equity,#N/A N/A
+1538,F07Q7W-R,CTAS UQ Equity,Industrials
+1539,B6ZXQL-R,O US Equity,Real Estate
+1540,C46454-R,NAE UN Equity,#N/A N/A
+1541,BWZ93Y-R,FBHS US Equity,Industrials
+1542,NJ06VG-R,BNK CT Equity,#N/A N/A
+1543,P399DN-R,2200Q US Equity,#N/A N/A
+1544,TY25DW-R,MT/NV/B CT Equity,#N/A N/A
+1545,NT37R4-R,ARE US Equity,Real Estate
+1546,J2NPSW-R,WFM UW Equity,Consumer Staples
+1547,JWPKK0-R,2106Q UN Equity,#N/A N/A
+1548,N71K8W-R,1703561D UN Equity,#N/A N/A
+1549,M7439D-R,CERN US Equity,Health Care
+1550,G7VWJD-R,NOVL UW Equity,#N/A N/A
+1551,X9Q3HC-R,ESS US Equity,Real Estate
+1552,HCXCQ1-R,SJ CN Equity,Materials
+1553,VNRDMV-R,TROW UQ Equity,Financials
+1554,L6BT3Q-R,MAC US Equity,Real Estate
+1555,VNRCPY-R,204923Q UN Equity,#N/A N/A
+1556,KC6WDM-R,1712414D UN Equity,#N/A N/A
+1557,HZ6Z7Q-R,INTC US Equity,Information Technology
+1558,MMRBGK-R,0888820D CT Equity,#N/A N/A
+1559,B6YVPL-R,3026360Q UN Equity,#N/A N/A
+1560,LY1WZH-R,LDWIF UN Equity,#N/A N/A
+1561,R3MHJZ-R,BYD CN Equity,Industrials
+1562,W235P2-R,CIGI CN Equity,Real Estate
+1563,N4P9L4-R,XRAY US Equity,Health Care
+1564,KXDMGL-R,STX UW Equity,Information Technology
+1565,FW4T5S-R,HBJ UN Equity,#N/A N/A
+1566,X1RJ5Y-R,NTRS US Equity,Financials
+1567,RK3HS8-R,STZ UN Equity,Consumer Staples
+1568,HXZ458-R,ILMN US Equity,Health Care
+1569,MXW701-R,NVU-U CN Equity,Real Estate
+1570,VVDXCK-R,3362726Q UN Equity,#N/A N/A
+1571,XP380S-R,BA CT Equity,Communication Services
+1572,JK7JJX-R,SNV UN Equity,Financials
+1573,NLDFD3-R,202550Q UN Equity,#N/A N/A
+1574,VNRCPY-R,204923Q US Equity,#N/A N/A
+1575,T2TNWF-R,SYY UN Equity,Consumer Staples
+1576,DWQQCL-R,FR CT Equity,Materials
+1577,FV85BQ-R,MFI CN Equity,Consumer Staples
+1578,WQQ01L-R,2818750Q CT Equity,Communication Services
+1579,CPCV0Y-R,SNPS UW Equity,Information Technology
+1580,GFJC62-R,CSCO UQ Equity,Information Technology
+1581,RVBRQX-R,IIP-U CN Equity,Real Estate
+1582,PBZ9G4-R,1356Q UN Equity,#N/A N/A
+1583,M8867B-R,QRVO UW Equity,Information Technology
+1584,QJBZ19-R,GL US Equity,Financials
+1585,Q4YP8S-R,KHC US Equity,Consumer Staples
+1586,X7K4SJ-R,680884Q UN Equity,#N/A N/A
+1587,LTP0Z2-R,CSX UW Equity,Industrials
+1588,SGJ4BQ-R,8138182Q CT Equity,#N/A N/A
+1589,JRFYNM-R,MPC US Equity,Energy
+1590,K6RW63-R,VIAC US Equity,Communication Services
+1591,PFCQ7V-R,3147596Q UN Equity,#N/A N/A
+1592,WQK5W2-R,SRE UN Equity,Utilities
+1593,HR82M7-R,375573Q UN Equity,#N/A N/A
+1594,L8SKLT-R,BMY US Equity,Health Care
+1595,LD0WYZ-R,COF US Equity,Financials
+1596,HLQ8YZ-R,DII/B CT Equity,Consumer Discretionary
+1597,F1DFCD-R,PHM US Equity,Consumer Discretionary
+1598,CGGG4R-R,NEM US Equity,Materials
+1599,J2NPSW-R,WFM UQ Equity,Consumer Staples
+1600,NB5RP3-R,BLX CT Equity,Utilities
+1601,L6CPTK-R,INTU UQ Equity,Information Technology
+1602,RH0GWC-R,FNV CT Equity,Materials
+1603,M758JH-R,2309058Q CT Equity,#N/A N/A
+1604,BK2FRW-R,ABC UN Equity,Health Care
+1605,CRP3ZV-R,ZION UW Equity,Financials
+1606,HLX79K-R,FOSL UW Equity,Consumer Discretionary
+1607,P31DB7-R,HIG UN Equity,Financials
+1608,B04V7K-R,NPI CT Equity,Utilities
+1609,NQTR8Z-R,JEF UN Equity,Financials
+1610,CF92SM-R,0544749D UN Equity,#N/A N/A
+1611,NWCQ48-R,3022239Q UN Equity,#N/A N/A
+1612,QJ9QP4-R,EQR US Equity,Real Estate
+1613,RQSB38-R,COS CT Equity,Energy
+1614,DJCHM1-R,KRB UN Equity,#N/A N/A
+1615,FDS65G-R,355488Q UN Equity,#N/A N/A
+1616,B5TG5C-R,ESRX UW Equity,Health Care
+1617,MVP8D8-R,614858Q CT Equity,#N/A N/A
+1618,PR8B4Q-R,SVFI US Equity,#N/A N/A
+1619,LY653H-R,AES US Equity,Utilities
+1620,HP58X9-R,AAP UN Equity,Consumer Discretionary
+1621,H69CWS-R,FANG UW Equity,Energy
+1622,SNBZ7F-R,PBG UN Equity,#N/A N/A
+1623,PQLF4Z-R,FPC UN Equity,#N/A N/A
+1624,GN6KCJ-R,HAL US Equity,Energy
+1625,QNZ30M-R,0749891D CT Equity,#N/A N/A
+1626,TBRYLK-R,NC UN Equity,Energy
+1627,DJHD0P-R,EMP/A CT Equity,Consumer Staples
+1628,KDJSF0-R,ALK UN Equity,Industrials
+1629,QMZ50L-R,TZH CT Equity,#N/A N/A
+1630,FPTJVK-R,SJM US Equity,Consumer Staples
+1631,DXVDJ4-R,SWKS US Equity,Information Technology
+1632,KYCY91-R,LHX US Equity,Industrials
+1633,LD1K6L-R,MG CN Equity,Consumer Discretionary
+1634,DR9KSW-R,PETM UW Equity,Consumer Discretionary
+1635,CN3XTF-R,1506604D CT Equity,Materials
+1636,M8XT6B-R,FOX US Equity,Communication Services
+1637,W00MKH-R,WDC US Equity,Information Technology
+1638,DLSMXK-R,WY US Equity,Real Estate
+1639,TZ2TSL-R,WM UN Equity,Industrials
+1640,L7LP86-R,LDOS UN Equity,Information Technology
+1641,T1NRCQ-R,GIB/A CT Equity,Information Technology
+1642,LG8XHP-R,1709305D CT Equity,Energy
+1643,PLWH27-R,NXE CT Equity,Energy
+1644,W0731Q-R,NCLH UN Equity,Consumer Discretionary
+1645,D69R0G-R,0748412D CT Equity,#N/A N/A
+1646,MBJNMG-R,CNQ CT Equity,Energy
+1647,G8WDMZ-R,DVN UA Equity,Energy
+1648,FT7VMB-R,ATO UN Equity,Utilities
+1649,NFLZ7S-R,CCA CN Equity,Communication Services
+1650,QCSBYD-R,MER UN Equity,#N/A N/A
+1651,KTZ9Z1-R,2576Q UN Equity,#N/A N/A
+1652,HLQD52-R,TSM/SV/A CT Equity,#N/A N/A
+1653,KDHCQP-R,NLOK UQ Equity,Information Technology
+1654,HY13GN-R,GOOS CT Equity,Consumer Discretionary
+1655,NZMV05-R,EIX US Equity,Utilities
+1656,Q3VTNZ-R,PKI UN Equity,Health Care
+1657,JKGP5M-R,ICE UN Equity,Financials
+1658,NMGMBX-R,BHF UW Equity,Financials
+1659,BYP0PF-R,PTC UW Equity,Information Technology
+1660,GRRPDW-R,RX UN Equity,#N/A N/A
+1661,MH3TRW-R,ANDV US Equity,Energy
+1662,FBBBH8-R,CEG UN Equity,#N/A N/A
+1663,GRMY8C-R,DHR UN Equity,Health Care
+1664,KRQTDT-R,PM UN Equity,Consumer Staples
+1665,KDC2JN-R,IAG CN Equity,Financials
+1666,R4M2WP-R,ROK UN Equity,Industrials
+1667,MXT1W0-R,300583Q UN Equity,#N/A N/A
+1668,F5SQ99-R,SCC CT Equity,Consumer Discretionary
+1669,HMWRJ6-R,BHMSQ UN Equity,#N/A N/A
+1670,LR9GT5-R,2267633Q UN Equity,#N/A N/A
+1671,S48YD1-R,STI US Equity,Financials
+1672,RXGLDT-R,LUC CT Equity,Materials
+1673,WHZD5T-R,1270Q UQ Equity,#N/A N/A
+1674,QJB2BG-R,NGD CT Equity,Materials
+1675,GRSDSK-R,AEE US Equity,Utilities
+1676,G5M19V-R,SLG US Equity,Real Estate
+1677,M1H0C2-R,SPG UN Equity,Real Estate
+1678,JT9G6G-R,ECO UA Equity,#N/A N/A
+1679,KV09QV-R,0956759D CT Equity,#N/A N/A
+1680,L7HQMF-R,945852Q UN Equity,#N/A N/A
+1681,SFTTTV-R,0867887D UN Equity,#N/A N/A
+1682,M519QL-R,1265384D CT Equity,#N/A N/A
+1683,KC6WDM-R,LMT UN Equity,Industrials
+1684,R6WVW3-R,CELG US Equity,Health Care
+1685,GC9695-R,SHW UN Equity,Materials
+1686,KFP1P3-R,SEA CT Equity,Materials
+1687,CRHPMR-R,PNR UN Equity,Industrials
+1688,WHZD5T-R,1270Q US Equity,#N/A N/A
+1689,MYW502-R,TTWO US Equity,Communication Services
+1690,BYJYYM-R,ALL UN Equity,Financials
+1691,P8R3C2-R,MSFT UW Equity,Information Technology
+1692,HXYXS2-R,BNQ-U CT Equity,#N/A N/A
+1693,KHYCT3-R,3605818Q UN Equity,#N/A N/A
+1694,FQJDL3-R,NWS US Equity,Communication Services
+1695,QG2Q1C-R,RRD UN Equity,Industrials
+1696,JMJFSG-R,DPHIQ UN Equity,#N/A N/A
+1697,TWTDGH-R,SBUX UQ Equity,Consumer Discretionary
+1698,MBK7R0-R,WLTW UW Equity,Financials
+1699,QZ3ZG1-R,LEG US Equity,Consumer Discretionary
+1700,GX8YYJ-R,NXY CT Equity,#N/A N/A
+1701,RW15L0-R,APHA CN Equity,Health Care
+1702,MG2TQV-R,KEY US Equity,Financials
+1703,SFHBPW-R,1053161D CT Equity,#N/A N/A
+1704,B83YJG-R,EVRG US Equity,Utilities
+1705,LP4DS3-R,FDG-U CT Equity,#N/A N/A
+1706,J70N5J-R,PCAR UQ Equity,Industrials
+1707,WV1ZC5-R,739306Q UN Equity,#N/A N/A
+1708,FBCHQC-R,LB US Equity,Consumer Discretionary
+1709,TTTZFZ-R,PVG CT Equity,Materials
+1710,PTSCWV-R,FAL CN Equity,#N/A N/A
+1711,RMCZ5D-R,REF-U CT Equity,Real Estate
+1712,XKPX2X-R,BEI-U CT Equity,Real Estate
+1713,DY0J8Y-R,ACM/A CT Equity,#N/A N/A
+1714,BGXVSD-R,1746513D UW Equity,#N/A N/A
+1715,T7B99L-R,2218Q UN Equity,#N/A N/A
+1716,QWT5HN-R,1511Q UN Equity,#N/A N/A
+1717,DKGV7D-R,1624Q UQ Equity,#N/A N/A
+1718,W5MG2M-R,FSL/B UN Equity,#N/A N/A
+1719,VNRHTY-R,3286728Q UN Equity,#N/A N/A
+1720,TGK8GS-R,NFI CT Equity,Industrials
+1721,QKJS7V-R,UAL UN Equity,Industrials
+1722,SC6NXK-R,8130791Q CT Equity,#N/A N/A
+1723,C1Y5MC-R,653707Q UN Equity,#N/A N/A
+1724,C7C9TP-R,DOW US Equity,Materials
+1725,B82VFF-R,CVH UN Equity,#N/A N/A
+1726,MKCXFN-R,SNC CT Equity,Industrials
+1727,J3RKCN-R,TWF-U CT Equity,#N/A N/A
+1728,CHKL7S-R,LOW US Equity,Consumer Discretionary
+1729,J2MW73-R,RMD UN Equity,Health Care
+1730,VFT0VQ-R,BLL UN Equity,Materials
+1731,F72PJT-R,MXIM UW Equity,Information Technology
+1732,BL5KVX-R,COST US Equity,Consumer Staples
+1733,VK7M4R-R,PFE US Equity,Health Care
+1734,XKPH9J-R,PVH UN Equity,Consumer Discretionary
+1735,JT792F-R,MFC CT Equity,Financials
+1736,W5QQ9P-R,TMUS UN Equity,Communication Services
+1737,BHPM6T-R,923022Q US Equity,#N/A N/A
+1738,BNMLW8-R,ALA CN Equity,Utilities
+1739,R852NX-R,WJA CT Equity,Industrials
+1740,NNL3GM-R,SW CT Equity,Information Technology
+1741,PRMD3Z-R,IMO CT Equity,Energy
+1742,S25R0V-R,FNMA UN Equity,Financials
+1743,RXH4B6-R,D-U CN Equity,Real Estate
+1744,BBDJ3P-R,WPRT CT Equity,Industrials
+1745,PKY50L-R,CINF UQ Equity,Financials
+1746,CRFGHS-R,2254Q UN Equity,#N/A N/A
+1747,HP58X9-R,AAP US Equity,Consumer Discretionary
+1748,T2T0MT-R,1704453D UN Equity,#N/A N/A
+1749,TZ93SH-R,571300Q UN Equity,#N/A N/A
+1750,M3TNY8-R,2300375Q CT Equity,#N/A N/A
+1751,D2W4QF-R,4121404Q CT Equity,#N/A N/A
+1752,VGYKN2-R,RY CT Equity,Financials
+1753,D79MYG-R,TIH CN Equity,Industrials
+1754,S8ZQDV-R,REGN US Equity,Health Care
+1755,PRGQ6L-R,SPGI UN Equity,Financials
+1756,TY202Q-R,ADP UW Equity,Information Technology
+1757,RYLRBP-R,TRE CT Equity,#N/A N/A
+1758,TYSRJ3-R,CHP-U CN Equity,Real Estate
+1759,DDZB0B-R,ALGN US Equity,Health Care
+1760,HN195G-R,ABMD UW Equity,Health Care
+1761,XPB7BB-R,134618Q UN Equity,#N/A N/A
+1762,B3G4BK-R,ASH UN Equity,Materials
+1763,T9M9M3-R,HSP UN Equity,Health Care
+1764,CGGG4R-R,NEM UN Equity,Materials
+1765,RBJXH6-R,DLR UN Equity,Real Estate
+1766,N96M5T-R,FWLT UN Equity,Industrials
+1767,CJQN0M-R,DFODQ UN Equity,Consumer Staples
+1768,BSZPJ1-R,NQL CT Equity,#N/A N/A
+1769,KYKCS8-R,DISCK UW Equity,Communication Services
+1770,J1J74L-R,DCNAQ UN Equity,#N/A N/A
+1771,TRDSY9-R,PAAS CN Equity,Materials
+1772,GHT33G-R,2641504Q UN Equity,#N/A N/A
+1773,CYB6Y5-R,KO US Equity,Consumer Staples
+1774,HP13ZD-R,WRK US Equity,Materials
+1775,FS32CR-R,FAST UW Equity,Industrials
+1776,WFJYTJ-R,GOOG UW Equity,Communication Services
+1777,N6GVND-R,AVO CT Equity,Information Technology
+1778,PLY66Q-R,SMF CN Equity,Materials
+1779,H4629G-R,3459Q UN Equity,#N/A N/A
+1780,T43Q80-R,DPM CT Equity,Materials
+1781,F07Q7W-R,CTAS UW Equity,Industrials
+1782,FXTG1M-R,KEYS UN Equity,Information Technology
+1783,JMHSJV-R,XLNX US Equity,Information Technology
+1784,MFYB4M-R,FMCC UN Equity,Financials
+1785,BMFSSV-R,611647Q UN Equity,#N/A N/A
+1786,T1NRCQ-R,GIB/A CN Equity,Information Technology
+1787,GRQMJ0-R,LYB UN Equity,Materials
+1788,XQCWLZ-R,TUP UN Equity,Consumer Discretionary
+1789,B4PGFJ-R,CSC UN Equity,Information Technology
+1790,RT2ZSJ-R,LRCX US Equity,Information Technology
+1791,DWQQCL-R,FR CN Equity,Materials
+1792,L32LM8-R,HWM UN Equity,Industrials
+1793,VT5051-R,AGF/B CT Equity,Financials
+1794,DG6SCF-R,KSU UN Equity,Industrials
+1795,L1XX07-R,S CT Equity,Materials
+1796,VZZC49-R,1802Q UN Equity,#N/A N/A
+1797,MS9FKZ-R,BXP UN Equity,Real Estate
+1798,K3FDW0-R,GSC CT Equity,Materials
+1799,RMJYP2-R,FVI CT Equity,Materials
+1800,VWF970-R,WFC UN Equity,Financials
+1801,LZBPWV-R,MYL US Equity,Health Care
+1802,S8ZPBT-R,TJX US Equity,Consumer Discretionary
+1803,K14FHD-R,OBE CT Equity,Energy
+1804,DH7WLK-R,DRE US Equity,Real Estate
+1805,J9F59G-R,WU UN Equity,Information Technology
+1806,R71MZL-R,AGN US Equity,Health Care
+1807,WN8BRL-R,TRP CN Equity,Energy
+1808,J89J6Y-R,MDT US Equity,Health Care
+1809,BJ2HRV-R,SLB US Equity,Energy
+1810,N4JMNR-R,GTW UN Equity,#N/A N/A
+1811,W0Z4W6-R,URI US Equity,Industrials
+1812,JLJ0VZ-R,GS UN Equity,Financials
+1813,SKZRLQ-R,AMP US Equity,Financials
+1814,MS57L1-R,HPQ US Equity,Information Technology
+1815,XGD9DM-R,SDM CT Equity,#N/A N/A
+1816,S7RZFF-R,CUS CT Equity,Materials
+1817,PRGN6N-R,CXO US Equity,Energy
+1818,BDQDB8-R,DG UN Equity,Consumer Discretionary
+1819,PFF98B-R,PCH UN Equity,Real Estate
+1820,QSDQCP-R,WMB US Equity,Energy
+1821,XJP9V8-R,NRI CT Equity,Health Care
+1822,GZKHGQ-R,RE US Equity,Financials
+1823,CQCV51-R,CM CT Equity,Financials
+1824,C8XJ7D-R,PNW US Equity,Utilities
+1825,PD3PV7-R,GUY CT Equity,Materials
+1826,FMFR39-R,NCR UN Equity,Information Technology
+1827,KMBRT0-R,AVB UN Equity,Real Estate
+1828,PP6JBQ-R,WRM CT Equity,#N/A N/A
+1829,C4HBRT-R,ABBV US Equity,Health Care
+1830,LKST5W-R,TFCFA UW Equity,Communication Services
+1831,TQ3DXD-R,BNSSA US Equity,#N/A N/A
+1832,FQZF97-R,ROP US Equity,Industrials
+1833,MKBN0G-R,3403545Q UN Equity,#N/A N/A
+1834,CHR1NX-R,MU UW Equity,Information Technology
+1835,RSVDFJ-R,1503Q UN Equity,#N/A N/A
+1836,CQJ4C2-R,PSI CT Equity,Energy
+1837,T0NS9N-R,1371050D CT Equity,#N/A N/A
+1838,X0N4MP-R,ED UN Equity,Utilities
+1839,NNKD2Y-R,JPM US Equity,Financials
+1840,NB6XX6-R,2999130Q UN Equity,#N/A N/A
+1841,X6K6SH-R,TMC UN Equity,#N/A N/A
+1842,LC1BTF-R,V US Equity,Information Technology
+1843,RLCZ19-R,PVE CT Equity,#N/A N/A
+1844,GGPTR9-R,DO UN Equity,Energy
+1845,NXD9CX-R,1618Q UN Equity,#N/A N/A
+1846,TXY0GZ-R,CPG CN Equity,Energy
+1847,NB76FG-R,VRSN UW Equity,Information Technology
+1848,WHQQKM-R,EDR CT Equity,Materials
+1849,G3949H-R,CBOE UF Equity,Financials
+1850,LTR512-R,140402Q UN Equity,#N/A N/A
+1851,B5P0VB-R,2288005Q UN Equity,#N/A N/A
+1852,F17SJ1-R,ADI UN Equity,Information Technology
+1853,J7493Y-R,9477159Q CT Equity,#N/A N/A
+1854,XMYTFJ-R,UHS US Equity,Health Care
+1855,QKJS7V-R,UAL US Equity,Industrials
+1856,S1SHTH-R,MXS UN Equity,#N/A N/A
+1857,GRLQZ7-R,MX CN Equity,Materials
+1858,GD9012-R,CRW-U CT Equity,#N/A N/A
+1859,SHRZF5-R,CHD UN Equity,Consumer Staples
+1860,GYJ1QD-R,SIA CT Equity,Health Care
+1861,CGDY8B-R,LNR CT Equity,Consumer Discretionary
+1862,J75D6Z-R,KBH UN Equity,Consumer Discretionary
+1863,P9ZNX8-R,GC CN Equity,Consumer Discretionary
+1864,QJHMYP-R,KHD CT Equity,#N/A N/A
+1865,X1RJ5Y-R,NTRS UW Equity,Financials
+1866,D4ZPQY-R,SUNEQ UN Equity,Information Technology
+1867,C0ZKS6-R,PSK CN Equity,Energy
+1868,CYC4Q1-R,AIV UN Equity,Real Estate
+1869,WYHB5Z-R,8206908Q UQ Equity,#N/A N/A
+1870,MS9DHY-R,BCO UN Equity,Industrials
+1871,F04K6X-R,BB CN Equity,Information Technology
+1872,W8YZJS-R,EQB CN Equity,Financials
+1873,C6LYWC-R,968734Q UN Equity,#N/A N/A
+1874,CD4N6C-R,1028411Q US Equity,#N/A N/A
+1875,CZB1R3-R,HDLM UN Equity,#N/A N/A
+1876,H1PTZZ-R,UAWGQ UN Equity,#N/A N/A
+1877,RMFR2L-R,FTI UN Equity,Energy
+1878,D403D7-R,RSHCQ UN Equity,Consumer Discretionary
+1879,GF5S48-R,3123863Q UN Equity,#N/A N/A
+1880,FXTG1M-R,KEYS US Equity,Information Technology
+1881,C4C0BL-R,NFLX US Equity,Communication Services
+1882,BW92P1-R,NYT US Equity,Communication Services
+1883,VLHKF9-R,T UN Equity,Communication Services
+1884,CN4ZZK-R,MJN UN Equity,Consumer Staples
+1885,H7DGWR-R,HAS UW Equity,Consumer Discretionary
+1886,NHV4Q7-R,CTVA UN Equity,Materials
+1887,R03NZV-R,BI/H CT Equity,#N/A N/A
+1888,R3J43T-R,SNDK UQ Equity,Information Technology
+1889,PN23TH-R,0206904D CT Equity,#N/A N/A
+1890,VCNXSP-R,YUM US Equity,Consumer Discretionary
+1891,RSQN90-R,XYL UN Equity,Industrials
+1892,KMBPNY-R,LLL UN Equity,Industrials
+1893,FK7P9F-R,CGP UN Equity,#N/A N/A
+1894,CRRX9G-R,USHC UQ Equity,#N/A N/A
+1895,B4L66G-R,PBCT US Equity,Financials
+1896,D502G9-R,AEP US Equity,Utilities
+1897,B81TLL-R,AVGO US Equity,Information Technology
+1898,N4K9ZD-R,GWO CN Equity,Financials
+1899,FDQM4Z-R,EXE CT Equity,Health Care
+1900,HF4YDC-R,CPX CT Equity,Utilities
+1901,JCTNCC-R,69895Q UN Equity,#N/A N/A
+1902,LD1K6L-R,MG CT Equity,Consumer Discretionary
+1903,NXHLP0-R,D UN Equity,Utilities
+1904,HSHXKK-R,BNF/A CT Equity,#N/A N/A
+1905,VMJ5QZ-R,GCO UN Equity,Consumer Discretionary
+1906,CGDY8B-R,LNR CN Equity,Consumer Discretionary
+1907,RGTY61-R,FIS US Equity,Information Technology
+1908,LHKN8Z-R,NOC UN Equity,Industrials
+1909,RJWS22-R,1539547D UN Equity,#N/A N/A
+1910,CC4XLJ-R,0882518D CT Equity,#N/A N/A
+1911,D41CTF-R,CMVT UQ Equity,#N/A N/A
+1912,N2GNNQ-R,UAA US Equity,Consumer Discretionary
+1913,B8350Q-R,MRU CT Equity,Consumer Staples
+1914,SN3294-R,1671Q UN Equity,#N/A N/A
+1915,DMRWLY-R,ALB UN Equity,Materials
+1916,J1CRMD-R,CFC UN Equity,#N/A N/A
+1917,JSZKG9-R,WETT US Equity,#N/A N/A
+1918,FYSXNQ-R,TOY UN Equity,#N/A N/A
+1919,JH4JKX-R,0203524D UN Equity,#N/A N/A
+1920,DXW84Y-R,SNA UN Equity,Industrials
+1921,GM32M5-R,SPLS UW Equity,Consumer Discretionary
+1922,PJTSGB-R,AN UN Equity,Consumer Discretionary
+1923,VR16P9-R,BSX UN Equity,Health Care
+1924,NPK3PS-R,EXC UN Equity,Utilities
+1925,NYJHHY-R,MCK UN Equity,Health Care
+1926,K6RW63-R,VIAC UN Equity,Communication Services
+1927,DBPVM6-R,974596Q CT Equity,#N/A N/A
+1928,H2VPCM-R,VLO UN Equity,Energy
+1929,GGPVTB-R,UNH UN Equity,Health Care
+1930,HZ2GNH-R,SGID UN Equity,#N/A N/A
+1931,MH7TCM-R,FDX US Equity,Industrials
+1932,HQ87P5-R,TXN US Equity,Information Technology
+1933,PQBJ2K-R,3540182Q CT Equity,#N/A N/A
+1934,VDV94T-R,KLG CT Equity,Materials
+1935,DGBZCC-R,DAL US Equity,Industrials
+1936,D8NHSR-R,399463Q UN Equity,#N/A N/A
+1937,R4LZTQ-R,90457Q UN Equity,#N/A N/A
+1938,VZDYKL-R,TOY CT Equity,Consumer Discretionary
+1939,SJSMSW-R,PKI CN Equity,Energy
+1940,K7YTNS-R,VIAV UQ Equity,Information Technology
+1941,WFLMHL-R,BDX US Equity,Health Care
+1942,SGLSD6-R,BCH CT Equity,#N/A N/A
+1943,M8CS1P-R,NGH UN Equity,#N/A N/A
+1944,JNSRSC-R,IDB CT Equity,#N/A N/A
+1945,MXZ7RW-R,BR US Equity,Information Technology
+1946,PVW48J-R,IPG US Equity,Communication Services
+1947,R70TJY-R,231079Q UN Equity,#N/A N/A
+1948,PB0T2B-R,PDL CT Equity,Materials
+1949,TQ8V8H-R,ARE CT Equity,Industrials
+1950,JTC04X-R,CVS US Equity,Health Care
+1951,LKST5W-R,TFCFA UN Equity,Communication Services
+1952,W4H2MF-R,USW UN Equity,#N/A N/A
+1953,NDGT5S-R,0202445Q UN Equity,#N/A N/A
+1954,RDKGSX-R,RET/A CT Equity,Consumer Discretionary
+1955,FLDWBD-R,NBR UN Equity,Energy
+1956,QVJDSG-R,OM UN Equity,#N/A N/A
+1957,TVTFDF-R,BAX US Equity,Health Care
+1958,FJ1B1C-R,AJG UN Equity,Financials
+1959,T2TNWF-R,SYY US Equity,Consumer Staples
+1960,CTYNJ1-R,GE US Equity,Industrials
+1961,WFH94G-R,ELD CN Equity,Materials
+1962,B6ZP8C-R,WELL UN Equity,Real Estate
+1963,PD9BLJ-R,GGAM/U CT Equity,Financials
+1964,LZBB5H-R,SITC UN Equity,Real Estate
+1965,L1TYCG-R,1627457D UN Equity,Consumer Discretionary
+1966,RT66YK-R,AMD US Equity,Information Technology
+1967,GGPDYX-R,CME UN Equity,Financials
+1968,QP00SH-R,519239Q UN Equity,#N/A N/A
+1969,V9977J-R,EQIX US Equity,Real Estate
+1970,M4W5YS-R,MAG CN Equity,Materials
+1971,DR9FJR-R,OIL/H CT Equity,#N/A N/A
+1972,FJ3VWR-R,279776Q UN Equity,#N/A N/A
+1973,C0ZKS6-R,PSK CT Equity,Energy
+1974,QWV5DL-R,EW UN Equity,Health Care
+1975,TGK8GS-R,NFI CN Equity,Industrials
+1976,HN195G-R,ABMD US Equity,Health Care
+1977,NXHLP0-R,D US Equity,Utilities
+1978,DRBC9M-R,GWW US Equity,Industrials
+1979,VV9LP2-R,OR CN Equity,Materials
+1980,FPPSQ1-R,GRMN UW Equity,Consumer Discretionary
+1981,TR8891-R,BEP-U CT Equity,Utilities
+1982,B6TD5D-R,1524867D UN Equity,#N/A N/A
+1983,GFGV9N-R,325330Q CT Equity,#N/A N/A
+1984,Q0JDDX-R,2731112Q UN Equity,#N/A N/A
+1985,Q1KXFF-R,ZL CT Equity,#N/A N/A
+1986,FJ7TFG-R,304024Q US Equity,#N/A N/A
+1987,TMZ082-R,BKB CT Equity,#N/A N/A
+1988,V3MK5N-R,RAI UN Equity,Consumer Staples
+1989,FWHKKR-R,MTG UN Equity,Financials
+1990,BFSY5M-R,LUV US Equity,Industrials
+1991,W5NBSG-R,LPX UN Equity,Materials
+1992,KFP2R4-R,UDR UN Equity,Real Estate
+1993,X0MNQ7-R,ITP CN Equity,Materials
+1994,NHX98Q-R,1683997D UW Equity,#N/A N/A
+1995,FT7VMB-R,ATO US Equity,Utilities
+1996,NPS0W8-R,PD CT Equity,Energy
+1997,Q774MW-R,FLR UN Equity,Industrials
+1998,W7XV7M-R,587977Q CT Equity,#N/A N/A
+1999,RCPQST-R,BDI CT Equity,Industrials
+2000,RT7HCR-R,TYL US Equity,Information Technology
+2001,NK3TVY-R,3546Q UN Equity,#N/A N/A
+2002,HTM0LK-R,GOOGL UQ Equity,Communication Services
+2003,DMR8FC-R,PRDCQ UN Equity,#N/A N/A
+2004,DDZB0B-R,ALGN UW Equity,Health Care
+2005,TWXW2R-R,8375930Q UN Equity,#N/A N/A
+2006,MH3TRW-R,ANDV UN Equity,Energy
+2007,R5XGXL-R,GIS US Equity,Consumer Staples
+2008,DWPMDP-R,1789530D UN Equity,#N/A N/A
+2009,NQVR5X-R,AAH CT Equity,#N/A N/A
+2010,XLY63V-R,AFL UN Equity,Financials
+2011,NCL5GV-R,TAP UN Equity,Consumer Staples
+2012,TMTXG7-R,WPK CN Equity,Materials
+2013,XKPX2X-R,BEI-U CN Equity,Real Estate
+2014,L56306-R,SU CN Equity,Energy
+2015,S6PC9W-R,DIV CT Equity,Consumer Discretionary
+2016,LZBPWV-R,MYL UN Equity,Health Care
+2017,HN0ZL5-R,CJR/B CT Equity,Communication Services
+2018,DF9PT2-R,BK US Equity,Financials
+2019,F96WSY-R,HSE CT Equity,Energy
+2020,PZHJN0-R,CG CT Equity,Materials
+2021,GJXKZY-R,MEG CT Equity,Energy
+2022,SPH6FH-R,JAG CT Equity,Materials
+2023,P9ZNX8-R,GC CT Equity,Consumer Discretionary
+2024,NB76FG-R,VRSN US Equity,Information Technology
+2025,V8549L-R,BMC UN Equity,#N/A N/A
+2026,MDV2VH-R,CORV CT Equity,Health Care
+2027,VS59M7-R,AIG UN Equity,Financials
+2028,XQ6H9X-R,EKDKQ UN Equity,Information Technology
+2029,D54YRW-R,TD CT Equity,Financials
+2030,TMW1M9-R,SRR UN Equity,#N/A N/A
+2031,XD67LR-R,EXR UN Equity,Real Estate
+2032,CJTQXJ-R,ETFC US Equity,Financials
+2033,SP34K9-R,1691Q UN Equity,#N/A N/A
+2034,CX6P1R-R,GRT-U CN Equity,Real Estate
+2035,V5WMVF-R,MCHP US Equity,Information Technology
+2036,VBMVML-R,WSP CN Equity,Industrials
+2037,BZVBZJ-R,1284913D CT Equity,#N/A N/A
+2038,X8LB4Q-R,MTB UN Equity,Financials
+2039,GQGP3B-R,FHI UN Equity,Financials
+2040,LF4HZG-R,XTO UN Equity,#N/A N/A
+2041,N712CF-R,285939Q UN Equity,#N/A N/A
+2042,MKH9XV-R,CFP CT Equity,Materials
+2043,RFPMVX-R,WEC US Equity,Utilities
+2044,H1QKCN-R,MTI/B CT Equity,#N/A N/A
+2045,LBWNRX-R,LNC UN Equity,Financials
+2046,Q3Z513-R,AW UN Equity,#N/A N/A
+2047,KDJL0T-R,AVY UN Equity,Materials
+2048,MKJ8WW-R,MSCI US Equity,Financials
+2049,STV3R3-R,TVA/B CT Equity,Communication Services
+2050,T0JL9Q-R,RRC UN Equity,Energy
+2051,H1PMLS-R,CL US Equity,Consumer Staples
+2052,BDMWDS-R,BIR CT Equity,Energy
+2053,C7V3J1-R,CEU CT Equity,Energy
+2054,DTVQS5-R,DAY CT Equity,#N/A N/A
+2055,JZGFGR-R,BPY-U CT Equity,Real Estate
+2056,H44LH2-R,901821Q CT Equity,#N/A N/A
+2057,TWS77D-R,FLIR US Equity,Information Technology
+2058,P9W9H3-R,GNA CT Equity,#N/A N/A
+2059,KB791X-R,XEL UN Equity,Utilities
+2060,SDDH43-R,WBA UW Equity,Consumer Staples
+2061,D3X1KC-R,RML UN Equity,#N/A N/A
+2062,FPPSQ1-R,GRMN US Equity,Consumer Discretionary
+2063,NDN5DT-R,ADS US Equity,Information Technology
+2064,MH2KBP-R,CCEP UN Equity,Consumer Staples
+2065,HZ6Z7Q-R,INTC UW Equity,Information Technology
+2066,Q4ZYNY-R,MTY CN Equity,Consumer Discretionary
+2067,TP420X-R,CSH-U CT Equity,Health Care
+2068,S390D0-R,TXU US Equity,#N/A N/A
+2069,S8TZCD-R,GAPTQ UN Equity,#N/A N/A
+2070,WQK5W2-R,SRE US Equity,Utilities
+2071,T2XF84-R,PBH CN Equity,Consumer Staples
+2072,BRWD2V-R,CCT CT Equity,Health Care
+2073,VT8FQ8-R,IMNX UQ Equity,#N/A N/A
+2074,PY50G1-R,PNC UN Equity,Financials
+2075,DMSDLF-R,CAE CT Equity,Industrials
+2076,VBCQMG-R,UA US Equity,Consumer Discretionary
+2077,HF5SX1-R,BIIB UW Equity,Health Care
+2078,R3HBM2-R,TSS UN Equity,Information Technology
+2079,LRJYZ2-R,HSH UN Equity,Consumer Staples
+2080,T536DM-R,1457122D CT Equity,Materials
+2081,DQ510J-R,AEM CN Equity,Materials
+2082,DJFT06-R,847636Q CT Equity,#N/A N/A
+2083,DVL9FZ-R,KXS CT Equity,Information Technology
+2084,LRK013-R,FITB UQ Equity,Financials
+2085,JH0BKZ-R,1284849D UN Equity,Health Care
+2086,BJ2HRV-R,SLB UN Equity,Energy
+2087,NFLZ7S-R,CCA CT Equity,Communication Services
+2088,VT67J6-R,RBA CT Equity,Industrials
+2089,VFT0VQ-R,BLL US Equity,Materials
+2090,BQ7YD0-R,CPGX UN Equity,Energy
+2091,VDT85V-R,PH US Equity,Industrials
+2092,V03NML-R,2987Q UN Equity,#N/A N/A
+2093,VMM07R-R,WEED CT Equity,Health Care
+2094,LN3P8B-R,TPR UN Equity,Consumer Discretionary
+2095,NDGZHY-R,T CT Equity,Communication Services
+2096,KZKK3D-R,CPB UN Equity,Consumer Staples
+2097,CHR1NX-R,MU UN Equity,Information Technology
+2098,F18L0S-R,1281683D UN Equity,#N/A N/A
+2099,WL1C5V-R,WCP CT Equity,Energy
+2100,M09N42-R,FFB UN Equity,#N/A N/A
+2101,F87563-R,ENRNQ UN Equity,#N/A N/A
+2102,PJNB5B-R,DFS US Equity,Financials
+2103,WM5BXP-R,COG US Equity,Energy
+2104,VWF970-R,WFC US Equity,Financials
+2105,RJVBBR-R,ALLE UN Equity,Industrials
+2106,FPTQ5Q-R,PTV UN Equity,#N/A N/A
+2107,TY1WWM-R,SYK US Equity,Health Care
+2108,B3DVXC-R,FCX US Equity,Materials
+2109,PPCTFP-R,PEP UW Equity,Consumer Staples
+2110,VTBNZC-R,SVU UN Equity,Consumer Staples
+2111,QLGSL2-R,FB US Equity,Communication Services
+2112,X420K1-R,ANDW UQ Equity,#N/A N/A
+2113,KB791X-R,XEL US Equity,Utilities
+2114,X59HZ5-R,JNPR UW Equity,Information Technology
+2115,RT2ZSJ-R,LRCX UW Equity,Information Technology
+2116,BWHWNF-R,MKG US Equity,#N/A N/A
+2117,HJGCMC-R,BCB CN Equity,Consumer Staples
+2118,RPNJRM-R,BLK US Equity,Financials
+2119,TWKFD4-R,2603Q US Equity,#N/A N/A
+2120,C4CVZD-R,HRX CT Equity,Industrials
+2121,Q7DQ83-R,NGX CT Equity,#N/A N/A
+2122,NV7K28-R,IFF UN Equity,Materials
+2123,NNK9YW-R,FET-U CT Equity,#N/A N/A
+2124,D8FPTC-R,GT UN Equity,Consumer Discretionary
+2125,BWHTJC-R,ACE/A CT Equity,#N/A N/A
+2126,DXV51X-R,MRC CT Equity,Real Estate
+2127,SM5S6G-R,BGEN UQ Equity,#N/A N/A
+2128,G5M19V-R,SLG UN Equity,Real Estate
+2129,CGLRBS-R,SCG UN Equity,Utilities
+2130,WKY44Y-R,702480Q UN Equity,#N/A N/A
+2131,QF56PM-R,KER-U CT Equity,#N/A N/A
+2132,DHGBXM-R,GOU CT Equity,#N/A N/A
+2133,CZG3GX-R,OSB CN Equity,Materials
+2134,CFG1CD-R,AWK US Equity,Utilities
+2135,HN0ZL5-R,CJR/B CN Equity,Communication Services
+2136,DG6SCF-R,KSU US Equity,Industrials
+2137,GW4QWL-R,3346Q UN Equity,#N/A N/A
+2138,MMSHPN-R,GR UN Equity,#N/A N/A
+2139,RYLVJS-R,9876544D UN Equity,Consumer Discretionary
+2140,PFHZCV-R,2284Q UN Equity,#N/A N/A
+2141,VFY8ZQ-R,AOS US Equity,Industrials
+2142,NBCT6S-R,0851201D CT Equity,#N/A N/A
+2143,BL5KVX-R,COST UW Equity,Consumer Staples
+2144,PY5NPN-R,AON US Equity,Financials
+2145,TTK2BH-R,CFW CT Equity,Energy
+2146,H8HVG0-R,3621240Q UN Equity,#N/A N/A
+2147,CD94SL-R,TFII CN Equity,Industrials
+2148,JFVSSM-R,YLO CT Equity,#N/A N/A
+2149,JDQ0K1-R,AZO UN Equity,Consumer Discretionary
+2150,LVYTWF-R,IRM UN Equity,Real Estate
+2151,V75BKP-R,DOV UN Equity,Industrials
+2152,L32L1Q-R,1528159D UN Equity,#N/A N/A
+2153,SQGTV7-R,WFT CT Equity,Materials
+2154,MKCXFN-R,SNC CN Equity,Industrials
+2155,KP3HBJ-R,DRM CT Equity,Real Estate
+2156,TZ22BW-R,TKN CT Equity,#N/A N/A
+2157,HF4YDC-R,CPX CN Equity,Utilities
+2158,DJC60R-R,CAG US Equity,Consumer Staples
+2159,FZRL7K-R,PKG US Equity,Materials
+2160,H59VN3-R,WEF CT Equity,Materials
+2161,GGPDYX-R,CME US Equity,Financials
+2162,PGQCV2-R,TOU CN Equity,Energy
+2163,PTRY1F-R,AIZ US Equity,Financials
+2164,CP8GLS-R,PDG UN Equity,#N/A N/A
+2165,CYB1M0-R,AMGN US Equity,Health Care
+2166,L32LM8-R,ARNC US Equity,Materials
+2167,HRCK3C-R,FTLAQ US Equity,#N/A N/A
+2168,TTNFRN-R,BRT CT Equity,#N/A N/A
+2169,RCNCKX-R,OTIS US Equity,Industrials
+2170,M9KTQG-R,ACAS UW Equity,Financials
+2171,W3BLZ4-R,ACQ CT Equity,Consumer Discretionary
+2172,DVRBF2-R,TXP CT Equity,Energy
+2173,TZ1NKH-R,NE UN Equity,Energy
+2174,GRQMJ0-R,LYB US Equity,Materials
+2175,HSDM8G-R,502466Q US Equity,#N/A N/A
+2176,PKZ3VH-R,POM UN Equity,Utilities
+2177,VWGLQ7-R,MOS US Equity,Materials
+2178,R81FQH-R,2283832Q CT Equity,#N/A N/A
+2179,L6BT3Q-R,MAC UN Equity,Real Estate
+2180,W3HF4N-R,2828888Q CT Equity,#N/A N/A
+2181,JQZ00G-R,STT UN Equity,Financials
+2182,LZ5M62-R,BPO CT Equity,#N/A N/A
+2183,WFMVVR-R,NDAQ US Equity,Financials
+2184,FZS250-R,3509785Q CT Equity,#N/A N/A
+2185,PTZ4X8-R,4095426Q CT Equity,#N/A N/A
+2186,P8Q7Q8-R,0112977D CT Equity,#N/A N/A
+2187,H7C8QR-R,210967Q UN Equity,#N/A N/A
+2188,CD94SL-R,TFII CT Equity,Industrials
+2189,C46454-R,NAE US Equity,#N/A N/A
+2190,KJZZ2T-R,ATH CT Equity,Energy
+2191,DBNXVB-R,BRK/B UN Equity,Financials
+2192,F3NM78-R,CMCSK UW Equity,Communication Services
+2193,Q4YP8S-R,KRFT UW Equity,Consumer Staples
+2194,L35S4Q-R,299312Q CT Equity,#N/A N/A
+2195,KL19N1-R,DC/A CT Equity,Real Estate
+2196,KM5Q58-R,SCHW UQ Equity,Financials
+2197,X8L2PH-R,BIO US Equity,Health Care
+2198,R3LDFY-R,ACE/B CT Equity,#N/A N/A
+2199,DNY1KW-R,PBI UN Equity,Industrials
+2200,B19ST9-R,LLY UN Equity,Health Care
+2201,P5F9DQ-R,QEP UN Equity,Energy
+2202,XLV24X-R,F UN Equity,Consumer Discretionary
+2203,FYMJCN-R,EMC UN Equity,Information Technology
+2204,NBCKRK-R,ISRG UW Equity,Health Care
+2205,LCJDJK-R,IT CT Equity,Consumer Discretionary
+2206,BB6ZKH-R,0991852D CT Equity,#N/A N/A
+2207,FDQTK5-R,IMN CT Equity,#N/A N/A
+2208,B5PHMN-R,1519128D UQ Equity,Information Technology
+2209,GB58PD-R,HTE-U CT Equity,#N/A N/A
+2210,VNN3BR-R,SMU-U CN Equity,Real Estate
+2211,NT37R4-R,ARE UN Equity,Real Estate
+2212,DRBC9M-R,GWW UN Equity,Industrials
+2213,PZHJN0-R,CG CN Equity,Materials
+2214,JFZDP0-R,CGG CT Equity,Materials
+2215,MTB64S-R,0981004D CT Equity,#N/A N/A
+2216,X9Q3HC-R,ESS UN Equity,Real Estate
+2217,FHZZH3-R,KFS CT Equity,Financials
+2218,LD63XW-R,HYG CT Equity,Industrials
+2219,D8HQP8-R,AFS UN Equity,#N/A N/A
+2220,RJVBBR-R,ALLE US Equity,Industrials
+2221,FXH4XG-R,QCOM UW Equity,Information Technology
+2222,SRR5X5-R,SAP CT Equity,Consumer Staples
+2223,WB34LS-R,PWF CT Equity,Financials
+2224,RGZN5G-R,MHK US Equity,Consumer Discretionary
+2225,HR1WTF-R,2245Q UN Equity,#N/A N/A
+2226,M0H6M5-R,AMAT UQ Equity,Information Technology
+2227,QLRPKF-R,WRB US Equity,Financials
+2228,DVKG6K-R,SCL CT Equity,Energy
+2229,LHKN8Z-R,NOC US Equity,Industrials
+2230,SX3H28-R,2036Q UN Equity,#N/A N/A
+2231,D3ZY22-R,HP UN Equity,Energy
+2232,S4FRKK-R,CGX CT Equity,Communication Services
+2233,QWSH60-R,244630Q UQ Equity,#N/A N/A
+2234,WDGX90-R,CLF UN Equity,Materials
+2235,DBTJMN-R,UTS CT Equity,#N/A N/A
+2236,DNX703-R,MHS UN Equity,#N/A N/A
+2237,VFY8ZQ-R,AOS UN Equity,Industrials
+2238,THB4X2-R,VTR UN Equity,Real Estate
+2239,M515GG-R,QTRN UQ Equity,#N/A N/A
+2240,RXHN9P-R,BA UN Equity,Industrials
+2241,LPBQV1-R,297187Q CT Equity,#N/A N/A
+2242,DHBWFH-R,89236Q UN Equity,#N/A N/A
+2243,GZF20K-R,IP US Equity,Materials
+2244,LQCGBT-R,NXTL UQ Equity,#N/A N/A
+2245,W6SYPW-R,JOY UN Equity,Industrials
+2246,MS9DHY-R,BCO US Equity,Industrials
+2247,QMW47R-R,NG CT Equity,Materials
+2248,KV0K62-R,RAD UN Equity,Consumer Staples
+2249,GJZ5YB-R,KSS UN Equity,Consumer Discretionary
+2250,F722C7-R,LDG UN Equity,#N/A N/A
+2251,M75DSM-R,RHDCQ UN Equity,#N/A N/A
+2252,QNVH47-R,7770556Q CT Equity,#N/A N/A
+2253,SJY281-R,IBM UN Equity,Information Technology
+2254,V2H5QG-R,APH UN Equity,Information Technology
+2255,PC2KK2-R,CSU CN Equity,Information Technology
+2256,T56LWT-R,MFL CT Equity,#N/A N/A
+2257,F03Z3C-R,KMP-U CT Equity,Real Estate
+2258,GZG53L-R,AAC/B CT Equity,#N/A N/A
+2259,BQ2T2P-R,TDG CT Equity,Energy
+2260,JMHYW0-R,CB UN Equity,Financials
+2261,L0NDP5-R,RUS CN Equity,Industrials
+2262,V4RQ7N-R,CIEN UQ Equity,Information Technology
+2263,MXW701-R,NVU-U CT Equity,Real Estate
+2264,FDQM4Z-R,EXE CN Equity,Health Care
+2265,CHLPBT-R,QLGC UW Equity,Information Technology
+2266,S9NVWV-R,TWTR US Equity,Communication Services
+2267,DH9ZLJ-R,2953349Q UN Equity,#N/A N/A
+2268,FBC2XZ-R,1463Q UN Equity,#N/A N/A
+2269,CPCV0Y-R,SNPS US Equity,Information Technology
+2270,NX4S4Z-R,601964Q US Equity,#N/A N/A
+2271,DF3YVP-R,BNE CT Equity,Energy
+2272,GGJNXG-R,NL UN Equity,Industrials
+2273,GGMSWD-R,3453805Z CT Equity,#N/A N/A
+2274,CZGY1P-R,WAMUQ UN Equity,#N/A N/A
+2275,W039P0-R,117473Q CT Equity,#N/A N/A
+2276,R5RD6T-R,GPS US Equity,Consumer Discretionary
+2277,KL1DV4-R,CAM UN Equity,Energy
+2278,RK4MYB-R,3423152Q UN Equity,#N/A N/A
+2279,PBZKZD-R,OGC CN Equity,Materials
+2280,GX5LJC-R,TFC UN Equity,Financials
+2281,DQ510J-R,AEM CT Equity,Materials
+2282,WFH94G-R,ELD CT Equity,Materials
+2283,X6FP15-R,FRU CT Equity,Energy
+2284,QQ56TG-R,0948669D US Equity,#N/A N/A
+2285,QTHYNT-R,NVL CT Equity,#N/A N/A
+2286,FT8DNV-R,MMM US Equity,Industrials
+2287,GTWXR1-R,ABX CN Equity,Materials
+2288,VR1F2H-R,VAR US Equity,Health Care
+2289,KDHCQP-R,SYMC US Equity,Information Technology
+2290,D502G9-R,AEP UN Equity,Utilities
+2291,THB4X2-R,VTR US Equity,Real Estate
+2292,PKZ95N-R,UNM UN Equity,Financials
+2293,TY1SPJ-R,DNB UN Equity,Industrials
+2294,VQYTRP-R,SYF US Equity,Financials
+2295,GGPDYX-R,CME UW Equity,Financials
+2296,D0H09V-R,FTT CT Equity,Industrials
+2297,BPRHF0-R,DUK US Equity,Utilities
+2298,VTBLV9-R,MCD US Equity,Consumer Discretionary
+2299,P8R3C2-R,MSFT US Equity,Information Technology
+2300,CGG3HF-R,0948146D CT Equity,#N/A N/A
+2301,MMMG1X-R,AGI CN Equity,Materials
+2302,B81TLL-R,AVGO UW Equity,Information Technology
+2303,Q0JCBW-R,1727044D UN Equity,#N/A N/A
+2304,S26JJL-R,CBRE US Equity,Real Estate
+2305,DJC2TN-R,ADBE UQ Equity,Information Technology
+2306,NFMPMG-R,IDXX UW Equity,Health Care
+2307,XLT03X-R,RCL US Equity,Consumer Discretionary
+2308,X59HZ5-R,JNPR US Equity,Information Technology
+2309,DXV75Z-R,SII UN Equity,Financials
+2310,H68NH2-R,LLTC UQ Equity,Information Technology
+2311,CYC4Q1-R,AIV US Equity,Real Estate
+2312,WL8678-R,RYC UN Equity,#N/A N/A
+2313,L7LP86-R,LDOS US Equity,Information Technology
+2314,FR5M42-R,HBC CN Equity,Consumer Discretionary
+2315,LF9ZDL-R,ARX CT Equity,Energy
+2316,XJMQTS-R,329179Q CT Equity,#N/A N/A
+2317,QF1NY9-R,TGL CT Equity,Energy
+2318,GFJC62-R,CSCO US Equity,Information Technology
+2319,RK8Z6D-R,ETR UN Equity,Utilities
+2320,J6TGHV-R,1708Q US Equity,#N/A N/A
+2321,R71MZL-R,AGN UN Equity,Health Care
+2322,TNZ1G6-R,EA UQ Equity,Communication Services
+2323,LQBB5R-R,MA UN Equity,Information Technology
+2324,KNKLZJ-R,RBD UN Equity,#N/A N/A
+2325,MDLLPL-R,1719Q UN Equity,#N/A N/A
+2326,TNZ6CZ-R,ANET US Equity,Information Technology
+2327,LKVX5V-R,CUF-U CN Equity,Real Estate
+2328,T8X2RS-R,NTR CT Equity,Materials
+2329,S277X8-R,605555Q UN Equity,#N/A N/A
+2330,KFMMZS-R,EL UN Equity,Consumer Staples
+2331,CHR1NX-R,MU US Equity,Information Technology
+2332,QVQ1DM-R,POW CT Equity,Financials
+2333,SDGZXG-R,8372706Q CT Equity,#N/A N/A
+2334,HSFL3C-R,PPG US Equity,Materials
+2335,RBB7RY-R,ANF UN Equity,Consumer Discretionary
+2336,STW6V4-R,1288652D US Equity,#N/A N/A
+2337,DCWPWS-R,WJX CT Equity,Industrials
+2338,XKTZWR-R,URBN UW Equity,Consumer Discretionary
+2339,B6ZXQL-R,O UN Equity,Real Estate
+2340,RT66YK-R,AMD UR Equity,Information Technology
+2341,N829VP-R,SSRM CT Equity,Materials
+2342,TMTXG7-R,WPK CT Equity,Materials
+2343,JS1YSB-R,WCN CN Equity,Industrials
+2344,QHJ1R3-R,PSG CT Equity,Consumer Discretionary
+2345,Q2W445-R,SIAL UQ Equity,Materials
+2346,NFRN55-R,PDCO UW Equity,Health Care
+2347,QKMC58-R,POU CT Equity,Energy
+2348,H9NX6V-R,0848680D UN Equity,#N/A N/A
+2349,S4J8BX-R,MKTX UW Equity,Financials
+2350,LHLHXS-R,AWE UN Equity,#N/A N/A
+2351,KFJFWS-R,IEX UN Equity,Industrials
+2352,WDC1YD-R,CGS CT Equity,#N/A N/A
+2353,FYRXRS-R,0964591D UW Equity,#N/A N/A
+2354,RJ0FT9-R,RL UN Equity,Consumer Discretionary
+2355,JZWRR3-R,LKQ US Equity,Consumer Discretionary
+2356,G49BPN-R,WNDXQ UN Equity,#N/A N/A
+2357,BK1GXZ-R,TRB UN Equity,#N/A N/A
+2358,XNRMXZ-R,COTY US Equity,Consumer Staples
+2359,T2XF84-R,PBH CT Equity,Consumer Staples
+2360,NB5RP3-R,BLX CN Equity,Utilities
+2361,PX75FZ-R,PGX-U CT Equity,#N/A N/A
+2362,V84ND4-R,UUU CT Equity,Energy
+2363,N00C43-R,DUP/A CT Equity,#N/A N/A
+2364,W13NGF-R,AQN CN Equity,Utilities
+2365,HKQ2FP-R,LLX UN Equity,#N/A N/A
+2366,R4S089-R,CHE-U CT Equity,Materials
+2367,S7RV59-R,VIAB UW Equity,Communication Services
+2368,LJPXK2-R,HR-U CT Equity,Real Estate
+2369,HQ2MHF-R,AMCR US Equity,Materials
+2370,QNWQHD-R,3029830Q UQ Equity,#N/A N/A
+2371,SKX4M8-R,ACO/X CN Equity,Utilities
+2372,R6WVW3-R,CELG UW Equity,Health Care
+2373,MYZLK9-R,IOL CT Equity,Energy
+2374,N93NK1-R,GNW UN Equity,Financials
+2375,MDYC2K-R,MCO US Equity,Financials
+2376,DGBZCC-R,DAL UN Equity,Industrials
+2377,QKM4S2-R,ASR CN Equity,Materials
+2378,T9VX37-R,IAE CT Equity,Energy
+2379,J70N5J-R,PCAR UW Equity,Industrials
+2380,D69C93-R,AUP CT Equity,Health Care
+2381,MVKZ35-R,ES UN Equity,Utilities
+2382,GRN6SM-R,SAPE UQ Equity,Information Technology
+2383,JFW9S3-R,EQT UN Equity,Energy
+2384,FCCHG2-R,BBU-U CT Equity,Industrials
+2385,F9VYPD-R,HPE US Equity,Information Technology
+2386,PRMD3Z-R,IMO CN Equity,Energy
+2387,FCHQXF-R,EDV CT Equity,Materials
+2388,K5JXTH-R,OI UN Equity,Materials
+2389,M9DGHF-R,NBL US Equity,Energy
+2390,FLF3SM-R,ARG UN Equity,Materials
+2391,XLXZ75-R,ATZ CN Equity,Consumer Discretionary
+2392,TMTGLT-R,AME UN Equity,Industrials
+2393,LQ7KY5-R,HRB UN Equity,Consumer Discretionary
+2394,CL1QH9-R,FTNT UW Equity,Information Technology
+2395,FFQNC3-R,VRTX US Equity,Health Care
+2396,BQR5YT-R,HOLX UW Equity,Health Care
+2397,L56306-R,SU CT Equity,Energy
+2398,BNGZ0X-R,KDX CT Equity,Materials
+2399,GPC46X-R,OYP CT Equity,#N/A N/A
+2400,D0H09V-R,FTT CN Equity,Industrials
+2401,HJCTX3-R,CKL UN Equity,#N/A N/A
+2402,WRVQ53-R,HET UN Equity,#N/A N/A
+2403,J89J6Y-R,MDT UN Equity,Health Care
+2404,JT792F-R,MFC CN Equity,Financials
+2405,RYRC40-R,NI US Equity,Utilities
+2406,TTTZFZ-R,PVG CN Equity,Materials
+2407,D0LRGC-R,EGU CT Equity,#N/A N/A
+2408,FT8DNV-R,MMM UN Equity,Industrials
+2409,QJBZ19-R,GL UN Equity,Financials
+2410,VV9LP2-R,OR CT Equity,Materials
+2411,J71550-R,FSZ CT Equity,Financials
+2412,K106FF-R,TIW CT Equity,#N/A N/A
+2413,M1H0C2-R,SPG US Equity,Real Estate
+2414,XP380S-R,AIT CT Equity,#N/A N/A
+2415,D1RCCS-R,LM UN Equity,Financials
+2416,F3HW5T-R,TA CT Equity,Utilities
+2417,CJW8VZ-R,MWI CT Equity,#N/A N/A
+2418,GM3DBL-R,ULTA UW Equity,Consumer Discretionary
+2419,NCCFMJ-R,LMNL CT Equity,Health Care
+2420,F2CT9X-R,MAXR CT Equity,Industrials
+2421,BZNSC9-R,GENZ UQ Equity,#N/A N/A
+2422,VS1X41-R,CAR UN Equity,Industrials
+2423,GC1HR2-R,1291Q US Equity,#N/A N/A
+2424,X2DZC9-R,DOO CN Equity,Consumer Discretionary
+2425,CYBC69-R,HRL US Equity,Consumer Staples
+2426,VR4SHN-R,IPGP UW Equity,Information Technology
+2427,V2G2MF-R,0111145D UN Equity,#N/A N/A
+2428,X1SCTR-R,CDNS US Equity,Information Technology
+2429,GW7J66-R,CVE CT Equity,Energy
+2430,N5T0SQ-R,FBF US Equity,#N/A N/A
+2431,RFPMVX-R,WEC UN Equity,Utilities
+2432,PHJ2V4-R,HAR UN Equity,Consumer Discretionary
+2433,KMBRT0-R,AVB US Equity,Real Estate
+2434,HF1JS1-R,IPCI CT Equity,Health Care
+2435,MYZ7WZ-R,FL UN Equity,Consumer Discretionary
+2436,BV3N5V-R,M US Equity,Consumer Discretionary
+2437,SK0VKN-R,HNL CT Equity,Industrials
+2438,D0LDT1-R,NVR UN Equity,Consumer Discretionary
+2439,RJ3WCJ-R,VAL UN Equity,Energy
+2440,LX48CM-R,GTE CN Equity,Energy
+2441,B4Q4R5-R,PXX CT Equity,Energy
+2442,T2ZH1Y-R,XEC US Equity,Energy
+2443,JYWMBW-R,GILD UW Equity,Health Care
+2444,BQWWY7-R,KMB UN Equity,Consumer Staples
+2445,T67DJN-R,IT US Equity,Information Technology
+2446,KGRLNL-R,UFS CT Equity,Materials
+2447,J9D5DJ-R,2251Q UN Equity,#N/A N/A
+2448,WTY9GV-R,316419Q UN Equity,#N/A N/A
+2449,NGX4WH-R,ECI CT Equity,Consumer Discretionary
+2450,K8YRNT-R,SIVB UW Equity,Financials
+2451,G47LH4-R,BAC1 US Equity,#N/A N/A
+2452,NK0V54-R,ENB CT Equity,Energy
+2453,K4NMRW-R,OK UN Equity,#N/A N/A
+2454,PFD45C-R,2745Q UN Equity,#N/A N/A
+2455,LX48CM-R,GTE CT Equity,Energy
+2456,G9ZBGY-R,LINB US Equity,#N/A N/A
+2457,F08R6V-R,AGU CT Equity,Materials
+2458,TY202Q-R,ADP UN Equity,Information Technology
+2459,JS32YD-R,VN CT Equity,#N/A N/A
+2460,T7GQMM-R,WCOEQ UQ Equity,#N/A N/A
+2461,B83YJG-R,EVRG UN Equity,Utilities
+2462,F2J1J0-R,HRZIQ US Equity,Industrials
+2463,T1TMP9-R,BNP CT Equity,Energy
+2464,W8YZJS-R,EQB CT Equity,Financials
+2465,WPKF66-R,BBY UN Equity,Consumer Discretionary
+2466,N03DYZ-R,BCE CT Equity,Communication Services
+2467,WGLQTS-R,HON UN Equity,Industrials
+2468,PVW48J-R,IPG UN Equity,Communication Services
+2469,TWTDGH-R,SBUX UW Equity,Consumer Discretionary
+2470,M4VYHK-R,RBK UN Equity,#N/A N/A
+2471,DNWWBS-R,UEX CT Equity,Energy
+2472,NW728X-R,CTXS US Equity,Information Technology
+2473,SX7WGD-R,2638Q UN Equity,#N/A N/A
+2474,M0H2C1-R,SGQ CT Equity,Energy
+2475,DMX4QY-R,APA UN Equity,Energy
+2476,MLQ41B-R,LYV US Equity,Communication Services
+2477,K6Q83L-R,RCI/B CN Equity,Communication Services
+2478,FDN05J-R,CWB CN Equity,Financials
+2479,GRMY8C-R,DHR US Equity,Health Care
+2480,DVKZ61-R,MBT CT Equity,Communication Services
+2481,FBB432-R,PAYX US Equity,Information Technology
+2482,WRYB4K-R,1539941D UN Equity,Energy
+2483,XN99FC-R,TGZ CN Equity,Materials
+2484,M7439D-R,CERN UW Equity,Health Care
+2485,QHBXV5-R,EOG UN Equity,Energy
+2486,V1HC1N-R,BIP-U CN Equity,Utilities
+2487,VBL38Y-R,NOV US Equity,Energy
+2488,CRHPMR-R,PNR US Equity,Industrials
+2489,QP3LLV-R,CE US Equity,Materials
+2490,JFW5HZ-R,NTAP US Equity,Information Technology
+2491,NW8BQ3-R,MKC US Equity,Consumer Staples
+2492,JPTF52-R,K UN Equity,Consumer Staples
+2493,JS2P50-R,SJR/B CT Equity,Communication Services
+2494,FQZF97-R,ROP UN Equity,Industrials
+2495,PKZ95N-R,UNM US Equity,Financials
+2496,QZ3ZG1-R,LEG UN Equity,Consumer Discretionary
+2497,FK9ZPL-R,8394653Q UN Equity,#N/A N/A
+2498,KZKK3D-R,CPB US Equity,Consumer Staples
+2499,VMM07R-R,WEED CN Equity,Health Care
+2500,JDPT4V-R,4122161Q CT Equity,#N/A N/A
+2501,VT4SWZ-R,JCI US Equity,Industrials
+2502,J1HGV0-R,LTS CT Equity,Energy
+2503,QTDCVG-R,JE CT Equity,Utilities
+2504,QJ9MM5-R,2746Q UN Equity,#N/A N/A
+2505,RMD5KL-R,CGO CT Equity,Communication Services
+2506,PPBQBN-R,DALRQ UN Equity,#N/A N/A
+2507,GKY1XC-R,VKR-U CT Equity,#N/A N/A
+2508,CL1QH9-R,FTNT US Equity,Information Technology
+2509,S6JRNP-R,390297Q UN Equity,#N/A N/A
+2510,HZ86LW-R,RMX CT Equity,Materials
+2511,KTPK4Q-R,NWSA UW Equity,Communication Services
+2512,Q4Z556-R,DEC/SV/A CT Equity,#N/A N/A
+2513,D54BL9-R,BBBY UQ Equity,Consumer Discretionary
+2514,J1HGV0-R,0623680D CT Equity,#N/A N/A
+2515,C5BGF5-R,CNCEQ UN Equity,#N/A N/A
+2516,SC6603-R,565058Q CT Equity,#N/A N/A
+2517,THGLC7-R,885553Q CT Equity,#N/A N/A
+2518,DG71WP-R,FTR UW Equity,Communication Services
+2519,WK3BVM-R,FRC CT Equity,Energy
+2520,MKC1SV-R,UTX UN Equity,Industrials
+2521,JBG9LM-R,BCR UN Equity,Health Care
+2522,JDYHV2-R,RAL UN Equity,#N/A N/A
+2523,W13F06-R,0226226D UN Equity,#N/A N/A
+2524,CLZ09Q-R,WN CT Equity,Consumer Staples
+2525,C7M7DL-R,LH US Equity,Health Care
+2526,RZXDWV-R,PG UN Equity,Consumer Staples
+2527,GM32M5-R,SPLS UQ Equity,Consumer Discretionary
+2528,WTJ15D-R,CPRI US Equity,Consumer Discretionary
+2529,RDQZ92-R,FHN UN Equity,Financials
+2530,P0SXV1-R,BTUUQ UN Equity,Energy
+2531,B4L66G-R,PBCT UW Equity,Financials
+2532,RJ022Y-R,CMA UN Equity,Financials
+2533,PY50G1-R,PNC US Equity,Financials
+2534,WNFZHW-R,1768548D CT Equity,#N/A N/A
+2535,MBJNMG-R,CNQ CN Equity,Energy
+2536,FV9XPC-R,CRR-U CN Equity,Real Estate
+2537,RJ022Y-R,CMA US Equity,Financials
+2538,QJKQYN-R,IFC CT Equity,Financials
+2539,M64L2R-R,2744139Q CT Equity,#N/A N/A
+2540,WDG05S-R,CFG US Equity,Financials
+2541,C8WRSP-R,NRTLQ UN Equity,#N/A N/A
+2542,SF4RN2-R,292356Z US Equity,#N/A N/A
+2543,HN01T9-R,CBE UN Equity,#N/A N/A
+2544,X2DZC9-R,DOO CT Equity,Consumer Discretionary
+2545,FPP9SL-R,JWN US Equity,Consumer Discretionary
+2546,TX0WZQ-R,MIC CT Equity,Financials
+2547,NZMV05-R,EIX UN Equity,Utilities
+2548,FPVHPG-R,SRU-U CN Equity,Real Estate
+2549,FPVVBS-R,HNZ UN Equity,#N/A N/A
+2550,KB2QBM-R,ATVI US Equity,Communication Services
+2551,GYJ1QD-R,SIA CN Equity,Health Care
+2552,JPTF52-R,K US Equity,Consumer Staples
+2553,RFYYQQ-R,2206Q UQ Equity,#N/A N/A
+2554,FPP9SL-R,JWN UQ Equity,Consumer Discretionary
+2555,LN3P8B-R,TPR US Equity,Consumer Discretionary
+2556,SVZJ8B-R,ATA CT Equity,Industrials
+2557,F96WSY-R,HSE CN Equity,Energy
+2558,W00MKH-R,WDC UN Equity,Information Technology
+2559,RFYYQQ-R,2206Q US Equity,#N/A N/A
+2560,N286BN-R,EMA CT Equity,Utilities
+2561,FBC521-R,UPC UN Equity,#N/A N/A
+2562,MMRZQ5-R,MSI US Equity,Information Technology
+2563,NNFR4J-R,MNST UW Equity,Consumer Staples
+2564,HJGCMC-R,PRMW CN Equity,Consumer Staples
+2565,QQ42ND-R,LUN CN Equity,Materials
+2566,N6S9K4-R,0132533D CT Equity,#N/A N/A
+2567,J5XSLR-R,CCL/B CN Equity,Materials
+2568,WNSC9M-R,JAVA UW Equity,#N/A N/A
+2569,MR0PSP-R,DLTR US Equity,Consumer Discretionary
+2570,TKSJKR-R,MSI CN Equity,Industrials
+2571,H679XT-R,XRX US Equity,Information Technology
+2572,F17SJ1-R,ADI US Equity,Information Technology
+2573,R2D15W-R,CMX UN Equity,#N/A N/A
+2574,X0MNQ7-R,ITP CT Equity,Materials
+2575,VBMVML-R,WSP CT Equity,Industrials
+2576,X7GQ47-R,1684442D UA Equity,Industrials
+2577,RGTY61-R,FIS UN Equity,Information Technology
+2578,J2NHZ7-R,FEC CT Equity,Energy
+2579,BXN63P-R,MNW CT Equity,Information Technology
+2580,KTPK4Q-R,NWSA US Equity,Communication Services
+2581,VT67J6-R,RBA CN Equity,Industrials
+2582,FVDJNT-R,CIX CN Equity,Financials
+2583,FDS65G-R,RF UN Equity,Financials
+2584,DBNXVB-R,BRK/B US Equity,Financials
+2585,MBP9GT-R,OTEX CN Equity,Information Technology
+2586,KZNLY8-R,2727195Q UN Equity,Financials
+2587,M9DGHF-R,NBL UN Equity,Energy
+2588,DTKPJP-R,AMT US Equity,Real Estate
+2589,PX3T0T-R,291784Q UN Equity,#N/A N/A
+2590,VTBLV9-R,MCD UN Equity,Consumer Discretionary
+2591,NYJHHY-R,MCK US Equity,Health Care
+2592,RVBRQX-R,IIP-U CT Equity,Real Estate
+2593,S7P87W-R,PWR UN Equity,Industrials
+2594,S26JJL-R,CBRE UN Equity,Real Estate
+2595,DSGSWW-R,NAE CT Equity,#N/A N/A
+2596,RH0BH3-R,0619764D CT Equity,#N/A N/A
+2597,SJX192-R,1431816D UN Equity,#N/A N/A
+2598,KW432H-R,JKHY US Equity,Information Technology
+2599,HVV49B-R,PGR UN Equity,Financials
+2600,QHBXV5-R,EOG US Equity,Energy
+2601,XHD46K-R,MMC UN Equity,Financials
+2602,BZNSC9-R,GENZ UW Equity,#N/A N/A
+2603,MYMJL1-R,2056Q UN Equity,#N/A N/A
+2604,VBK29Z-R,L US Equity,Financials
+2605,JKDM7P-R,J UN Equity,Industrials
+2606,XKT8J2-R,SBAC US Equity,Real Estate
+2607,PN6Y00-R,MO US Equity,Consumer Staples
+2608,H53QZC-R,PRGO UN Equity,Health Care
+2609,WYCPCP-R,SNI UN Equity,Communication Services
+2610,S8Z499-R,WST US Equity,Health Care
+2611,SGMZTG-R,AIR CT Equity,Materials
+2612,R88PLB-R,IVN CT Equity,Materials
+2613,MMMG1X-R,AGI CT Equity,Materials
+2614,HKLJPC-R,NUE US Equity,Materials
+2615,JCPT0R-R,WYNN US Equity,Consumer Discretionary
+2616,LC0H1H-R,BKNG UW Equity,Consumer Discretionary
+2617,WFLMHL-R,BDX UN Equity,Health Care
+2618,GNVZFT-R,330950Q CT Equity,#N/A N/A
+2619,SJY281-R,IBM US Equity,Information Technology
+2620,RDKCLT-R,VNO US Equity,Real Estate
+2621,CHKL7S-R,LOW UN Equity,Consumer Discretionary
+2622,R2CVVQ-R,CIN UN Equity,#N/A N/A
+2623,KB3YPS-R,NEE UN Equity,Utilities
+2624,RFQNTW-R,FNX CT Equity,#N/A N/A
+2625,JDV16T-R,QBR/B CT Equity,Communication Services
+2626,M0C1P8-R,TFX US Equity,Health Care
+2627,JMNLQC-R,CMCSA UQ Equity,Communication Services
+2628,FNQFTK-R,3520842Q UN Equity,#N/A N/A
+2629,JDV16T-R,QBR/B CN Equity,Communication Services
+2630,FPTR7R-R,0365557D CT Equity,#N/A N/A
+2631,NBCKRK-R,ISRG US Equity,Health Care
+2632,MS57L1-R,HPQ UN Equity,Information Technology
+2633,DZ4XT5-R,WTE CT Equity,Industrials
+2634,X0RZZ9-R,987200Q UN Equity,#N/A N/A
+2635,G4DWFZ-R,126784Q US Equity,#N/A N/A
+2636,FZRL7K-R,PKG UN Equity,Materials
+2637,L0NDP5-R,RUS CT Equity,Industrials
+2638,HCXCQ1-R,SJ CT Equity,Materials
+2639,CGLQ8R-R,ESI CT Equity,Energy
+2640,FXH4XG-R,QCOM UQ Equity,Information Technology
+2641,PX63DZ-R,SLF CN Equity,Financials
+2642,LTN487-R,CP CN Equity,Industrials
+2643,G6RN78-R,PMCS UW Equity,Information Technology
+2644,TVTFDF-R,BAX UN Equity,Health Care
+2645,QMZHNX-R,WMX UN Equity,#N/A N/A
+2646,M3QDQ6-R,CAR-U CT Equity,Real Estate
+2647,LC3ZQS-R,GPUI UN Equity,#N/A N/A
+2648,G5JHGG-R,MIRKQ UN Equity,#N/A N/A
+2649,QJ9QP4-R,EQR UN Equity,Real Estate
+2650,GJSRL7-R,0339293Q CT Equity,#N/A N/A
+2651,MH7TCM-R,FDX UN Equity,Industrials
+2652,W1403R-R,PTI CT Equity,#N/A N/A
+2653,T43Q80-R,DPM CN Equity,Materials
+2654,SJSMSW-R,PKI CT Equity,Energy
+2655,XKPH9J-R,PVH US Equity,Consumer Discretionary
+2656,G15019-R,1297Q UN Equity,#N/A N/A
+2657,VK7M4R-R,PFE UN Equity,Health Care
+2658,QKM4S2-R,ASR CT Equity,Materials
+2659,KSWML9-R,HFC UN Equity,Energy
+2660,QCWHZC-R,210811Q UN Equity,#N/A N/A
+2661,RVBLDR-R,AUQ CT Equity,Materials
+2662,MCTMVZ-R,2991914Q CT Equity,#N/A N/A
+2663,CQJ4C2-R,PSI CN Equity,Energy
+2664,TKKPJB-R,PXD US Equity,Energy
+2665,JFW5HZ-R,NTAP UW Equity,Information Technology
+2666,VCJSXT-R,DIAM CT Equity,Materials
+2667,BK2FRW-R,ABC US Equity,Health Care
+2668,JCKM0T-R,CTL CT Equity,#N/A N/A
+2669,TR8891-R,BEP-U CN Equity,Utilities
+2670,DF9PT2-R,BK UN Equity,Financials
+2671,MMN39J-R,RTN UN Equity,Industrials
+2672,GJXKZY-R,MEG CN Equity,Energy
+2673,W800CN-R,CF CT Equity,Financials
+2674,G9ZP04-R,MMD CT Equity,#N/A N/A
+2675,CYB1M0-R,AMGN UW Equity,Health Care
+2676,XF43NV-R,WAB UN Equity,Industrials
+2677,Q7CL31-R,LB CT Equity,Financials
+2678,XLY63V-R,AFL US Equity,Financials
+2679,N7XDM6-R,504369Q UN Equity,#N/A N/A
+2680,RH34VR-R,AC CT Equity,Industrials
+2681,TTHJD1-R,DISH US Equity,Communication Services
+2682,VDPDV7-R,KIM UN Equity,Real Estate
+2683,QTK2TW-R,LO UN Equity,Consumer Staples
+2684,WW88H5-R,PGL UN Equity,#N/A N/A
+2685,S7RV59-R,VIAB UN Equity,Communication Services
+2686,X59HZ5-R,JNPR UN Equity,Information Technology
+2687,DKJ8VM-R,DDS UN Equity,Consumer Discretionary
+2688,VT66G5-R,ANTM US Equity,Health Care
+2689,W00MKH-R,WDC UW Equity,Information Technology
+2690,B1DND3-R,TSGI CN Equity,Consumer Discretionary
+2691,R4M2WP-R,ROK US Equity,Industrials
+2692,BV8JHF-R,APD US Equity,Materials
+2693,JG36YL-R,2650Q UN Equity,#N/A N/A
+2694,N6446B-R,PEY CT Equity,Energy
+2695,TKLBRY-R,BLU CT Equity,Health Care
+2696,WNCY3G-R,GUD CN Equity,Health Care
+2697,GRSDSK-R,UEP UN Equity,Utilities
+2698,PHP2BT-R,PPL CN Equity,Energy
+2699,MZZ0KV-R,MWW UW Equity,Communication Services
+2700,TQ8V8H-R,ARE CN Equity,Industrials
+2701,R5XGXL-R,GIS UN Equity,Consumer Staples
+2702,D8FPTC-R,GT UW Equity,Consumer Discretionary
+2703,CL0BQW-R,DJ UN Equity,#N/A N/A
+2704,F1F5T3-R,ACKH UN Equity,#N/A N/A
+2705,XKPF5G-R,SWN UN Equity,Energy
+2706,KHX8Q2-R,DGX US Equity,Health Care
+2707,Q3ZHPF-R,1541931D UQ Equity,Information Technology
+2708,D3VZJC-R,RHI UN Equity,Industrials
+2709,CPHBQ7-R,BKB UN Equity,#N/A N/A
+2710,B2G10C-R,SKY UN Equity,Consumer Discretionary
+2711,CLYQXL-R,0820143D UN Equity,#N/A N/A
+2712,DJC2TN-R,ADBE US Equity,Information Technology
+2713,HQ4DBK-R,ORCL UN Equity,Information Technology
+2714,LKPWM4-R,SWK UN Equity,Industrials
+2715,MZZ0KV-R,MWW UN Equity,Communication Services
+2716,D8D820-R,OMC US Equity,Communication Services
+2717,X1SH0V-R,YRI CT Equity,Materials
+2718,PRHBD5-R,ECA CN Equity,Energy
+2719,K4F5JW-R,DH CT Equity,Information Technology
+2720,WRNZ6Q-R,CAL UN Equity,Consumer Discretionary
+2721,LTP334-R,GD US Equity,Industrials
+2722,JMHSJV-R,XLNX UW Equity,Information Technology
+2723,KGQLRN-R,1654539D UN Equity,#N/A N/A
+2724,SYHYVY-R,1567Q UN Equity,#N/A N/A
+2725,VYWGHH-R,BBD/B CT Equity,Industrials
+2726,KYCY91-R,LHX UN Equity,Industrials
+2727,T3YH93-R,HCP US Equity,Real Estate
+2728,HJMV1H-R,TLM CT Equity,Energy
+2729,XLXZ75-R,ATZ CT Equity,Consumer Discretionary
+2730,SQGTV7-R,WFT CN Equity,Materials
+2731,WJWKY8-R,WCS/A CT Equity,#N/A N/A
+2732,GVCLVY-R,EFX CN Equity,Energy
+2733,TZ6SB9-R,1389726D CT Equity,Materials
+2734,C5GXYC-R,TT US Equity,Industrials
+2735,NK4NFQ-R,ONEX CT Equity,Financials
+2736,MQ0Y3T-R,VMC UN Equity,Materials
+2737,RXH4B6-R,D-U CT Equity,Real Estate
+2738,C5GXYC-R,IR US Equity,Industrials
+2739,J70N5J-R,PCAR US Equity,Industrials
+2740,F3NM78-R,CMCSK UQ Equity,Communication Services
+2741,C5CPSB-R,PCG UN Equity,Utilities
+2742,C4HBRT-R,ABBV UN Equity,Health Care
+2743,RK3HS8-R,STZ US Equity,Consumer Staples
+2744,C1Z2B6-R,NAV UN Equity,Industrials
+2745,WQK5W2-R,PET UN Equity,Utilities
+2746,T1N9NF-R,TEL UN Equity,Information Technology
+2747,HKRNG5-R,JH UN Equity,#N/A N/A
+2748,M1FW60-R,UNP US Equity,Industrials
+2749,MMMG1X-R,1294096D CT Equity,Materials
+2750,VQXR21-R,DD UN Equity,Materials
+2751,F86155-R,2972Q UN Equity,#N/A N/A
+2752,BW8YDX-R,MZIAQ UN Equity,#N/A N/A
+2753,T2TKPB-R,IPL CT Equity,Energy
+2754,LF4H1K-R,1530Q UN Equity,#N/A N/A
+2755,R74Y8P-R,574083Q CT Equity,#N/A N/A
+2756,KFNT6W-R,8277831Q UN Equity,#N/A N/A
+2757,KB6ZLR-R,1581Q UN Equity,#N/A N/A
+2758,KFP2R4-R,UDR US Equity,Real Estate
+2759,BCHRDT-R,FCR-U CN Equity,Real Estate
+2760,JYRG0L-R,INFO US Equity,Industrials
+2761,VS59M7-R,AIG US Equity,Financials
+2762,PX63DZ-R,SLF CT Equity,Financials
+2763,P9WJYB-R,PJC/A CT Equity,Consumer Staples
+2764,DWZ08F-R,2223Q UN Equity,#N/A N/A
+2765,MDYC2K-R,MCO UN Equity,Financials
+2766,C6QT2V-R,RNB US Equity,Financials
+2767,F04K6X-R,BB CT Equity,Information Technology
+2768,VYPKC2-R,GIDL US Equity,#N/A N/A
+2769,LGH1W3-R,JWEL CN Equity,Consumer Staples
+2770,JS63Q7-R,PNP CT Equity,Financials
+2771,D2WW33-R,BTE CT Equity,Energy
+2772,VCNXSP-R,YUM UN Equity,Consumer Discretionary
+2773,PBZ9B0-R,8384662Q US Equity,#N/A N/A
+2774,KC6WDM-R,LMT US Equity,Industrials
+2775,CHK9QJ-R,JBHT US Equity,Industrials
+2776,GGKLPB-R,GND CT Equity,#N/A N/A
+2777,M79B89-R,MGM UN Equity,Consumer Discretionary
+2778,VR4SHN-R,IPGP US Equity,Information Technology
+2779,FYT21Z-R,BTO CT Equity,Materials
+2780,R5RD6T-R,GPS UN Equity,Consumer Discretionary
+2781,WQL4PZ-R,1413620D CT Equity,#N/A N/A
+2782,D1P43P-R,CF UN Equity,Materials
+2783,Q1Q3FC-R,TAP/B UN Equity,#N/A N/A
+2784,Q53D75-R,GME UN Equity,Consumer Discretionary
+2785,QVQ1DM-R,POW CN Equity,Financials
+2786,SHNDLT-R,ABT UN Equity,Health Care
+2787,TB9J64-R,TRIP US Equity,Communication Services
+2788,MNVWBZ-R,TSX CT Equity,#N/A N/A
+2789,CJSZGT-R,2269312Q UN Equity,#N/A N/A
+2790,FVDJNT-R,CIX CT Equity,Financials
+2791,MQ119X-R,ADM UN Equity,Consumer Staples
+2792,NDG727-R,2307532Q UQ Equity,#N/A N/A
+2793,VNRDMV-R,TROW US Equity,Financials
+2794,KK2P47-R,AKS UN Equity,Materials
+2795,NKGZ7J-R,HCA US Equity,Health Care
+2796,LBWNRX-R,LNC US Equity,Financials
+2797,MKHF3Y-R,1254537D CT Equity,#N/A N/A
+2798,CZBYFY-R,KLAC UQ Equity,Information Technology
+2799,QWPZDN-R,TUV CT Equity,#N/A N/A
+2800,RZVJ92-R,DML CT Equity,Energy
+2801,HMVVTC-R,BEN US Equity,Financials
+2802,FDMH61-R,CAO/A CT Equity,Consumer Discretionary
+2803,DXZQS6-R,PFG UW Equity,Financials
+2804,XGFDHN-R,SO US Equity,Utilities
+2805,R856Y1-R,MB CT Equity,#N/A N/A
+2806,GYM5PB-R,FRC US Equity,Financials
+2807,PHPSQH-R,MTD US Equity,Health Care
+2808,V1H7QF-R,AET UN Equity,Health Care
+2809,N3JC0D-R,PKZ CT Equity,#N/A N/A
+2810,KYJFW8-R,PEG UN Equity,Utilities
+2811,GRLQZ7-R,MX CT Equity,Materials
+2812,TWTDGH-R,SBUX US Equity,Consumer Discretionary
+2813,WYCPCP-R,SNI UW Equity,Communication Services
+2814,X498CV-R,162007Q UN Equity,#N/A N/A
+2815,TTHGD3-R,2964Q UN Equity,#N/A N/A
+2816,KB75VT-R,1789494D UN Equity,#N/A N/A
+2817,NJ0JFR-R,0945582D CT Equity,#N/A N/A
+2818,KZMN3C-R,TFCF UW Equity,Communication Services
+2819,TSDJK4-R,KL CN Equity,Materials
+2820,R998SY-R,OXY US Equity,Energy
+2821,S9NVWV-R,TWTR UN Equity,Communication Services
+2822,PGJW6S-R,L CT Equity,Consumer Staples
+2823,HD1PZ3-R,BLS UN Equity,#N/A N/A
+2824,VZDYKL-R,TOY CN Equity,Consumer Discretionary
+2825,S6PJN1-R,PMT CT Equity,Energy
+2826,RK8Z6D-R,ETR US Equity,Utilities
+2827,MLN59H-R,PMZ-U CT Equity,#N/A N/A
+2828,D79MYG-R,TIH CT Equity,Industrials
+2829,TVTQ1T-R,AD CT Equity,Financials
+2830,LKVW3T-R,RDC UN Equity,Energy
+2831,PZ917X-R,HUM US Equity,Health Care
+2832,TD0179-R,PTF-U CT Equity,#N/A N/A
+2833,GTWXR1-R,ABX CT Equity,Materials
+2834,TSMM1S-R,2428Q UN Equity,#N/A N/A
+2835,X0SP8Y-R,SVY CT Equity,Energy
+2836,BCD4JF-R,FMC UN Equity,Materials
+2837,L32LM8-R,HWM US Equity,Industrials
+2838,WM8ZW3-R,ERF CT Equity,Energy
+2839,LF9ZDL-R,ARX CN Equity,Energy
+2840,GGS0YC-R,3301Q UN Equity,#N/A N/A
+2841,BS168C-R,0611568D CT Equity,#N/A N/A
+2842,K8ZYYY-R,1051665D UN Equity,#N/A N/A
+2843,PY63K2-R,AFN CN Equity,Industrials
+2844,CYB6Y5-R,KO UN Equity,Consumer Staples
+2845,JKGP5M-R,ICE US Equity,Financials
+2846,V1HC1N-R,BIP-U CT Equity,Utilities
+2847,FFQNC3-R,VRTX UW Equity,Health Care
+2848,V759HN-R,LIF CT Equity,Materials
+2849,X34XZP-R,222435Q UN Equity,#N/A N/A
+2850,RMFR2L-R,FTI US Equity,Energy
+2851,C239D5-R,JNY UN Equity,#N/A N/A
+2852,NNL4JN-R,ETS UN Equity,#N/A N/A
+2853,VYQ02C-R,FLS US Equity,Industrials

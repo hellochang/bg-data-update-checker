@@ -1,0 +1,1118 @@
+﻿fsym_id,sector,industry_group,industry,sub_industry,sector_id,industry_group_id,industry_id,sub_industry_id
+B04V7K-R,Utilities,Utilities,Independent Power and Renewabl,Renewable Electricity,55,5510,551050,55105020
+B19ST9-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+B1DND3-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+B3DVXC-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+B3LCDJ-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+B4L66G-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+B4PGFJ-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+B4Q4R5-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+B5PHMN-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+B5TG5C-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+B6V0BZ-R,Consumer Discretionary,Retailing,Distributors,Distributors,25,2550,255010,25501010
+B6ZP8C-R,Real Estate,Real Estate,Equity Real Estate Investment,Health Care REITs,60,6010,601010,60101050
+B6ZXQL-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+B71DJZ-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+B81TLL-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+B8350Q-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+B8374S-R,Materials,Materials,Metals & Mining,Aluminum,15,1510,151040,15104010
+B83YJG-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+B9310T-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+B97MP0-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+BB6XFF-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+BBDJ3P-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+BCD4JF-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+BCHRDT-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+BDHNGY-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+BDMWDS-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+BDQDB8-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+BFMPK2-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+BFSQSF-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+BFSY5M-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+BHX6NW-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+BJ2HRV-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+BK2FRW-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Distributors,35,3510,351020,35102010
+BK6JKQ-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+BK6YC3-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+BL5KVX-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Hypermarkets & Super Centers,30,3010,301010,30101040
+BLB2G4-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+BM9QXX-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+BNGZ0X-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+BNJBN6-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+BNMLW8-R,Utilities,Utilities,Gas Utilities,Gas Utilities,55,5510,551020,55102010
+BPRHF0-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+BQ2T2P-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+BQ7YD0-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+BQR5YT-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+BQWWY7-R,Consumer Staples,Household & Personal Products,Household Products,Household Products,30,3030,303010,30301010
+BRWD2V-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+BRWKF0-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+BT4P4V-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+BV3N5V-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+BV4P4T-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+BV8GCC-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+BV8JHF-R,Materials,Materials,Chemicals,Industrial Gases,15,1510,151010,15101040
+BWDZ2P-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+BWZ93Y-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+BXKJY2-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+BXN63P-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+BYJYYM-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+BYNP13-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Homebuilding,25,2520,252010,25201030
+BZPFLX-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+C0YGQ6-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+C0YRLT-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+C0ZKS6-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+C46DK8-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+C46GQC-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Security & Alarm Services,20,2020,202010,20201080
+C4C0BL-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+C4CVZD-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+C4HBRT-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+C5CPSB-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+C5GXYC-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+C5H02F-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+C7C9TP-R,Materials,Materials,Chemicals,Commodity Chemicals,15,1510,151010,15101010
+C7M7DL-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+C7V3J1-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+C8WF4C-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+C8XJ7D-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+CC0SQN-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Alternative Carriers,50,5010,501010,50101010
+CD94SL-R,Industrials,Transportation,Road & Rail,Trucking,20,2030,203040,20304020
+CFG1CD-R,Utilities,Utilities,Water Utilities,Water Utilities,55,5510,551040,55104010
+CFJ279-R,Real Estate,Real Estate,Equity Real Estate Investment,Health Care REITs,60,6010,601010,60101050
+CG3M36-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+CGDY8B-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+CGFC5V-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+CGGG4R-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+CGKFVK-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+CGLQ8R-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+CGLRBS-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+CHK9QJ-R,Industrials,Transportation,Road & Rail,Trucking,20,2030,203040,20304020
+CHKL7S-R,Consumer Discretionary,Retailing,Specialty Retail,Home Improvement Retail,25,2550,255040,25504030
+CHQS4N-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+CHR1NX-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+CJQN0M-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+CJTQXJ-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+CJVKH9-R,Consumer Staples,Household & Personal Products,Household Products,Household Products,30,3030,303010,30301010
+CL1QH9-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+CLZ09Q-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+CN3XTF-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+CN4ZZK-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+CN7T72-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+CN8LQT-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+CPCV0Y-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+CPCW2Z-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+CQCD9M-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Supplies,35,3510,351010,35101020
+CQCV51-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+CQJ4C2-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+CRHPMR-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+CRNHT8-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+CRP3ZV-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+CSFJSZ-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+CSMTMQ-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Hypermarkets & Super Centers,30,3010,301010,30101040
+CTYNJ1-R,Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates,20,2010,201050,20105010
+CWRF0J-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+CX6P1R-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+CY644B-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+CY9XBW-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+CYB1M0-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+CYB6Y5-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+CYBC69-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+CYC4Q1-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+CZ9VBX-R,Utilities,Utilities,Gas Utilities,Gas Utilities,55,5510,551020,55102010
+CZBYFY-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductor Equipment,45,4530,453010,45301010
+CZG3GX-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+D0H09V-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+D0LDT1-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Homebuilding,25,2520,252010,25201030
+D0QHLW-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+D1P43P-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+D1RCCS-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+D2RP35-R,Consumer Staples,Household & Personal Products,Personal Products,Personal Products,30,3030,303020,30302010
+D2WW33-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+D3VZJC-R,Industrials,Commercial & Professional Serv,Professional Services,Human Resource & Employment Se,20,2020,202020,20202010
+D3ZY22-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+D403D7-R,Consumer Discretionary,Retailing,Specialty Retail,Computer & Electronics Retail,25,2550,255040,25504020
+D4C1S0-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+D502G9-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+D54BL9-R,Consumer Discretionary,Retailing,Specialty Retail,Homefurnishing Retail,25,2550,255040,25504060
+D54YRW-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+D68983-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+D69C93-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+D79MYG-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+D8D820-R,Communication Services,Media & Entertainment,Media,Advertising,50,5020,502010,50201010
+D8FPTC-R,Consumer Discretionary,Automobiles & Components,Auto Components,Tires & Rubber,25,2510,251010,25101020
+D9PTF2-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+DBNXVB-R,Financials,Diversified Financials,Diversified Financial Services,Multi-Sector Holdings,40,4020,402010,40201030
+DBPJ30-R,Materials,Materials,Paper & Forest Products,Paper Products,15,1510,151050,15105020
+DBPQC2-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+DCWPWS-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+DDZB0B-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Supplies,35,3510,351010,35101020
+DF2NCG-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+DF2WYT-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+DF3WQM-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+DF3YVP-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+DF9PT2-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+DG27Q5-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+DG6SCF-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+DG71WP-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+DGBZCC-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+DH79H0-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Household Appliances,25,2520,252010,25201040
+DH7WLK-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+DH962S-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+DHC1MJ-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+DJBQ39-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+DJC2TN-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+DJC60R-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+DJHD0P-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+DLSMXK-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+DMRWLY-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+DMSDLF-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+DMSLZM-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+DMX4QY-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+DNWWBS-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+DNY1KW-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Office Services & Supplies,20,2020,202010,20201060
+DQ510J-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+DR9KSW-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+DRBC9M-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+DSBCFQ-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+DTKPJP-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+DTKZ1Y-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+DVKG6K-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+DVKZ61-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+DVL9FZ-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+DVRBF2-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+DWQQCL-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+DXTTDL-R,Utilities,Utilities,Gas Utilities,Gas Utilities,55,5510,551020,55102010
+DXV51X-R,Real Estate,Real Estate,Real Estate Management & Devel,Diversified Real Estate Activi,60,6010,601020,60102010
+DXVDJ4-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+DXW84Y-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+DXYMP5-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+DXZQS6-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+DY0VKX-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+DZ4XT5-R,Industrials,Transportation,Transportation Infrastructure,Marine Ports & Services,20,2030,203050,20305030
+DZ776B-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+F03Z3C-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+F04K6X-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+F05QG0-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+F07DSQ-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Operating Companie,60,6010,601020,60102020
+F07Q7W-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+F08R6V-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+F17SJ1-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+F1B8CH-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+F1DFCD-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Homebuilding,25,2520,252010,25201030
+F1DNTM-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+F2CT9X-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+F2F3T4-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+F3HW5T-R,Utilities,Utilities,Independent Power and Renewabl,Independent Power Producers &,55,5510,551050,55105010
+F3NM78-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+F5SQ99-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+F72PJT-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+F82H8Q-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+F96WSY-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+F96XVZ-R,Materials,Materials,Chemicals,Diversified Chemicals,15,1510,151010,15101020
+F9VYPD-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+FBB432-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+FBCHQC-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+FCCHG2-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+FCHQXF-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+FCHV3J-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+FCK6QT-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+FCPGVT-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+FDMH61-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+FDN05J-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+FDQM4Z-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+FDS1XB-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+FDS65G-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+FFQNC3-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+FH1NKL-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Homebuilding,25,2520,252010,25201030
+FHZZH3-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+FJ1B1C-R,Financials,Insurance,Insurance,Insurance Brokers,40,4030,403010,40301010
+FJ4J4C-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+FJ4NDH-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+FLDWBD-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+FLF3SM-R,Materials,Materials,Chemicals,Industrial Gases,15,1510,151010,15101040
+FMDS8D-R,Industrials,Transportation,Air Freight & Logistics,Air Freight & Logistics,20,2030,203010,20301010
+FMGHK0-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+FPP2BC-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+FPP9SL-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+FPPSQ1-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Consumer Electronics,25,2520,252010,25201010
+FPTJVK-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+FPVHPG-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+FPZT1N-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+FQJDL3-R,Communication Services,Media & Entertainment,Media,Publishing,50,5020,502010,50201040
+FQTTHX-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+FQYW7Q-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+FQZF97-R,Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates,20,2010,201050,20105010
+FR4YZK-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+FR5M42-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+FS319Q-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+FS32CR-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+FS46JT-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+FT7VMB-R,Utilities,Utilities,Gas Utilities,Gas Utilities,55,5510,551020,55102010
+FT8DNV-R,Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates,20,2010,201050,20105010
+FT8FQW-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+FV824M-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+FV85BQ-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+FV9XPC-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+FVC51J-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+FVD6P4-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+FVDJNT-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+FWHC5K-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+FWJSXX-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+FXH4XG-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+FXTG1M-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+FYMJCN-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+FYT21Z-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+FYT41X-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Distributors,35,3510,351020,35102010
+FZRL7K-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+G2Q5K4-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+G3949H-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+G4GB6B-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductor Equipment,45,4530,453010,45301010
+G5GDGH-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+G5M19V-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+G7VZQH-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+G8WDMZ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+G90MPY-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+GC4MKW-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+GC9695-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+GCCR8P-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+GFJC62-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+GFJGD5-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Housewares & Specialties,25,2520,252010,25201050
+GGPDYX-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+GGPTR9-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+GGPVTB-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+GJXKZY-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+GJZ5YB-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+GM32M5-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+GM3DBL-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+GN6KCJ-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+GN6RRQ-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+GN7G2C-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+GQGP3B-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+GQGQ5C-R,Materials,Materials,Chemicals,Diversified Chemicals,15,1510,151010,15101020
+GRLQZ7-R,Materials,Materials,Chemicals,Commodity Chemicals,15,1510,151010,15101010
+GRMY8C-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+GRQMJ0-R,Materials,Materials,Chemicals,Commodity Chemicals,15,1510,151010,15101010
+GRRFYN-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+GRS9LG-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+GRSDSK-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+GS3RJ8-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+GTWXR1-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+GVCLVY-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+GW5LD8-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+GW7J66-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+GX5LJC-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+GXCQ63-R,Industrials,Transportation,Air Freight & Logistics,Air Freight & Logistics,20,2030,203010,20301010
+GYJ1QD-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+GYM5PB-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+GZF20K-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+GZKHGQ-R,Financials,Insurance,Insurance,Reinsurance,40,4030,403010,40301050
+GZMRSV-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+H0P6P9-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+H1PMLS-R,Consumer Staples,Household & Personal Products,Household Products,Household Products,30,3030,303010,30301010
+H2VPCM-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+H53QZC-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+H59VN3-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+H679XT-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+H68NH2-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+H69CWS-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+H6L5S4-R,Financials,Diversified Financials,Diversified Financial Services,Specialized Finance,40,4020,402010,40201040
+H7CL5X-R,Communication Services,Media & Entertainment,Media,Advertising,50,5020,502010,50201010
+H7DGWR-R,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,Leisure Products,25,2520,252020,25202010
+H8JXH0-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+HCXCQ1-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+HF1JS1-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+HF1P15-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+HF4YDC-R,Utilities,Utilities,Independent Power and Renewabl,Independent Power Producers &,55,5510,551050,55105010
+HF5SX1-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+HGBJ0K-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+HHB3C8-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+HJG212-R,Real Estate,Real Estate,Equity Real Estate Investment,Hotel & Resort REITs,60,6010,601010,60101030
+HJGCMC-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+HJMV1H-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+HJXXH4-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+HKLJPC-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+HLQ8YZ-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Home Furnishings,25,2520,252010,25201020
+HLRKD5-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+HLX79K-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+HMCYDD-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+HMVVTC-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+HMWK40-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+HMWTN8-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+HN0LVT-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+HN0ZL5-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+HN195G-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+HNZVK6-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+HP13ZD-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+HP55Q6-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+HP58X9-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+HQ2MHF-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+HQ4DBK-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+HQ87P5-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+HR96N5-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+HSF35X-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+HSFL3C-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+HTM0LK-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+HVQ2KJ-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+HVV49B-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+HXYSHY-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Commercial Printing,20,2020,202010,20201010
+HXZ458-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+HY13GN-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+HZ6Z7Q-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+HZ76PY-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+HZ86LW-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+J06HGC-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+J1CQKC-R,Communication Services,Media & Entertainment,Media,Publishing,50,5020,502010,50201040
+J1HGV0-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+J2LVSN-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+J2M6ZH-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+J2MLPV-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+J2MW73-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+J2NHZ7-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+J2NPSW-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+J3WSFM-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+J5XSLR-R,Materials,Materials,Containers & Packaging,Metal & Glass Containers,15,1510,151030,15103010
+J61GM6-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+J70N5J-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+J70ZTV-R,Industrials,Capital Goods,Machinery,Agricultural & Farm Machinery,20,2010,201060,20106015
+J71550-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+J89J6Y-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+J994MP-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+J998WT-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+J9F59G-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+JBG9LM-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+JCPT0R-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+JDDDQJ-R,Consumer Discretionary,Retailing,Specialty Retail,Homefurnishing Retail,25,2550,255040,25504060
+JDQ0K1-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+JDV16T-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+JDVMBC-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+JFVMGG-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+JFVSSM-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+JFW5HZ-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+JFW9S3-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+JFZDP0-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+JGQD13-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+JH07CW-R,Consumer Discretionary,Consumer Services,Diversified Consumer Services,Education Services,25,2530,253020,25302010
+JH0BKZ-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+JJ39BV-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+JJ7V03-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+JJ81D9-R,Industrials,Transportation,Road & Rail,Trucking,20,2030,203040,20304020
+JKDM7P-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+JKGP5M-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+JLJ0VZ-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+JMHSJV-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+JMHYW0-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+JML6TS-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+JMNLQC-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+JNTPK7-R,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,40,4010,401020,40102010
+JPTF52-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+JPXNB3-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+JQZ00G-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+JRFYNM-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+JS1YSB-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+JS2P50-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+JS30TB-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+JS63Q7-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+JS6B3F-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+JT71M6-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+JT792F-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+JTC04X-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+JWH12W-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+JXMLY8-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+JYRG0L-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+JYWMBW-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+JZGFGR-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Operating Companie,60,6010,601020,60102020
+JZWRR3-R,Consumer Discretionary,Retailing,Distributors,Distributors,25,2550,255010,25501010
+K14FHD-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+K24537-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Components,45,4520,452030,45203015
+K24Q4R-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Alternative Carriers,50,5010,501010,50101010
+K38HHD-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+K3FDW0-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+K4F5JW-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+K5JXTH-R,Materials,Materials,Containers & Packaging,Metal & Glass Containers,15,1510,151030,15103010
+K5Q6XG-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+K6Q83L-R,Communication Services,Telecommunication Services,Wireless Telecommunication Ser,Wireless Telecommunication Ser,50,5010,501020,50102010
+K6RW63-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+K7TPSX-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+K7YTNS-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+K8YRNT-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+K8ZYYY-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+KB2QBM-R,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,50,5020,502020,50202020
+KB36D6-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+KB3YPS-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+KB791X-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+KC6WDM-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+KCCLD1-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+KDC2JN-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+KDCD3Y-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+KDHCQP-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+KDJL0T-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+KDJSF0-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+KFJFWS-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+KFMMZS-R,Consumer Staples,Household & Personal Products,Personal Products,Personal Products,30,3030,303020,30302010
+KFP1P3-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+KFP2R4-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+KFQHFG-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+KGRLNL-R,Materials,Materials,Paper & Forest Products,Paper Products,15,1510,151050,15105020
+KGSZF0-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+KHX8Q2-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+KHZRFD-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Services,60,6010,601020,60102040
+KJZZ2T-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+KK1SFD-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+KK1YRK-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+KK2P47-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+KK9RS0-R,Real Estate,Real Estate,Equity Real Estate Investment,Diversified REITs,60,6010,601010,60101010
+KL19N1-R,Real Estate,Real Estate,Real Estate Management & Devel,Diversified Real Estate Activi,60,6010,601020,60102010
+KL1DV4-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+KM5Q58-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+KMBPNY-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+KMBRT0-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+KP3HBJ-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Development,60,6010,601020,60102030
+KPFMHW-R,Industrials,Transportation,Air Freight & Logistics,Air Freight & Logistics,20,2030,203010,20301010
+KPQ4X0-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+KRQTDT-R,Consumer Staples,"Food, Beverage & Tobacco",Tobacco,Tobacco,30,3020,302030,30203010
+KRTZ9N-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+KSWML9-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+KTPK4Q-R,Communication Services,Media & Entertainment,Media,Publishing,50,5020,502010,50201040
+KV0J41-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+KW432H-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+KWBVZV-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+KXDMGL-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+KYCY91-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+KYJFW8-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+KYKCS8-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+KZKK3D-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+KZMN3C-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+L0ND5P-R,Financials,Diversified Financials,Diversified Financial Services,Specialized Finance,40,4020,402010,40201040
+L0NDP5-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+L1XX07-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+L32LM8-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+L56306-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+L6BT3Q-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+L6CPTK-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+L7LP86-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+L7M79Q-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+L7MTPJ-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+L7N0TG-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+L8SKLT-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+LBWB3L-R,Consumer Discretionary,Retailing,Specialty Retail,Home Improvement Retail,25,2550,255040,25504030
+LBWNRX-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+LC0H1H-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+LC1BTF-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+LCJDJK-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+LD0WYZ-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+LD13C5-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+LD1K6L-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+LD63XW-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+LF4WPT-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Manufacturing Servi,45,4520,452030,45203020
+LF9ZDL-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+LG8XHP-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+LGFBYV-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+LGH1W3-R,Consumer Staples,Household & Personal Products,Personal Products,Personal Products,30,3030,303020,30302010
+LGLG64-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+LHKN8Z-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+LJPXK2-R,Real Estate,Real Estate,Equity Real Estate Investment,Diversified REITs,60,6010,601010,60101010
+LJQYJ1-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+LKPWM4-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+LKST5W-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+LKVW3T-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+LKVX5V-R,Real Estate,Real Estate,Equity Real Estate Investment,Diversified REITs,60,6010,601010,60101010
+LLZBW5-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+LN3P8B-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+LPRN3T-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+LQ766T-R,Materials,Materials,Chemicals,Industrial Gases,15,1510,151010,15101040
+LQ7KY5-R,Consumer Discretionary,Consumer Services,Diversified Consumer Services,Specialized Consumer Services,25,2530,253020,25302020
+LQBB5R-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+LRJBXM-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+LRJYZ2-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+LRK013-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+LTN366-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Services,35,3510,351020,35102015
+LTN487-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+LTP0Z2-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+LTP334-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+LTSNXH-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+LTT932-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+LVS9GC-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+LVYTWF-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+LX237L-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Distillers & Vintners,30,3020,302010,30201020
+LX48CM-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+LY653H-R,Utilities,Utilities,Independent Power and Renewabl,Independent Power Producers &,55,5510,551050,55105010
+LY8HKP-R,Communication Services,Media & Entertainment,Media,Advertising,50,5020,502010,50201010
+LZBPWV-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+M0C1P8-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+M0DGHQ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+M0H2C1-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+M0H6M5-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductor Equipment,45,4530,453010,45301010
+M1FW60-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+M1H0C2-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+M2LK7H-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+M3QDQ6-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+M4VLV7-R,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,Leisure Products,25,2520,252020,25202010
+M4W5YS-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+M67VFY-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+M7439D-R,Health Care,Health Care Equipment & Servic,Health Care Technology,Health Care Technology,35,3510,351030,35103010
+M79B89-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+M79R1P-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+M8867B-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+M8XT6B-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+M9DGHF-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+M9L13N-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+MBJNMG-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+MBK7R0-R,Financials,Insurance,Insurance,Insurance Brokers,40,4030,403010,40301010
+MBP9GT-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+MCNYYL-R,Consumer Discretionary,Retailing,Internet & Direct Marketing Re,Internet & Direct Marketing Re,25,2550,255020,25502020
+MDV2VH-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+MDYC2K-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+MFQVZQ-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+MFZ7XH-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Distillers & Vintners,30,3020,302010,30201020
+MG2TQV-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+MH2KBP-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+MH33D6-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+MH3TRW-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+MH7TCM-R,Industrials,Transportation,Air Freight & Logistics,Air Freight & Logistics,20,2030,203010,20301010
+MJ0XB7-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+MJB531-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+MJCGG4-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+MKC1SV-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+MKCXFN-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+MKH9XV-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+MKJ8WW-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+MLHF81-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+MLQ41B-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+MMMCXV-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+MMMG1X-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+MMN39J-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+MMRZQ5-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+MPXJMM-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+MQ0Y3T-R,Materials,Materials,Construction Materials,Construction Materials,15,1510,151020,15102010
+MQ119X-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Agricultural Products,30,3020,302020,30202010
+MR0PSP-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+MR5BN1-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+MS57L1-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+MS9FKZ-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+MTFF9T-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+MTGRW2-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+MTGSY3-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+MVKZ35-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+MVLTQZ-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+MXW701-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+MXZ7RW-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+MYW502-R,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,50,5020,502020,50202020
+MYZ7WZ-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+MYZLK9-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+MZJHY9-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+MZZ0KV-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+N03DYZ-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+N13NK9-R,Consumer Discretionary,Retailing,Multiline Retail,Department Stores,25,2550,255030,25503010
+N17TH6-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+N18P40-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+N286BN-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+N2DMST-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+N2GNNQ-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+N3DFJQ-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+N4K9ZD-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+N4P9L4-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Supplies,35,3510,351010,35101020
+N5NG2F-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+N6446B-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+N6GVND-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+N829VP-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+N93NK1-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+NB5RP3-R,Utilities,Utilities,Independent Power and Renewabl,Renewable Electricity,55,5510,551050,55105020
+NB76FG-R,Information Technology,Software & Services,IT Services,Internet Services & Infrastruc,45,4510,451020,45102030
+NBCKRK-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+NBFPTK-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+NCCFMJ-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+NCHMMG-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+NCL5GV-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Brewers,30,3020,302010,30201010
+NDGZHY-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+NDN5DT-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+NFLZ7S-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+NFMH78-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+NFMPMG-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+NFRN55-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Distributors,35,3510,351020,35102010
+NGW97P-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+NGX4WH-R,Consumer Discretionary,Consumer Services,Diversified Consumer Services,Specialized Consumer Services,25,2530,253020,25302020
+NHV4Q7-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+NJ06VG-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+NK0C7P-R,Utilities,Utilities,Independent Power and Renewabl,Independent Power Producers &,55,5510,551050,55105010
+NK0V54-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+NK4NFQ-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+NKGZ7J-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+NL79M9-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+NL8WMS-R,Financials,Insurance,Insurance,Multi-line Insurance,40,4030,403010,40301030
+NM9SGQ-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+NMGMBX-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+NNFR4J-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+NNKD2Y-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+NNKRT9-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+NNL3GM-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+NPJW7K-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+NPK3PS-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+NPK7YX-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+NPS0W8-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+NQP2CL-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+NQTR8Z-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+NS7RQS-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+NT37R4-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+NT38T5-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+NV79M1-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+NV7K28-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+NW728X-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+NW8BQ3-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+NXHLP0-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+NYJB5S-R,Consumer Discretionary,Retailing,Specialty Retail,Homefurnishing Retail,25,2550,255040,25504060
+NYJHHY-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Distributors,35,3510,351020,35102010
+NZMV05-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+P0SXV1-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+P1P032-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+P1WWLX-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+P31DB7-R,Financials,Insurance,Insurance,Multi-line Insurance,40,4030,403010,40301030
+P36M94-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+P4VXRX-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+P5BP94-R,Consumer Discretionary,Automobiles & Components,Automobiles,Motorcycle Manufacturers,25,2510,251020,25102020
+P5F9DQ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+P884Z5-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+P8Q3G4-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+P8R3C2-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+P9WJYB-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Drug Retail,30,3010,301010,30101010
+P9ZMV7-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+P9ZNX8-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+PB0T2B-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+PBZKZD-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+PC2KK2-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+PD3PV7-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+PD79QM-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+PD98GG-R,Consumer Discretionary,Retailing,Specialty Retail,Home Improvement Retail,25,2550,255040,25504030
+PD9BLJ-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+PGJW6S-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+PGQCV2-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+PHJ2V4-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Consumer Electronics,25,2520,252010,25201010
+PHP2BT-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+PHPSQH-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+PHQ4CT-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+PJNB5B-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+PJTSGB-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+PKY50L-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+PKZ3VH-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+PKZ95N-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+PLWH27-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+PLY66Q-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+PN37ZK-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+PN6Y00-R,Consumer Staples,"Food, Beverage & Tobacco",Tobacco,Tobacco,30,3020,302030,30203010
+PPCTFP-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Soft Drinks,30,3020,302010,30201030
+PRGN6N-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+PRGQ6L-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+PRHBD5-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+PRMD3Z-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+PRR12D-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+PTRY1F-R,Financials,Insurance,Insurance,Multi-line Insurance,40,4030,403010,40301030
+PTWVJ3-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+PVBYXV-R,Consumer Discretionary,Retailing,Internet & Direct Marketing Re,Internet & Direct Marketing Re,25,2550,255020,25502020
+PVG5TM-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+PVW48J-R,Communication Services,Media & Entertainment,Media,Advertising,50,5020,502010,50201010
+PVWPB1-R,Industrials,Transportation,Air Freight & Logistics,Air Freight & Logistics,20,2030,203010,20301010
+PX1NYT-R,Information Technology,Software & Services,IT Services,Internet Services & Infrastruc,45,4510,451020,45102030
+PX63DZ-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+PY50G1-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+PY5KHK-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+PY5NPN-R,Financials,Insurance,Insurance,Insurance Brokers,40,4030,403010,40301010
+PY63K2-R,Industrials,Capital Goods,Machinery,Agricultural & Farm Machinery,20,2010,201060,20106015
+PZ917X-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+PZG74S-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+PZHJN0-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+PZJT26-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+Q2W445-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+Q2YN1N-R,Consumer Discretionary,Automobiles & Components,Automobiles,Automobile Manufacturers,25,2510,251020,25102010
+Q3VTNZ-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+Q3ZHPF-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+Q4YP8S-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+Q4ZYNY-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+Q53D75-R,Consumer Discretionary,Retailing,Specialty Retail,Computer & Electronics Retail,25,2550,255040,25504020
+Q541GS-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+Q63955-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+Q774MW-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+Q78D01-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+Q78KB6-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+Q7CL31-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+Q7WZWY-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+Q8G78M-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+QCBKSL-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QCS6P8-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+QCYLZB-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+QD8WKZ-R,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,25,2550,255040,25504040
+QF1NY9-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QF2V5D-R,Real Estate,Real Estate,Equity Real Estate Investment,Hotel & Resort REITs,60,6010,601010,60101030
+QG1HR7-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+QG2Q1C-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Commercial Printing,20,2020,202010,20201010
+QHBXV5-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QHJ1R3-R,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,Leisure Products,25,2520,252020,25202010
+QJ9QP4-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+QJB2BG-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+QJBZ19-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+QJKQYN-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+QKJS7V-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+QKM4S2-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+QKMC58-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QLGSL2-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+QLQKDC-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+QLRPKF-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+QMQV1Q-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QMW47R-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+QP3LLV-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+QQ00XL-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+QQ42ND-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+QR56YK-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+QR6LKV-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+QSDQCP-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+QTDCVG-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+QTK2TW-R,Consumer Staples,"Food, Beverage & Tobacco",Tobacco,Tobacco,30,3020,302030,30203010
+QVJJXG-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+QVQ1DM-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+QWV5DL-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+QZ3ZG1-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Home Furnishings,25,2520,252010,25201020
+R2J99W-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+R3HBM2-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+R3J43T-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+R3MHJZ-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+R4M2WP-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+R4N0NK-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+R4S089-R,Materials,Materials,Chemicals,Commodity Chemicals,15,1510,151010,15101010
+R4SK9T-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+R5RD6T-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+R5XGXL-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+R6WVW3-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+R6XPFW-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+R71MZL-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+R81DNG-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+R852NX-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+R85LND-R,Consumer Discretionary,Retailing,Distributors,Distributors,25,2550,255010,25501010
+R88PLB-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+R95W9R-R,Consumer Discretionary,Consumer Services,Diversified Consumer Services,Education Services,25,2530,253020,25302010
+R998SY-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+RB97W0-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+RBB7RY-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+RBDXWG-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+RBHHTX-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+RBHW3V-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+RBJXH6-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+RC9616-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+RCNCKX-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+RCPQST-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+RDKCLT-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+RDKGSX-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+RDQZ92-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+RFPMVX-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+RFPYG6-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+RFQX93-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+RGJSSH-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+RGTY61-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+RGW192-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+RGZN5G-R,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,Home Furnishings,25,2520,252010,25201020
+RH0GWC-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+RH34VR-R,Industrials,Transportation,Airlines,Airlines,20,2030,203020,20302010
+RJ022Y-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+RJ0FT9-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+RJ3WCJ-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+RJVBBR-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+RK3DL5-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+RK3HS8-R,Consumer Staples,"Food, Beverage & Tobacco",Beverages,Distillers & Vintners,30,3020,302010,30201020
+RK8Z6D-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+RL8ZBH-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+RMCZ5D-R,Real Estate,Real Estate,Equity Real Estate Investment,Diversified REITs,60,6010,601010,60101010
+RMD5KL-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+RMFR2L-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+RMJYP2-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+RNHYX7-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+RNNB7B-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+RPNJRM-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+RPTY1P-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+RQ9F5S-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+RQSB38-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+RQXL78-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Distributors,35,3510,351020,35102010
+RRXTTL-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+RSQN90-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+RT20YM-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Manufacturing Servi,45,4520,452030,45203020
+RT2ZSJ-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductor Equipment,45,4530,453010,45301010
+RT4T87-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+RT66YK-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+RT7HCR-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+RTXD8D-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Technology Distributors,45,4520,452030,45203030
+RVBLDR-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+RVBRQX-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+RVC5J9-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+RW15L0-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+RWBV02-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+RWHM3K-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+RXG6KB-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+RXGLDT-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+RXH4B6-R,Real Estate,Real Estate,Equity Real Estate Investment,Office REITs,60,6010,601010,60101040
+RXHN9P-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+RYLVJS-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+RYRC40-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+RYTJNF-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+RZQS4K-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+RZR2QV-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+RZVJ92-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+RZXDWV-R,Consumer Staples,Household & Personal Products,Household Products,Household Products,30,3030,303010,30301010
+S1ZZ0F-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+S26JJL-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Services,60,6010,601020,60102040
+S48YD1-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+S4FRKK-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+S4J8BX-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+S5FPKL-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+S5LHR3-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+S6PC9W-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+S6PJN1-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+S7P87W-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+S7RV59-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+S7RZFF-R,Materials,Materials,Chemicals,Commodity Chemicals,15,1510,151010,15101010
+S8Z499-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Supplies,35,3510,351010,35101020
+S8ZPBT-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+S8ZQDV-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+S9NVWV-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+SCC17N-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+SD0F4T-R,Utilities,Utilities,Independent Power and Renewabl,Renewable Electricity,55,5510,551050,55105020
+SDDH43-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Drug Retail,30,3010,301010,30101010
+SGMZTG-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+SHNDLT-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+SHNVG7-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+SHRZF5-R,Consumer Staples,Household & Personal Products,Household Products,Household Products,30,3030,303010,30301010
+SJS2RC-R,Consumer Discretionary,Retailing,Distributors,Distributors,25,2550,255010,25501010
+SJSMSW-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+SJY281-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+SK0VKN-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+SKX4M8-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+SKZRLQ-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+SPGL7X-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+SPH6FH-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+SQGTV7-R,Materials,Materials,Paper & Forest Products,Forest Products,15,1510,151050,15105010
+SQGY1B-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+SRR5X5-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+STV3R3-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+SVZJ8B-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+SW42ZM-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+SYS0R0-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+SZJK3L-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+SZJL5M-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+T0JL9Q-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+T0SQZH-R,Consumer Discretionary,Automobiles & Components,Automobiles,Automobile Manufacturers,25,2510,251020,25102010
+T1N9NF-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Manufacturing Servi,45,4520,452030,45203020
+T1NRCQ-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+T1TMP9-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+T2TKPB-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+T2TNWF-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Distributors,30,3010,301010,30101020
+T2XF84-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+T2Z5LS-R,Utilities,Utilities,Independent Power and Renewabl,Renewable Electricity,55,5510,551050,55105020
+T2ZH1Y-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+T3YH93-R,Real Estate,Real Estate,Equity Real Estate Investment,Health Care REITs,60,6010,601010,60101050
+T4259K-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+T43Q80-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+T536DM-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+T67DJN-R,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,45,4510,451020,45102010
+T6CPQP-R,Industrials,Transportation,Road & Rail,Trucking,20,2030,203040,20304020
+T7CGDK-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+T7H5H1-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Supplies,35,3510,351010,35101020
+T8H08Z-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+T8X2RS-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+T9M9M3-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+T9VX37-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+TB9J64-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+TBS2VP-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+TCX5SM-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+TD1G1R-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+TF1DZP-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+TF5FNG-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+TGK8GS-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+THB4X2-R,Real Estate,Real Estate,Equity Real Estate Investment,Health Care REITs,60,6010,601010,60101050
+TJG1FT-R,Information Technology,Software & Services,Software,Systems Software,45,4510,451030,45103020
+TJLTK9-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+TKKPJB-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+TKLBRY-R,Health Care,"Pharmaceuticals, Biotechnology",Biotechnology,Biotechnology,35,3520,352010,35201010
+TKSJKR-R,Industrials,Commercial & Professional Serv,Professional Services,Human Resource & Employment Se,20,2020,202020,20202010
+TMTGLT-R,Industrials,Capital Goods,Electrical Equipment,Electrical Components & Equipm,20,2010,201040,20104010
+TMTXG7-R,Materials,Materials,Containers & Packaging,Metal & Glass Containers,15,1510,151030,15103010
+TMZSRT-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+TNZ1G6-R,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,50,5020,502020,50202020
+TNZ6CZ-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+TP420X-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+TQ33B3-R,Industrials,Transportation,Road & Rail,Trucking,20,2030,203040,20304020
+TQ8V8H-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+TR8891-R,Utilities,Utilities,Independent Power and Renewabl,Renewable Electricity,55,5510,551050,55105020
+TR8HR8-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+TRDSY9-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+TSDJK4-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+TSJ29G-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+TTDQ0D-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Refining & Marketing,10,1010,101020,10102030
+TTHJD1-R,Communication Services,Media & Entertainment,Media,Cable & Satellite,50,5020,502010,50201030
+TTK2BH-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+TTTZFZ-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+TVTFDF-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+TVTQ1T-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+TW6KKV-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+TWS77D-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Equipment & Instrum,45,4520,452030,45203010
+TWTDGH-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+TWXW2R-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+TX0WZQ-R,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,40,4010,401020,40102010
+TXN5MP-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductor Equipment,45,4530,453010,45301010
+TXY0GZ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+TY1SPJ-R,Industrials,Commercial & Professional Serv,Professional Services,Research & Consulting Services,20,2020,202020,20202020
+TY1WWM-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+TY202Q-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+TY2CT2-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+TYPLZM-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Services,60,6010,601020,60102040
+TYSRJ3-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+TZ1NKH-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+TZ2TSL-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+TZ6SB9-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+V05L58-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+V1H7QF-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+V1HC1N-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+V2H5QG-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Components,45,4520,452030,45203015
+V3MK5N-R,Consumer Staples,"Food, Beverage & Tobacco",Tobacco,Tobacco,30,3020,302030,30203010
+V3Q5PM-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+V5WMVF-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+V60VXD-R,Real Estate,Real Estate,Equity Real Estate Investment,Diversified REITs,60,6010,601010,60101010
+V6ZMTG-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+V6ZQWF-R,Materials,Materials,Construction Materials,Construction Materials,15,1510,151020,15102010
+V759HN-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+V75BKP-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+V84ND4-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Coal & Consumable Fuels,10,1010,101020,10102050
+V9977J-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+VBCQMG-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+VBK29Z-R,Financials,Insurance,Insurance,Property & Casualty Insurance,40,4030,403010,40301040
+VBL38Y-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+VBMVML-R,Industrials,Capital Goods,Construction & Engineering,Construction & Engineering,20,2010,201030,20103010
+VBN9H0-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Casinos & Gaming,25,2530,253010,25301010
+VCJSXT-R,Materials,Materials,Metals & Mining,Precious Metals & Minerals,15,1510,151040,15104040
+VCNXSP-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+VDPDV7-R,Real Estate,Real Estate,Equity Real Estate Investment,Retail REITs,60,6010,601010,60101070
+VDT2VP-R,Consumer Discretionary,Retailing,Multiline Retail,General Merchandise Stores,25,2550,255030,25503020
+VDT85V-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+VDV94T-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+VFT0VQ-R,Materials,Materials,Containers & Packaging,Metal & Glass Containers,15,1510,151030,15103010
+VFY8ZQ-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+VGYKN2-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+VK6WS2-R,Materials,Materials,Metals & Mining,Diversified Metals & Mining,15,1510,151040,15104020
+VK7M4R-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+VLHKF9-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+VMM07R-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+VMMBRY-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+VNMTTH-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo",Footwear,25,2520,252030,25203020
+VNN3BR-R,Real Estate,Real Estate,Equity Real Estate Investment,Industrial REITs,60,6010,601010,60101020
+VNRDMV-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+VQXR21-R,Materials,Materials,Chemicals,Specialty Chemicals,15,1510,151010,15101050
+VQYTRP-R,Financials,Diversified Financials,Consumer Finance,Consumer Finance,40,4020,402020,40202010
+VR16P9-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+VR1F2H-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+VR4SHN-R,Information Technology,Technology Hardware & Equipmen,"Electronic Equipment, Instrume",Electronic Manufacturing Servi,45,4520,452030,45203020
+VS59M7-R,Financials,Insurance,Insurance,Multi-line Insurance,40,4030,403010,40301030
+VT4SWZ-R,Industrials,Capital Goods,Building Products,Building Products,20,2010,201020,20102010
+VT5051-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+VT66G5-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+VT67J6-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Diversified Support Services,20,2020,202010,20201070
+VTBLV9-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",Restaurants,25,2530,253010,25301040
+VTBNZC-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+VV9LP2-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+VWF970-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+VWGLQ7-R,Materials,Materials,Chemicals,Fertilizers & Agricultural Che,15,1510,151010,15101030
+VWPHWQ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+VYQ02C-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+VYWGHH-R,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,20,2010,201010,20101010
+VZDYKL-R,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,Leisure Products,25,2520,252020,25202010
+VZYGFG-R,Information Technology,Semiconductors & Semiconductor,Semiconductors & Semiconductor,Semiconductors,45,4530,453010,45301020
+W00MKH-R,Information Technology,Technology Hardware & Equipmen,"Technology Hardware, Storage &","Technology Hardware, Storage &",45,4520,452020,45202030
+W0731Q-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+W0Z4W6-R,Industrials,Capital Goods,Trading Companies & Distributo,Trading Companies & Distributo,20,2010,201070,20107010
+W103Q3-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+W13NGF-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+W14WTL-R,Consumer Discretionary,Consumer Services,Diversified Consumer Services,Education Services,25,2530,253020,25302010
+W235P2-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Services,60,6010,601020,60102040
+W3BLZ4-R,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,25,2550,255040,25504050
+W3F6YL-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+W5QQ9P-R,Communication Services,Telecommunication Services,Wireless Telecommunication Ser,Wireless Telecommunication Ser,50,5010,501020,50102010
+W6N4JC-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+W6SXMV-R,Consumer Discretionary,Retailing,Internet & Direct Marketing Re,Internet & Direct Marketing Re,25,2550,255020,25502020
+W6SYPW-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+W7S6D8-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+W800CN-R,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,40,4020,402030,40203020
+W8YRN3-R,Consumer Staples,"Food, Beverage & Tobacco",Food Products,Packaged Foods & Meats,30,3020,302020,30202030
+W8YZJS-R,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,40,4010,401020,40102010
+W91F62-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+W91W1H-R,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,Food Retail,30,3010,301010,30101030
+WB32GQ-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+WB34LS-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+WC5Y1H-R,Industrials,Transportation,Road & Rail,Railroads,20,2030,203040,20304010
+WDG05S-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+WDGX90-R,Materials,Materials,Metals & Mining,Steel,15,1510,151040,15104050
+WFH94G-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+WFJYTJ-R,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,50,5020,502030,50203010
+WFLMHL-R,Health Care,Health Care Equipment & Servic,Health Care Equipment & Suppli,Health Care Equipment,35,3510,351010,35101010
+WFMVVR-R,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,40,4020,402030,40203040
+WGLQTS-R,Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates,20,2010,201050,20105010
+WGXV7D-R,Information Technology,Software & Services,IT Services,Data Processing & Outsourced S,45,4510,451020,45102020
+WHQQKM-R,Materials,Materials,Metals & Mining,Silver,15,1510,151040,15104045
+WJYLFT-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+WK3BVM-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+WL1C5V-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+WL1GCY-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+WM5BXP-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+WM8ZW3-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+WN8BRL-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+WN99LH-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+WNCY3G-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+WPFS7S-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Integrated Oil & Gas,10,1010,101020,10102010
+WPKF66-R,Consumer Discretionary,Retailing,Specialty Retail,Computer & Electronics Retail,25,2550,255040,25504020
+WQK5W2-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+WQQ01L-R,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,50,5020,502020,50202010
+WRTQ85-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+WRVHRX-R,Industrials,Commercial & Professional Serv,Commercial Services & Supplies,Environmental & Facilities Ser,20,2020,202010,20201050
+WRYB4K-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+WTJ15D-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+WW3PDJ-R,Real Estate,Real Estate,Real Estate Management & Devel,Real Estate Services,60,6010,601020,60102040
+WW7DBW-R,Consumer Discretionary,Automobiles & Components,Auto Components,Auto Parts & Equipment,25,2510,251010,25101010
+WXD74Z-R,Materials,Materials,Containers & Packaging,Paper Packaging,15,1510,151030,15103020
+WYCPCP-R,Communication Services,Media & Entertainment,Media,Broadcasting,50,5020,502010,50201020
+WYJT0C-R,Financials,Banks,Banks,Diversified Banks,40,4010,401010,40101010
+WZHGL6-R,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,40,4010,401020,40102010
+X0MNQ7-R,Materials,Materials,Containers & Packaging,Metal & Glass Containers,15,1510,151030,15103010
+X0N4MP-R,Utilities,Utilities,Multi-Utilities,Multi-Utilities,55,5510,551030,55103010
+X0QJ91-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Equipment & Services,10,1010,101010,10101020
+X0SP8Y-R,Energy,Energy,Energy Equipment & Services,Oil & Gas Drilling,10,1010,101010,10101010
+X1RJ5Y-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+X1SCTR-R,Information Technology,Software & Services,Software,Application Software,45,4510,451030,45103010
+X1SH0V-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+X2DZC9-R,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,Leisure Products,25,2520,252020,25202010
+X3JLR4-R,Information Technology,Software & Services,IT Services,Internet Services & Infrastruc,45,4510,451020,45102030
+X42HGH-R,Materials,Materials,Metals & Mining,Copper,15,1510,151040,15104025
+X44SZS-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+X45VWN-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+X47RHF-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Managed Health Care,35,3510,351020,35102030
+X4JD2N-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+X59HZ5-R,Information Technology,Technology Hardware & Equipmen,Communications Equipment,Communications Equipment,45,4520,452010,45201020
+X5BL05-R,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,20,2010,201040,20104020
+X6FP15-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+X7GQ47-R,Industrials,Capital Goods,Machinery,Industrial Machinery,20,2010,201060,20106020
+X8L2PH-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+X8LB4Q-R,Financials,Banks,Banks,Regional Banks,40,4010,401010,40101015
+X9Q3HC-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+XD67LR-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+XF43NV-R,Industrials,Capital Goods,Machinery,Construction Machinery & Heavy,20,2010,201060,20106010
+XF814J-R,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Ban,40,4020,402030,40203010
+XGFDHN-R,Utilities,Utilities,Electric Utilities,Electric Utilities,55,5510,551010,55101010
+XHD46K-R,Financials,Insurance,Insurance,Insurance Brokers,40,4030,403010,40301010
+XJP9V8-R,Health Care,"Pharmaceuticals, Biotechnology",Pharmaceuticals,Pharmaceuticals,35,3520,352020,35202010
+XKBMRH-R,Health Care,"Pharmaceuticals, Biotechnology",Life Sciences Tools & Services,Life Sciences Tools & Services,35,3520,352030,35203010
+XKPF5G-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
+XKPH9J-R,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goo","Apparel, Accessories & Luxury",25,2520,252030,25203010
+XKPX2X-R,Real Estate,Real Estate,Equity Real Estate Investment,Residential REITs,60,6010,601010,60101060
+XKT8J2-R,Real Estate,Real Estate,Equity Real Estate Investment,Specialized REITs,60,6010,601010,60101080
+XKTZWR-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+XLT03X-R,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure","Hotels, Resorts & Cruise Lines",25,2530,253010,25301020
+XLV24X-R,Consumer Discretionary,Automobiles & Components,Automobiles,Automobile Manufacturers,25,2510,251020,25102010
+XLXZ75-R,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,25,2550,255040,25504010
+XLY63V-R,Financials,Insurance,Insurance,Life & Health Insurance,40,4030,403010,40301020
+XM8P7T-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Storage & Transporta,10,1010,101020,10102040
+XMYTFJ-R,Health Care,Health Care Equipment & Servic,Health Care Providers & Servic,Health Care Facilities,35,3510,351020,35102020
+XN99FC-R,Materials,Materials,Metals & Mining,Gold,15,1510,151040,15104030
+XNRMXZ-R,Consumer Staples,Household & Personal Products,Personal Products,Personal Products,30,3030,303020,30302010
+XP380S-R,Communication Services,Telecommunication Services,Diversified Telecommunication,Integrated Telecommunication S,50,5010,501010,50101020
+XQCN4R-R,Energy,Energy,"Oil, Gas & Consumable Fuels",Oil & Gas Exploration & Produc,10,1010,101020,10102020
